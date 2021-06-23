@@ -9,156 +9,333 @@
 
 </head>
 
-<div id="MPHD_Facility_MonthlyCustomForm">
-
+<div id="MPHDCustomForm">
   <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
 
   <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
-    <br />
-    <br />
-    <img src="../images/ajax-loader-circle.gif" /><br />
-    <br />
-    &nbsp;
-    <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+      <br />
+      <br />
+      <img src="../images/ajax-loader-circle.gif" /><br />
+      <br />
+      &nbsp;
+      <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
   </div>
 
-  <div id="MPHD_Facility_MonthlyCustomForm_Content">
-    <div id="tabs" style="display:block;">
-      <ul class="custom_tab">
-        <li><a href="#CHTab" keyword="opt_c:TAB_Title_1">Infants</a></li>
-        <li><a href="#FPTab" keyword="opt_c:TAB_Title_2">Family planning</a></li>
-        <li><a href="#IMMTab" keyword="opt_c:TAB_Title_3">Immunization</a></li>
-        <li><a href="#MN" keyword="opt_c:TAB_Title_4">MN</a></li>
-      </ul>
-      <!-- Infants Tab -->
+  <div id="MPHDCustomForm_Content">
+      <div id="tabs" style="display:block;">
+          <ul class="custom_tab">
+              <li><a href="#CHTab" keyword="opt_c:TAB_Title_1">Infants</a></li>
+              <li><a href="#FPTab" keyword="opt_c:TAB_Title_2">Family planning</a></li>
+              <li><a href="#IMMTab" keyword="opt_c:TAB_Title_3">Immunization</a></li>
+              <li><a href="#MN" keyword="opt_c:TAB_Title_4">MN</a></li>
+          </ul>
+          <!-- Infants Tab -->
 
-      <div id="CHTab">
-        <div class="ty_h2" keyword="opt_c:TAB_1_Title_1">CH.1 Number of Childer 0-59m classified w/ diarrhea</div>
-        <div class="cont-d3rwt">
-          <div class="a0"></div>
-          <div class="a1">Diagnosed</div>
-          <div class="a2">Treated with ORS</div>
-          <div class="a3">Treated with ORD+Zinc</div>
-          <div class="b0">0-59 days</div>
-          <div class="b1"><input></div>
-          <div class="b2"><input></div>
-          <div class="b3"><input></div>
-          <div class="c0">2-59 months</div>
-          <div class="c1"><input></div>
-          <div class="c2"><input></div>
-          <div class="c3"><input></div>
-          <div class="d0">+5 years</div>
-          <div class="d1"><input></div>
-          <div class="d2"><input></div>
-          <div class="d3"><input></div>
-          <div class="e0">Totals</div>
-          <div class="e1"><input></div>
-          <div class="e2"><input></div>
-          <div class="e3"><input></div>
-        </div>
+          <div id="CHTab">
+              <div class="ty_h2" keyword="opt_c:TAB_1_Title_1">CH.1 Number of Childer 0-59m classified w/ diarrhea
+              </div>
 
-        <div class="ty_h2" keyword="opt_c:TAB_1_Title_2">CH.2 Number of Childer 0-59m classified w/ Pneumonia</div>
-        <div class="cont-d3rwt">
-          <div class="a0"></div>
-          <div class="a1">Diagnosed</div>
-          <div class="a2">Amox DT</div>
-          <div class="a3">Antibiotics</div>
-          <div class="b0">0-59d</div>
-          <div class="b1"><input></div>
-          <div class="b2"><input></div>
-          <div class="b3"><input></div>
-          <div class="c0">2-60m</div>
-          <div class="c1"><input></div>
-          <div class="c2"><input></div>
-          <div class="c3"><input></div>
-          <div class="d0">+5 years</div>
-          <div class="d1"><input></div>
-          <div class="d2"><input></div>
-          <div class="d3"><input></div>
-          <div class="e0">Totals</div>
-          <div class="e1"><input></div>
-          <div class="e2"><input></div>
-          <div class="e3"><input></div>
-        </div>
+              <div class="cont-d3rwt">
+                  <div class="a0">&nbsp;</div>
 
-        <div class="ty_h2" keyword="opt_c:TAB_1_Title_3">CH.2 Number of Childer 0-59m classified w/ Pneumonia</div>
-        <div class="cont-d7rwt-st">
-          <div class="a0"></div>
-          <div class="a1">Line 1</div>
-          <div class="a2">Line 2</div>
-          <div class="a3">Line 3</div>
-          <div class="a4">Line 4</div>
-          <div class="a5">Line 5</div>
-          <div class="a6">Line 6</div>
-          <div class="a7">Line 7</div>
-          <div class="a8">Totals</div>
-          <div class="b0">Male</div>
-          <div class="b1"><input></div>
-          <div class="b2"><input></div>
-          <div class="b3"><input></div>
-          <div class="b4"><input></div>
-          <div class="b5"><input></div>
-          <div class="b6"><input></div>
-          <div class="b7"><input></div>
-          <div class="b8"><input></div>
-          <div class="c0">Female</div>
-          <div class="c1"><input></div>
-          <div class="c2"><input></div>
-          <div class="c3"><input></div>
-          <div class="c4"><input></div>
-          <div class="c5"><input></div>
-          <div class="c6"><input></div>
-          <div class="c7"><input></div>
-          <div class="c8"><input></div>
-          <div class="d0">Unknown</div>
-          <div class="d1"><input></div>
-          <div class="d2"><input></div>
-          <div class="d3"><input></div>
-          <div class="d4"><input></div>
-          <div class="d5"><input></div>
-          <div class="d6"><input></div>
-          <div class="d7"><input></div>
-          <div class="d8"><input></div>
-          <div class="e0">Totals</div>
-          <div class="e1"><input></div>
-          <div class="e2"><input></div>
-          <div class="e3"><input></div>
-          <div class="e4"><input></div>
-          <div class="e5"><input></div>
-          <div class="e6"><input></div>
-          <div class="e7"><input></div>
-          <div class="e8"><input></div>
-        </div>
+                  <div class="a1">Diagnosed</div>
 
-        <div class="ty_h2" keyword="opt_c:TAB_1_Title_4">Ch+Nut 2 Number of children 6-59m</div>
+                  <div class="a2">Treated with ORS</div>
 
-        <div class="ty_h2" keyword="opt_c:TAB_1_Title_5">FP RH 4 title goes here</div>
+                  <div class="a3">Treated with ORD+Zinc</div>
+
+                  <div class="b0">0-59 days</div>
+
+                  <div class="b1"><input id="ZXeMzUkXMqh-mkNNcRxfuwE-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 0-59 days"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 0-59 days ]" />
+                  </div>
+
+                  <div class="b2"><input id="QkEzO7YldGz-mkNNcRxfuwE-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 0-59 days"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 0-59 days ]" />
+                  </div>
+
+                  <div class="b3"><input id="q4U5FXdNEAH-mkNNcRxfuwE-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 0-59 days"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 0-59 days ]" />
+                  </div>
+
+                  <div class="c0">2-59 months</div>
+
+                  <div class="c1"><input id="ZXeMzUkXMqh-giLKcCUM5Bk-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 2-59 months"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 2-59 months ]" />
+                  </div>
+
+                  <div class="c2"><input id="QkEzO7YldGz-giLKcCUM5Bk-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 2-59 months"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 2-59 months ]" />
+                  </div>
+
+                  <div class="c3"><input id="q4U5FXdNEAH-giLKcCUM5Bk-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 2-59 months"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 2-59 months ]" />
+                  </div>
+
+                  <div class="d0">+5 years</div>
+
+                  <div class="d1"><input id="ZXeMzUkXMqh-owGSKu6HanY-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas &lt;5 years (age not specified)"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+                  </div>
+
+                  <div class="d2"><input id="QkEzO7YldGz-owGSKu6HanY-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas &lt;5 years (age not specified)"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+                  </div>
+
+                  <div class="d3"><input id="q4U5FXdNEAH-owGSKu6HanY-val" name="entryfield"
+                          title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas &lt;5 years (age not specified)"
+                          value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+                  </div>
+
+                  <div class="e0">Totals</div>
+
+                  <div class="e1"><input /></div>
+
+                  <div class="e2"><input /></div>
+
+                  <div class="e3"><input /></div>
+              </div>
+
+              <div class="ty_h2" keyword="opt_c:TAB_1_Title_2">CH.2 Number of Childer 0-59m classified w/ Pneumonia
+              </div>
+
+              <div class="cont-d3rwt">
+                  <div class="a0">&nbsp;</div>
+
+                  <div class="a1">Diagnosed</div>
+
+                  <div class="a2">Amox DT</div>
+
+                  <div class="a3">Antibiotics</div>
+
+                  <div class="b0">0-59d</div>
+
+                  <div class="b1"><input id="SPUObFYwT82-mkNNcRxfuwE-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 0-59 days"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 0-59 days ]" />
+                  </div>
+
+                  <div class="b2"><input id="KNU1hyVR1V7-mkNNcRxfuwE-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 0-59 days"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 0-59 days ]" />
+                  </div>
+
+                  <div class="b3"><input id="Vo2EJ0seZCV-mkNNcRxfuwE-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 0-59 days"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 0-59 days ]" />
+                  </div>
+
+                  <div class="c0">2-60m</div>
+
+                  <div class="c1"><input id="SPUObFYwT82-giLKcCUM5Bk-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 2-59 months"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 2-59 months ]" />
+                  </div>
+
+                  <div class="c2"><input id="KNU1hyVR1V7-giLKcCUM5Bk-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 2-59 months"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 2-59 months ]" />
+                  </div>
+
+                  <div class="c3"><input id="Vo2EJ0seZCV-giLKcCUM5Bk-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 2-59 months"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 2-59 months ]" />
+                  </div>
+
+                  <div class="d0">+5 years</div>
+
+                  <div class="d1"><input id="SPUObFYwT82-owGSKu6HanY-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas &lt;5 years (age not specified)"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+                  </div>
+
+                  <div class="d2"><input id="KNU1hyVR1V7-owGSKu6HanY-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas &lt;5 years (age not specified)"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+                  </div>
+
+                  <div class="d3"><input id="Vo2EJ0seZCV-owGSKu6HanY-val" name="entryfield"
+                          title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas &lt;5 years (age not specified)"
+                          value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+                  </div>
+
+                  <div class="e0">Totals</div>
+
+                  <div class="e1"><input /></div>
+
+                  <div class="e2"><input /></div>
+
+                  <div class="e3"><input /></div>
+              </div>
+
+              <div class="ty_h2" keyword="opt_c:TAB_1_Title_3">CH.2 Number of Childer 0-59m classified w/ Pneumonia
+              </div>
+
+              <div class="cont-d7rwt-st">
+                  <div class="a0">&nbsp;</div>
+
+                  <div class="a1">Line 1</div>
+
+                  <div class="a2">Line 2</div>
+
+                  <div class="a3">Line 3</div>
+
+                  <div class="a4">Line 4</div>
+
+                  <div class="a5">Line 5</div>
+
+                  <div class="a6">Line 6</div>
+
+                  <div class="a7">Line 7</div>
+
+                  <div class="a8">Totals</div>
+
+                  <div class="b0">Male</div>
+
+                  <div class="b1"><input id="jpGMiEAwDyQ-GhdeQuQT3pI-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Male"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Male ]" />
+                  </div>
+
+                  <div class="b2"><input id="VEyMUs5KSrl-GhdeQuQT3pI-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Male"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Male ]" />
+                  </div>
+
+                  <div class="b3"><input id="xgxOrRAwlQI-GhdeQuQT3pI-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Male"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Male ]" />
+                  </div>
+
+                  <div class="b4"><input id="PTm0vYatBH1-GhdeQuQT3pI-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Male"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Male ]" />
+                  </div>
+
+                  <div class="b5"><input /></div>
+
+                  <div class="b6"><input /></div>
+
+                  <div class="b7"><input /></div>
+
+                  <div class="b8"><input /></div>
+
+                  <div class="c0">Female</div>
+
+                  <div class="c1"><input id="jpGMiEAwDyQ-RaDA18EdM3O-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Female"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Female ]" />
+                  </div>
+
+                  <div class="c2"><input id="VEyMUs5KSrl-RaDA18EdM3O-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Female"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Female ]" />
+                  </div>
+
+                  <div class="c3"><input id="xgxOrRAwlQI-RaDA18EdM3O-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Female"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Female ]" />
+                  </div>
+
+                  <div class="c4"><input id="PTm0vYatBH1-RaDA18EdM3O-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Female"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Female ]" />
+                  </div>
+
+                  <div class="c5"><input /></div>
+
+                  <div class="c6"><input /></div>
+
+                  <div class="c7"><input /></div>
+
+                  <div class="c8"><input /></div>
+
+                  <div class="d0">Unknown</div>
+
+                  <div class="d1"><input id="jpGMiEAwDyQ-ZOFzuGOXt0U-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Unspecified (sex)"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Unspecified (sex) ]" />
+                  </div>
+
+                  <div class="d2"><input id="VEyMUs5KSrl-ZOFzuGOXt0U-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Unspecified (sex)"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Unspecified (sex) ]" />
+                  </div>
+
+                  <div class="d3"><input id="xgxOrRAwlQI-ZOFzuGOXt0U-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Unspecified (sex)"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Unspecified (sex) ]" />
+                  </div>
+
+                  <div class="d4"><input id="PTm0vYatBH1-ZOFzuGOXt0U-val" name="entryfield"
+                          title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Unspecified (sex)"
+                          value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Unspecified (sex) ]" />
+                  </div>
+
+                  <div class="d5"><input /></div>
+
+                  <div class="d6"><input /></div>
+
+                  <div class="d7"><input /></div>
+
+                  <div class="d8"><input /></div>
+
+                  <div class="e0">Totals</div>
+
+                  <div class="e1"><input /></div>
+
+                  <div class="e2"><input /></div>
+
+                  <div class="e3"><input /></div>
+
+                  <div class="e4"><input /></div>
+
+                  <div class="e5"><input /></div>
+
+                  <div class="e6"><input /></div>
+
+                  <div class="e7"><input /></div>
+
+                  <div class="e8"><input /></div>
+              </div>
+
+              <div class="ty_h2" keyword="opt_c:TAB_1_Title_4">Ch+Nut 2 Number of children 6-59m</div>
+
+              <div class="ty_h2" keyword="opt_c:TAB_1_Title_5">FP RH 4 title goes here</div>
+          </div>
+          <!-- //Infants Tab -->
+          <!-- Family planning Tab -->
+
+          <div id="FPTab">2</div>
+          <!-- //Family planning Tab -->
+          <!-- Immunization Tab -->
+
+          <div id="IMMTab">3</div>
+          <!-- //Immunization Tab -->
+          <!-- MN Tab -->
+
+          <div id="MN">4</div>
+          <!-- //MN Tab -->
       </div>
-      <!-- //Infants Tab -->
-
-      <!-- Family planning Tab -->
-      <div id="FPTab">2</div>
-      <!-- //Family planning Tab -->
-
-      <!-- Immunization Tab -->
-      <div id="IMMTab">3</div>
-      <!-- //Immunization Tab -->
-
-      <!-- MN Tab -->
-      <div id="MN">4</div>
-      <!-- //MN Tab -->
-    </div>
   </div>
 
   <div class="dialog">
-    <div class="content">
-      <div class="nav_dg">
-        <div class="title" keyword="opt_c:Permission">Permission</div>
+      <div class="content">
+          <div class="nav_dg">
+              <div class="title" keyword="opt_c:Permission">Permission</div>
 
-        <div class="cta"><span class="material-icons md-dark">close</span></div>
+              <div class="cta"><span class="material-icons md-dark">close</span></div>
+          </div>
+
+          <div class="descriptionInfo">&nbsp;</div>
       </div>
-
-      <div class="descriptionInfo">&nbsp;</div>
-    </div>
   </div>
 </div>
