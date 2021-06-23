@@ -45,10 +45,10 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 		$("#MPHDCustomForm_Content").hide();
 		$("#loaderDiv").show();
 
-		new MPHDTranslation(function () {
-			$("#loaderDiv").hide();
-			$("#MPHDCustomForm_Content").show();
-		});
+		//new MPHDTranslation(function () {
+            $("#loaderDiv").hide();
+            $("#MPHDCustomForm_Content").show();
+        //});
 	}
 
 	// ============================================================================================================
