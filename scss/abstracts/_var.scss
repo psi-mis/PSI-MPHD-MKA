@@ -1,0 +1,34 @@
+// theme
+$color1: #00276F;
+$color2: #333333;
+$color3: #0072B2;
+$color4: #00A2E1;
+$color5: #007F93;
+$color6: #8DD3D0;
+$color7: #8CD8ED;
+
+$colorT: transparent;
+
+$MPHD_FM-1 : #B4C6E7;
+$MPHD_FM-2 : #b4c6e79c;
+
+$color_error: red;
+
+//Tables
+// Main Colors
+$primary: $color6;
+$success: $color7; 
+$gray: #ccc;
+
+// talbe custom colors
+$defaultColor: black;
+$theadColor: $color2;
+$cellOddColor: $color4;
+$cellEvenColor: $success;
+
+// Border Options
+$cellBorderWidth: 1px;
+$borderSpacing: 1px;
+
+// Max width to change the display
+$MaxWidth: 630px;

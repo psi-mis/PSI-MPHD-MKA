@@ -1,0 +1,884 @@
+//TAB: 1 ->G1/2
+.cont-d3rwt {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 b0 c0 d0 e0"
+        "a1 b1 c1 d1 e1"
+        "a2 b2 c2 d2 e2"
+        "a3 b3 c3 d3 e3";
+
+
+    .a0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $colorT;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a1;
+    }
+
+    .a2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a2;
+    }
+
+    .a3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        border-left: 1px solid $color2;
+        grid-area: a3;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: b0;
+    }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b1;
+    }
+
+    .b2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b2;
+    }
+
+    .b3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b3;
+    }
+
+    .c0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: c0;
+    }
+
+    .c1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c1;
+    }
+
+    .c2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c2;
+    }
+
+    .c3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c3;
+    }
+
+    .d0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: d0;
+    }
+
+    .d1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d1;
+    }
+
+    .d2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d2;
+    }
+
+    .d3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d3;
+    }
+
+    .e0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-top: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: e0;
+    }
+
+    .e1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e1;
+    }
+
+    .e2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e2;
+    }
+
+    .e3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e3;
+    }
+}
+//TAB: 1 ->G3
+.cont-d7rwt-st {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 b0 c0 d0 e0"
+        "a1 b1 c1 d1 e1"
+        "a2 b2 c2 d2 e2"
+        "a3 b3 c3 d3 e3"
+        "a4 b4 c4 d4 e4"
+        "a5 b5 c5 d5 e5"
+        "a6 b6 c6 d6 e6"
+        "a7 b7 c7 d7 e7"
+        "a8 b8 c8 d8 e8";
+
+
+    .a0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $colorT;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a1;
+    }
+
+    .a2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a2;
+    }
+
+    .a3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a3;
+    }
+
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a4;
+    }
+
+    .a5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a5;
+    }
+
+    .a6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a6;
+    }
+
+    .a7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a7;
+    }
+
+    .a8 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        border-left: 1px solid $color2;
+        min-width: 120px;
+        grid-area: a8;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: b0;
+    }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b1;
+    }
+
+    .b2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b2;
+    }
+
+    .b3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b3;
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b4;
+    }
+
+    .b5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b5;
+    }
+
+    .b6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b6;
+    }
+
+    .b7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b7;
+    }
+
+    .b8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b8;
+    }
+
+    .c0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: c0;
+    }
+
+    .c1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c1;
+    }
+
+    .c2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c2;
+    }
+
+    .c3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c3;
+    }
+
+    .c4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c4;
+    }
+
+    .c5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c5;
+    }
+
+    .c6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c6;
+    }
+
+    .c7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c7;
+    }
+
+    .c8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c8;
+    }
+
+    .d0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: d0;
+    }
+
+    .d1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d1;
+    }
+
+    .d2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d2;
+    }
+
+    .d3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d3;
+    }
+
+    .d4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d4;
+    }
+
+    .d5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d5;
+    }
+
+    .d6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d6;
+    }
+
+    .d7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d7;
+    }
+
+    .d8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d8;
+    }
+
+    .e0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM-1;
+        padding: 8px;
+        border-bottom: 2px solid $color2;
+        border-right: 1px solid $color2;
+        border-top: 1px solid $color2;
+        min-width: 110px;
+        text-align: center;
+        grid-area: e0;
+    }
+
+    .e1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e1;
+    }
+
+    .e2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e2;
+    }
+
+    .e3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e3;
+    }
+
+    .e4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e4;
+    }
+
+    .e5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e5;
+    }
+
+    .e6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e6;
+    }
+
+    .e7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e7;
+    }
+
+    .e8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM-2;
+        padding: 8px;
+        border-bottom: 1px solid $color2;
+        border-right: 1px solid $color2;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e8;
+    }
+}

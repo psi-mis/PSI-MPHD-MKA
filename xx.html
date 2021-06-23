@@ -1,0 +1,2901 @@
+<style type="text/css">
+    @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .color_ind {
+        color: orange;
+    }
+
+    .color_note {
+        padding: 8px;
+        color: #333;
+    }
+
+    .typc_error {
+        color: red;
+    }
+
+    .head_logo {
+        width: 100%;
+        height: 80px;
+        text-align: left;
+    }
+
+    .i_info {
+        float: right;
+        top: 0px;
+    }
+
+    .ty_h1 {
+        color: #004A6D;
+        font-size: 2rem;
+    }
+
+    .ty_h2 {
+        padding: 26px 0 8px 0;
+        font-size: 1.3rem;
+        color: #004A6D;
+    }
+
+    .ty_h3 {
+        font-size: 1.2rem;
+        color: #0072B2;
+    }
+
+    .ty_h4 {
+        padding-top: 18px;
+        font-size: 1rem;
+        color: #0072B2;
+    }
+
+    .ta_left {
+        text-align: left !important;
+        font-weight: 400 !important;
+    }
+
+    .ta_left_b {
+        text-align: left !important;
+        font-weight: 600 !important;
+        color: #007F93;
+        border-top: 1px solid #007F93;
+        background-color: rgba(0, 0, 0, 0.089);
+    }
+
+    .ta_center {
+        text-align: center !important;
+    }
+
+    .ta_right {
+        text-align: right !important;
+        background-color: blueviolet !important;
+        max-width: 150px !important;
+    }
+
+    .text-overflow {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .c10 {
+        width: 10% !important;
+    }
+
+    .c20 {
+        width: 20% !important;
+    }
+
+    .c30 {
+        width: 30% !important;
+    }
+
+    .c50 {
+        width: 50% !important;
+    }
+
+    .c80 {
+        width: 80% !important;
+    }
+
+    .material-icons {
+        font-family: "Material Icons";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+        /* Support for IE. */
+        font-feature-settings: "liga";
+    }
+
+    .material-icons.md-dark {
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .material-icons.md-dark.md-inactive {
+        color: rgba(0, 0, 0, 0.26);
+    }
+
+    .material-icons.md-light {
+        color: white;
+    }
+
+    .material-icons.md-light.md-inactive {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .dialog {
+        position: fixed;
+        top: 45%;
+        left: 45%;
+        display: none;
+        width: 300px;
+        height: auto;
+        vertical-align: top;
+        background-color: #fff;
+        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+        box-sizing: border-box;
+        padding: 16px;
+        z-index: 999;
+    }
+
+    .dialog .content {
+        height: auto;
+        font-size: 0.9em;
+        box-sizing: border-box;
+    }
+
+    .dialog .content .nav_dg {
+        width: 100%;
+        min-height: 40px;
+        box-sizing: border-box;
+    }
+
+    .dialog .content .nav_dg .title {
+        float: left;
+        font-size: 1.3em;
+        height: auto;
+        width: calc(100% - 32px);
+        margin-bottom: 8px;
+        box-sizing: border-box;
+    }
+
+    .dialog .content .nav_dg .cta {
+        float: left;
+        height: 36px;
+        font-size: 1.3em;
+        margin-left: 8px;
+        width: 24px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .dialog .content .descriptionInfo {
+        clear: both;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dialog .content .button {
+        width: 90px;
+        float: right;
+    }
+
+    /* Misc */
+    .center {
+        text-align: center;
+    }
+
+    .label {
+        padding: 0 16px;
+    }
+
+    .label-blue {
+        color: #4285f4;
+    }
+
+    .table_1 {
+        width: 100%;
+        border-collapse: collapse !important;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+        background: linear-gradient(45deg, #dbfffd, #8CD8ED) !important;
+    }
+
+    .table_1 th,
+    .table_1 td {
+        padding: 15px 8px !important;
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .table_1 thead th {
+        border-left: 0px !important;
+        border-right: 0px !important;
+        background-color: #007F93 !important;
+        color: #FFF !important;
+    }
+
+    .table_1 thead th div {
+        float: right !important;
+    }
+
+    .table_1 thead th img {
+        margin: -2 10px !important;
+        float: left !important;
+        cursor: pointer !important;
+    }
+
+    .table_1 tbody tr {
+        border-bottom: 1px solid rgba(189, 189, 189, 0.384) !important;
+    }
+
+    .table_1 tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    .table_1 tbody td {
+        border-left: 0px !important;
+        border-right: 0px !important;
+    }
+
+    .table_1 tbody td div {
+        float: left !important;
+    }
+
+    .table_1 tbody td div img {
+        margin: -2 10px !important;
+        float: left !important;
+        cursor: pointer !important;
+    }
+
+    .table_1 tbody td .cont_longtext {
+        clear: both;
+        width: 100%;
+        height: 48px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .table_1 tbody td .cont_longtext textarea {
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        border-width: 0;
+        min-height: 40px;
+        background-color: #F5F5F5;
+        border-bottom: 1px solid #333;
+        resize: none;
+        outline-style: none;
+    }
+
+    .table_1 tbody td input {
+        max-width: 100px !important;
+    }
+
+    .table_1 tbody td:hover:before {
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: -9999px !important;
+        bottom: -9999px !important;
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        z-index: -1 !important;
+    }
+
+    .tab1_tabl1 trtr:nth-child(1) td:nth-child(2) {
+        background-color: #FFF45E;
+    }
+
+    .tab1_tabl1 trtr:nth-child(2) td:nth-child(2) {
+        background-color: #DCDCDC;
+    }
+
+    .tab1_tabl1 trtr:nth-child(3) td:nth-child(2) {
+        background-color: #FFC933;
+    }
+
+    .custom_tab {
+        border: 1px solid #007F93 !important;
+        background: #007F93 !important;
+        color: #ffffff;
+        font-weight: bold;
+        /*
+	  li{
+		  a{
+			  color: $color5!important;
+		  }
+	  }
+	  */
+    }
+
+    .s-hidden {
+        visibility: hidden;
+        padding-right: 10px;
+    }
+
+    .select {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        font: normal 11px/22px Arial, Sans-Serif;
+        color: black;
+        border: 1px solid #ccc;
+    }
+
+    .styledSelect {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        padding: 0 10px;
+        font-weight: bold;
+    }
+
+    .styledSelect:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-color: black transparent transparent transparent;
+        position: absolute;
+        top: 9px;
+        right: 6px;
+    }
+
+    .styledSelect:active,
+    .styledSelect.active {
+        background-color: #eee;
+    }
+
+    .options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0 0;
+        padding: 0 0;
+        list-style: none;
+        border: 1px solid #ccc;
+        background-color: white;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .options li {
+        padding: 0 6px;
+        margin: 0 0;
+        padding: 0 10px;
+    }
+
+    .options li:hover {
+        background-color: #39f;
+        color: white;
+    }
+
+    * {
+        font-family: "Rubik", sans-serif;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    input {
+        box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #c5c5c5;
+        border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #007F93;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 0px;
+        box-shadow: inset 2px 10px 12px #f0f0f0;
+    }
+
+    .cta_dg {
+        cursor: pointer;
+    }
+
+    .totals input {
+        background-color: #DCDCDC !important;
+    }
+
+    /*# sourceMappingURL=style.css.map */
+</style>
+<div id="MPHD_Facility_MonthlyCustomForm">
+    <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+
+    <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+        <br />
+        <br />
+        <img src="../images/ajax-loader-circle.gif" /><br />
+        <br />
+        &nbsp;
+        <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+    </div>
+
+    <div id="MPHD_Facility_MonthlyCustomForm_Content">
+        <div id="tabs" style="display:block;">
+            <ul class="custom_tab">
+                <li><a href="#summaryTab" keyword="opt_c:TAB_Title_1">Summary</a></li>
+                <li><a href="#abortionTab" keyword="opt_c:TAB_Title_2">Abortion</a></li>
+                <li><a href="#postAbortionTab" keyword="opt_c:TAB_Title_3">Post-abortion</a></li>
+                <li><a href="#contraceptionTab" keyword="opt_c:TAB_Title_4">Contraception</a></li>
+                <li><a href="#complicationsTab" keyword="opt_c:TAB_Title_5">Complications</a></li>
+                <li><a href="#demandTab" keyword="opt_c:TAB_Title_6">Demand</a></li>
+            </ul>
+            <!-- Summary Tab -->
+
+            <div id="summaryTab">
+                <div class="ty_h2" keyword="opt_c:TAB_1_Title_1">Clients</div>
+
+                <div style="overflow-x:auto;">
+                    <table class="table_1 tab1_tabl1">
+                        <thead>
+                            <tr>
+                                <th class="ta_right _tb_th c50" colspan="3" keyword="opt_c:Male">Male</th>
+                                <th class="ta_right _tb_th c10" keyword="opt_c:Female">Female</th>
+                                <th class="ta_right _tb_th c10" keyword="opt_c:Other">Other</th>
+                                <th class="ta_right _tb_th c10" keyword="opt_c:Unknown">Unknown</th>
+                                <th class="ta_right _tb_th c10" keyword="opt_c:Total">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ta_left" rowspan="3">
+                                    <div><label keyword="de_id:Tdi0Ild8iLU">Total clients served</label> <span
+                                            class="material-icons md-dark cta_dg">info</span></div>
+                                </td>
+                                <td class="ta_left" keyword="catOpt_id:psXYrDUawbP">Aged &lt;25</td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-N9v3LRNACoJ-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 0 - 24, Male Gender"
+                                        value="[ GCACI - CL - Total clients 0 - 24, Male Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-aAi6HPQxwrx-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 0 - 24, Female Gender"
+                                        value="[ GCACI - CL - Total clients 0 - 24, Female Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-e4zszW0q97z-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 0 - 24, Other Gender"
+                                        value="[ GCACI - CL - Total clients 0 - 24, Other Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-IfSF1wCUx9k-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 0 - 24, Unknown Gender"
+                                        value="[ GCACI - CL - Total clients 0 - 24, Unknown Gender ]" /></td>
+                                <td class="ta_right"><input id="indicatorQPCCSP1iINY" indicatorid="QPCCSP1iINY"
+                                        name="indicator" readonly="readonly"
+                                        title="GCACI - CL - Total clients aged &lt;25"
+                                        value="[ GCACI - CL - Total clients aged &lt;25 ]" /></td>
+                            </tr>
+                            <tr>
+                                <td class="ta_left" keyword="catOpt_id:MYQTldjv2Jt">Aged 25+</td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-y6gAyn2JZOd-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 25 +, Male Gender"
+                                        value="[ GCACI - CL - Total clients 25 +, Male Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-dUmZRMMkVGa-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 25 +, Female Gender"
+                                        value="[ GCACI - CL - Total clients 25 +, Female Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-DEz8sVxM4Ex-val" name="entryfield"
+                                        title="GCACI - CL - Total clients 25 +, Other Gender"
+                                        value="[ GCACI - CL - Total clients 25 +, Other Gender ]" /></td>
+                                <td class="ta_right" keyword="opt:dlqsplymle7"><input id="Tdi0Ild8iLU-dlqsplymle7-val"
+                                        name="entryfield" title="GCACI - CL - Total clients 25 +, Unknown Gender"
+                                        value="[ GCACI - CL - Total clients 25 +, Unknown Gender ]" /></td>
+                                <td class="ta_right"><input id="indicatorK8b3KkbxmMM" indicatorid="K8b3KkbxmMM"
+                                        name="indicator" readonly="readonly" title="GCACI - CL - Total clients aged 25+"
+                                        value="[ GCACI - CL - Total clients aged 25+ ]" /></td>
+                            </tr>
+                            <tr>
+                                <td class="ta_left" keyword="catOpt_id:ESxUThSLwPF">Unknown</td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-C09YY1Z1zzM-val" name="entryfield"
+                                        title="GCACI - CL - Total clients Unknown Age, Male Gender"
+                                        value="[ GCACI - CL - Total clients Unknown Age, Male Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-cw3XsIakN8e-val" name="entryfield"
+                                        title="GCACI - CL - Total clients Unknown Age, Female Gender"
+                                        value="[ GCACI - CL - Total clients Unknown Age, Female Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-tZ6zoiFaqpS-val" name="entryfield"
+                                        title="GCACI - CL - Total clients Unknown Age, Other Gender"
+                                        value="[ GCACI - CL - Total clients Unknown Age, Other Gender ]" /></td>
+                                <td class="ta_right"><input id="Tdi0Ild8iLU-XatAM3knxwu-val" name="entryfield"
+                                        title="GCACI - CL - Total clients Unknown Age, Unknown Gender"
+                                        value="[ GCACI - CL - Total clients Unknown Age, Unknown Gender ]" /></td>
+                                <td class="ta_right"><input id="indicatorkODTjNsgTCq" indicatorid="kODTjNsgTCq"
+                                        name="indicator" readonly="readonly"
+                                        title="GCACI - CL - Total clients age unknown "
+                                        value="[ GCACI - CL - Total clients age unknown  ]" /></td>
+                            </tr>
+                            <tr>
+                                <td class="ta_left" rowspan="3">
+                                    <div><label keyword="de_id:b5IROQ7fagX">Total SRH (including FP) clients</label>
+                                        <span class="material-icons md-dark cta_dg">info</span></div>
+                                </td>
+                                <td class="ta_left" keyword="catOpt_id:psXYrDUawbP">Aged &lt;25</td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-N9v3LRNACoJ-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Male Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Male Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-aAi6HPQxwrx-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Female Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Female Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-e4zszW0q97z-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Other Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Other Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-IfSF1wCUx9k-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Unknown Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  0 - 24, Unknown Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="indicatorWdsx143RQvQ" indicatorid="Wdsx143RQvQ"
+                                        name="indicator" readonly="readonly" title="GCACI - CL - Total SRH aged &lt;25"
+                                        value="[ GCACI - CL - Total SRH aged &lt;25 ]" /></td>
+                            </tr>
+                            <tr>
+                                <td class="ta_left" keyword="catOpt_id:MYQTldjv2Jt">Aged 25+</td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-y6gAyn2JZOd-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Male Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Male Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-dUmZRMMkVGa-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Female Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Female Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-DEz8sVxM4Ex-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Other Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Other Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-dlqsplymle7-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Unknown Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  25 +, Unknown Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="indicatorzT7bPlHeFvg" indicatorid="zT7bPlHeFvg"
+                                        name="indicator" readonly="readonly" title="GCACI - CL - Total SRH aged 25+"
+                                        value="[ GCACI - CL - Total SRH aged 25+ ]" /></td>
+                            </tr>
+                            <tr>
+                                <td class="ta_left" keyword="catOpt_id:ESxUThSLwPF">Unknown</td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-C09YY1Z1zzM-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Male Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Male Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-cw3XsIakN8e-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Female Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Female Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-tZ6zoiFaqpS-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Other Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Other Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="b5IROQ7fagX-XatAM3knxwu-val" name="entryfield"
+                                        title="GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Unknown Gender"
+                                        value="[ GCACI - CL - Total SRH clients (Incl. contraception)  Unknown Age, Unknown Gender ]" />
+                                </td>
+                                <td class="ta_right"><input id="indicatorgJR7PbPi5AI" indicatorid="gJR7PbPi5AI"
+                                        name="indicator" readonly="readonly" title="GCACI - CL - Total SRH age unknown"
+                                        value="[ GCACI - CL - Total SRH age unknown ]" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ty_h2" keyword="opt_c:TAB_1_Title_2">Services</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2" keyword="opt_c:TAB_1_Title_2">Services</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left c80">
+                                <div><label keyword="de_id:leoQ30Y1Cqy">Total services provided</label> <span
+                                        class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right c20"><input id="leoQ30Y1Cqy-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - SRV - Total services" value="[ GCACI - SRV - Total services ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:GgmtYkbN8bt">Total SRH (including FP) services
+                                        provided</label> <span class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="GgmtYkbN8bt-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - SRV - Total SRH (Including FP)"
+                                    value="[ GCACI - SRV - Total SRH (Including FP) ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:OXPmHT0JKex">Total abortion-related services provided</label>
+                                    <span class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="OXPmHT0JKex-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - SRV - Total abortion-related services"
+                                    value="[ GCACI - SRV - Total abortion-related services ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //Summary Tab -->
+            <!-- Abortion Tab -->
+
+            <div id="abortionTab">
+                <div class="ty_h2" keyword="opt_c:TAB_2_Title_1">Abortion clients not documented/served</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T1_Clients">info</span></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:UNOfztx52tr">Abortion clients who were referred to other
+                                        service providers (govt,private clinics)</label></div>
+                            </td>
+                            <td class="ta_right"><input id="VaGKRjpVVst-bVGc8Vy2ETG-val" name="entryfield"
+                                    title="GCACI - CL - Pre-abortion counselling clients Referral to other service providers"
+                                    value="[ GCACI - CL - Pre-abortion counselling clients Referral to other service providers ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:VXWdvv2M3mh">Decided not to have an abortion</label>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="VaGKRjpVVst-XOB2mkBcosb-val" name="entryfield"
+                                    title="GCACI - CL - Pre-abortion counselling clients Decided not to have an abortion"
+                                    value="[ GCACI - CL - Pre-abortion counselling clients Decided not to have an abortion ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:pI20s6Xfu00">Lost client information</label></div>
+                            </td>
+                            <td class="ta_right"><input id="VaGKRjpVVst-AsahEC21vtu-val" name="entryfield"
+                                    title="GCACI - CL - Pre-abortion counselling clients Lost Client Information"
+                                    value="[ GCACI - CL - Pre-abortion counselling clients Lost Client Information ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_2_Title_2">Surgical abortion</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:1stTrimester">1st Trimester</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T2_1stT">info</span></div>
+                            </th>
+                            <th class="ta_right _tb_th">
+                                <div><label keyword="opt_c:2ndTrimester">2nd Trimester</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T2_2ndT">info</span></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:ARyPBecoXv2">Aspiration</label></div>
+                            </td>
+                            <td class="ta_right"><input id="SboKUZiSyF8-LvY1Ko5EIh6-val" name="entryfield"
+                                    title="GCACI - CL - Surgical abortions clients - First Trimester  Aspiration"
+                                    value="[ GCACI - CL - Surgical abortions clients - First Trimester  Aspiration ]" />
+                            </td>
+                            <td class="ta_right"><input id="et8fhEsrje8-LvY1Ko5EIh6-val" name="entryfield"
+                                    title="GCACI - CL - Surgical abortions clients - Second Trimester Aspiration"
+                                    value="[ GCACI - CL - Surgical abortions clients - Second Trimester Aspiration ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:W04kakwe56N">D&amp;E</label></div>
+                            </td>
+                            <td class="ta_right"><input id="SboKUZiSyF8-j7J6kKcFKdm-val" name="entryfield"
+                                    title="GCACI - CL - Surgical abortions clients - First Trimester  D&amp;E"
+                                    value="[ GCACI - CL - Surgical abortions clients - First Trimester  D&amp;E ]" />
+                            </td>
+                            <td class="ta_right"><input id="et8fhEsrje8-j7J6kKcFKdm-val" name="entryfield"
+                                    title="GCACI - CL - Surgical abortions clients - Second Trimester D&amp;E"
+                                    value="[ GCACI - CL - Surgical abortions clients - Second Trimester D&amp;E ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:IHMAP1oUpCN">Other techniques</label></div>
+
+                                <div class="cont_longtext"><input id="P5ENXLOyyI1-X66r2y4EuwS-val" name="entryfield"
+                                        title="GCACI - surgical - Other techniques comment"
+                                        value="[ GCACI - surgical - Other techniques comment ]" /></div>
+                            </td>
+                            <td class="ta_right"><input id="SboKUZiSyF8-F1tcJJF8C3t-val" name="entryfield"
+                                    title="GCACI - CL - Surgical abortions clients - First Trimester  Other techniques"
+                                    value="[ GCACI - CL - Surgical abortions clients - First Trimester  Other techniques ]" />
+                            </td>
+                            <td class="ta_right"><input id="et8fhEsrje8-F1tcJJF8C3t-val" name="entryfield"
+                                    title="GCACI - CL - Surgical abortions clients - Second Trimester Other techniques"
+                                    value="[ GCACI - CL - Surgical abortions clients - Second Trimester Other techniques ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_2_Title_3">Medical abortion</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:1stTrimester">1st Trimester</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T2_1stT">info</span></div>
+                            </th>
+                            <th class="ta_right _tb_th">
+                                <div><label keyword="opt_c:2ndTrimester">2nd Trimester</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T2_2ndT">info</span></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">&nbsp;</td>
+                            <td class="ta_right"><input id="ARyPBecoXv2-oH6ZV0Y8V0F-val" name="entryfield"
+                                    title="GCACI - CL - Medical abortion clients First trimester (GCACI)"
+                                    value="[ GCACI - CL - Medical abortion clients First trimester (GCACI) ]" /></td>
+                            <td class="ta_right"><input id="ARyPBecoXv2-BHzNv4gkqeD-val" name="entryfield"
+                                    title="GCACI - CL - Medical abortion clients Second trimester (GCACI)"
+                                    value="[ GCACI - CL - Medical abortion clients Second trimester (GCACI) ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_2_Title_6">Harm reduction clients (PFPPA only)</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:1stTrimester">1st Trimester</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T2_1stT">info</span></div>
+                            </th>
+                            <th class="ta_right _tb_th">
+                                <div><label keyword="opt_c:2ndTrimester">2nd Trimester</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T2_2ndT">info</span></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword-data="opt_c:TAB2_HRC-ic">Initial consultation</label></div>
+                            </td>
+                            <td class="ta_right"><input id="AkYp5Y1i4Lu-vje2yby2WYw-val" name="entryfield"
+                                    title="GCACI harm reduction (1st trimester) Initial consultation"
+                                    value="[ GCACI harm reduction (1st trimester) Initial consultation ]" /></td>
+                            <td class="ta_right"><input id="kp4konxtu9A-ApO1J4mZjdw-val" name="entryfield"
+                                    title="GCACI harm reduction (2nd trimester) Initial consultation"
+                                    value="[ GCACI harm reduction (2nd trimester) Initial consultation ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword-data="opt_c:TAB2_HRC-fuc">Follow-up consultation</label></div>
+                            </td>
+                            <td class="ta_right"><input id="AkYp5Y1i4Lu-AQPlJf8Vh8H-val" name="entryfield"
+                                    title="GCACI harm reduction (1st trimester) Follow-up consultation "
+                                    value="[ GCACI harm reduction (1st trimester) Follow-up consultation  ]" /></td>
+                            <td class="ta_right"><input id="kp4konxtu9A-dWbQQd9U2JI-val" name="entryfield"
+                                    title="GCACI harm reduction (2nd trimester) Follow-up consultation "
+                                    value="[ GCACI harm reduction (2nd trimester) Follow-up consultation  ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_2_Title_4">Incomplete abortion treatment (following abortion NOT
+                    performed in MA clinic)</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB2_D-T4_Clients">info</span></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:OPAeu3Zcq73">by medical methods</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB2_DS-medical_methods ">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="A2UuTGGD0FE-OPAeu3Zcq73-val" name="entryfield"
+                                    title="GCACI - CL - treatment for incomplete abortion clients Incomplete abortion treatment medical GCACI"
+                                    value="[ GCACI - CL - treatment for incomplete abortion clients Incomplete abortion treatment medical GCACI ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:VCU9ExzhWZF">by manual vacuum aspiration</label></div>
+                            </td>
+                            <td class="ta_right"><input id="A2UuTGGD0FE-mHNaesoW9NH-val" name="entryfield"
+                                    title="GCACI - CL - treatment for incomplete abortion clients Incomplete abortion treatment manual vacuum aspiration GCACI"
+                                    value="[ GCACI - CL - treatment for incomplete abortion clients Incomplete abortion treatment manual vacuum aspiration GCACI ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword-data="TAB4_T1-OMM">by other methods</label></div>
+
+                                <div class="cont_longtext"><input id="AfgbQX2XOaM-X66r2y4EuwS-val" name="entryfield"
+                                        title="GCACI - Incomplete abortion- Other methods comment"
+                                        value="[ GCACI - Incomplete abortion- Other methods comment ]" /></div>
+                            </td>
+                            <td class="ta_right"><input id="A2UuTGGD0FE-goLj3T4stfr-val" name="entryfield"
+                                    title="GCACI - CL - treatment for incomplete abortion clients Incomplete abortion treatment other methods GCACI"
+                                    value="[ GCACI - CL - treatment for incomplete abortion clients Incomplete abortion treatment other methods GCACI ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_2_Title_5">Abortion summary</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_1_Title_1">Clients</label>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left_b" colspan="2">
+                                <div><label keyword="opt_c:TAB2_Table_51">Surgical abortions</label></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:et8fhEsrje8">Total surgical abortions during first
+                                        trimester</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="et8fhEsrje8" id="totalet8fhEsrje8"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - CL - Surgical abortions clients - Second Trimester"
+                                    value="[ GCACI - CL - Surgical abortions clients - Second Trimester ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:SboKUZiSyF8">GCACI - CL - Surgical abortions clients - Second
+                                        Trimester</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="SboKUZiSyF8" id="totalSboKUZiSyF8"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - CL - Surgical abortions clients - First Trimester "
+                                    value="[ GCACI - CL - Surgical abortions clients - First Trimester  ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:NHP7QbVNAc3">Total surgical abortions</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorNHP7QbVNAc3" indicatorid="NHP7QbVNAc3"
+                                    name="indicator" readonly="readonly" title="GCACI - Surgical abortions Total"
+                                    value="[ GCACI - Surgical abortions Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:c2a9uIaAnk9">% of total abortions through surgical
+                                        methods</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorcQ7GQYoTKjr" indicatorid="cQ7GQYoTKjr"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of total abortions through surgical methods"
+                                    value="[ GCACI - % of total abortions through surgical methods ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left_b" colspan="2">
+                                <div><label keyword="opt_c:TAB_2_ST_t1">Medical abortions</label></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div<label keyword="de_id:ARyPBecoXv2">Medical abortion </div<label>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="ARyPBecoXv2" id="totalARyPBecoXv2"
+                                    name="total" readonly="readonly" title="GCACI - CL - Medical abortion clients"
+                                    value="[ GCACI - CL - Medical abortion clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:o7oyfqGajEE">% of total abortions through medical
+                                        methods</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatoro7oyfqGajEE" indicatorid="o7oyfqGajEE"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of total abortions through medical methods"
+                                    value="[ GCACI - % of total abortions through medical methods ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left_b" colspan="2">
+                                <div><label keyword-data="opt_c:TAB2_Title4">Incomplete abortion treatment (following
+                                        abortion NOT performed in MA clinic)</label></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:oZ6OKErX8fP">GCACI - Total Incomplete abortion
+                                        treatment</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatoroZ6OKErX8fP" indicatorid="oZ6OKErX8fP"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - Total Incomplete abortion treatment"
+                                    value="[ GCACI - Total Incomplete abortion treatment ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left_b" colspan="2"><label keyword="opt_c:TAB_2_Table_52">Total abortions
+                                    provided</label></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div keyword="ind_id:LY5HuSUWbm8">GCACI - Pre-abortion counselling <span
+                                        class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorLY5HuSUWbm8" indicatorid="LY5HuSUWbm8"
+                                    name="indicator" readonly="readonly" title="GCACI - Pre-abortion counselling"
+                                    value="[ GCACI - Pre-abortion counselling ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div>
+                                    <labe keyword="ind_id:qRuMGdTrpYz">GCACI - Total abortion-related clients <span
+                                            class="material-icons md-dark cta_dg">info</span></labe>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorqRuMGdTrpYz" indicatorid="qRuMGdTrpYz"
+                                    name="indicator" readonly="readonly" title="GCACI - Total abortion-related clients"
+                                    value="[ GCACI - Total abortion-related clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:BA6BzjsE2gM">Total clients provided with an abortion</label>
+                                    <span class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorBA6BzjsE2gM" indicatorid="BA6BzjsE2gM"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - Total No. of Clients provided with an abortion"
+                                    value="[ GCACI - Total No. of Clients provided with an abortion ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:glbbjWWbVoY">% of clients provided with an abortion who are
+                                        young people</label></div>
+                            </td>
+                            <td class="ta_right"><input id="glbbjWWbVoY-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - % of clients provided with an abortion who are young people"
+                                    value="[ GCACI - % of clients provided with an abortion who are young people ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:mcLWd5gKhjE">% of clients provided with TIA who are young
+                                        people</label></div>
+                            </td>
+                            <td class="ta_right"><input id="mcLWd5gKhjE-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - % of clients provided with TIA who are young people"
+                                    value="[ GCACI - % of clients provided with TIA who are young people ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //Abortion Tab -->
+            <!-- Post-abortion Tab -->
+
+            <div id="postAbortionTab">
+                <div class="ty_h2" keyword="opt_c:TAB_3_Title_1">Follow up care</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:pOdlOC6Q0OI">Post abortion counselling provided</label> <span
+                                        class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="pOdlOC6Q0OI-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - CL - Post-abortion counselling clients"
+                                    value="[ GCACI - CL - Post-abortion counselling clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:s46yKNpxYJI">String example</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_TIA_MA">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="LCfFS38Lbgi-SCfP86neep3-val" name="entryfield"
+                                    title="GCACI - CL - Post-abortion follow up clients TIA at MA clinics GCACI"
+                                    value="[ GCACI - CL - Post-abortion follow up clients TIA at MA clinics GCACI ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:FpjDiNq4qHs">Follow up provided after having had an
+                                        abortion at a formal partner site referred to the MA clinics</label> <span
+                                        class="material-icons md-dark cta_dg" keyword-data="opt_c:TAB3_A_MA">info</span>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="LCfFS38Lbgi-UHx31MOkPY5-val" name="entryfield"
+                                    title="GCACI - CL - Post-abortion follow up clients Abortion at former partner site and referred to MA clinics GCACI"
+                                    value="[ GCACI - CL - Post-abortion follow up clients Abortion at former partner site and referred to MA clinics GCACI ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:Goo2ctmMTRA">Follow up provided after having had an
+                                        abortion at a &ldquo;non-partner&rdquo; site referred to the MA clinics</label>
+                                    <span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_ANP_MA">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="LCfFS38Lbgi-JWnFnoKPFKK-val" name="entryfield" non=""
+                                    partner="" title="GCACI - CL - Post-abortion follow up clients Abortion at " /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:AnMzK2FuIfA">Followed up provided for walk in clients
+                                        (self-referred)</label> <span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_WC_SR">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="LCfFS38Lbgi-Hso1hz6lX2w-val" name="entryfield"
+                                    title="GCACI - CL - Post-abortion follow up clients Walk in clients (self-referred) GCACI"
+                                    value="[ GCACI - CL - Post-abortion follow up clients Walk in clients (self-referred) GCACI ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:FU4aKU99iT5">Referred clients (3b) subsequently followed p by
+                                        the MA clinic</label> <span class="material-icons md-dark cta_dg">info</span>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="FU4aKU99iT5-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - Referred clients (3b) subsequently followed up by the MA clinic"
+                                    value="[ GCACI - Referred clients (3b) subsequently followed up by the MA clinic ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_3_Title_2">Post-abortion contraception provided</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:xpcjzKvxZGo">Condoms</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_PA_condom">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-P0UI9L2XkzS-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Condoms"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Condoms ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:QXQbgpFI54q">Pills</label></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-TKW9RUc5jKP-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Pills"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Pills ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:rNyJoQFW58i">Injectables</label></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-kkQJskG8Q6h-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Injectables"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Injectables ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:PBlToE6vCQ1">Implants</label></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-Ux133bZkovW-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Implant"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Implant ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:cYL9SCrNbpI">IUDs</label></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-X9DZJmqIEeQ-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception IUD"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception IUD ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:KoHJDTLD731">Tubal ligation</label></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-bYjThWS8yXP-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Tubal Ligation"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Tubal Ligation ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:GBs3pbh4jcD">Vasectomy</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_PA_VSC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-oXj6HJlNALQ-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception VSC"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception VSC ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:WUkDJtPuVME">Emergency Contraception</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_PA_EC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-oYw5iRupjl2-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Emergency contraception"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Emergency contraception ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:PPmD4SvcUGm">Other modern methods (please
+                                        specify)</label></div>
+
+                                <div class="cont_longtext"><input id="a3UrD5SXiBq-X66r2y4EuwS-val" name="entryfield"
+                                        title="GCACI - Postabortion - Other modern methods comment"
+                                        value="[ GCACI - Postabortion - Other modern methods comment ]" /></div>
+                            </td>
+                            <td class="ta_right"><input id="LLlJdyJJXJo-UYYmJncamQN-val" name="entryfield"
+                                    title="GCACI - CL - Total number of post-abortion clients adopting contraception Other"
+                                    value="[ GCACI - CL - Total number of post-abortion clients adopting contraception Other ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_Title_1">Summary</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:LCfFS38Lbgi">Total post-abortion follow-up</label> <span
+                                        class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="LCfFS38Lbgi" id="totalLCfFS38Lbgi"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - CL - Post-abortion follow up clients"
+                                    value="[ GCACI - CL - Post-abortion follow up clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:RKpJSDxp1yB">% of MA clinic post-abortion clients receiving
+                                        follow-up</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorRKpJSDxp1yB" indicatorid="RKpJSDxp1yB"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of MA clinic post-abortion clients receiving follow-up "
+                                    value="[ GCACI - % of MA clinic post-abortion clients receiving follow-up  ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:pZu9HiXXuiv">% of post-abortion clients receiving
+                                        counselling</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorpZu9HiXXuiv" indicatorid="pZu9HiXXuiv"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of post-abortion clients receiving counselling"
+                                    value="[ GCACI - % of post-abortion clients receiving counselling ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:jyf3YCZuqdu">GCACI - Post-abortion clients adopting
+                                        contraception </label><span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_Sum_client_adopt_contraception">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorjyf3YCZuqdu" indicatorid="jyf3YCZuqdu"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - Post-abortion clients adopting contraception"
+                                    value="[ GCACI - Post-abortion clients adopting contraception ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:ICaqw18ybvb">% of post-abortion clients adopting
+                                        contraception</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorICaqw18ybvb" indicatorid="ICaqw18ybvb"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of post-abortion clients adopting contraception"
+                                    value="[ GCACI - % of post-abortion clients adopting contraception ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:smV7hvRF9oX">Total short-acting methods</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_Sum_SARC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorsmV7hvRF9oX" indicatorid="smV7hvRF9oX"
+                                    name="indicator" readonly="readonly" title="GCACI - Post-abortion clients SARC"
+                                    value="[ GCACI - Post-abortion clients SARC ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:lIYUPw9SW3V">Total long-acting and permanent methods</label>
+                                    <span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB3_Sum_LARC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorlIYUPw9SW3V" indicatorid="lIYUPw9SW3V"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - Post-abortion clients LARC &amp; perm"
+                                    value="[ GCACI - Post-abortion clients LARC &amp; perm ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:PSvouXHiGUx">% of post-abortion contraception which is
+                                        long-acting or permanent</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorPSvouXHiGUx" indicatorid="PSvouXHiGUx"
+                                    name="indicator" readonly="readonly"
+                                    title="% of post-abortion contraception which is long-acting or permanent"
+                                    value="[ % of post-abortion contraception which is long-acting or permanent ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:PT8cVFpJasH">% of referred clients followed up</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorPT8cVFpJasH" indicatorid="PT8cVFpJasH"
+                                    name="indicator" readonly="readonly" title="% of referred clients followed up"
+                                    value="[ % of referred clients followed up ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //Post-abortion Tab -->
+            <!-- Contraception Tab -->
+
+            <div id="contraceptionTab">
+                <div class="ty_h2" keyword="opt_c:TAB_4_Title_1">Number of clients and services for contraceptive
+                    methods</div>
+
+                <div class="color_note"><label keyword="opt_c:TAB4_note">NOTE: If a client accepts more than one method
+                        of contraception, record the client under the most effective method of contraception
+                        chosen.</label></div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                            <th class="ta_right _tb_th" keyword="opt_c:TAB_1_Title_2">Services</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:xpcjzKvxZGo">Condoms</label></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-P0UI9L2XkzS-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Condoms"
+                                    value="[ GCACI - CL - Total number of clients using contraception Condoms ]" /></td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-P0UI9L2XkzS-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Condoms"
+                                    value="[ GCACI - SRV - Contraceptive services  Condoms ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:QXQbgpFI54q">Pills</label></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-TKW9RUc5jKP-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Pills"
+                                    value="[ GCACI - CL - Total number of clients using contraception Pills ]" /></td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-TKW9RUc5jKP-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Pills"
+                                    value="[ GCACI - SRV - Contraceptive services  Pills ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:rNyJoQFW58i">Injectables</label></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-kkQJskG8Q6h-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Injectables"
+                                    value="[ GCACI - CL - Total number of clients using contraception Injectables ]" />
+                            </td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-kkQJskG8Q6h-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Injectables"
+                                    value="[ GCACI - SRV - Contraceptive services  Injectables ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left"><label keyword="catOpt_id:PBlToE6vCQ1">GCACI - CL - Total number of
+                                    clients using contraception</label></td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-Ux133bZkovW-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Implant"
+                                    value="[ GCACI - CL - Total number of clients using contraception Implant ]" /></td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-Ux133bZkovW-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Implant"
+                                    value="[ GCACI - SRV - Contraceptive services  Implant ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:cYL9SCrNbpI">IUDs</label></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-X9DZJmqIEeQ-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception IUD"
+                                    value="[ GCACI - CL - Total number of clients using contraception IUD ]" /></td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-X9DZJmqIEeQ-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  IUD"
+                                    value="[ GCACI - SRV - Contraceptive services  IUD ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:KoHJDTLD731">Tubal ligation</label></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-bYjThWS8yXP-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Tubal Ligation"
+                                    value="[ GCACI - CL - Total number of clients using contraception Tubal Ligation ]" />
+                            </td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-bYjThWS8yXP-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Tubal Ligation"
+                                    value="[ GCACI - SRV - Contraceptive services  Tubal Ligation ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:fL3O8ZteCsO">Vasectomy</label></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-oXj6HJlNALQ-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception VSC"
+                                    value="[ GCACI - CL - Total number of clients using contraception VSC ]" /></td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-oXj6HJlNALQ-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  VSC"
+                                    value="[ GCACI - SRV - Contraceptive services  VSC ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:WUkDJtPuVME">Emergency Contraception</label> <span
+                                        class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB4_PA_EC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-oYw5iRupjl2-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Emergency contraception"
+                                    value="[ GCACI - CL - Total number of clients using contraception Emergency contraception ]" />
+                            </td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-oYw5iRupjl2-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Emergency contraception"
+                                    value="[ GCACI - SRV - Contraceptive services  Emergency contraception ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:fxr7Soq0OHh">Other modern methods (please
+                                        specify)</label></div>
+
+                                <div class="cont_longtext"><input id="gnPlLZIirOW-X66r2y4EuwS-val" name="entryfield"
+                                        title="GCACI - Contraception - Other modern methods comment"
+                                        value="[ GCACI - Contraception - Other modern methods comment ]" /></div>
+                            </td>
+                            <td class="ta_right"><input id="azbLYkg8W2z-UYYmJncamQN-val" name="entryfield"
+                                    title="GCACI - CL - Total number of clients using contraception Other"
+                                    value="[ GCACI - CL - Total number of clients using contraception Other ]" /></td>
+                            <td class="ta_right"><input id="qUUkCsbpY9O-UYYmJncamQN-val" name="entryfield"
+                                    title="GCACI - SRV - Contraceptive services  Other"
+                                    value="[ GCACI - SRV - Contraceptive services  Other ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB3_Title_1">Removal clients served</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="_tb_th">&nbsp;</th>
+                            <th class="ta_right _tb_th">
+                                <div><label keyword="opt_c:Implants">Implants</label></div>
+                            </th>
+                            <th class="ta_right _tb_th">
+                                <div><label keyword="opt_c:IUDs">IUDs</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:bjDaNTaE49W">Removal of implant/IUD provided by MA within
+                                        last 12 months, client does not intend to become pregnant</label></div>
+                            </td>
+                            <td class="ta_right"><input id="xzPKJ2VQN6q-Y7BHVr18eWG-val" name="entryfield"
+                                    title="GCACI - CL - Implant removal clients GCACI - Implant provided by MA within last 12 months, client does not intend to become pregnant"
+                                    value="[ GCACI - CL - Implant removal clients GCACI - Implant provided by MA within last 12 months, client does not intend to become pregnant ]" />
+                            </td>
+                            <td class="ta_right"><input id="n6Oc30X4f54-Y7BHVr18eWG-val" name="entryfield"
+                                    title="GCACI - CL - IUD removal clients GCACI - Implant provided by MA within last 12 months, client does not intend to become pregnant"
+                                    value="[ GCACI - CL - IUD removal clients GCACI - Implant provided by MA within last 12 months, client does not intend to become pregnant ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:dhuuo14qfm6">Removal of implant/IUD provided by MA within
+                                        last 12 months, client wishes to become pregnant.</label></div>
+                            </td>
+                            <td class="ta_right"><input id="xzPKJ2VQN6q-tQcki89n3Et-val" name="entryfield"
+                                    title="GCACI - CL - Implant removal clients GCACI - Implant provided by MA within last 12 months, client wishes to become pregnant"
+                                    value="[ GCACI - CL - Implant removal clients GCACI - Implant provided by MA within last 12 months, client wishes to become pregnant ]" />
+                            </td>
+                            <td class="ta_right"><input id="n6Oc30X4f54-tQcki89n3Et-val" name="entryfield"
+                                    title="GCACI - CL - IUD removal clients GCACI - Implant provided by MA within last 12 months, client wishes to become pregnant"
+                                    value="[ GCACI - CL - IUD removal clients GCACI - Implant provided by MA within last 12 months, client wishes to become pregnant ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:eBhv077zEDq">Removal of implant/IUD provided more than 12
+                                        months ago and/or inserted by a non-MA provider</label></div>
+                            </td>
+                            <td class="ta_right"><input id="xzPKJ2VQN6q-fTulfSUElJL-val" name="entryfield"
+                                    title="GCACI - CL - Implant removal clients GCACI - Implant provided by more than 12 months and/or inserted by non-MA provider"
+                                    value="[ GCACI - CL - Implant removal clients GCACI - Implant provided by more than 12 months and/or inserted by non-MA provider ]" />
+                            </td>
+                            <td class="ta_right"><input id="n6Oc30X4f54-fTulfSUElJL-val" name="entryfield"
+                                    title="GCACI - CL - IUD removal clients GCACI - Implant provided by more than 12 months and/or inserted by non-MA provider"
+                                    value="[ GCACI - CL - IUD removal clients GCACI - Implant provided by more than 12 months and/or inserted by non-MA provider ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_Title_1">Summary</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label> <span
+                                        class="material-icons md-light cta_dg"
+                                        keyword-data="opt_c:TAB4_D-T3_Clients">info</span></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:BEBjoqlHXYl">GCACI - CL - Total contraception (excl.
+                                        EC)</label> <span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB4_Sum_total_contraception">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorBEBjoqlHXYl" indicatorid="BEBjoqlHXYl"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - CL - Total contraception (excl. EC)"
+                                    value="[ GCACI - CL - Total contraception (excl. EC) ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:dMPXNvft4Ta">GCACI - Total contraception services</label>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="indicatordMPXNvft4Ta" indicatorid="dMPXNvft4Ta"
+                                    name="indicator" readonly="readonly" title="GCACI - Total contraception services"
+                                    value="[ GCACI - Total contraception services ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:NIZo39DLfLu">Total number of clients provided with
+                                        short-acting methods</label> <span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB4_Sum_SARC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorNIZo39DLfLu" indicatorid="NIZo39DLfLu"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - Total contraception clients SARC"
+                                    value="[ GCACI - Total contraception clients SARC ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:LHQq4oDZMGF">Total number of clients provided with long-term
+                                        and permanent methods</label> <span class="material-icons md-dark cta_dg"
+                                        keyword-data="opt_c:TAB4_Sum_LARC">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorLHQq4oDZMGF" indicatorid="LHQq4oDZMGF"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - Total contraception clients LARC &amp; perm"
+                                    value="[ GCACI - Total contraception clients LARC &amp; perm ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:mj6msOfEsEq">% of total contraception clients who receive
+                                        long-acting or permanent methods</label> <span
+                                        class="material-icons md-dark cta_dg">info</span></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatormj6msOfEsEq" indicatorid="mj6msOfEsEq"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of contraception which is long-acting or permanent"
+                                    value="[ GCACI - % of contraception which is long-acting or permanent ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:xzPKJ2VQN6q">GCACI - CL - Implant removal clients</label>
+                                </div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="xzPKJ2VQN6q" id="totalxzPKJ2VQN6q"
+                                    name="total" readonly="readonly" title="GCACI - CL - Implant removal clients"
+                                    value="[ GCACI - CL - Implant removal clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:n6Oc30X4f54">GCACI - CL - IUD removal clients</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="n6Oc30X4f54" id="totaln6Oc30X4f54"
+                                    name="total" readonly="readonly" title="GCACI - CL - IUD removal clients"
+                                    value="[ GCACI - CL - IUD removal clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:bFO92frGLfD">GCACI - % of clients using contraceptives who
+                                        are young people</label></div>
+                            </td>
+                            <td class="ta_right"><input id="bFO92frGLfD-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - % of clients using contraceptives who are young people"
+                                    value="[ GCACI - % of clients using contraceptives who are young people ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_4_Title_2">[FPAP only] Post-partum IUDs</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:JyXG0fjhuip">Total number of clients delivering at FPAP
+                                        clinics</label></div>
+                            </td>
+                            <td class="ta_right"><input id="HiUrDj45WAz-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - CL - women delivering within clinics [FPAP only]"
+                                    value="[ GCACI - CL - women delivering within clinics [FPAP only] ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:B2r5ahCc4ZG">Total number of delivery clients who accept
+                                        PPIUDs</label></div>
+                            </td>
+                            <td class="ta_right"><input id="B2r5ahCc4ZG-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - CL - PPIUD clients" value="[ GCACI - CL - PPIUD clients ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:BwfFAVUrevE">GCACI - % of FPAP delivery clients provided
+                                        with PPIUD</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorBwfFAVUrevE" indicatorid="BwfFAVUrevE"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of FPAP delivery clients provided with PPIUD"
+                                    value="[ GCACI - % of FPAP delivery clients provided with PPIUD ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //Contraception Tab -->
+            <!-- Complications Tab -->
+
+            <div id="complicationsTab">
+                <div class="color_note"><label keyword="opt_c:TAB5_note">Note: Complications from abortions performed by
+                        aspiration in the participating MA clinics (count only one, the most serious complication per
+                        client). This measures QoC in terms of skills of providers and infection prevention. Please note
+                        that any clients treated for complications following an abortion performed outside of the MA
+                        clinic should be recorded under Indicator 6 - Incomplete abortion treatment.</label></div>
+
+                <div class="ty_h2" keyword="opt_c:TAB_5_Title_1">Complications after abortion done by aspiration, by
+                    type</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:YZZJKOtzt88">Retention of ovular products</label></div>
+                            </td>
+                            <td class="ta_right"><input id="yzaluDjjKPb-r3oUOx3T3ic-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type Retention of ovular products"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type Retention of ovular products ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:NyRdp9nHlgg">Excessive bleeding/haemorrhage</label></div>
+                            </td>
+                            <td class="ta_right"><input id="yzaluDjjKPb-nhg6ude0xQY-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type Excessive bleeding/hemorrhage"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type Excessive bleeding/hemorrhage ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:YTBwQRlUNWE">Trauma to uterus, cervix or vagina</label>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="yzaluDjjKPb-p7LnQvX6YZm-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type Trauma to uterus, cervix or vagina"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type Trauma to uterus, cervix or vagina ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:uUt746FZsmi">Shock</label></div>
+                            </td>
+                            <td class="ta_right"><input id="yzaluDjjKPb-BEvQrPhz0kE-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type Shock"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type Shock ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:C04UVu2PQ14">Infection</label></div>
+                            </td>
+                            <td class="ta_right"><input id="yzaluDjjKPb-rvXPiTrgTJE-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type Infection"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type Infection ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:ayFznNxg7Gm">Continuing pregnancy</label></div>
+                            </td>
+                            <td class="ta_right"><input id="yzaluDjjKPb-kLSc6J4wsaw-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type Continuing Pregnancy"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type Continuing Pregnancy ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_5_Title_2">Complications after abortion done by D&amp;E, by type
+                </div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:YZZJKOtzt88">Retention of ovular products</label></div>
+                            </td>
+                            <td class="ta_right"><input id="vB9qnhcHFTM-r3oUOx3T3ic-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type Retention of ovular products"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type Retention of ovular products ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:NyRdp9nHlgg">Excessive bleeding/haemorrhage</label></div>
+                            </td>
+                            <td class="ta_right"><input id="vB9qnhcHFTM-nhg6ude0xQY-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type Excessive bleeding/hemorrhage"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type Excessive bleeding/hemorrhage ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:YTBwQRlUNWE">Trauma to uterus, cervix or vagina</label>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="vB9qnhcHFTM-p7LnQvX6YZm-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type Trauma to uterus, cervix or vagina"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type Trauma to uterus, cervix or vagina ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:uUt746FZsmi">Shock</label></div>
+                            </td>
+                            <td class="ta_right"><input id="vB9qnhcHFTM-BEvQrPhz0kE-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type Shock"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type Shock ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:C04UVu2PQ14">Infection</label></div>
+                            </td>
+                            <td class="ta_right"><input id="vB9qnhcHFTM-rvXPiTrgTJE-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type Infection"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type Infection ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:ayFznNxg7Gm">Continuing pregnancy</label></div>
+                            </td>
+                            <td class="ta_right"><input id="vB9qnhcHFTM-kLSc6J4wsaw-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type Continuing Pregnancy"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type Continuing Pregnancy ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_5_Title_3">Complications after medical (drug induced) abortion, by
+                    type:</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:YZZJKOtzt88">Retention of ovular products</label></div>
+                            </td>
+                            <td class="ta_right"><input id="FmhIO8vojWa-lk6RLGaROLK-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Retention of ovular products"
+                                    value="[ GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Retention of ovular products ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:NyRdp9nHlgg">Excessive bleeding/haemorrhage</label></div>
+                            </td>
+                            <td class="ta_right"><input id="FmhIO8vojWa-VJ1SnhxSew9-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Excessive bleeding/hemorrhage"
+                                    value="[ GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Excessive bleeding/hemorrhage ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:uUt746FZsmi">Shock</label></div>
+                            </td>
+                            <td class="ta_right"><input id="FmhIO8vojWa-rHMAR1xQZEX-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Shock"
+                                    value="[ GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Shock ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:C04UVu2PQ14">Infection</label></div>
+                            </td>
+                            <td class="ta_right"><input id="FmhIO8vojWa-eQPMpdMW9mD-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Infection"
+                                    value="[ GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Infection ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:ayFznNxg7Gm">Continuing pregnancy</label></div>
+                            </td>
+                            <td class="ta_right"><input id="FmhIO8vojWa-Cld5ivqAqHg-val" name="entryfield"
+                                    title="GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Continuing Pregnancy"
+                                    value="[ GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type Continuing Pregnancy ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_Title_1">Summary</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2">
+                                <div><label keyword="opt_c:TAB_1_Title_1">Clients</label></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:yzaluDjjKPb">GCACI - CL - Complications after abortion done
+                                        by aspiration, by type</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="yzaluDjjKPb" id="totalyzaluDjjKPb"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - CL - Complications after abortion done by aspiration, by type"
+                                    value="[ GCACI - CL - Complications after abortion done by aspiration, by type ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:n7YeFJMIovn">% of MVA procedures resulting in
+                                        complications</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorn7YeFJMIovn" indicatorid="n7YeFJMIovn"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of MVA procedures resulting in complications"
+                                    value="[ GCACI - % of MVA procedures resulting in complications ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:vB9qnhcHFTM">GCACI - CL - Complications after abortion done
+                                        by D&amp;E, by type</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="vB9qnhcHFTM" id="totalvB9qnhcHFTM"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - CL - Complications after abortion done by D&amp;E, by type"
+                                    value="[ GCACI - CL - Complications after abortion done by D&amp;E, by type ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:EOk6QN7Xc40">% of D&amp;E procedures resulting in
+                                        complications</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorEOk6QN7Xc40" indicatorid="EOk6QN7Xc40"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of D&amp;E procedures resulting in complications "
+                                    value="[ GCACI - % of D&amp;E procedures resulting in complications  ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:FmhIO8vojWa">GCACI - CL - Complications after abortion done
+                                        by medical (drug induced) abortion, by type</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="FmhIO8vojWa" id="totalFmhIO8vojWa"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type"
+                                    value="[ GCACI - CL - Complications after abortion done by medical (drug induced) abortion, by type ]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="ind_id:spKLRvDWbqH">% of medical abortion procedures resulting in
+                                        complications</label></div>
+                            </td>
+                            <td class="ta_right"><input id="indicatorspKLRvDWbqH" indicatorid="spKLRvDWbqH"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - % of medical abortion procedures resulting in complications "
+                                    value="[ GCACI - % of medical abortion procedures resulting in complications  ]" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //Complications Tab -->
+            <!-- Demand Tab -->
+
+            <div id="demandTab">
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_1">Please enter the number of clients visiting the clinic
+                    by type of referral source</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_left _tb_th"><label keyword="opt_c:TAB_Title_6">Referral sources</label></th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:TAB_Title_2">Abortion</label></th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:BPysIHJVy4b">IEC materials distribution (fliers, handbills,
+                                        referral coupons)</label></div>
+                            </td>
+                            <td class="ta_right"><input id="BPysIHJVy4b-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA IEC materials"
+                                    value="[ GCACI - DG - CAC+TIA IEC materials ]" /></td>
+                            <td class="ta_right"><input id="NFkFRojwmhe-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP IEC materials" value="[ GCACI - DG - FP IEC materials ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorYmvLKt845zh" indicatorid="YmvLKt845zh"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - IEC materials Total"
+                                    value="[ GCACI - DG - IEC materials Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_2">Media activities including radio, TV, newspapers,
+                    journalists</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:wfMpnLJsDhZ">Radio broadcasts</label></div>
+                            </td>
+                            <td class="ta_right"><input id="cLRmWnIFWO6-SBgw7bX3cj2-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Media Radio broadcast"
+                                    value="[ GCACI - DG - CAC+TIA - Media Radio broadcast ]" /></td>
+                            <td class="ta_right"><input id="ap60PgzL6As-ffLLhVWAlJo-val" name="entryfield"
+                                    title="GCACI - DG - FP - Media Radio broadcast"
+                                    value="[ GCACI - DG - FP - Media Radio broadcast ]" /></td>
+                            <td class="ta_right"><input id="indicatordIz1ctjbB5z" indicatorid="dIz1ctjbB5z"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Radio broadcasts Total"
+                                    value="[ GCACI - DG - Radio broadcasts Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:rYFlTeZfvvC">TV broadcasts</label></div>
+                            </td>
+                            <td class="ta_right"><input id="cLRmWnIFWO6-yuxRLzTJiZy-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Media TV broadcasts"
+                                    value="[ GCACI - DG - CAC+TIA - Media TV broadcasts ]" /></td>
+                            <td class="ta_right"><input id="ap60PgzL6As-DlreWeOMiqf-val" name="entryfield"
+                                    title="GCACI - DG - FP - Media TV broadcasts"
+                                    value="[ GCACI - DG - FP - Media TV broadcasts ]" /></td>
+                            <td class="ta_right"><input id="indicatorQO6aCnMR1m8" indicatorid="QO6aCnMR1m8"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - TV broadcasts Total"
+                                    value="[ GCACI - DG - TV broadcasts Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:YKN409mbj9w">Billboards, wall art</label></div>
+                            </td>
+                            <td class="ta_right"><input id="cLRmWnIFWO6-CAtWKWjqzZJ-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Media Billboards / wall art"
+                                    value="[ GCACI - DG - CAC+TIA - Media Billboards / wall art ]" /></td>
+                            <td class="ta_right"><input id="ap60PgzL6As-QRZBjIxqez9-val" name="entryfield"
+                                    title="GCACI - DG - FP - Media Billboards / wall art"
+                                    value="[ GCACI - DG - FP - Media Billboards / wall art ]" /></td>
+                            <td class="ta_right"><input id="indicatorwMiF7V142jd" indicatorid="wMiF7V142jd"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Billboards, wall art Total"
+                                    value="[ GCACI - DG - Billboards, wall art Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:RdfjnBb5JJM">prueba 1</label></div>
+                            </td>
+                            <td class="ta_right"><input id="cLRmWnIFWO6-NkHOopr64Mx-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Media Newspaper ads / articles"
+                                    value="[ GCACI - DG - CAC+TIA - Media Newspaper ads / articles ]" /></td>
+                            <td class="ta_right"><input id="ap60PgzL6As-sYukAqpO8Zh-val" name="entryfield"
+                                    title="GCACI - DG - FP - Media Newspaper ads / articles"
+                                    value="[ GCACI - DG - FP - Media Newspaper ads / articles ]" /></td>
+                            <td class="ta_right"><input id="indicatorxEpdg4UaUgy" indicatorid="xEpdg4UaUgy"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Newspaper ads or articles Total"
+                                    value="[ GCACI - DG - Newspaper ads or articles Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Totals">Totals</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="cLRmWnIFWO6" id="totalcLRmWnIFWO6"
+                                    name="total" readonly="readonly" title="GCACI - DG - CAC+TIA - Media"
+                                    value="[ GCACI - DG - CAC+TIA - Media ]" /></td>
+                            <td class="ta_right totals"><input dataelementid="ap60PgzL6As" id="totalap60PgzL6As"
+                                    name="total" readonly="readonly" title="GCACI - DG - FP - Media"
+                                    value="[ GCACI - DG - FP - Media ]" /></td>
+                            <td class="ta_right"><input id="indicatorjwwc9rL7k6D" indicatorid="jwwc9rL7k6D"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Media Total"
+                                    value="[ GCACI - DG - Media Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_3">Community engagement through sensitization meetings,
+                    health talks or education sessions</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:fkO1Chl8XqT">a. Community awareness sessions;
+                                        awareness-raising sessions/events</label></div>
+                            </td>
+                            <td class="ta_right"><input id="tAxaE4W1xzu-LDGM3OWUGE4-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Community engagement Community awareness sessions"
+                                    value="[ GCACI - DG - CAC+TIA - Community engagement Community awareness sessions ]" />
+                            </td>
+                            <td class="ta_right"><input id="hcnkBrhmoPC-tFttqXw8DLf-val" name="entryfield"
+                                    title="GCACI - DG - FP - Community engagement Community awareness sessions"
+                                    value="[ GCACI - DG - FP - Community engagement Community awareness sessions ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorQ5iTNckAmNU" indicatorid="Q5iTNckAmNU"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Community awareness sessions Total"
+                                    value="[ GCACI - DG - Community awareness sessions Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:lY18mcXlGaM">hola</label></div>
+                            </td>
+                            <td class="ta_right"><input id="tAxaE4W1xzu-FoC7L6hDUUz-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Community engagement Individual sessions"
+                                    value="[ GCACI - DG - CAC+TIA - Community engagement Individual sessions ]" /></td>
+                            <td class="ta_right"><input id="hcnkBrhmoPC-eHsLC0YcihT-val" name="entryfield"
+                                    title="GCACI - DG - FP - Community engagement Individual sessions"
+                                    value="[ GCACI - DG - FP - Community engagement Individual sessions ]" /></td>
+                            <td class="ta_right"><input id="indicatorSaSE0pI3AK9" indicatorid="SaSE0pI3AK9"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Individual sessions Total"
+                                    value="[ GCACI - DG - Individual sessions Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Totals">Totals</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="tAxaE4W1xzu" id="totaltAxaE4W1xzu"
+                                    name="total" readonly="readonly" title="GCACI - DG - CAC+TIA - Community engagement"
+                                    value="[ GCACI - DG - CAC+TIA - Community engagement ]" /></td>
+                            <td class="ta_right totals"><input dataelementid="hcnkBrhmoPC" id="totalhcnkBrhmoPC"
+                                    name="total" readonly="readonly" title="GCACI - DG - FP - Community engagement"
+                                    value="[ GCACI - DG - FP - Community engagement ]" /></td>
+                            <td class="ta_right"><input id="indicatorPkaLzuitdYv" indicatorid="PkaLzuitdYv"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Community engagement Total"
+                                    value="[ GCACI - DG - Community engagement Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_4">Youth engagement including peer educator activities,
+                    higher learning institutions, out-of-school youth etc.</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:rgGqWnZaMLZ">a. Training school staff on VCAT and
+                                        referrals</label></div>
+                            </td>
+                            <td class="ta_right"><input id="SmZjydtOBzB-awO76zixhJb-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Youth Engagement School staff VCAT and referral training"
+                                    value="[ GCACI - DG - CAC+TIA - Youth Engagement School staff VCAT and referral training ]" />
+                            </td>
+                            <td class="ta_right"><input id="q3MX7doO3aj-UvDAjWK1sjp-val" name="entryfield"
+                                    title="GCACI - DG - FP - Youth Engagement School staff VCAT and referral training"
+                                    value="[ GCACI - DG - FP - Youth Engagement School staff VCAT and referral training ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorroDIXrnxLXX" indicatorid="roDIXrnxLXX"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - School staff VCAT and referral training Total"
+                                    value="[ GCACI - DG - School staff VCAT and referral training Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:SzjaQwU72Qm">b. Training parents of young people on
+                                        VCAT</label></div>
+                            </td>
+                            <td class="ta_right"><input id="SmZjydtOBzB-e40mWEiEOyD-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Youth Engagement Parents of young people VCAT"
+                                    value="[ GCACI - DG - CAC+TIA - Youth Engagement Parents of young people VCAT ]" />
+                            </td>
+                            <td class="ta_right"><input id="q3MX7doO3aj-Pf4MOX3RBdG-val" name="entryfield"
+                                    title="GCACI - DG - FP - Youth Engagement Parents of young people VCAT"
+                                    value="[ GCACI - DG - FP - Youth Engagement Parents of young people VCAT ]" /></td>
+                            <td class="ta_right"><input id="indicatorvyCUCKG1zu6" indicatorid="vyCUCKG1zu6"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Parents of young people VCAT Total"
+                                    value="[ GCACI - DG - Parents of young people VCAT Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:Uz9y5nf9CIh">c. University/high school meetings</label>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="SmZjydtOBzB-AQ6lzIekHlM-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Youth Engagement University or high school"
+                                    value="[ GCACI - DG - CAC+TIA - Youth Engagement University or high school ]" />
+                            </td>
+                            <td class="ta_right"><input id="q3MX7doO3aj-VyWU1aPd3ng-val" name="entryfield"
+                                    title="GCACI - DG - FP - Youth Engagement University or high school"
+                                    value="[ GCACI - DG - FP - Youth Engagement University or high school ]" /></td>
+                            <td class="ta_right"><input id="indicatorZsW6F1r85vi" indicatorid="ZsW6F1r85vi"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - University or high school Total"
+                                    value="[ GCACI - DG - University or high school Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:SPX6gifBxNY">d. Education talks with young people (formal
+                                        and informal)</label></div>
+                            </td>
+                            <td class="ta_right"><input id="SmZjydtOBzB-Y2qMMJQKOy6-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Youth Engagement Education talks with young people"
+                                    value="[ GCACI - DG - CAC+TIA - Youth Engagement Education talks with young people ]" />
+                            </td>
+                            <td class="ta_right"><input id="q3MX7doO3aj-AUEywL12OxR-val" name="entryfield"
+                                    title="GCACI - DG - FP - Youth Engagement Education talks with young people"
+                                    value="[ GCACI - DG - FP - Youth Engagement Education talks with young people ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorUlWNzuQuWzy" indicatorid="UlWNzuQuWzy"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Education talks with young people Total"
+                                    value="[ GCACI - DG - Education talks with young people Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Totals">Totals</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="SmZjydtOBzB" id="totalSmZjydtOBzB"
+                                    name="total" readonly="readonly" title="GCACI - DG - CAC+TIA - Youth Engagement"
+                                    value="[ GCACI - DG - CAC+TIA - Youth Engagement ]" /></td>
+                            <td class="ta_right totals"><input dataelementid="q3MX7doO3aj" id="totalq3MX7doO3aj"
+                                    name="total" readonly="readonly" title="GCACI - DG - FP - Youth Engagement"
+                                    value="[ GCACI - DG - FP - Youth Engagement ]" /></td>
+                            <td class="ta_right"><input id="indicatorOIzpkwXrpLg" indicatorid="OIzpkwXrpLg"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Youth engagement Total"
+                                    value="[ GCACI - DG - Youth engagement Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_5">Referral partnerships with other health service
+                    providers, NGOs, government and other organisations</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:iVrovJbk4Vd">a. Referrals from public and private health
+                                        providers</label></div>
+                            </td>
+                            <td class="ta_right"><input id="u82N6OpEPAZ-IQJ2YSDxtlU-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Referral partnerships Health providers"
+                                    value="[ GCACI - DG - CAC+TIA - Referral partnerships Health providers ]" /></td>
+                            <td class="ta_right"><input id="yzbvFVtxZJ4-RN40kSm8d9t-val" name="entryfield"
+                                    title="GCACI - DG - FP - Referral partnerships Health providers"
+                                    value="[ GCACI - DG - FP - Referral partnerships Health providers ]" /></td>
+                            <td class="ta_right"><input id="indicatorq61LbPt3Nuu" indicatorid="q61LbPt3Nuu"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Health providers Total"
+                                    value="[ GCACI - DG - Health providers Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:DxhBLVCSXcr">b. Referrals from phone
+                                        lines/hotlines</label></div>
+                            </td>
+                            <td class="ta_right"><input id="u82N6OpEPAZ-tMLbAC82jxG-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Referral partnerships Phonelines or hotlines"
+                                    value="[ GCACI - DG - CAC+TIA - Referral partnerships Phonelines or hotlines ]" />
+                            </td>
+                            <td class="ta_right"><input id="yzbvFVtxZJ4-Wspenwut1wp-val" name="entryfield"
+                                    title="GCACI - DG - FP - Referral partnerships Phonelines or hotlines"
+                                    value="[ GCACI - DG - FP - Referral partnerships Phonelines or hotlines ]" /></td>
+                            <td class="ta_right"><input id="indicatorw51QV7wuh7R" indicatorid="w51QV7wuh7R"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Phonelines or hotlines Total"
+                                    value="[ GCACI - DG - Phonelines or hotlines Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:UddzDR62IOu">c. Referrals from drug sellers or
+                                        pharmacies</label></div>
+                            </td>
+                            <td class="ta_right"><input id="u82N6OpEPAZ-OWOHzU5cpgt-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Referral partnerships Drug sellers or pharmacies"
+                                    value="[ GCACI - DG - CAC+TIA - Referral partnerships Drug sellers or pharmacies ]" />
+                            </td>
+                            <td class="ta_right"><input id="yzbvFVtxZJ4-ycB3ZczWHEC-val" name="entryfield"
+                                    title="GCACI - DG - FP - Referral partnerships Drug sellers or pharmacies"
+                                    value="[ GCACI - DG - FP - Referral partnerships Drug sellers or pharmacies ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorEIZldiMbmgn" indicatorid="EIZldiMbmgn"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Drug sellers or pharmacies Total"
+                                    value="[ GCACI - DG - Drug sellers or pharmacies Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:KxVwQxUYRTW">d. Referrals from informal partnerships,
+                                        e.g. street vendors, motorbike taxi drivers, bars, brothels, etc.</label></div>
+                            </td>
+                            <td class="ta_right"><input id="u82N6OpEPAZ-U0bwWvsRbyP-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Referral partnerships Informal partnerships"
+                                    value="[ GCACI - DG - CAC+TIA - Referral partnerships Informal partnerships ]" />
+                            </td>
+                            <td class="ta_right"><input id="yzbvFVtxZJ4-m8hDYU43i9u-val" name="entryfield"
+                                    title="GCACI - DG - FP - Referral partnerships Informal partnerships"
+                                    value="[ GCACI - DG - FP - Referral partnerships Informal partnerships ]" /></td>
+                            <td class="ta_right"><input id="indicatoriqVRFkYMwwq" indicatorid="iqVRFkYMwwq"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Informal partnerships Total"
+                                    value="[ GCACI - DG - Informal partnerships Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Totals">Totals</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="u82N6OpEPAZ" id="totalu82N6OpEPAZ"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - DG - CAC+TIA - Referral partnerships"
+                                    value="[ GCACI - DG - CAC+TIA - Referral partnerships ]" /></td>
+                            <td class="ta_right totals"><input dataelementid="yzbvFVtxZJ4" id="totalyzbvFVtxZJ4"
+                                    name="total" readonly="readonly" title="GCACI - DG - FP - Referral partnerships"
+                                    value="[ GCACI - DG - FP - Referral partnerships ]" /></td>
+                            <td class="ta_right"><input id="indicatorXaQBbXjXcC3" indicatorid="XaQBbXjXcC3"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Referral partnerships Total"
+                                    value="[ GCACI - DG - Referral partnerships Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2">&nbsp;</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:M6yALZmTf2T">Referrals through mobile/outreach
+                                        clinics</label></div>
+                            </td>
+                            <td class="ta_right"><input id="Rw6ouyBvFdY-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA mobile/outreach clinic referrals"
+                                    value="[ GCACI - DG - CAC+TIA mobile/outreach clinic referrals ]" /></td>
+                            <td class="ta_right"><input id="ubFtjRcqKuu-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP mobile/outreach clinic referrals"
+                                    value="[ GCACI - DG - FP mobile/outreach clinic referrals ]" /></td>
+                            <td class="ta_right"><input id="indicators0K6nxCPBsu" indicatorid="s0K6nxCPBsu"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - mobile/outreach clinic referrals Total"
+                                    value="[ GCACI - DG - mobile/outreach clinic referrals Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_6">Referrals through trained CBDs/community health workers
+                    and volunteers (door to door visits)</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:lQ1QcS3qZ4l">a. Referrals from CBDs, CHWs, VHTs,
+                                        community outreach worker, &#39;relais&#39;</label></div>
+                            </td>
+                            <td class="ta_right"><input id="fPPPTtHGplu-uR8hr0WFlt6-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral CBDs, CHWs, VHTs"
+                                    value="[ GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral CBDs, CHWs, VHTs ]" />
+                            </td>
+                            <td class="ta_right"><input id="xLlsGxEWr2D-B44I713m6g1-val" name="entryfield"
+                                    title="GCACI - DG - FP - CBD, CHW or volunteer referral CBDs, CHWs, VHTs"
+                                    value="[ GCACI - DG - FP - CBD, CHW or volunteer referral CBDs, CHWs, VHTs ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorDcEtyp3rPRZ" indicatorid="DcEtyp3rPRZ"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - CBDs, CHWs, VHTs, relais Total"
+                                    value="[ GCACI - DG - CBDs, CHWs, VHTs, relais Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:aBlaozd7A9C">b. Referrals from peer educators</label>
+                                </div>
+                            </td>
+                            <td class="ta_right"><input id="fPPPTtHGplu-TIBvQA1H4TD-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral Peer educators"
+                                    value="[ GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral Peer educators ]" />
+                            </td>
+                            <td class="ta_right"><input id="xLlsGxEWr2D-GZcIvLoZ56L-val" name="entryfield"
+                                    title="GCACI - DG - FP - CBD, CHW or volunteer referral Peer educators"
+                                    value="[ GCACI - DG - FP - CBD, CHW or volunteer referral Peer educators ]" /></td>
+                            <td class="ta_right"><input id="indicatorVRi4NietSDS" indicatorid="VRi4NietSDS"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Peer educators Total"
+                                    value="[ GCACI - DG - Peer educators Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:iBssXtDE1ai">c. Referals from &#39;focal points&#39; or
+                                        &#39;champions&#39;</label></div>
+                            </td>
+                            <td class="ta_right"><input id="fPPPTtHGplu-CUHx19P9Rf9-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral Focal points or champions"
+                                    value="[ GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral Focal points or champions ]" />
+                            </td>
+                            <td class="ta_right"><input id="xLlsGxEWr2D-liq5o39KgHX-val" name="entryfield"
+                                    title="GCACI - DG - FP - CBD, CHW or volunteer referral Focal points or champions"
+                                    value="[ GCACI - DG - FP - CBD, CHW or volunteer referral Focal points or champions ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatortSyzIdAQKE2" indicatorid="tSyzIdAQKE2"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Focal points or champions Total"
+                                    value="[ GCACI - DG - Focal points or champions Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:vnWX1QMyXBq">d. Referrals from members of a committee of
+                                        satisfied clients</label></div>
+                            </td>
+                            <td class="ta_right"><input id="fPPPTtHGplu-O6OUpPihboO-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral Satisfied clients"
+                                    value="[ GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral Satisfied clients ]" />
+                            </td>
+                            <td class="ta_right"><input id="xLlsGxEWr2D-MNoSUwVxd6t-val" name="entryfield"
+                                    title="GCACI - DG - FP - CBD, CHW or volunteer referral Satisfied clients"
+                                    value="[ GCACI - DG - FP - CBD, CHW or volunteer referral Satisfied clients ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorknHBzMb2cto" indicatorid="knHBzMb2cto"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Satisfied clients Total"
+                                    value="[ GCACI - DG - Satisfied clients Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Totals">Totals</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="fPPPTtHGplu" id="totalfPPPTtHGplu"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral"
+                                    value="[ GCACI - DG - CAC+TIA - CBD, CHW or volunteer referral ]" /></td>
+                            <td class="ta_right totals"><input dataelementid="xLlsGxEWr2D" id="totalxLlsGxEWr2D"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - DG - FP - CBD, CHW or volunteer referral"
+                                    value="[ GCACI - DG - FP - CBD, CHW or volunteer referral ]" /></td>
+                            <td class="ta_right"><input id="indicatork4Ot4Hz0mrn" indicatorid="k4Ot4Hz0mrn"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - CBDs, CHWs, VHTs Total"
+                                    value="[ GCACI - DG - CBDs, CHWs, VHTs Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2">&nbsp;</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:q1pEP1CkqBN">Open days at clinics including related
+                                        campaign activities</label></div>
+                            </td>
+                            <td class="ta_right"><input id="zbssWpPXupP-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Open days"
+                                    value="[ GCACI - DG - CAC+TIA - Open days ]" /></td>
+                            <td class="ta_right"><input id="wGQPZ8oVYKI-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP - Open days" value="[ GCACI - DG - FP - Open days ]" /></td>
+                            <td class="ta_right"><input id="indicatorTUE1AItSN0E" indicatorid="TUE1AItSN0E"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Open days Total"
+                                    value="[ GCACI - DG - Open days Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2" keyword="opt_c:TAB_6_Title_7">Internet and social media (including MA websites,
+                    Facebook, Twitter, Snapchat and WhatsApp)</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:N25HStQKBy3">a. WhatsApp groups</label></div>
+                            </td>
+                            <td class="ta_right"><input id="Ono0SGL3Tty-rZqrvCxuHPU-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Internet &amp; Social Media WhatsApp groups"
+                                    value="[ GCACI - DG - CAC+TIA - Internet &amp; Social Media WhatsApp groups ]" />
+                            </td>
+                            <td class="ta_right"><input id="DglujcstAGj-i3VBCjTLFl8-val" name="entryfield"
+                                    title="GCACI - DG - FP - Internet &amp; Social Media WhatsApp groups"
+                                    value="[ GCACI - DG - FP - Internet &amp; Social Media WhatsApp groups ]" /></td>
+                            <td class="ta_right"><input id="indicators0qOZMqPUUQ" indicatorid="s0qOZMqPUUQ"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - WhatsApp groups Total"
+                                    value="[ GCACI - DG - WhatsApp groups Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:swpZLED59lY">b. Information disseminated through other
+                                        social media platforms (e.g. MA website, Facebook, Twitter, etc.)</label></div>
+                            </td>
+                            <td class="ta_right"><input id="Ono0SGL3Tty-sGO4ig7vRoc-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Internet &amp; Social Media Social media platforms"
+                                    value="[ GCACI - DG - CAC+TIA - Internet &amp; Social Media Social media platforms ]" />
+                            </td>
+                            <td class="ta_right"><input id="DglujcstAGj-Eptgoph8X9X-val" name="entryfield"
+                                    title="GCACI - DG - FP - Internet &amp; Social Media Social media platforms"
+                                    value="[ GCACI - DG - FP - Internet &amp; Social Media Social media platforms ]" />
+                            </td>
+                            <td class="ta_right"><input id="indicatorNS3af5As2Xg" indicatorid="NS3af5As2Xg"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Social media platforms Total"
+                                    value="[ GCACI - DG - Social media platforms Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Totals">Totals</label></div>
+                            </td>
+                            <td class="ta_right totals"><input dataelementid="Ono0SGL3Tty" id="totalOno0SGL3Tty"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - DG - CAC+TIA - Internet &amp; Social Media"
+                                    value="[ GCACI - DG - CAC+TIA - Internet &amp; Social Media ]" /></td>
+                            <td class="ta_right totals"><input dataelementid="DglujcstAGj" id="totalDglujcstAGj"
+                                    name="total" readonly="readonly"
+                                    title="GCACI - DG - FP - Internet &amp; Social Media"
+                                    value="[ GCACI - DG - FP - Internet &amp; Social Media ]" /></td>
+                            <td class="ta_right"><input id="indicatoraULGJLBXPfr" indicatorid="aULGJLBXPfr"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Internet &amp; Social Media Total"
+                                    value="[ GCACI - DG - Internet &amp; Social Media Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ty_h2">&nbsp;</div>
+
+                <table class="table_1">
+                    <thead>
+                        <tr>
+                            <th class="ta_right _tb_th" colspan="2"><label keyword="opt_c:TAB_Title_2">Abortion</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Family_planning">Family planning</label>
+                            </th>
+                            <th class="ta_right _tb_th"><label keyword="opt_c:Totals">Total</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="de_id:eseCbLPDglM">Telephone calls/ Group SMS</label></div>
+                            </td>
+                            <td class="ta_right"><input id="eseCbLPDglM-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Telephone / SMS"
+                                    value="[ GCACI - DG - CAC+TIA - Telephone / SMS ]" /></td>
+                            <td class="ta_right"><input id="sLNiI5BWPnf-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP - Telephone / SMS"
+                                    value="[ GCACI - DG - FP - Telephone / SMS ]" /></td>
+                            <td class="ta_right"><input id="indicatorfeKCEYbD9YT" indicatorid="feKCEYbD9YT"
+                                    name="indicator" readonly="readonly"
+                                    title="GCACI - DG - Telephone calls/ Group SMS Total"
+                                    value="[ GCACI - DG - Telephone calls/ Group SMS Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:vnWX1QMyXBq">Word of mouth &ndash; including through
+                                        satisfied clients, friends or neighbours</label></div>
+                            </td>
+                            <td class="ta_right"><input id="a37nq9ZccKS-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Word of mouth"
+                                    value="[ GCACI - DG - CAC+TIA - Word of mouth ]" /></td>
+                            <td class="ta_right"><input id="Uj6EuIaIBBS-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP - Word of mouth"
+                                    value="[ GCACI - DG - FP - Word of mouth ]" /></td>
+                            <td class="ta_right"><input id="indicatorveQv2iSNYrz" indicatorid="veQv2iSNYrz"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Word of mouth Total"
+                                    value="[ GCACI - DG - Word of mouth Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="catOpt_id:J2vvBt621W4">OTHER (please specify)</label></div>
+                            </td>
+                            <td class="ta_right"><input id="Xea3LJxdP2X-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Other" value="[ GCACI - DG - CAC+TIA - Other ]" />
+                            </td>
+                            <td class="ta_right"><input id="vZwjUUM25br-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP - Other" value="[ GCACI - DG - FP - Other ]" /></td>
+                            <td class="ta_right"><input id="indicatorsbUxknXNXi2" indicatorid="sbUxknXNXi2"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Other  Total"
+                                    value="[ GCACI - DG - Other  Total ]" /></td>
+                        </tr>
+                        <tr>
+                            <td class="ta_left">
+                                <div><label keyword="opt_c:Unknown">UNKNOWN (for those who cannot say/ do not
+                                        know/refuse to answer)</label></div>
+                            </td>
+                            <td class="ta_right"><input id="vhtt6q8vtdr-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - CAC+TIA - Unknown" value="[ GCACI - DG - CAC+TIA - Unknown ]" />
+                            </td>
+                            <td class="ta_right"><input id="bARGgOIM16N-X66r2y4EuwS-val" name="entryfield"
+                                    title="GCACI - DG - FP - Unknown" value="[ GCACI - DG - FP - Unknown ]" /></td>
+                            <td class="ta_right"><input id="indicatortFkPsUxcKzy" indicatorid="tFkPsUxcKzy"
+                                    name="indicator" readonly="readonly" title="GCACI - DG - Unknown Total"
+                                    value="[ GCACI - DG - Unknown Total ]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //Complications Tab -->
+        </div>
+    </div>
+
+    <div class="dialog">
+        <div class="content">
+            <div class="nav_dg">
+                <div class="title" keyword="opt_c:Permission">Permission</div>
+
+                <div class="cta"><span class="material-icons md-dark">close</span></div>
+            </div>
+
+            <div class="descriptionInfo">&nbsp;</div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        // Dialog - For DE descriptions
+        $(".cta_dg:not([keyword-data])").click(function (e) {
+            var parentTag = $(this).parent();
+            var title = parentTag.find("[keyword]").html();
+            title = (title != undefined) ? title : "";
+            $(".dialog").find('.title').html(title);
+
+            var description = $(this).attr('description');
+            description = (description != undefined) ? description : "";
+            $(".dialog").find(".descriptionInfo").html(description);
+
+            // var title_box = title.substring(0, title.length - 4);
+
+            // console.log('title1: ' + title_box);
+
+            // $('.title').html(title_box);
+            $('.dialog').css({
+                'display': 'inline-block'
+            });
+        });
+
+        // Dialog - For option keywords
+        $(".cta_dg[keyword-data]").click(function (e) {
+            var parentTag = $(this).parent();
+            var title = parentTag.find("[keyword]").html();
+            title = (title != undefined) ? title : "";
+            $(".dialog").find('.title').html(title);
+
+            var description = $(this).attr('keyword-data');
+            description = (description != undefined) ? description : "";
+            $(".dialog").find(".descriptionInfo").html(description);
+
+            $('.dialog').css({
+                'display': 'inline-block'
+            });
+        });
+
+
+        $('.cta').click(function (e) {
+            $('.dialog').css({
+                'display': 'none'
+            })
+        });
+
+        ///////////////////////////////////////////
+
+        $('ul.listitems li').click(function (e) {
+            tab_selected = $(this).find('a').attr('href');
+            switch (tab_selected) {
+                case '#summary':
+                    break;
+                case '#Abortion':
+                    break;
+                case '#Post-abortion':
+                    break;
+                case '#Contraception':
+                    break;
+                case '#Complications':
+                    break;
+            }
+        });
+
+
+    });
+
+
+    $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
+        if ($("#MPHD_Facility_MonthlyCustomForm").length > 0) {
+            $("#tabs").tabs();
+            $("#MPHD_Facility_MonthlyCustomForm_Content").hide();
+            $("#loaderDiv").show();
+
+            new GCACITranslation(function () {
+                $("#loaderDiv").hide();
+                $("#MPHD_Facility_MonthlyCustomForm_Content").show();
+            });
+        }
+    });
+
+
+    // ============================================================================================================
+    // GCACITranslation
+
+    function GCACITranslation(_exeFunc) {
+        var me = this;
+
+        me.exeFunc = _exeFunc;
+
+        me.selectedDataSetIdTag = $("#selectedDataSetId");
+
+        me.optionSetTermId = "dFSdtzx7O5Z";
+
+        me.loadedDataSetElementList = false;
+        me.loadedOptionSetList = false;
+
+        me.DATAELEMENT_KEY = "de_id";
+        me.INDICATOR_KEY = "ind_id";
+        me.CATOPTION_KEY = "catOpt_id";
+        me.OPTION_KEY = "opt_c";
+
+
+        // ----------------------------------------------------------------------------------------------
+        // URLs
+
+        me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
+
+        me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
+        me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId + ".json?fields=options[code,displayName]&paging=false";
+
+
+        // ----------------------------------------------------------------------------------------------
+        // HTML Element
+
+
+        me.tableTag = $("body");
+
+        // ----------------------------------------------------------------------------------------------
+        // Init method
+
+        me.init = function () {
+            console.log("INIT translation ... ");
+            me.translateDataSetElementList();
+            me.translateOptionSetList();
+        }
+
+        // ----------------------------------------------------------------------------------------------
+        // Supportive methods
+
+        me.translateDataSetElementList = function () {
+            var url = me.QUERY_URL_DATASET;
+            url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
+
+            me.loadMetadata(url, function (response) {
+
+                // Translate Data elements & Get CatOptions Map
+                var catOptionMap = {};
+                var dataSetElements = response.dataSetElements;
+
+                for (var i in dataSetElements) {
+                    var dataElement = dataSetElements[i].dataElement;
+
+                    // Translation for FORMNAME of DEs
+                    var deDivTag = me.tableTag.find("[keyword='" + me.DATAELEMENT_KEY + ":" + dataElement.id + "']");
+                    deDivTag.html(dataElement.displayFormName);
+
+                    // Translation for DESCRIPTION of DEs
+                    var descriptionDivTag = deDivTag.closest("div").find(".cta_dg");
+                    if (descriptionDivTag.length > 0 && dataElement.displayDescription != undefined) {
+                        descriptionDivTag.attr("description", dataElement.displayDescription);
+                    }
+
+                    // Get CatOptions Map
+                    var categories = dataElement.categoryCombo.categories;
+                    for (var i in categories) {
+                        var categoryOptions = categories[i].categoryOptions;
+                        for (var j in categoryOptions) {
+                            var categoryOption = categoryOptions[j];
+                            catOptionMap[categoryOption.id] = categoryOption;
+                        }
+                    }
+
+                }
+
+                // Translation categories
+                for (var key in catOptionMap) {
+                    var catOption = catOptionMap[key];
+
+                    // For CatOption NAME
+                    var catOptionDivTag = me.tableTag.find("[keyword='" + me.CATOPTION_KEY + ":" + key + "']");
+                    catOptionDivTag.html(catOption.displayName);
+
+                    // For CatOption Description
+                    var descriptionDivTag = catOptionDivTag.closest("div").find(".cta_dg");
+                    if (descriptionDivTag.length > 0 && catOption.displayDescription != undefined) {
+                        descriptionDivTag.attr("description", catOption.displayDescription);
+                    }
+
+
+                }
+
+
+                // Translate Indicators
+                var indicators = response.indicators;
+                for (var i in indicators) {
+                    var indicator = indicators[i];
+                    // Translation for NAME of Indicator
+                    var indicatorDivTag = me.tableTag.find("[keyword='" + me.INDICATOR_KEY + ":" + indicator.id + "']");
+                    indicatorDivTag.html(indicator.displayName);
+
+                    // Translation for DESCRIPTION of Indicator
+                    var descriptionDivTag = indicatorDivTag.closest("div").find(".cta_dg");
+                    if (descriptionDivTag.length > 0 && indicator.displayDescription != undefined) {
+                        descriptionDivTag.attr("description", indicator.displayDescription);
+                    }
+                }
+
+
+                me.loadedDataSetElementList = true;
+                me.afterLoadedTranslationData();
+
+            });
+
+        }
+
+        me.translateOptionSetList = function () {
+            var url = me.QUERY_URL_TERMS;
+            me.loadMetadata(url, function (response) {
+
+                var options = response.options;
+                for (var j in options) {
+                    var option = options[j];
+                    var value = option.displayName;
+                    me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']").html(value);
+                    me.tableTag.find("[keyword-data='" + me.OPTION_KEY + ":" + option.code + "']").attr("keyword-data", value);
+                }
+
+                me.loadedOptionSetList = true;
+                me.afterLoadedTranslationData();
+            });
+        }
+
+        me.afterLoadedTranslationData = function () {
+            if (me.loadedDataSetElementList && me.loadedOptionSetList) {
+
+                me.exeFunc();
+            }
+        }
+
+        me.loadMetadata = function (url, exeFunc) {
+            $.ajax({
+                type: "GET"
+                , url: url
+                , contentType: "application/json;charset=utf-8"
+                , beforeSend: function (xhr) {
+                    //me.hideReportTag();
+                }
+                , success: function (response) {
+                    exeFunc(response);
+                }
+            });
+
+        }
+
+
+        // ----------------------------------------------------------------------------------------------
+        // init
+
+        me.init();
+
+    }
+
+</script>
