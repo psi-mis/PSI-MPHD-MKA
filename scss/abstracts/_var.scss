@@ -3,14 +3,21 @@ $color1: #00276F;
 $color2: #333333;
 $color3: #0072B2;
 $color4: #00A2E1;
-$color5: #007F93;
+$color5: #B4C6E7;
 $color6: #8DD3D0;
 $color7: #8CD8ED;
 
 $colorT: transparent;
 
-$MPHD_FM-1 : #B4C6E7;
-$MPHD_FM-2 : #b4c6e79c;
+$MPHD_FM_TB1-GT : #e7efff;
+$MPHD_FM_TB1-RW : #eff5ff;
+$MPHD_FM_TB1-T : #d6e5ff;
+$MPHD_FM_TB1-L : #f7faff;
+
+$MPHD_FM_TB2-GT: #ffe0e5;
+$MPHD_FM_TB2-RW: #ffeaed;
+$MPHD_FM_TB2-T: #ffd5dc;
+$MPHD_FM_TB2-L: #fff5f6;
 
 $color_error: red;
 
@@ -19,6 +26,7 @@ $color_error: red;
 $primary: $color6;
 $success: $color7; 
 $gray: #ccc;
+$white: #FFFFFF;
 
 // talbe custom colors
 $defaultColor: black;

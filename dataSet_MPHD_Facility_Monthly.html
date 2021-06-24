@@ -1,1756 +1,2092 @@
 <style type="text/css">
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.ty_h1 {
-  color: #333333;
-  font-size: 2rem;
-}
+  @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.ty_h2 {
-  padding: 50px 0 8px 0;
-  font-size: 1.3rem;
-  color: #333333;
-}
+  .ty_h1 {
+    color: #333333;
+    font-size: 2rem;
+  }
 
-.ty_h3 {
-  font-size: 1.2rem;
-  color: #0072B2;
-}
+  .ty_h2 {
+    padding: 50px 0 8px 0;
+    font-size: 1.3rem;
+    color: #333333;
+  }
 
-.ty_h4 {
-  padding-top: 18px;
-  font-size: 1rem;
-  color: #0072B2;
-}
+  .ty_h3 {
+    font-size: 1.2rem;
+    color: #0072B2;
+  }
 
-.ta_left {
-  text-align: left !important;
-  font-weight: 400 !important;
-}
+  .ty_h4 {
+    padding-top: 18px;
+    font-size: 1rem;
+    color: #0072B2;
+  }
 
-.ta_left_b {
-  text-align: left !important;
-  font-weight: 600 !important;
-  color: #007F93;
-  border-top: 1px solid #007F93;
-  background-color: rgba(0, 0, 0, 0.089);
-}
+  .ta_left {
+    text-align: left !important;
+    font-weight: 400 !important;
+  }
 
-.ta_center {
-  text-align: center !important;
-}
+  .ta_left_b {
+    text-align: left !important;
+    font-weight: 600 !important;
+    color: #007F93;
+    border-top: 1px solid #007F93;
+    background-color: rgba(0, 0, 0, 0.089);
+  }
 
-.ta_right {
-  text-align: right !important;
-  background-color: blueviolet !important;
-  max-width: 150px !important;
-}
+  .ta_center {
+    text-align: center !important;
+  }
 
-.text-overflow {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+  .ta_right {
+    text-align: right !important;
+    background-color: blueviolet !important;
+    max-width: 150px !important;
+  }
 
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
+  .text-overflow {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 
-.material-icons.md-dark {
-  color: rgba(0, 0, 0, 0.54);
-}
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: "liga";
+  }
 
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26);
-}
+  .material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+  }
 
-.material-icons.md-light {
-  color: white;
-}
+  .material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+  }
 
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3);
-}
+  .material-icons.md-light {
+    color: white;
+  }
 
-.dialog {
-  position: fixed;
-  top: 45%;
-  left: 45%;
-  display: none;
-  width: 300px;
-  height: auto;
-  vertical-align: top;
-  background-color: #fff;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  box-sizing: border-box;
-  padding: 16px;
-  z-index: 999;
-}
-.dialog .content {
-  height: auto;
-  font-size: 0.9em;
-  box-sizing: border-box;
-}
-.dialog .content .nav_dg {
-  width: 100%;
-  min-height: 40px;
-  box-sizing: border-box;
-}
-.dialog .content .nav_dg .title {
-  float: left;
-  font-size: 1.3em;
-  height: auto;
-  width: calc(100% - 32px);
-  margin-bottom: 8px;
-  box-sizing: border-box;
-}
-.dialog .content .nav_dg .cta {
-  float: left;
-  height: 36px;
-  font-size: 1.3em;
-  margin-left: 8px;
-  width: 24px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-.dialog .content .descriptionInfo {
-  clear: both;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
-.dialog .content .button {
-  width: 90px;
-  float: right;
-}
+  .material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-/* Misc */
-.center {
-  text-align: center;
-}
+  .dialog {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    display: none;
+    width: 300px;
+    height: auto;
+    vertical-align: top;
+    background-color: #fff;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    padding: 16px;
+    z-index: 999;
+  }
 
-.label {
-  padding: 0 16px;
-}
+  .dialog .content {
+    height: auto;
+    font-size: 0.9em;
+    box-sizing: border-box;
+  }
 
-.label-blue {
-  color: #4285f4;
-}
+  .dialog .content .nav_dg {
+    width: 100%;
+    min-height: 40px;
+    box-sizing: border-box;
+  }
 
-.cont-d3rwt {
-  display: grid;
-  grid-template-columns: 1fr auto auto auto auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3";
-}
-.cont-d3rwt .a0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: transparent;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a0;
-}
-.cont-d3rwt .a1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a1;
-}
-.cont-d3rwt .a2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a2;
-}
-.cont-d3rwt .a3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  border-left: 1px solid #333333;
-  grid-area: a3;
-}
-.cont-d3rwt .b0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: b0;
-}
-.cont-d3rwt .b1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b1;
-}
-.cont-d3rwt .b1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .b2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b2;
-}
-.cont-d3rwt .b2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .b3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b3;
-}
-.cont-d3rwt .b3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .c0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: c0;
-}
-.cont-d3rwt .c1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c1;
-}
-.cont-d3rwt .c1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .c2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c2;
-}
-.cont-d3rwt .c2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .c3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c3;
-}
-.cont-d3rwt .c3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .d0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: d0;
-}
-.cont-d3rwt .d1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d1;
-}
-.cont-d3rwt .d1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .d2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d2;
-}
-.cont-d3rwt .d2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .d3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d3;
-}
-.cont-d3rwt .d3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .e0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-top: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: e0;
-}
-.cont-d3rwt .e1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e1;
-}
-.cont-d3rwt .e1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .e2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e2;
-}
-.cont-d3rwt .e2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d3rwt .e3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e3;
-}
-.cont-d3rwt .e3 input {
-  max-width: 104px;
-  text-align: right;
-}
+  .dialog .content .nav_dg .title {
+    float: left;
+    font-size: 1.3em;
+    height: auto;
+    width: calc(100% - 32px);
+    margin-bottom: 8px;
+    box-sizing: border-box;
+  }
 
-.cont-d7rwt-st {
-  display: grid;
-  grid-template-columns: 1fr auto auto auto auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3" "a4 b4 c4 d4 e4" "a5 b5 c5 d5 e5" "a6 b6 c6 d6 e6" "a7 b7 c7 d7 e7" "a8 b8 c8 d8 e8";
-}
-.cont-d7rwt-st .a0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: transparent;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a0;
-}
-.cont-d7rwt-st .a1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a1;
-}
-.cont-d7rwt-st .a2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a2;
-}
-.cont-d7rwt-st .a3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a3;
-}
-.cont-d7rwt-st .a4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a4;
-}
-.cont-d7rwt-st .a5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a5;
-}
-.cont-d7rwt-st .a6 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a6;
-}
-.cont-d7rwt-st .a7 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a7;
-}
-.cont-d7rwt-st .a8 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  border-left: 1px solid #333333;
-  min-width: 120px;
-  grid-area: a8;
-}
-.cont-d7rwt-st .b0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: b0;
-}
-.cont-d7rwt-st .b1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b1;
-}
-.cont-d7rwt-st .b1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b2;
-}
-.cont-d7rwt-st .b2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b3;
-}
-.cont-d7rwt-st .b3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b4;
-}
-.cont-d7rwt-st .b4 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b5;
-}
-.cont-d7rwt-st .b5 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b6 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b6;
-}
-.cont-d7rwt-st .b6 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b7 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b7;
-}
-.cont-d7rwt-st .b7 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .b8 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: b8;
-}
-.cont-d7rwt-st .b8 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: c0;
-}
-.cont-d7rwt-st .c1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c1;
-}
-.cont-d7rwt-st .c1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c2;
-}
-.cont-d7rwt-st .c2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c3;
-}
-.cont-d7rwt-st .c3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c4;
-}
-.cont-d7rwt-st .c4 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c5;
-}
-.cont-d7rwt-st .c5 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c6 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c6;
-}
-.cont-d7rwt-st .c6 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c7 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c7;
-}
-.cont-d7rwt-st .c7 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .c8 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: c8;
-}
-.cont-d7rwt-st .c8 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: d0;
-}
-.cont-d7rwt-st .d0 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d1;
-}
-.cont-d7rwt-st .d1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d2;
-}
-.cont-d7rwt-st .d2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d3;
-}
-.cont-d7rwt-st .d3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d4;
-}
-.cont-d7rwt-st .d4 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d5;
-}
-.cont-d7rwt-st .d5 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d6 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d6;
-}
-.cont-d7rwt-st .d6 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d7 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d7;
-}
-.cont-d7rwt-st .d7 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .d8 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: d8;
-}
-.cont-d7rwt-st .d8 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e0 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #B4C6E7;
-  padding: 8px;
-  border-bottom: 2px solid #333333;
-  border-right: 1px solid #333333;
-  border-top: 1px solid #333333;
-  min-width: 110px;
-  text-align: center;
-  grid-area: e0;
-}
-.cont-d7rwt-st .e1 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e1;
-}
-.cont-d7rwt-st .e1 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e2 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e2;
-}
-.cont-d7rwt-st .e2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e3;
-}
-.cont-d7rwt-st .e3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e4;
-}
-.cont-d7rwt-st .e4 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e5;
-}
-.cont-d7rwt-st .e5 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e6 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e6;
-}
-.cont-d7rwt-st .e6 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e7 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e7;
-}
-.cont-d7rwt-st .e7 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-d7rwt-st .e8 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #b4c6e79c;
-  padding: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  min-width: 120px;
-  text-align: left;
-  grid-area: e8;
-}
-.cont-d7rwt-st .e8 input {
-  max-width: 104px;
-  text-align: right;
-}
+  .dialog .content .nav_dg .cta {
+    float: left;
+    height: 36px;
+    font-size: 1.3em;
+    margin-left: 8px;
+    width: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
 
-.custom_tab {
-  border: 1px solid #007F93 !important;
-  background: #007F93 !important;
-  color: #ffffff;
-  font-weight: bold;
-  /*
+  .dialog .content .descriptionInfo {
+    clear: both;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dialog .content .button {
+    width: 90px;
+    float: right;
+  }
+
+  /* Misc */
+  .center {
+    text-align: center;
+  }
+
+  .label {
+    padding: 0 16px;
+  }
+
+  .label-blue {
+    color: #4285f4;
+  }
+
+  .cont-tb1g1_2 {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "a0 b0 c0 d0 e0""a1 b1 c1 d1 e1""a2 b2 c2 d2 e2""a3 b3 c3 d3 e3";
+  }
+
+  .cont-tb1g1_2 .a0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: transparent;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a0;
+  }
+
+  .cont-tb1g1_2 .a1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a1;
+  }
+
+  .cont-tb1g1_2 .a2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a2;
+  }
+
+  .cont-tb1g1_2 .a3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    border-left: 1px solid #333333;
+    grid-area: a3;
+  }
+
+  .cont-tb1g1_2 .b0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B4C6E7;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: b0;
+  }
+
+  .cont-tb1g1_2 .b1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b1;
+  }
+
+  .cont-tb1g1_2 .b1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .b2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b2;
+  }
+
+  .cont-tb1g1_2 .b2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .b3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b3;
+  }
+
+  .cont-tb1g1_2 .b3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .c0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B4C6E7;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: c0;
+  }
+
+  .cont-tb1g1_2 .c1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c1;
+  }
+
+  .cont-tb1g1_2 .c1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .c2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c2;
+  }
+
+  .cont-tb1g1_2 .c2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .c3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c3;
+  }
+
+  .cont-tb1g1_2 .c3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .d0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B4C6E7;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: d0;
+  }
+
+  .cont-tb1g1_2 .d1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d1;
+  }
+
+  .cont-tb1g1_2 .d1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .d2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d2;
+  }
+
+  .cont-tb1g1_2 .d2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .d3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d3;
+  }
+
+  .cont-tb1g1_2 .d3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .e0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: e0;
+  }
+
+  .cont-tb1g1_2 .e1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e1;
+  }
+
+  .cont-tb1g1_2 .e1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .e2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e2;
+  }
+
+  .cont-tb1g1_2 .e2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g1_2 .e3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e3;
+  }
+
+  .cont-tb1g1_2 .e3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "a0 b0 c0 d0 e0""a1 b1 c1 d1 e1""a2 b2 c2 d2 e2""a3 b3 c3 d3 e3""a4 b4 c4 d4 e4""a5 b5 c5 d5 e5""a6 b6 c6 d6 e6""a7 b7 c7 d7 e7""a8 b8 c8 d8 e8";
+  }
+
+  .cont-tb1g3 .a0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: transparent;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a0;
+  }
+
+  .cont-tb1g3 .a1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a1;
+  }
+
+  .cont-tb1g3 .a2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a2;
+  }
+
+  .cont-tb1g3 .a3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a3;
+  }
+
+  .cont-tb1g3 .a4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a4;
+  }
+
+  .cont-tb1g3 .a5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a5;
+  }
+
+  .cont-tb1g3 .a6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a6;
+  }
+
+  .cont-tb1g3 .a7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a7;
+  }
+
+  .cont-tb1g3 .a8 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a8;
+  }
+
+  .cont-tb1g3 .b0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B4C6E7;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: b0;
+  }
+
+  .cont-tb1g3 .b1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b1;
+  }
+
+  .cont-tb1g3 .b1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b2;
+  }
+
+  .cont-tb1g3 .b2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b3;
+  }
+
+  .cont-tb1g3 .b3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b4;
+  }
+
+  .cont-tb1g3 .b4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b5;
+  }
+
+  .cont-tb1g3 .b5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b6;
+  }
+
+  .cont-tb1g3 .b6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b7;
+  }
+
+  .cont-tb1g3 .b7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .b8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: b8;
+  }
+
+  .cont-tb1g3 .b8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B4C6E7;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: c0;
+  }
+
+  .cont-tb1g3 .c1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c1;
+  }
+
+  .cont-tb1g3 .c1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c2;
+  }
+
+  .cont-tb1g3 .c2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c3;
+  }
+
+  .cont-tb1g3 .c3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c4;
+  }
+
+  .cont-tb1g3 .c4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c5;
+  }
+
+  .cont-tb1g3 .c5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c6;
+  }
+
+  .cont-tb1g3 .c6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c7;
+  }
+
+  .cont-tb1g3 .c7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .c8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: c8;
+  }
+
+  .cont-tb1g3 .c8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B4C6E7;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: d0;
+  }
+
+  .cont-tb1g3 .d0 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d1;
+  }
+
+  .cont-tb1g3 .d1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d2;
+  }
+
+  .cont-tb1g3 .d2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d3;
+  }
+
+  .cont-tb1g3 .d3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d4;
+  }
+
+  .cont-tb1g3 .d4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d5;
+  }
+
+  .cont-tb1g3 .d5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d6;
+  }
+
+  .cont-tb1g3 .d6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d7;
+  }
+
+  .cont-tb1g3 .d7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .d8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 2px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: d8;
+  }
+
+  .cont-tb1g3 .d8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e0 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #333333;
+    min-width: 110px;
+    text-align: center;
+    grid-area: e0;
+  }
+
+  .cont-tb1g3 .e1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e1;
+  }
+
+  .cont-tb1g3 .e1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e2;
+  }
+
+  .cont-tb1g3 .e2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e3;
+  }
+
+  .cont-tb1g3 .e3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e4;
+  }
+
+  .cont-tb1g3 .e4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e5;
+  }
+
+  .cont-tb1g3 .e5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e6;
+  }
+
+  .cont-tb1g3 .e6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 2px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e7;
+  }
+
+  .cont-tb1g3 .e7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g3 .e8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #a5bbe6;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    min-width: 120px;
+    text-align: left;
+    grid-area: e8;
+  }
+
+  .cont-tb1g3 .e8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g4 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "a0 b0""a1 b1""a2 b2""a3 b3";
+  }
+
+  .cont-tb1g4 .a0 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a0;
+  }
+
+  .cont-tb1g4 .a1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a1;
+  }
+
+  .cont-tb1g4 .a2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a2;
+  }
+
+  .cont-tb1g4 .a3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a3;
+  }
+
+  .cont-tb1g4 .b0 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: b0;
+  }
+
+  .cont-tb1g4 .b0 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g4 .b1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: b1;
+  }
+
+  .cont-tb1g4 .b1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g4 .b2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: b2;
+  }
+
+  .cont-tb1g4 .b2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g4 .b3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: b3;
+  }
+
+  .cont-tb1g4 .b3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g4 .a4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: a4;
+  }
+
+  .cont-tb1g4 .a4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .cont-tb1g4 .b4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #b4c6e79c;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-left: 1px solid #333333;
+    min-width: 120px;
+    grid-area: b4;
+  }
+
+  .cont-tb1g4 .b4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .custom_tab {
+    border: 1px solid #B4C6E7 !important;
+    background: #B4C6E7 !important;
+    color: #ffffff;
+    font-weight: bold;
+    /*
   li{
       a{
           color: $color5!important;
       }
   }
   */
-}
+  }
 
-* {
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
+  * {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
 
-input {
-  box-sizing: border-box;
-}
+  input {
+    box-sizing: border-box;
+  }
 
-::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
-}
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #c5c5c5;
-  border-radius: 0px;
-}
+  ::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 0px;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #007F93;
-}
+  ::-webkit-scrollbar-thumb:hover {
+    background: #007F93;
+  }
 
-::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 0px;
-  box-shadow: inset 2px 10px 12px #f0f0f0;
-}
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 0px;
+    box-shadow: inset 2px 10px 12px #f0f0f0;
+  }
 
-.cta_dg {
-  cursor: pointer;
-}
+  .cta_dg {
+    cursor: pointer;
+  }
 
-.totals input {
-  background-color: #DCDCDC !important;
-}
+  .totals input {
+    background-color: #DCDCDC !important;
+  }
 
-/*# sourceMappingURL=style.css.map */
-
+  /*# sourceMappingURL=style.css.map */
 </style>
 <div id="MPHDCustomForm">
-    <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+  <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
 
-    <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
-        <br />
-        <br />
-        <img src="../images/ajax-loader-circle.gif" /><br />
-        <br />
-        &nbsp;
-        <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
-    </div>
+  <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+    <br />
+    <br />
+    <img src="../images/ajax-loader-circle.gif" /><br />
+    <br />
+    &nbsp;
+    <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+  </div>
 
-    <div id="MPHDCustomForm_Content">
-        <div id="tabs" style="display:block;">
-            <ul class="custom_tab">
-                <li><a href="#CHTab" keyword="opt_c:TAB_Title_1">Infants</a></li>
-                <li><a href="#FPTab" keyword="opt_c:TAB_Title_2">Family planning</a></li>
-                <li><a href="#IMMTab" keyword="opt_c:TAB_Title_3">Immunization</a></li>
-                <li><a href="#MN" keyword="opt_c:TAB_Title_4">MN</a></li>
-            </ul>
-            <!-- Infants Tab -->
+  <div id="MPHDCustomForm_Content">
+    <div id="tabs" style="display:block;">
+      <ul class="custom_tab">
+        <li><a href="#CHTab" keyword="opt_c:TAB_Title_1">Infants</a></li>
+        <li><a href="#FPTab" keyword="opt_c:TAB_Title_2">Family planning</a></li>
+        <li><a href="#IMMTab" keyword="opt_c:TAB_Title_3">Immunization</a></li>
+        <li><a href="#MN" keyword="opt_c:TAB_Title_4">MN</a></li>
+      </ul>
+      <!-- Infants Tab -->
 
-            <div id="CHTab">
-                <div class="ty_h2" keyword="opt_c:TAB_1_Title_1">CH.1 Number of Childer 0-59m classified w/ diarrhea
-                </div>
+      <div id="CHTab">
+        <div class="ty_h2" keyword="opt_c:TAB_1_Title_1">CH.1 Number of Childer 0-59m classified w/ diarrhea</div>
 
-                <div class="cont-d3rwt">
-                    <div class="a0">&nbsp;</div>
+        <div class="cont-tb1g1_2">
+          <div class="a0">&nbsp;</div>
 
-                    <div class="a1">Diagnosed</div>
+          <div class="a1">Diagnosed</div>
 
-                    <div class="a2">Treated with ORS</div>
+          <div class="a2">Treated with ORS</div>
 
-                    <div class="a3">Treated with ORD+Zinc</div>
+          <div class="a3">Treated with ORD+Zinc</div>
 
-                    <div class="b0">0-59 days</div>
+          <div class="b0">0-59 days</div>
 
-                    <div class="b1"><input id="ZXeMzUkXMqh-mkNNcRxfuwE-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 0-59 days"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 0-59 days ]" />
-                    </div>
+          <div class="b1"><input id="ZXeMzUkXMqh-mkNNcRxfuwE-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 0-59 days"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 0-59 days ]" />
+          </div>
 
-                    <div class="b2"><input id="QkEzO7YldGz-mkNNcRxfuwE-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 0-59 days"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 0-59 days ]" />
-                    </div>
+          <div class="b2"><input id="QkEzO7YldGz-mkNNcRxfuwE-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 0-59 days"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 0-59 days ]" />
+          </div>
 
-                    <div class="b3"><input id="q4U5FXdNEAH-mkNNcRxfuwE-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 0-59 days"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 0-59 days ]" />
-                    </div>
+          <div class="b3"><input id="q4U5FXdNEAH-mkNNcRxfuwE-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 0-59 days"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 0-59 days ]" />
+          </div>
 
-                    <div class="c0">2-59 months</div>
+          <div class="c0">2-59 months</div>
 
-                    <div class="c1"><input id="ZXeMzUkXMqh-giLKcCUM5Bk-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 2-59 months"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 2-59 months ]" />
-                    </div>
+          <div class="c1"><input id="ZXeMzUkXMqh-giLKcCUM5Bk-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 2-59 months"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas 2-59 months ]" />
+          </div>
 
-                    <div class="c2"><input id="QkEzO7YldGz-giLKcCUM5Bk-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 2-59 months"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 2-59 months ]" />
-                    </div>
+          <div class="c2"><input id="QkEzO7YldGz-giLKcCUM5Bk-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 2-59 months"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas 2-59 months ]" />
+          </div>
 
-                    <div class="c3"><input id="q4U5FXdNEAH-giLKcCUM5Bk-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 2-59 months"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 2-59 months ]" />
-                    </div>
+          <div class="c3"><input id="q4U5FXdNEAH-giLKcCUM5Bk-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 2-59 months"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas 2-59 months ]" />
+          </div>
 
-                    <div class="d0">+5 years</div>
+          <div class="d0">+5 years</div>
 
-                    <div class="d1"><input id="ZXeMzUkXMqh-owGSKu6HanY-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas &lt;5 years (age not specified)"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
-                    </div>
+          <div class="d1"><input id="ZXeMzUkXMqh-owGSKu6HanY-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas &lt;5 years (age not specified)"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+          </div>
 
-                    <div class="d2"><input id="QkEzO7YldGz-owGSKu6HanY-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas &lt;5 years (age not specified)"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
-                    </div>
+          <div class="d2"><input id="QkEzO7YldGz-owGSKu6HanY-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas &lt;5 years (age not specified)"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS only in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+          </div>
 
-                    <div class="d3"><input id="q4U5FXdNEAH-owGSKu6HanY-val" name="entryfield"
-                            title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas &lt;5 years (age not specified)"
-                            value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
-                    </div>
+          <div class="d3"><input id="q4U5FXdNEAH-owGSKu6HanY-val" name="entryfield"
+              title="CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas &lt;5 years (age not specified)"
+              value="[ CH.1_Number of children 0-59 months of age classified with diarrhea treated with ORS+zinc in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+          </div>
 
-                    <div class="e0">Totals</div>
+          <div class="e0">Totals</div>
 
-                    <div class="e1"><input /></div>
+          <div class="e1"><input /></div>
 
-                    <div class="e2"><input /></div>
+          <div class="e2"><input /></div>
 
-                    <div class="e3"><input /></div>
-                </div>
-
-                <div class="ty_h2" keyword="opt_c:TAB_1_Title_2">CH.2 Number of Childer 0-59m classified w/ Pneumonia
-                </div>
-
-                <div class="cont-d3rwt">
-                    <div class="a0">&nbsp;</div>
-
-                    <div class="a1">Diagnosed</div>
-
-                    <div class="a2">Amox DT</div>
-
-                    <div class="a3">Antibiotics</div>
-
-                    <div class="b0">0-59d</div>
-
-                    <div class="b1"><input id="SPUObFYwT82-mkNNcRxfuwE-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 0-59 days"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 0-59 days ]" />
-                    </div>
-
-                    <div class="b2"><input id="KNU1hyVR1V7-mkNNcRxfuwE-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 0-59 days"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 0-59 days ]" />
-                    </div>
-
-                    <div class="b3"><input id="Vo2EJ0seZCV-mkNNcRxfuwE-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 0-59 days"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 0-59 days ]" />
-                    </div>
-
-                    <div class="c0">2-60m</div>
-
-                    <div class="c1"><input id="SPUObFYwT82-giLKcCUM5Bk-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 2-59 months"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 2-59 months ]" />
-                    </div>
-
-                    <div class="c2"><input id="KNU1hyVR1V7-giLKcCUM5Bk-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 2-59 months"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 2-59 months ]" />
-                    </div>
-
-                    <div class="c3"><input id="Vo2EJ0seZCV-giLKcCUM5Bk-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 2-59 months"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 2-59 months ]" />
-                    </div>
-
-                    <div class="d0">+5 years</div>
-
-                    <div class="d1"><input id="SPUObFYwT82-owGSKu6HanY-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas &lt;5 years (age not specified)"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
-                    </div>
-
-                    <div class="d2"><input id="KNU1hyVR1V7-owGSKu6HanY-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas &lt;5 years (age not specified)"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
-                    </div>
-
-                    <div class="d3"><input id="Vo2EJ0seZCV-owGSKu6HanY-val" name="entryfield"
-                            title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas &lt;5 years (age not specified)"
-                            value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
-                    </div>
-
-                    <div class="e0">Totals</div>
-
-                    <div class="e1"><input /></div>
-
-                    <div class="e2"><input /></div>
-
-                    <div class="e3"><input /></div>
-                </div>
-
-                <div class="ty_h2" keyword="opt_c:TAB_1_Title_3">CH.2 Number of Childer 0-59m classified w/ Pneumonia
-                </div>
-
-                <div class="cont-d7rwt-st">
-                    <div class="a0">&nbsp;</div>
-
-                    <div class="a1">Line 1</div>
-
-                    <div class="a2">Line 2</div>
-
-                    <div class="a3">Line 3</div>
-
-                    <div class="a4">Line 4</div>
-
-                    <div class="a5">Line 5</div>
-
-                    <div class="a6">Line 6</div>
-
-                    <div class="a7">Line 7</div>
-
-                    <div class="a8">Totals</div>
-
-                    <div class="b0">Male</div>
-
-                    <div class="b1"><input id="jpGMiEAwDyQ-GhdeQuQT3pI-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Male"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Male ]" />
-                    </div>
-
-                    <div class="b2"><input id="VEyMUs5KSrl-GhdeQuQT3pI-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Male"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Male ]" />
-                    </div>
-
-                    <div class="b3"><input id="xgxOrRAwlQI-GhdeQuQT3pI-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Male"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Male ]" />
-                    </div>
-
-                    <div class="b4"><input id="PTm0vYatBH1-GhdeQuQT3pI-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Male"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Male ]" />
-                    </div>
-
-                    <div class="b5"><input /></div>
-
-                    <div class="b6"><input /></div>
-
-                    <div class="b7"><input /></div>
-
-                    <div class="b8"><input /></div>
-
-                    <div class="c0">Female</div>
-
-                    <div class="c1"><input id="jpGMiEAwDyQ-RaDA18EdM3O-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Female"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Female ]" />
-                    </div>
-
-                    <div class="c2"><input id="VEyMUs5KSrl-RaDA18EdM3O-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Female"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Female ]" />
-                    </div>
-
-                    <div class="c3"><input id="xgxOrRAwlQI-RaDA18EdM3O-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Female"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Female ]" />
-                    </div>
-
-                    <div class="c4"><input id="PTm0vYatBH1-RaDA18EdM3O-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Female"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Female ]" />
-                    </div>
-
-                    <div class="c5"><input /></div>
-
-                    <div class="c6"><input /></div>
-
-                    <div class="c7"><input /></div>
-
-                    <div class="c8"><input /></div>
-
-                    <div class="d0">Unknown</div>
-
-                    <div class="d1"><input id="jpGMiEAwDyQ-ZOFzuGOXt0U-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Unspecified (sex)"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Unspecified (sex) ]" />
-                    </div>
-
-                    <div class="d2"><input id="VEyMUs5KSrl-ZOFzuGOXt0U-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Unspecified (sex)"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Unspecified (sex) ]" />
-                    </div>
-
-                    <div class="d3"><input id="xgxOrRAwlQI-ZOFzuGOXt0U-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Unspecified (sex)"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Unspecified (sex) ]" />
-                    </div>
-
-                    <div class="d4"><input id="PTm0vYatBH1-ZOFzuGOXt0U-val" name="entryfield"
-                            title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Unspecified (sex)"
-                            value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Unspecified (sex) ]" />
-                    </div>
-
-                    <div class="d5"><input /></div>
-
-                    <div class="d6"><input /></div>
-
-                    <div class="d7"><input /></div>
-
-                    <div class="d8"><input /></div>
-
-                    <div class="e0">Totals</div>
-
-                    <div class="e1"><input /></div>
-
-                    <div class="e2"><input /></div>
-
-                    <div class="e3"><input /></div>
-
-                    <div class="e4"><input /></div>
-
-                    <div class="e5"><input /></div>
-
-                    <div class="e6"><input /></div>
-
-                    <div class="e7"><input /></div>
-
-                    <div class="e8"><input /></div>
-                </div>
-
-                <div class="ty_h2" keyword="opt_c:TAB_1_Title_4">Ch+Nut 2 Number of children 6-59m</div>
-
-                <div class="ty_h2" keyword="opt_c:TAB_1_Title_5">FP RH 4 title goes here</div>
-            </div>
-            <!-- //Infants Tab -->
-            <!-- Family planning Tab -->
-
-            <div id="FPTab">2</div>
-            <!-- //Family planning Tab -->
-            <!-- Immunization Tab -->
-
-            <div id="IMMTab">3</div>
-            <!-- //Immunization Tab -->
-            <!-- MN Tab -->
-
-            <div id="MN">4</div>
-            <!-- //MN Tab -->
+          <div class="e3"><input /></div>
         </div>
-    </div>
 
-    <div class="dialog">
-        <div class="content">
-            <div class="nav_dg">
-                <div class="title" keyword="opt_c:Permission">Permission</div>
+        <div class="ty_h2" keyword="opt_c:TAB_1_Title_2">CH.2 Number of Childer 0-59m classified w/ Pneumonia</div>
 
-                <div class="cta"><span class="material-icons md-dark">close</span></div>
-            </div>
+        <div class="cont-tb1g1_2">
+          <div class="a0">&nbsp;</div>
 
-            <div class="descriptionInfo">&nbsp;</div>
+          <div class="a1">Diagnosed</div>
+
+          <div class="a2">Amox DT</div>
+
+          <div class="a3">Antibiotics</div>
+
+          <div class="b0">0-59d</div>
+
+          <div class="b1"><input id="SPUObFYwT82-mkNNcRxfuwE-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 0-59 days"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 0-59 days ]" />
+          </div>
+
+          <div class="b2"><input id="KNU1hyVR1V7-mkNNcRxfuwE-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 0-59 days"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 0-59 days ]" />
+          </div>
+
+          <div class="b3"><input id="Vo2EJ0seZCV-mkNNcRxfuwE-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 0-59 days"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 0-59 days ]" />
+          </div>
+
+          <div class="c0">2-60m</div>
+
+          <div class="c1"><input id="SPUObFYwT82-giLKcCUM5Bk-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 2-59 months"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas 2-59 months ]" />
+          </div>
+
+          <div class="c2"><input id="KNU1hyVR1V7-giLKcCUM5Bk-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 2-59 months"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas 2-59 months ]" />
+          </div>
+
+          <div class="c3"><input id="Vo2EJ0seZCV-giLKcCUM5Bk-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 2-59 months"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas 2-59 months ]" />
+          </div>
+
+          <div class="d0">+5 years</div>
+
+          <div class="d1"><input id="SPUObFYwT82-owGSKu6HanY-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas &lt;5 years (age not specified)"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+          </div>
+
+          <div class="d2"><input id="KNU1hyVR1V7-owGSKu6HanY-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas &lt;5 years (age not specified)"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with Amox DT in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+          </div>
+
+          <div class="d3"><input id="Vo2EJ0seZCV-owGSKu6HanY-val" name="entryfield"
+              title="CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas &lt;5 years (age not specified)"
+              value="[ CH.2_Number of children 0-59 months of age classified with pneumonia treated with antibiotics Treatment in MOMENTUM supported areas &lt;5 years (age not specified) ]" />
+          </div>
+
+          <div class="e0">Totals</div>
+
+          <div class="e1"><input /></div>
+
+          <div class="e2"><input /></div>
+
+          <div class="e3"><input /></div>
         </div>
+
+        <div class="ty_h2" keyword="opt_c:TAB_1_Title_3">CH.2 Number of Childer 0-59m classified w/ Pneumonia</div>
+
+        <div class="cont-tb1g3">
+          <div class="a0">&nbsp;</div>
+
+          <div class="a1">CH+Nut.1 Admitted for treatment of moderate acute malnutrition</div>
+
+          <div class="a2">CH+Nut.1 Admitted for treatment of severe acute malnutrition</div>
+
+          <div class="a3">CH+Nut.1 Direct food assistance of fortified/specialized food products (i.e. CSB+, Super
+            cereal Plus, etc.)</div>
+
+          <div class="a4">CH+Nut.1 Multiple Micronutrient Powder (MNP) supplementation</div>
+
+          <div class="a5">CH+Nut.1 Social and behavior change (SBC)</div>
+
+          <div class="a6">CH+Nut.1 Vitamin A supplementation in the past 6 months</div>
+
+          <div class="a7">CH+Nut.1 Zinc supplementation during episodes of diarrhea</div>
+
+          <div class="a8">Totals</div>
+
+          <div class="b0">Male</div>
+
+          <div class="b1"><input id="jpGMiEAwDyQ-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Male ]" />
+          </div>
+
+          <div class="b2"><input id="VEyMUs5KSrl-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Male ]" />
+          </div>
+
+          <div class="b3"><input id="xgxOrRAwlQI-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Male ]" />
+          </div>
+
+          <div class="b4"><input id="PTm0vYatBH1-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Male ]" />
+          </div>
+
+          <div class="b5"><input id="r1fShhmmj4O-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Social and behavior change (SBC)) Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Social and behavior change (SBC)) Male ]" />
+          </div>
+
+          <div class="b6"><input id="Q8d5k5wlgmG-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Vitamin A supplementation in the past 6 months) in MOMENTUM-supported areas Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Vitamin A supplementation in the past 6 months) in MOMENTUM-supported areas Male ]" />
+          </div>
+
+          <div class="b7"><input id="agGDLNoEaCi-GhdeQuQT3pI-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Zinc supplementation during episodes of diarrhea) in MOMENTUM-supported areas Male"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Zinc supplementation during episodes of diarrhea) in MOMENTUM-supported areas Male ]" />
+          </div>
+
+          <div class="b8"><input /></div>
+
+          <div class="c0">Female</div>
+
+          <div class="c1"><input id="jpGMiEAwDyQ-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Female ]" />
+          </div>
+
+          <div class="c2"><input id="VEyMUs5KSrl-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Female ]" />
+          </div>
+
+          <div class="c3"><input id="xgxOrRAwlQI-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Female ]" />
+          </div>
+
+          <div class="c4"><input id="PTm0vYatBH1-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Female ]" />
+          </div>
+
+          <div class="c5"><input id="r1fShhmmj4O-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Social and behavior change (SBC)) Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Social and behavior change (SBC)) Female ]" />
+          </div>
+
+          <div class="c6"><input id="Q8d5k5wlgmG-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Vitamin A supplementation in the past 6 months) in MOMENTUM-supported areas Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Vitamin A supplementation in the past 6 months) in MOMENTUM-supported areas Female ]" />
+          </div>
+
+          <div class="c7"><input id="agGDLNoEaCi-RaDA18EdM3O-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Zinc supplementation during episodes of diarrhea) in MOMENTUM-supported areas Female"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Zinc supplementation during episodes of diarrhea) in MOMENTUM-supported areas Female ]" />
+          </div>
+
+          <div class="c8"><input /></div>
+
+          <div class="d0">Unknown</div>
+
+          <div class="d1"><input id="jpGMiEAwDyQ-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of moderate acute malnutrition) in MOMENTUM-supported areas Unspecified (sex) ]" />
+          </div>
+
+          <div class="d2"><input id="VEyMUs5KSrl-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Admitted for treatment of severe acute malnutrition) in MOMENTUM-supported areas Unspecified (sex) ]" />
+          </div>
+
+          <div class="d3"><input id="xgxOrRAwlQI-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Direct food assistance of fortified/specialized food products (i.e. CSB+, Super cereal Plus, etc.)) in MOMENTUM-supported areas Unspecified (sex) ]" />
+          </div>
+
+          <div class="d4"><input id="PTm0vYatBH1-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Multiple Micronutrient Powder (MNP) supplementation) in MOMENTUM-supported areas Unspecified (sex) ]" />
+          </div>
+
+          <div class="d5"><input id="r1fShhmmj4O-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Social and behavior change (SBC)) Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Social and behavior change (SBC)) Unspecified (sex) ]" />
+          </div>
+
+          <div class="d6"><input id="Q8d5k5wlgmG-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Vitamin A supplementation in the past 6 months) in MOMENTUM-supported areas Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Vitamin A supplementation in the past 6 months) in MOMENTUM-supported areas Unspecified (sex) ]" />
+          </div>
+
+          <div class="d7"><input id="agGDLNoEaCi-ZOFzuGOXt0U-val" name="entryfield"
+              title="CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Zinc supplementation during episodes of diarrhea) in MOMENTUM-supported areas Unspecified (sex)"
+              value="[ CH+Nut.1_Number of children under five (0-59 months) reached with USG nutrition programs (Zinc supplementation during episodes of diarrhea) in MOMENTUM-supported areas Unspecified (sex) ]" />
+          </div>
+
+          <div class="d8"><input /></div>
+
+          <div class="e0">Totals</div>
+
+          <div class="e1"><input /></div>
+
+          <div class="e2"><input /></div>
+
+          <div class="e3"><input /></div>
+
+          <div class="e4"><input /></div>
+
+          <div class="e5"><input /></div>
+
+          <div class="e6"><input /></div>
+
+          <div class="e7"><input /></div>
+
+          <div class="e8"><input /></div>
+        </div>
+
+        <div class="ty_h2" keyword="opt_c:TAB_1_Title_4">Ch+Nut 2 Number of children 6-59m</div>
+
+        <div class="cont-tb1g4 ">
+          <div class="a0">CH+Nut.2 Well child or sick child visits</div>
+
+          <div class="a1">CH+Nut.2 Through MUAC or height and weight</div>
+
+          <div class="a2">CH+Nut.3 MAM</div>
+
+          <div class="a3">CH+Nut.3 SAM</div>
+
+          <div class="b0"><input id="FZSUcu53R6R-HllvX50cXC0-val" name="entryfield"
+              title="CH+Nut.2_Number of children 6-59m seen (well child or sick child visits) in MOMENTUM-supported areas"
+              value="[ CH+Nut.2_Number of children 6-59m seen (well child or sick child visits) in MOMENTUM-supported areas ]" />
+          </div>
+
+          <div class="b1"><input id="x0M0d8ueQHb-HllvX50cXC0-val" name="entryfield"
+              title="CH+Nut.2_Number of children aged 6-59 months screened for acute malnutrition (through MUAC or height and weight) in MOMENTUM-supported areas"
+              value="[ CH+Nut.2_Number of children aged 6-59 months screened for acute malnutrition (through MUAC or height and weight) in MOMENTUM-supported areas ]" />
+          </div>
+
+          <div class="b2"><input id="cymsIV6uBkS-HllvX50cXC0-val" name="entryfield"
+              title="CH+Nut.3_Number of children aged 6-59 months identified with Moderate Acute Malnutrition (MAM) in MOMENTUM-supported areas"
+              value="[ CH+Nut.3_Number of children aged 6-59 months identified with Moderate Acute Malnutrition (MAM) in MOMENTUM-supported areas ]" />
+          </div>
+
+          <div class="b3"><input id="ApezmIHEMdA-HllvX50cXC0-val" name="entryfield"
+              title="CH+Nut.3_Number of children aged 6-59 months identified with Severe Acute Malnutrition (SAM) in MOMENTUM-supported areas"
+              value="[ CH+Nut.3_Number of children aged 6-59 months identified with Severe Acute Malnutrition (SAM) in MOMENTUM-supported areas ]" />
+          </div>
+        </div>
+      </div>
+      <!-- //Infants Tab -->
+      <!-- Family planning Tab -->
+
+      <div id="FPTab">2</div>
+      <!-- //Family planning Tab -->
+      <!-- Immunization Tab -->
+
+      <div id="IMMTab">3</div>
+      <!-- //Immunization Tab -->
+      <!-- MN Tab -->
+
+      <div id="MN">4</div>
+      <!-- //MN Tab -->
     </div>
+  </div>
+
+  <div class="dialog">
+    <div class="content">
+      <div class="nav_dg">
+        <div class="title" keyword="opt_c:Permission">Permission</div>
+
+        <div class="cta"><span class="material-icons md-dark">close</span></div>
+      </div>
+
+      <div class="descriptionInfo">&nbsp;</div>
+    </div>
+  </div>
 </div>
 <script>
-$(document).ready(function () {
+  $(document).ready(function () {
     //MPHD_Facility_Monthly
 
     $('.cta_dg').click(function (e) {
-        var title = $(this).parent().text();
-        var title_box = title.substring(0, title.length-4)
+      var title = $(this).parent().text();
+      var title_box = title.substring(0, title.length - 4)
 
-        console.log('title1: ' + title_box);
+      console.log('title1: ' + title_box);
 
-        $('.title').html(title_box);
-        $('.dialog').css({
-            'display': 'inline-block'
-        })
+      $('.title').html(title_box);
+      $('.dialog').css({
+        'display': 'inline-block'
+      })
     });
 
     $('.cta').click(function (e) {
-        $('.dialog').css({
-            'display': 'none'
-        })
+      $('.dialog').css({
+        'display': 'none'
+      })
     });
 
     ///////////////////////////////////////////
 
     $('ul.listitems li').click(function (e) {
-        tab_selected = $(this).find('a').attr('href');
-        switch (tab_selected) {
-            case '#CHTab':
-                break;
-            case '#FPTab':
-                break;
-            case '#IMMTab':
-                break;
-            case '#MN':
-                break;
-        }
+      tab_selected = $(this).find('a').attr('href');
+      switch (tab_selected) {
+        case '#CHTab':
+          break;
+        case '#FPTab':
+          break;
+        case '#IMMTab':
+          break;
+        case '#MN':
+          break;
+      }
     });
 
 
-});
+  });
 
 
-$(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
+  $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
     if ($("#MPHDCustomForm").length > 0) {
-        $("#tabs").tabs();
-        $("#MPHDCustomForm_Content").hide();
-        $("#loaderDiv").show();
+      $("#tabs").tabs();
+      $("#MPHDCustomForm_Content").hide();
+      $("#loaderDiv").show();
 
-        //new MPHDTranslation(function () {
-            $("#loaderDiv").hide();
-            $("#MPHDCustomForm_Content").show();
-        //});
+      //new MPHDTranslation(function () {
+      $("#loaderDiv").hide();
+      $("#MPHDCustomForm_Content").show();
+      //});
     }
-    
+
     // ============================================================================================================
-		// GCACITranslation
-	
-		function MPHDTranslation(_exeFunc) {
-			var me = this;
-	
-			me.exeFunc = _exeFunc;
-	
-			me.selectedDataSetIdTag = $("#selectedDataSetId");
-	
-			me.optionSetTermId = "vYRqe6FShDo";
-	
-			me.loadedDataSetElementList = false;
-			me.loadedOptionSetList = false;
-	
-			me.DATAELEMENT_KEY = "de_id";
-			me.INDICATOR_KEY = "ind_id";
-			me.CATOPTION_KEY = "catOpt_id";
-			me.OPTION_KEY = "opt_c";
-	
-	
-			// ----------------------------------------------------------------------------------------------
-			// URLs
-	
-			me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
-	
-			me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
-			me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId + ".json?fields=options[code,displayName]&paging=false";
-	
-	
-			// ----------------------------------------------------------------------------------------------
-			// HTML Element
-	
-	
-			me.tableTag = $("body");
-	
-			// ----------------------------------------------------------------------------------------------
-			// Init method
-	
-			me.init = function () {
-				console.log("INIT translation ... ");
-				me.translateDataSetElementList();
-				me.translateOptionSetList();
-			}
-	
-			// ----------------------------------------------------------------------------------------------
-			// Supportive methods
-	
-			me.translateDataSetElementList = function () {
-				var url = me.QUERY_URL_DATASET;
-				url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
-	
-				me.loadMetadata(url, function (response) {
-	
-					// Translate Data elements & Get CatOptions Map
-					var catOptionMap = {};
-					var dataSetElements = response.dataSetElements;
-	
-					for (var i in dataSetElements) {
-						var dataElement = dataSetElements[i].dataElement;
-	
-						// Translation for FORMNAME of DEs
-						var deDivTag = me.tableTag.find("[keyword='" + me.DATAELEMENT_KEY + ":" + dataElement.id + "']");
-						deDivTag.html(dataElement.displayFormName);
-	
-						// Translation for DESCRIPTION of DEs
-						var descriptionDivTag = deDivTag.closest("div").find(".cta_dg");
-						if (descriptionDivTag.length > 0 && dataElement.displayDescription != undefined) {
-							descriptionDivTag.attr("description", dataElement.displayDescription);
-						}
-	
-						// Get CatOptions Map
-						var categories = dataElement.categoryCombo.categories;
-						for (var i in categories) {
-							var categoryOptions = categories[i].categoryOptions;
-							for (var j in categoryOptions) {
-								var categoryOption = categoryOptions[j];
-								catOptionMap[categoryOption.id] = categoryOption;
-							}
-						}
-	
-					}
-	
-					// Translation categories
-					for (var key in catOptionMap) {
-						var catOption = catOptionMap[key];
-	
-						// For CatOption NAME
-						var catOptionDivTag = me.tableTag.find("[keyword='" + me.CATOPTION_KEY + ":" + key + "']");
-						catOptionDivTag.html(catOption.displayName);
-	
-						// For CatOption Description
-						var descriptionDivTag = catOptionDivTag.closest("div").find(".cta_dg");
-						if (descriptionDivTag.length > 0 && catOption.displayDescription != undefined) {
-							descriptionDivTag.attr("description", catOption.displayDescription);
-						}
-	
-	
-					}
-	
-	
-					// Translate Indicators
-					var indicators = response.indicators;
-					for (var i in indicators) {
-						var indicator = indicators[i];
-						// Translation for NAME of Indicator
-						var indicatorDivTag = me.tableTag.find("[keyword='" + me.INDICATOR_KEY + ":" + indicator.id + "']");
-						indicatorDivTag.html(indicator.displayName);
-	
-						// Translation for DESCRIPTION of Indicator
-						var descriptionDivTag = indicatorDivTag.closest("div").find(".cta_dg");
-						if (descriptionDivTag.length > 0 && indicator.displayDescription != undefined) {
-							descriptionDivTag.attr("description", indicator.displayDescription);
-						}
-					}
-	
-	
-					me.loadedDataSetElementList = true;
-					me.afterLoadedTranslationData();
-	
-				});
-	
-			}
-	
-			me.translateOptionSetList = function () {
-				var url = me.QUERY_URL_TERMS;
-				me.loadMetadata(url, function (response) {
-	
-					var options = response.options;
-					for (var j in options) {
-						var option = options[j];
-						var value = option.displayName;
-						me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']").html(value);
-						me.tableTag.find("[keyword-data='" + me.OPTION_KEY + ":" + option.code + "']").attr("keyword-data", value);
-					}
-	
-					me.loadedOptionSetList = true;
-					me.afterLoadedTranslationData();
-				});
-			}
-	
-			me.afterLoadedTranslationData = function () {
-				if (me.loadedDataSetElementList && me.loadedOptionSetList) {
-	
-					me.exeFunc();
-				}
-			}
-	
-			me.loadMetadata = function (url, exeFunc) {
-				$.ajax({
-					type: "GET"
-					, url: url
-					, contentType: "application/json;charset=utf-8"
-					, beforeSend: function (xhr) {
-						//me.hideReportTag();
-					}
-					, success: function (response) {
-						exeFunc(response);
-					}
-				});
-	
-			}
-	
-	
-			// ----------------------------------------------------------------------------------------------
-			// init
-	
-			me.init();
-	
-		}
-	
-});
+    // GCACITranslation
+
+    function MPHDTranslation(_exeFunc) {
+      var me = this;
+
+      me.exeFunc = _exeFunc;
+
+      me.selectedDataSetIdTag = $("#selectedDataSetId");
+
+      me.optionSetTermId = "vYRqe6FShDo";
+
+      me.loadedDataSetElementList = false;
+      me.loadedOptionSetList = false;
+
+      me.DATAELEMENT_KEY = "de_id";
+      me.INDICATOR_KEY = "ind_id";
+      me.CATOPTION_KEY = "catOpt_id";
+      me.OPTION_KEY = "opt_c";
+
+
+      // ----------------------------------------------------------------------------------------------
+      // URLs
+
+      me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
+
+      me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
+      me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId + ".json?fields=options[code,displayName]&paging=false";
+
+
+      // ----------------------------------------------------------------------------------------------
+      // HTML Element
+
+
+      me.tableTag = $("body");
+
+      // ----------------------------------------------------------------------------------------------
+      // Init method
+
+      me.init = function () {
+        console.log("INIT translation ... ");
+        me.translateDataSetElementList();
+        me.translateOptionSetList();
+      }
+
+      // ----------------------------------------------------------------------------------------------
+      // Supportive methods
+
+      me.translateDataSetElementList = function () {
+        var url = me.QUERY_URL_DATASET;
+        url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
+
+        me.loadMetadata(url, function (response) {
+
+          // Translate Data elements & Get CatOptions Map
+          var catOptionMap = {};
+          var dataSetElements = response.dataSetElements;
+
+          for (var i in dataSetElements) {
+            var dataElement = dataSetElements[i].dataElement;
+
+            // Translation for FORMNAME of DEs
+            var deDivTag = me.tableTag.find("[keyword='" + me.DATAELEMENT_KEY + ":" + dataElement.id + "']");
+            deDivTag.html(dataElement.displayFormName);
+
+            // Translation for DESCRIPTION of DEs
+            var descriptionDivTag = deDivTag.closest("div").find(".cta_dg");
+            if (descriptionDivTag.length > 0 && dataElement.displayDescription != undefined) {
+              descriptionDivTag.attr("description", dataElement.displayDescription);
+            }
+
+            // Get CatOptions Map
+            var categories = dataElement.categoryCombo.categories;
+            for (var i in categories) {
+              var categoryOptions = categories[i].categoryOptions;
+              for (var j in categoryOptions) {
+                var categoryOption = categoryOptions[j];
+                catOptionMap[categoryOption.id] = categoryOption;
+              }
+            }
+
+          }
+
+          // Translation categories
+          for (var key in catOptionMap) {
+            var catOption = catOptionMap[key];
+
+            // For CatOption NAME
+            var catOptionDivTag = me.tableTag.find("[keyword='" + me.CATOPTION_KEY + ":" + key + "']");
+            catOptionDivTag.html(catOption.displayName);
+
+            // For CatOption Description
+            var descriptionDivTag = catOptionDivTag.closest("div").find(".cta_dg");
+            if (descriptionDivTag.length > 0 && catOption.displayDescription != undefined) {
+              descriptionDivTag.attr("description", catOption.displayDescription);
+            }
+
+
+          }
+
+
+          // Translate Indicators
+          var indicators = response.indicators;
+          for (var i in indicators) {
+            var indicator = indicators[i];
+            // Translation for NAME of Indicator
+            var indicatorDivTag = me.tableTag.find("[keyword='" + me.INDICATOR_KEY + ":" + indicator.id + "']");
+            indicatorDivTag.html(indicator.displayName);
+
+            // Translation for DESCRIPTION of Indicator
+            var descriptionDivTag = indicatorDivTag.closest("div").find(".cta_dg");
+            if (descriptionDivTag.length > 0 && indicator.displayDescription != undefined) {
+              descriptionDivTag.attr("description", indicator.displayDescription);
+            }
+          }
+
+
+          me.loadedDataSetElementList = true;
+          me.afterLoadedTranslationData();
+
+        });
+
+      }
+
+      me.translateOptionSetList = function () {
+        var url = me.QUERY_URL_TERMS;
+        me.loadMetadata(url, function (response) {
+
+          var options = response.options;
+          for (var j in options) {
+            var option = options[j];
+            var value = option.displayName;
+            me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']").html(value);
+            me.tableTag.find("[keyword-data='" + me.OPTION_KEY + ":" + option.code + "']").attr("keyword-data", value);
+          }
+
+          me.loadedOptionSetList = true;
+          me.afterLoadedTranslationData();
+        });
+      }
+
+      me.afterLoadedTranslationData = function () {
+        if (me.loadedDataSetElementList && me.loadedOptionSetList) {
+
+          me.exeFunc();
+        }
+      }
+
+      me.loadMetadata = function (url, exeFunc) {
+        $.ajax({
+          type: "GET"
+          , url: url
+          , contentType: "application/json;charset=utf-8"
+          , beforeSend: function (xhr) {
+            //me.hideReportTag();
+          }
+          , success: function (response) {
+            exeFunc(response);
+          }
+        });
+
+      }
+
+
+      // ----------------------------------------------------------------------------------------------
+      // init
+
+      me.init();
+
+    }
+
+  });
 
 </script>
