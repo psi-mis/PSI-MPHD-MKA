@@ -1252,22 +1252,22 @@
 //TAB: 2 ->G1
 .cont-tb2g1 {
     display: grid;
-    grid-template-columns: 1fr auto auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "a0 b0 c0 d0 e0"
-    "a1 b1 c1 d1 e1"
-    "a2 b2 c2 d2 e2"
-    "a3 b3 c3 d3 e3"
-    "a4 b4 c4 d4 e4"
-    "a5 b5 c5 d5 e5"
-    "a6 b6 c6 d6 e6"
-    "a7 b7 c7 d7 e7"
-    "a8 b8 c8 d8 e8"
-    "a9 b9 c9 d9 e9"
-    "a10 b10 c10 d10 e10"; 
+        "a0 b0 c0 d0 e0 f0"
+        "a1 b1 c1 d1 e1 f1"
+        "a2 b2 c2 d2 e2 f2"
+        "a3 b3 c3 d3 e3 f3"
+        "a4 b4 c4 d4 e4 f4"
+        "a5 b5 c5 d5 e5 f5"
+        "a6 b6 c6 d6 e6 f6"
+        "a7 b7 c7 d7 e7 f7"
+        "a8 b8 c8 d8 e8 f8"
+        "a9 b9 c9 d9 e9 f9"
+        "a10 b10 c10 d10 e10 f10";
 
 
     .a0 {
@@ -1973,10 +1973,10 @@
         font-size: 1em;
         font-weight: 500;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-GT;
         padding: 8px;
         border-bottom: 2px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         border-top: 1px solid $MPHD_FM_TB2-L;
         min-width: 110px;
         text-align: center;
@@ -1987,10 +1987,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e1;
 
@@ -2004,10 +2004,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e2;
 
@@ -2021,10 +2021,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e3;
 
@@ -2038,10 +2038,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e4;
 
@@ -2055,10 +2055,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e5;
 
@@ -2072,10 +2072,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e6;
 
@@ -2089,10 +2089,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e7;
 
@@ -2106,10 +2106,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e8;
 
@@ -2123,10 +2123,10 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB2-T;
+        background-color: $MPHD_FM_TB2-RW;
         padding: 8px;
         border-bottom: 2px solid $MPHD_FM_TB2-L;
-        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e9;
 
@@ -2146,6 +2146,3130 @@
         border-right: 1px solid $MPHD_FM_TB2-L;
         min-width: 120px;
         grid-area: e10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: f0;
+    }
+
+    .f1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+//TAB: 2 ->G2
+.cont-tb2g2 {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 b0 c0 d0 e0 f0"
+        "a1 b1 c1 d1 e1 f1"
+        "a2 b2 c2 d2 e2 f2"
+        "a3 b3 c3 d3 e3 f3"
+        "a4 b4 c4 d4 e4 f4"
+        "a5 b5 c5 d5 e5 f5"
+        "a6 b6 c6 d6 e6 f6"
+        "a7 b7 c7 d7 e7 f7"
+        "a8 b8 c8 d8 e8 f8"
+        "a9 b9 c9 d9 e9 f9";
+
+
+    .a0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $colorT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a1;
+    }
+
+    .a2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a2;
+    }
+
+    .a3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a3;
+    }
+
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a4;
+    }
+
+    .a5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a5;
+    }
+
+    .a6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a6;
+    }
+
+    .a7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a7;
+    }
+
+    .a8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a8;
+    }
+
+    .a9 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: a9;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: b0;
+    }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b9 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: b9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: c0;
+    }
+
+    .c1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c9 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: c9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: d0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d9 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: e0;
+    }
+
+    .e1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e9 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: f0;
+    }
+
+    .f1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f9 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-left: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+//TAB: 3 ->G1
+.cont-tb3g1 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 b0"
+        "a1 b1"
+        "a2 b2"
+        "a3 b3";
+
+    .a0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB3-L;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: a1;
+    }
+
+    .a2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: a2;
+    }
+
+    .a3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: a3;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB3-L;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-right: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: b0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-right: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: b1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-right: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: b2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-right: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: b3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-right: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: a4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB3-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB3-L;
+        border-right: 1px solid $MPHD_FM_TB3-L;
+        border-left: 1px solid $MPHD_FM_TB3-L;
+        min-width: 120px;
+        grid-area: b4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+//TAB: 4 ->G1
+.cont-tb4g1 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 b0"
+        "a1 b1"
+        "a2 b2"
+        "a3 b3"
+        "a4 b4"
+        "a5 b5"
+        "a6 b6"
+        "a7 b7"
+        "a8 b8"
+        "a9 b9"
+        "a10 b10"
+        "a11 b11"
+        "a12 b12"
+        "a13 b13"
+        "a14 b14"
+        "a15 b15"
+        "a16 b16"
+        "a17 b17"
+        "a18 b18"
+        "a19 b19"
+        "a20 b20"
+        "a21 b21";
+
+    .a0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a1;
+    }
+
+    .a2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a2;
+    }
+
+    .a3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a3;
+    }
+
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a4;
+    }
+
+    .a5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a5;
+    }
+
+    .a6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a6;
+    }
+
+    .a7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a7;
+    }
+
+    .a8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a8;
+    }
+
+    .a9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a9;
+    }
+
+    .a10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a10;
+    }
+
+    .a11 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a11;
+    }
+
+    .a12 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a12;
+    }
+
+    .a13{
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a13;
+    }
+
+    .a14 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a14;
+    }
+
+    .a15 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a15;
+    }
+
+    .a16 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a16;
+    }
+
+    .a17 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a17;
+    }
+
+    .a18 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a18;
+    }
+
+    .a19 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a19;
+    }
+
+    .a20 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a20;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b11 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b11;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b12 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b12;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b13{
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b13;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b14 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b14;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b15 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b15;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b16 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b16;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b17 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b17;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b18 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b18;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b19 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b19;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b20 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b20;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+}
+
+//TAB: 4 ->G2
+.cont-tb4g2 {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 b0 c0 d0 e0 f0"
+        "a1 b1 c1 d1 e1 f1"
+        "a2 b2 c2 d2 e2 f2"
+        "a3 b3 c3 d3 e3 f3"
+        "a4 b4 c4 d4 e4 f4"
+        "a5 b5 c5 d5 e5 f5"
+        "a6 b6 c6 d6 e6 f6"
+        "a7 b7 c7 d7 e7 f7"
+        "a8 b8 c8 d8 e8 f8"
+        "a9 b9 c9 d9 e9 f9"
+        "a10 b10 c10 d10 e10 f10";
+
+
+    .a0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $colorT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a1;
+    }
+
+    .a2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a2;
+    }
+
+    .a3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a3;
+    }
+
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a4;
+    }
+
+    .a5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a5;
+    }
+
+    .a6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a6;
+    }
+
+    .a7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a7;
+    }
+
+    .a8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a8;
+    }
+
+    .a9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a9;
+    }
+
+    .a10 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-left: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: a10;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: b0;
+    }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: b10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: c0;
+    }
+
+    .c1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 1px solid $MPHD_FM_TB4-L;
+        min-width: 120px;
+        grid-area: c10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB4-L;
+        border-right: 2px solid $MPHD_FM_TB4-L;
+        border-top: 1px solid $MPHD_FM_TB4-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: d0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB4-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB4-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: d10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-GT;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: e0;
+    }
+
+    .e1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-RW;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 2px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .e10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: e10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f0 {
+        font-size: 1em;
+        font-weight: 500;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        border-top: 1px solid $MPHD_FM_TB2-L;
+        min-width: 110px;
+        text-align: center;
+        grid-area: f0;
+    }
+
+    .f1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 2px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB2-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB2-L;
+        border-right: 1px solid $MPHD_FM_TB2-L;
+        min-width: 120px;
+        grid-area: f10;
 
         input {
             max-width: 104px;

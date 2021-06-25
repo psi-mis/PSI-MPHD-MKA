@@ -1,40 +1,51 @@
 $(document).ready(function () {
 	//MPHD_Facility_Monthly
-	
-		$('.cta_dg').click(function (e) {
-			var title = $(this).parent().text();
-			var title_box = title.substring(0, title.length-4)
-	
-			console.log('title1: ' + title_box);
-	
-			$('.title').html(title_box);
-			$('.dialog').css({
-				'display': 'inline-block'
-			})
-		});
-	
-		$('.cta').click(function (e) {
-			$('.dialog').css({
-				'display': 'none'
-			})
-		});
-	
+
+	$('.cta_dg').click(function (e) {
+		var title = $(this).parent().text();
+		var title_box = title.substring(0, title.length - 4)
+
+		console.log('title1: ' + title_box);
+
+		$('.title').html(title_box);
+		$('.dialog').css({
+			'display': 'inline-block'
+		})
+	});
+
+	$('.cta').click(function (e) {
+		$('.dialog').css({
+			'display': 'none'
+		})
+	});
+
 	///////////////////////////////////////////
 
-	$('ul.listitems li').click(function (e) {
+	$('.custom_tab li').click(function (e) {
 		tab_selected = $(this).find('a').attr('href');
 		switch (tab_selected) {
 			case '#CHTab':
+				$('.custom_tab').css({
+					'border': '1px solid #d6e5ff',
+					'background': '#e7efff'
+				});
 				break;
 			case '#FPTab':
+				$('.custom_tab').css({
+					'border': '1px solid #ffd5dc',
+					'background': '#ffe0e5'
+				});
 				break;
 			case '#IMMTab':
+				$('.custom_tab').css({
+					'border': '1px solid #C6EFCE',
+					'background': '#ecfaef'
+				});
 				break;
 			case '#MN':
 				break;
 		}
 	});
-
 
 });
 
@@ -46,9 +57,9 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 		$("#loaderDiv").show();
 
 		//new MPHDTranslation(function () {
-            $("#loaderDiv").hide();
-            $("#MPHDCustomForm_Content").show();
-        //});
+		$("#loaderDiv").hide();
+		$("#MPHDCustomForm_Content").show();
+		//});
 	}
 
 	// ============================================================================================================
