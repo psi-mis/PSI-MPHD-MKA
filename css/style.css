@@ -85,71 +85,6 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.dialog {
-  position: fixed;
-  top: 45%;
-  left: 45%;
-  display: none;
-  width: 300px;
-  height: auto;
-  vertical-align: top;
-  background-color: #fff;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  box-sizing: border-box;
-  padding: 16px;
-  z-index: 999;
-}
-.dialog .content {
-  height: auto;
-  font-size: 0.9em;
-  box-sizing: border-box;
-}
-.dialog .content .nav_dg {
-  width: 100%;
-  min-height: 40px;
-  box-sizing: border-box;
-}
-.dialog .content .nav_dg .title {
-  float: left;
-  font-size: 1.3em;
-  height: auto;
-  width: calc(100% - 32px);
-  margin-bottom: 8px;
-  box-sizing: border-box;
-}
-.dialog .content .nav_dg .cta {
-  float: left;
-  height: 36px;
-  font-size: 1.3em;
-  margin-left: 8px;
-  width: 24px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-.dialog .content .descriptionInfo {
-  clear: both;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
-.dialog .content .button {
-  width: 90px;
-  float: right;
-}
-
-/* Misc */
-.center {
-  text-align: center;
-}
-
-.label {
-  padding: 0 16px;
-}
-
-.label-blue {
-  color: #4285f4;
-}
-
 .cont-tb1g1_2 {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1392,7 +1327,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4";
+  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3";
   padding: 8px 0 42px 0;
 }
 .cont-tb1g7 .a0 {
@@ -1438,18 +1373,6 @@
   border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a3;
-}
-.cont-tb1g7 .a4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a4;
 }
 .cont-tb1g7 .b0 {
   font-size: 1em;
@@ -1505,21 +1428,6 @@
   grid-area: b3;
 }
 .cont-tb1g7 .b3 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb1g7 .b4 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b4;
-}
-.cont-tb1g7 .b4 input {
   max-width: 104px;
   text-align: right;
 }
@@ -6009,13 +5917,13 @@
 }
 .cont-tb4g9 .a8 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
+  min-width: 120px;
   min-width: 120px;
   grid-area: a8;
 }
@@ -6139,13 +6047,12 @@
 }
 .cont-tb4g9 .b8 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: b8;
 }
@@ -6273,13 +6180,13 @@
 }
 .cont-tb4g9 .c8 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
+  min-width: 120px;
   grid-area: c8;
 }
 .cont-tb4g9 .c8 input {
@@ -6410,13 +6317,12 @@
 }
 .cont-tb4g9 .d8 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: d8;
 }
@@ -6544,13 +6450,12 @@
 }
 .cont-tb4g9 .e8 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: e8;
 }
@@ -6734,10 +6639,6 @@ input {
   background: #ffffff;
   border-radius: 0px;
   box-shadow: inset 2px 10px 12px #f0f0f0;
-}
-
-.cta_dg {
-  cursor: pointer;
 }
 
 .totals input {

@@ -1,25 +1,6 @@
 $(document).ready(function () {
 	//MPHD_Facility_Monthly
 
-	$('.cta_dg').click(function (e) {
-		var title = $(this).parent().text();
-		var title_box = title.substring(0, title.length - 4)
-
-		console.log('title1: ' + title_box);
-
-		$('.title').html(title_box);
-		$('.dialog').css({
-			'display': 'inline-block'
-		})
-	});
-
-	$('.cta').click(function (e) {
-		$('.dialog').css({
-			'display': 'none'
-		})
-	});
-
-	///////////////////////////////////////////
 
 	$('.custom_tab li').click(function (e) {
 		tab_selected = $(this).find('a').attr('href');
