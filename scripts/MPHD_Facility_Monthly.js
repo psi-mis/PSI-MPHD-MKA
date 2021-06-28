@@ -24,28 +24,40 @@ $(document).ready(function () {
 	$('.custom_tab li').click(function (e) {
 		tab_selected = $(this).find('a').attr('href');
 		switch (tab_selected) {
-			case '#CHTab':
-				$('.custom_tab').css({
-					'border': '1px solid #d6e5ff',
-					'background': '#e7efff'
-				});
-				break;
-			case '#FPTab':
-				$('.custom_tab').css({
-					'border': '1px solid #ffd5dc',
-					'background': '#ffe0e5'
-				});
-				break;
-			case '#IMMTab':
-				$('.custom_tab').css({
-					'border': '1px solid #C6EFCE',
-					'background': '#ecfaef'
-				});
-				break;
-			case '#MN':
-				break;
+		  case '#CHTab':
+			/*
+			  $('.custom_tab').css({
+				'border': '1px solid #d6e5ff',
+				'background': '#e7efff'
+			  });
+			  */
+			break;
+		  case '#FPTab':
+			/*
+			  $('.custom_tab').css({
+				'border': '1px solid #ffd5dc',
+				'background': '#ffe0e5'
+			  });
+			  */
+			break;
+		  case '#IMMTab':
+			/*
+			  $('.custom_tab').css({
+				'border': '1px solid #C6EFCE',
+				'background': '#ecfaef'
+			  });
+			  */
+			break;
+		  case '#MN':
+			/*
+			  $('.custom_tab').css({
+				'border': '1px solid #f8cbad',
+				'background': '#fcdcc8'
+			  });
+			  */
+			break;
 		}
-	});
+	  });
 
 });
 
