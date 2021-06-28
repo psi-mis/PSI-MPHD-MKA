@@ -10,6 +10,7 @@
         "a1 b1 c1 d1 e1"
         "a2 b2 c2 d2 e2"
         "a3 b3 c3 d3 e3";
+    padding: 8px 0 42px 0;
 
 
     .a0 {
@@ -348,6 +349,7 @@
         "a1 b1 c1 d1 e1"
         "a2 b2 c2 d2 e2"
         "a3 b3 c3 d3 e3";
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
@@ -676,7 +678,7 @@
     grid-template-areas:
         "a0 b0 c0 d0 e0"
         "a1 b1 c1 d1 e1";
-
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
@@ -847,7 +849,7 @@
         "a3 b3 c3 d3 e3"
         "a4 b4 c4 d4 e4"
         "a5 b5 c5 d5 e5";
-
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
@@ -1337,9 +1339,20 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "a0 b0 c0 d0 e0";
+        "a0 b0"
+        "a1 b1";
+    padding: 8px 0 42px 0;
 
     .a0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        padding: 8px;
+        min-width: 120px;
+        grid-area: a0;
+    }
+
+    .a1 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
@@ -1349,10 +1362,24 @@
         border-right: 1px solid $MPHD_FM_TB1-L;
         border-left: 1px solid $MPHD_FM_TB1-L;
         min-width: 120px;
-        grid-area: a0;
+        grid-area: a1;
     }
 
     .b0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        padding: 8px;
+        min-width: 120px;
+        grid-area: b0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b1 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
@@ -1361,7 +1388,7 @@
         border-bottom: 1px solid $MPHD_FM_TB1-L;
         border-right: 1px solid $MPHD_FM_TB1-L;
         min-width: 120px;
-        grid-area: b0;
+        grid-area: b1;
 
         input {
             max-width: 104px;
@@ -1373,7 +1400,7 @@
 //TAB: 1 ->G6
 .cont-tb1g7 {
     display: grid;
-    grid-template-columns: 1fr auto ;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -1381,17 +1408,15 @@
         "a0 b0"
         "a1 b1"
         "a2 b2"
-        "a3 b3";
+        "a3 b3"
+        "a4 b4";
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB1-RW;
         padding: 8px;
-        border-bottom: 1px solid $MPHD_FM_TB1-L;
-        border-right: 1px solid $MPHD_FM_TB1-L;
-        border-left: 1px solid $MPHD_FM_TB1-L;
         min-width: 120px;
         grid-area: a0;
     }
@@ -1426,7 +1451,7 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB1-T;
+        background-color: $MPHD_FM_TB1-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB1-L;
         border-right: 1px solid $MPHD_FM_TB1-L;
@@ -1435,14 +1460,24 @@
         grid-area: a3;
     }
 
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB1-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB1-L;
+        border-right: 1px solid $MPHD_FM_TB1-L;
+        border-left: 1px solid $MPHD_FM_TB1-L;
+        min-width: 120px;
+        grid-area: a4;
+    }
+
     .b0 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB1-RW;
         padding: 8px;
-        border-bottom: 1px solid $MPHD_FM_TB1-L;
-        border-right: 1px solid $MPHD_FM_TB1-L;
         min-width: 120px;
         grid-area: b0;
 
@@ -1490,12 +1525,29 @@
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB1-T;
+        background-color: $MPHD_FM_TB1-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB1-L;
         border-right: 1px solid $MPHD_FM_TB1-L;
         min-width: 120px;
         grid-area: b3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $MPHD_FM_TB1-T;
+        padding: 8px;
+        border-bottom: 1px solid $MPHD_FM_TB1-L;
+        border-right: 1px solid $MPHD_FM_TB1-L;
+        min-width: 120px;
+        grid-area: b4;
 
         input {
             max-width: 104px;
@@ -1516,6 +1568,7 @@
     grid-template-areas:
         "a0 b0 c0 d0 e0 f0"
         "a1 b1 c1 d1 e1 f1";
+    padding: 8px 0 42px 0;
 
 
     .a0 {
@@ -1722,6 +1775,7 @@
         "a7 b7 c7 d7 e7 f7"
         "a8 b8 c8 d8 e8 f8"
         "a9 b9 c9 d9 e9 f9";
+    padding: 8px 0 42px 0;
 
 
     .a0 {
@@ -2712,7 +2766,7 @@
         "a7 b7 c7 d7 e7 f7"
         "a8 b8 c8 d8 e8 f8"
         "a9 b9 c9 d9 e9 f9";
-
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
@@ -3706,7 +3760,7 @@
         "a6 b6 c6 d6 e6 f6"
         "a7 b7 c7 d7 e7 f7"
         "a8 b8 c8 d8 e8 f8";
-
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
@@ -4598,16 +4652,13 @@
         "a0 b0"
         "a1 b1"
         "a2 b2";
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
-        border-top: 1px solid $MPHD_FM_TB3-L;
-        border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: a0;
     }
@@ -4626,32 +4677,21 @@
 
     .a2 {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-T;
+        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-right: 1px solid $MPHD_FM_TB3-L;
         border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: a2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
     }
 
     .b0 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
-        border-top: 1px solid $MPHD_FM_TB3-L;
-        border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-right: 1px solid $MPHD_FM_TB3-L;
-        border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: b0;
 
@@ -4681,12 +4721,11 @@
 
     .b2 {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-T;
+        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-right: 1px solid $MPHD_FM_TB3-L;
         border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: b2;
@@ -4709,16 +4748,13 @@
         "a0 b0"
         "a1 b1"
         "a2 b2";
+    padding: 8px 0 42px 0;
 
     .a0 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
-        border-top: 1px solid $MPHD_FM_TB3-L;
-        border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: a0;
     }
@@ -4737,32 +4773,21 @@
 
     .a2 {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-T;
+        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-right: 1px solid $MPHD_FM_TB3-L;
         border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: a2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
     }
 
     .b0 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
-        border-top: 1px solid $MPHD_FM_TB3-L;
-        border-bottom: 1px solid $MPHD_FM_TB3-L;
-        border-right: 1px solid $MPHD_FM_TB3-L;
-        border-left: 1px solid $MPHD_FM_TB3-L;
         min-width: 120px;
         grid-area: b0;
 
@@ -4792,9 +4817,9 @@
 
     .b2 {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
         color: $color2;
-        background-color: $MPHD_FM_TB3-T;
+        background-color: $MPHD_FM_TB3-RW;
         padding: 8px;
         border-bottom: 1px solid $MPHD_FM_TB3-L;
         border-right: 1px solid $MPHD_FM_TB3-L;
@@ -5068,7 +5093,7 @@
         }
     }
 
-    .b13{
+    .b13 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
@@ -5414,7 +5439,7 @@
         grid-area: a12;
     }
 
-    .a13{
+    .a13 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
@@ -5752,7 +5777,7 @@
         }
     }
 
-    .b13{
+    .b13 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;

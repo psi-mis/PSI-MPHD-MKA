@@ -5,12 +5,6 @@
   font-size: 2rem;
 }
 
-.ty_h2 {
-  padding: 50px 0 8px 0;
-  font-size: 1.3rem;
-  color: #333333;
-}
-
 .ty_h3 {
   font-size: 1.2rem;
   color: #0072B2;
@@ -163,6 +157,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3";
+  padding: 8px 0 42px 0;
 }
 .cont-tb1g1_2 .a0 {
   font-size: 1em;
@@ -463,6 +458,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3";
+  padding: 8px 0 42px 0;
 }
 .cont-tb1g3 .a0 {
   font-size: 1em;
@@ -754,6 +750,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1";
+  padding: 8px 0 42px 0;
 }
 .cont-tb1g4 .a0 {
   font-size: 1em;
@@ -902,6 +899,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3" "a4 b4 c4 d4 e4" "a5 b5 c5 d5 e5";
+  padding: 8px 0 42px 0;
 }
 .cont-tb1g5 .a0 {
   font-size: 1em;
@@ -1337,9 +1335,18 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0";
+  grid-template-areas: "a0 b0" "a1 b1";
+  padding: 8px 0 42px 0;
 }
 .cont-tb1g6 .a0 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  min-width: 120px;
+  grid-area: a0;
+}
+.cont-tb1g6 .a1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1349,9 +1356,21 @@
   border-right: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 120px;
-  grid-area: a0;
+  grid-area: a1;
 }
 .cont-tb1g6 .b0 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  min-width: 120px;
+  grid-area: b0;
+}
+.cont-tb1g6 .b0 input {
+  max-width: 104px;
+  text-align: right;
+}
+.cont-tb1g6 .b1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1360,9 +1379,9 @@
   border-bottom: 1px solid #f7faff;
   border-right: 1px solid #f7faff;
   min-width: 120px;
-  grid-area: b0;
+  grid-area: b1;
 }
-.cont-tb1g6 .b0 input {
+.cont-tb1g6 .b1 input {
   max-width: 104px;
   text-align: right;
 }
@@ -1373,17 +1392,14 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3";
+  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4";
+  padding: 8px 0 42px 0;
 }
 .cont-tb1g7 .a0 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #eff5ff;
   padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a0;
 }
@@ -1415,7 +1431,7 @@
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
   border-right: 1px solid #f7faff;
@@ -1423,14 +1439,23 @@
   min-width: 120px;
   grid-area: a3;
 }
+.cont-tb1g7 .a4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 120px;
+  grid-area: a4;
+}
 .cont-tb1g7 .b0 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #eff5ff;
   padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
   min-width: 120px;
   grid-area: b0;
 }
@@ -1472,7 +1497,7 @@
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #d6e5ff;
+  background-color: #eff5ff;
   padding: 8px;
   border-bottom: 1px solid #f7faff;
   border-right: 1px solid #f7faff;
@@ -1480,6 +1505,21 @@
   grid-area: b3;
 }
 .cont-tb1g7 .b3 input {
+  max-width: 104px;
+  text-align: right;
+}
+.cont-tb1g7 .b4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  grid-area: b4;
+}
+.cont-tb1g7 .b4 input {
   max-width: 104px;
   text-align: right;
 }
@@ -1491,6 +1531,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1";
+  padding: 8px 0 42px 0;
 }
 .cont-tb2g1 .a0 {
   font-size: 1em;
@@ -1667,6 +1708,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8" "a9 b9 c9 d9 e9 f9";
+  padding: 8px 0 42px 0;
 }
 .cont-tb2g2 .a0 {
   font-size: 1em;
@@ -2539,6 +2581,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8" "a9 b9 c9 d9 e9 f9";
+  padding: 8px 0 42px 0;
 }
 .cont-tb2g3 .a0 {
   font-size: 1em;
@@ -3416,6 +3459,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8";
+  padding: 8px 0 42px 0;
 }
 .cont-tb2g4 .a0 {
   font-size: 1em;
@@ -4206,16 +4250,13 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0" "a1 b1" "a2 b2";
+  padding: 8px 0 42px 0;
 }
 .cont-tb3g1 .a0 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #ecfaef;
   padding: 8px;
-  border-top: 1px solid #f6fcf7;
-  border-bottom: 1px solid #f6fcf7;
-  border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: a0;
 }
@@ -4232,30 +4273,20 @@
 }
 .cont-tb3g1 .a2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #C6EFCE;
+  background-color: #ecfaef;
   padding: 8px;
   border-bottom: 1px solid #f6fcf7;
-  border-right: 1px solid #f6fcf7;
   border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: a2;
-}
-.cont-tb3g1 .a2 input {
-  max-width: 104px;
-  text-align: right;
 }
 .cont-tb3g1 .b0 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #ecfaef;
   padding: 8px;
-  border-top: 1px solid #f6fcf7;
-  border-bottom: 1px solid #f6fcf7;
-  border-right: 1px solid #f6fcf7;
-  border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: b0;
 }
@@ -4281,12 +4312,11 @@
 }
 .cont-tb3g1 .b2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #C6EFCE;
+  background-color: #ecfaef;
   padding: 8px;
   border-bottom: 1px solid #f6fcf7;
-  border-right: 1px solid #f6fcf7;
   border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: b2;
@@ -4303,16 +4333,13 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "a0 b0" "a1 b1" "a2 b2";
+  padding: 8px 0 42px 0;
 }
 .cont-tb3g2 .a0 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #ecfaef;
   padding: 8px;
-  border-top: 1px solid #f6fcf7;
-  border-bottom: 1px solid #f6fcf7;
-  border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: a0;
 }
@@ -4329,30 +4356,20 @@
 }
 .cont-tb3g2 .a2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #C6EFCE;
+  background-color: #ecfaef;
   padding: 8px;
   border-bottom: 1px solid #f6fcf7;
-  border-right: 1px solid #f6fcf7;
   border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: a2;
-}
-.cont-tb3g2 .a2 input {
-  max-width: 104px;
-  text-align: right;
 }
 .cont-tb3g2 .b0 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
-  background-color: #ecfaef;
   padding: 8px;
-  border-top: 1px solid #f6fcf7;
-  border-bottom: 1px solid #f6fcf7;
-  border-right: 1px solid #f6fcf7;
-  border-left: 1px solid #f6fcf7;
   min-width: 120px;
   grid-area: b0;
 }
@@ -4378,9 +4395,9 @@
 }
 .cont-tb3g2 .b2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
-  background-color: #C6EFCE;
+  background-color: #ecfaef;
   padding: 8px;
   border-bottom: 1px solid #f6fcf7;
   border-right: 1px solid #f6fcf7;
@@ -6356,6 +6373,12 @@ input {
 
 .totals input {
   background-color: #DCDCDC !important;
+}
+
+i, rem {
+  color: #8a7474;
+  font-weight: 100;
+  font-size: 8;
 }
 
 /*# sourceMappingURL=style.css.map */
