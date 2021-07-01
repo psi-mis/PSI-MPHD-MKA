@@ -9,31 +9,12 @@
 'components/_tabs.scss';
 
 * {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
   box-sizing: border-box;
 }
 
 input {
   box-sizing: border-box;
 }
-
-::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
- }
- ::-webkit-scrollbar-thumb {
-  background: rgb(197, 197, 197);
-  border-radius: 0px;
- }
- ::-webkit-scrollbar-thumb:hover{
-  background: #007F93;
- }
- ::-webkit-scrollbar-track{
-  background: #ffffff;
-  border-radius: 0px;
-  box-shadow: inset 2px 10px 12px #f0f0f0;
- }
 
  .totals {
    input{
@@ -43,7 +24,7 @@ input {
 
  i, rem {
    color:rgb(138, 116, 116);
-   font-weight: 100;
-   font-size: 8;
+   font-weight: 300;
+   font-size: 0.5em;
  }
 
