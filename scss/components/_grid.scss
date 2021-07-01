@@ -1,5 +1,6 @@
 //TAB: 1 ->G1/2
 .cont-tb1g1_2 {
+    clear: both;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto;
@@ -1529,6 +1530,7 @@
 
 //TAB: 2 ->G1
 .cont-tb2g1 {
+    clear: both;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto;
@@ -3813,6 +3815,7 @@
 
 //TAB: 3 ->G1
 .cont-tb3g1 {
+    clear: both;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto;
@@ -4006,6 +4009,7 @@
 
 //TAB: 4 ->G1
 .cont-tb4g1 {
+    clear: both;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto;

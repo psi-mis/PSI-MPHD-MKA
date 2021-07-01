@@ -8,14 +8,6 @@
 'components/_grid.scss',
 'components/_tabs.scss';
 
-* {
-  box-sizing: border-box;
-}
-
-input {
-  box-sizing: border-box;
-}
-
  .totals {
    input{
      background-color: #DCDCDC!important;
@@ -28,4 +20,11 @@ input {
    font-size: 0.5em;
  }
 
-.img_footer {float: right;}
+.img_logo {
+  width: 100%;
+  height:max-content;
+  box-sizing: border-box;
+  img{
+    float: left;
+  }
+}
