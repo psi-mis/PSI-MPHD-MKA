@@ -1,43 +1,88 @@
 $(document).ready(function () {
-	//MPHD_Facility_Monthly
 
+	$(document).ready(function () {
 
-	$('.custom_tab li').click(function (e) {
-		tab_selected = $(this).find('a').attr('href');
-		switch (tab_selected) {
-		  case '#CHTab':
-			/*
-			  $('.custom_tab').css({
-				'border': '1px solid #d6e5ff',
-				'background': '#e7efff'
+		$('.custom_tab li').click(function (e) {
+		  tab_selected = $(this).find('a').attr('href');
+		  switch (tab_selected) {
+			case '#CHTab':
+			  $('#MN').css({
+				'display': 'none'
 			  });
-			  */
-			break;
-		  case '#FPTab':
-			/*
-			  $('.custom_tab').css({
-				'border': '1px solid #ffd5dc',
-				'background': '#ffe0e5'
+			  $(this).attr('tabindex', '0');
+			  $(this).addClass('ui-state-hover');
+			  $(this).addClass('ui-tabs-active');
+			  $(this).addClass('ui-state-active');
+			  $(this).attr('aria-selected', 'true');
+			  $(this).attr('aria-expanded', 'true');
+			  $('#CHTab').attr('aria-hidden', 'false');
+			  $('#CHTab').css({
+				'display': 'block'
 			  });
-			  */
-			break;
-		  case '#IMMTab':
-			/*
-			  $('.custom_tab').css({
-				'border': '1px solid #C6EFCE',
-				'background': '#ecfaef'
+			  break;
+			case '#FPTab':
+			  $('#MN').css({
+				'display': 'none'
 			  });
-			  */
-			break;
-		  case '#MN':
-			/*
-			  $('.custom_tab').css({
-				'border': '1px solid #f8cbad',
-				'background': '#fcdcc8'
+			  $(this).attr('tabindex', '0');
+			  $(this).addClass('ui-state-hover');
+			  $(this).addClass('ui-tabs-active');
+			  $(this).addClass('ui-state-active');
+			  $(this).attr('aria-selected', 'true');
+			  $(this).attr('aria-expanded', 'true');
+			  $('#FPTab').attr('aria-hidden', 'false');
+			  $('#FPTab').css({
+				'display': 'block'
 			  });
-			  */
-			break;
-		}
+			  break;
+			case '#IMMTab':
+			  $('#MN').css({
+				'display': 'none'
+			  });
+			  $(this).attr('tabindex', '0');
+			  $(this).addClass('ui-state-hover');
+			  $(this).addClass('ui-tabs-active');
+			  $(this).addClass('ui-state-active');
+			  $(this).attr('aria-selected', 'true');
+			  $(this).attr('aria-expanded', 'true');
+			  $('#IMMTab').attr('aria-hidden', 'false');
+			  $('#IMMTab').css({
+				'display': 'block'
+			  });
+			  break;
+		  }
+		});
+	
+		$('#hide_tab').click(function (e) {
+		  $('.custom_tab li').attr('tabindex', '-1');
+		  $('.custom_tab li').attr('aria-selected', 'false');
+		  $('.custom_tab li').attr('aria-expanded', 'false');
+		  $('.custom_tab li').removeClass('ui-state-hover');
+		  $('.custom_tab li').removeClass('ui-tabs-active');
+		  $('.custom_tab li').removeClass('ui-state-active');
+	
+		  $('#CHTab').css({
+			'display': 'none'
+		  });
+		  $('#CHTab').attr('aria-hidden', 'true');
+	
+		  $('#FPTab').css({
+			'display': 'none'
+		  });
+		  $('#FPTab').attr('aria-hidden', 'true');
+	
+		  $('#IMMTab').css({
+			'display': 'none'
+		  });
+	
+		  $('#MN').css({
+			'display': 'block'
+		  });
+		  $('#MN').attr('aria-hidden', 'true');
+	
+		});
+	
+	
 	  });
 
 });
@@ -49,10 +94,10 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 		$("#MPHDCustomForm_Content").hide();
 		$("#loaderDiv").show();
 
-		//new MPHDTranslation(function () {
-		$("#loaderDiv").hide();
-		$("#MPHDCustomForm_Content").show();
-		//});
+		new MPHDTranslation(function () {
+			$("#loaderDiv").hide();
+			$("#MPHDCustomForm_Content").show();
+		});
 	}
 
 	// ============================================================================================================
@@ -80,7 +125,10 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 		// URLs
 
 		me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
+		console.log(me.PARAM_DATASET_ID);
+		console.log(me.optionSetTermId);
 
+		// me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription],categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
 		me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
 		me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId + ".json?fields=options[code,displayName]&paging=false";
 
@@ -104,7 +152,7 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 		// Supportive methods
 
 		me.translateDataSetElementList = function () {
-			var url = me.QUERY_URL_DATASET;
+			var url = encodeURI(me.QUERY_URL_DATASET);
 			url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
 
 			me.loadMetadata(url, function (response) {
@@ -180,7 +228,7 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 		}
 
 		me.translateOptionSetList = function () {
-			var url = me.QUERY_URL_TERMS;
+			var url = encodeURI(me.QUERY_URL_TERMS);
 			me.loadMetadata(url, function (response) {
 
 				var options = response.options;

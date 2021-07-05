@@ -6605,20 +6605,14 @@
   background: #d6e5ff;
   color: #ffffff;
   font-weight: bold;
-  /*
-  li{
-      a{
-          color: $color5!important;
-      }
-  }
-  */
 }
 
 .totals input {
   background-color: #DCDCDC !important;
 }
 
-i, rem {
+i,
+rem {
   color: #8a7474;
   font-weight: 300;
   font-size: 0.5em;
@@ -6631,6 +6625,16 @@ i, rem {
 }
 .img_logo img {
   float: left;
+}
+
+#hide_tab {
+  padding: 8px;
+  float: right;
+}
+#hide_tab a {
+  color: #f1f1f1f1;
+  text-decoration: none;
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=style.css.map */
