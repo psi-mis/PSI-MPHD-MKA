@@ -1,0 +1,54 @@
+// theme
+$color1: #00276F;
+$color2: #333333;
+$color3: #0072B2;
+$color4: #00A2E1;
+$color5: #B4C6E7;
+$color6: #8DD3D0;
+$color7: #8CD8ED;
+
+$colorT: transparent;
+
+$Default-GT : #e7efff;
+$Default-RW : #eff5ff;
+$Default-T : #d6e5ff;
+$Default-L : #f7faff;
+
+$MPHD_FM_TB2-GT: #ffe0e5;
+$MPHD_FM_TB2-RW: #ffeaed;
+$MPHD_FM_TB2-T: #ffd5dc;
+$MPHD_FM_TB2-L: #fff5f6;
+
+$MPHD_FM_TB3-GT: #d9f4de;
+$MPHD_FM_TB3-RW: #ecfaef;
+$MPHD_FM_TB3-T: #C6EFCE;
+$MPHD_FM_TB3-L: #f6fcf7;
+
+$MPHD_FM_TB4-GT: #fcdcc8;
+$MPHD_FM_TB4-RW: #feede3;
+$MPHD_FM_TB4-T: #f8cbad;
+$MPHD_FM_TB4-L: #fff6f1;
+
+//#C6EFCE
+
+$color_error: red;
+
+//Tables
+// Main Colors
+$primary: $color6;
+$success: $color7; 
+$gray: #ccc;
+$white: #FFFFFF;
+
+// talbe custom colors
+$defaultColor: black;
+$theadColor: $color2;
+$cellOddColor: $color4;
+$cellEvenColor: $success;
+
+// Border Options
+$cellBorderWidth: 1px;
+$borderSpacing: 1px;
+
+// Max width to change the display
+$MaxWidth: 630px;
