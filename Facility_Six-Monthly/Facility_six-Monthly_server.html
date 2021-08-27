@@ -1,0 +1,958 @@
+<style type="text/css">
+        @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+        .ty_h1 {
+                color: #333333;
+                font-size: 2rem;
+        }
+
+        .ty_h3 {
+                font-size: 1.2rem;
+                color: #0072B2;
+        }
+
+        .ty_h4 {
+                padding-top: 18px;
+                font-size: 1rem;
+                color: #0072B2;
+        }
+
+        .ta_left {
+                text-align: left !important;
+                font-weight: 400 !important;
+        }
+
+        .ta_left_b {
+                text-align: left !important;
+                font-weight: 600 !important;
+                color: #007F93;
+                border-top: 1px solid #007F93;
+                background-color: rgba(0, 0, 0, 0.089);
+        }
+
+        .ta_center {
+                text-align: center !important;
+        }
+
+        .ta_right {
+                text-align: right !important;
+                background-color: blueviolet !important;
+                max-width: 150px !important;
+        }
+
+        .text-overflow {
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+        }
+
+        .material-icons {
+                font-family: "Material Icons";
+                font-weight: normal;
+                font-style: normal;
+                font-size: 24px;
+                /* Preferred icon size */
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+                /* Support for IE. */
+                font-feature-settings: "liga";
+        }
+
+        .material-icons.md-dark {
+                color: rgba(0, 0, 0, 0.54);
+        }
+
+        .material-icons.md-dark.md-inactive {
+                color: rgba(0, 0, 0, 0.26);
+        }
+
+        .material-icons.md-light {
+                color: white;
+        }
+
+        .material-icons.md-light.md-inactive {
+                color: rgba(255, 255, 255, 0.3);
+        }
+
+        .tg1 {
+                clear: both;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                grid-template-rows: auto;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas: "a0 b0""a1 b1""a2 b2""a3 b3""a4 b4""a5 b5""a6 b6""a7 b7";
+                padding: 8px 0 42px 0;
+        }
+
+        .tg1 .a0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                padding: 8px;
+                min-width: 90px;
+                grid-area: a0;
+        }
+
+        .tg1 .a1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a1;
+        }
+
+        .tg1 .a2 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a2;
+        }
+
+        .tg1 .a3 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a3;
+        }
+
+        .tg1 .a4 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a4;
+        }
+
+        .tg1 .a5 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a5;
+        }
+
+        .tg1 .a6 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a6;
+        }
+
+        .tg1 .a7 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a7;
+        }
+
+        .tg1 .b0 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                padding: 8px;
+                min-width: 90px;
+                grid-area: b0;
+        }
+
+        .tg1 .b0 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b1;
+        }
+
+        .tg1 .b1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b2 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b2;
+        }
+
+        .tg1 .b2 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b3 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b3;
+        }
+
+        .tg1 .b3 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b4 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b4;
+        }
+
+        .tg1 .b4 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b5 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b5;
+        }
+
+        .tg1 .b5 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b6 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b6;
+        }
+
+        .tg1 .b6 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg1 .b7 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: b7;
+        }
+
+        .tg1 .b7 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg2 {
+                clear: both;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                grid-template-rows: auto;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas: "a0 b0 c0 d0 e0 f0""a1 b1 c1 d1 e1 f1";
+                padding: 8px 0 42px 0;
+        }
+
+        .tg2 .a0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: transparent;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a0;
+        }
+
+        .tg2 .a1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a1;
+        }
+
+        .tg2 .b0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #e7efff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: center;
+                grid-area: b0;
+        }
+
+        .tg2 .b1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: left;
+                grid-area: b1;
+        }
+
+        .tg2 .b1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg2 .c0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #e7efff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: center;
+                grid-area: c0;
+        }
+
+        .tg2 .c1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: left;
+                grid-area: c1;
+        }
+
+        .tg2 .c1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg2 .d0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #e7efff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 2px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: center;
+                grid-area: d0;
+        }
+
+        .tg2 .d1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 2px solid #f7faff;
+                min-width: 90px;
+                text-align: left;
+                grid-area: d1;
+        }
+
+        .tg2 .d1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg2 .e0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #e7efff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 2px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: center;
+                grid-area: e0;
+        }
+
+        .tg2 .e1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 2px solid #f7faff;
+                min-width: 90px;
+                text-align: left;
+                grid-area: e1;
+        }
+
+        .tg2 .e1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg2 .f0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #d6e5ff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: center;
+                grid-area: f0;
+        }
+
+        .tg2 .f1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #d6e5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: left;
+                grid-area: f1;
+        }
+
+        .tg2 .f1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg3 {
+                clear: both;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                grid-template-rows: auto;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas: "a0 b0""a1 b1""a2 b2""a3 b3""a4 b4""a5 b5""a6 b6";
+                padding: 8px 0 42px 0;
+        }
+
+        .tg3 .a0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: transparent;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a0;
+        }
+
+        .tg3 .a1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a1;
+        }
+
+        .tg3 .a2 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a2;
+        }
+
+        .tg3 .a3 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a3;
+        }
+
+        .tg3 .a4 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a4;
+        }
+
+        .tg3 .a5 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-left: 1px solid #f7faff;
+                min-width: 90px;
+                grid-area: a5;
+        }
+
+        .tg3 .a6 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #d6e5ff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 110px;
+                grid-area: a6;
+        }
+
+        .tg3 .b0 {
+                font-size: 1.1em !important;
+                font-weight: 800 !important;
+                color: #333333;
+                background-color: #e7efff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: center;
+                grid-area: b0;
+        }
+
+        .tg3 .b1 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: right;
+                grid-area: b1;
+        }
+
+        .tg3 .b1 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg3 .b2 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: right;
+                grid-area: b2;
+        }
+
+        .tg3 .b2 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg3 .b3 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: right;
+                grid-area: b3;
+        }
+
+        .tg3 .b3 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg3 .b4 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: right;
+                grid-area: b4;
+        }
+
+        .tg3 .b4 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg3 .b5 {
+                font-size: 1em;
+                font-weight: 400;
+                color: #333333;
+                background-color: #eff5ff;
+                padding: 8px;
+                border-bottom: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 90px;
+                text-align: right;
+                grid-area: b5;
+        }
+
+        .tg3 .b5 input {
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .tg3 .b6 {
+                font-size: 1.1em !important;
+                font-weight: 500 !important;
+                color: #333333;
+                background-color: #d6e5ff;
+                padding: 8px;
+                border-bottom: 2px solid #f7faff;
+                border-top: 1px solid #f7faff;
+                border-right: 1px solid #f7faff;
+                min-width: 110px;
+                text-align: right;
+        }
+
+        .tg3 .b6 input {
+                float: right;
+                max-width: 104px;
+                text-align: right;
+        }
+
+        .custom_tab {
+                border: 1px solid #d6e5ff;
+                background: #d6e5ff;
+                color: #ffffff;
+                font-weight: bold;
+        }
+
+        .totals input {
+                background-color: #DCDCDC !important;
+        }
+
+        i,
+        rem {
+                color: #8a7474;
+                font-weight: 300;
+                font-size: 0.5em;
+        }
+
+        .img_logo {
+                width: 100%;
+                height: max-content;
+                box-sizing: border-box;
+        }
+
+        .img_logo img {
+                float: left;
+        }
+
+        #hide_tab {
+                padding: 8px;
+                float: right;
+        }
+
+        #hide_tab a {
+                color: #f1f1f1f1;
+                text-decoration: none;
+                font-weight: 200;
+        }
+
+        /*# sourceMappingURL=main.css.map */
+</style>
+<div id="MPHDCustomForm">
+        <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+
+        <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+                <br />
+                <br />
+                <img src="../images/ajax-loader-circle.gif" /><br />
+                <br />
+                &nbsp;
+                <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+        </div>
+
+        <div id="MPHDCustomForm_Content">
+                <div class="img_logo"><img alt="usaid" height="120px"
+                                src="https://beckolsystem.com/momentum/momentum.png" /></div>
+
+                <div class="tg1">
+                        <div class="a0">MPHD Facility Six-monthly</div>
+
+                        <div class="a1">Imm.2_Estimated number of children less than 12 months of age in MOMENTUM
+                                supported areas</div>
+
+                        <div class="a2">Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported
+                                areas</div>
+
+                        <div class="a3">PWI 1.1 / X.Cut.6_PSI_Momentum Supervision suppoort received during the period
+                                (y/n)</div>
+
+                        <div class="a4">PWI 2.5_PSI_MPHD-supported facilities/outlets initiated or improved reporting
+                                into national HMIS (y/n)</div>
+
+                        <div class="a5">X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and
+                                outside of facilities)</div>
+
+                        <div class="a6">X.Cut.3_Total number of annual outpatient department visits* among
+                                MOMENTUM-supported facilities implementing QI</div>
+
+                        <div class="a7">X.Cut.3_Total number of people residing in the catchment areas for the
+                                MOMENTUM-supported facilities which are implementing QI</div>
+
+                        <div class="b0">&nbsp;</div>
+
+                        <div class="b1"><input id="o5ofu8ng6pZ-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - Imm.2_Estimated number of children less than 12 months of age in MOMENTUM supported areas"
+                                        value="[ MPHD - Imm.2_Estimated number of children less than 12 months of age in MOMENTUM supported areas ]" />
+                        </div>
+
+                        <div class="b2"><input id="PMysiLAYZKZ-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported areas"
+                                        value="[ MPHD - Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported areas ]" />
+                        </div>
+
+                        <div class="b3"><input id="SINMQ7EXz0x-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - PSI PWI 1.1 / X.Cut.6_PSI_Momentum Supervision suppoort received during the period (y/n)"
+                                        value="[ MPHD - PSI PWI 1.1 / X.Cut.6_PSI_Momentum Supervision suppoort received during the period (y/n) ]" />
+                        </div>
+
+                        <div class="b4"><input id="iZfas7VFeNB-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - PSI PWI 2.5_PSI_MPHD-supported facilities/outlets  initiated or improved reporting into national HMIS (y/n)"
+                                        value="[ MPHD - PSI PWI 2.5_PSI_MPHD-supported facilities/outlets  initiated or improved reporting into national HMIS (y/n) ]" />
+                        </div>
+
+                        <div class="b5"><input id="ngNzhyU3LMB-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities) "
+                                        value="[ MPHD - X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities)  ]" />
+                        </div>
+
+                        <div class="b6"><input id="iCMsCCYcgsy-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI"
+                                        value="[ MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI ]" />
+                        </div>
+
+                        <div class="b7"><input id="aB2GGd4PrEU-HllvX50cXC0-val" name="entryfield"
+                                        title="MPHD - X.Cut.3_Total number of people residing in the catchment areas for the MOMENTUM-supported facilities which are implementing QI"
+                                        value="[ MPHD - X.Cut.3_Total number of people residing in the catchment areas for the MOMENTUM-supported facilities which are implementing QI ]" />
+                        </div>
+                </div>
+
+                <div class="tg2">
+                        <div class="a0">MPHD - Age for facility</div>
+
+                        <div class="a1">Number of children diagnosed with diarrhea</div>
+
+                        <div class="b0">-20</div>
+
+                        <div class="b1"><input id="bKr06t6fkQo-vjZPre4Dzjf-val" name="entryfield"
+                                        title="MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age below 20"
+                                        value="[ MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age below 20 ]" />
+                        </div>
+
+                        <div class="c0">20-24</div>
+
+                        <div class="c1"><input id="bKr06t6fkQo-bip4Z81y6Od-val" name="entryfield"
+                                        title="MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age between 20-24"
+                                        value="[ MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age between 20-24 ]" />
+                        </div>
+
+                        <div class="d0">+25</div>
+
+                        <div class="d1"><input id="bKr06t6fkQo-x1FvtISW5xt-val" name="entryfield"
+                                        title="MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age more than 25"
+                                        value="[ MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age more than 25 ]" />
+                        </div>
+
+                        <div class="e0">Unknown</div>
+
+                        <div class="e1"><input id="bKr06t6fkQo-oQJiZGGYtPx-val" name="entryfield"
+                                        title="MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age not specified"
+                                        value="[ MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas Age not specified ]" />
+                        </div>
+
+                        <div class="f0">Totals</div>
+
+                        <div class="f1"><input dataelementid="bKr06t6fkQo" id="totalbKr06t6fkQo" name="total"
+                                        readonly="readonly"
+                                        title="MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas"
+                                        value="[ MPHD - MNH.5_Option D1: Estimated number of pregnant women in MOMENTUM supported facility catchment areas ]" />
+                        </div>
+                </div>
+
+                <div class="tg3">
+                        <div class="a0">MPHD - Type of Gender programming</div>
+
+                        <div class="b0">MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service
+                                provision</div>
+
+                        <div class="a1">Empowerment</div>
+
+                        <div class="b1"><input id="dbkK38teXGw-lXcGx74jYwB-val" name="entryfield"
+                                        title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Empowerment (or reproductive empowerment)"
+                                        value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Empowerment (or reproductive empowerment) ]" />
+                        </div>
+
+                        <div class="a2">Gender-BV</div>
+
+                        <div class="b2"><input id="dbkK38teXGw-V0eWeTr4iS0-val" name="entryfield"
+                                        title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Gender-based violence"
+                                        value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Gender-based violence ]" />
+                        </div>
+
+                        <div class="a3">Male engagement</div>
+
+                        <div class="b3"><input id="dbkK38teXGw-IyEEYnSY6vl-val" name="entryfield"
+                                        title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Male engagement"
+                                        value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Male engagement ]" />
+                        </div>
+
+                        <div class="a4">Maternity care</div>
+
+                        <div class="b4"><input id="dbkK38teXGw-bbPo5zgHCCE-val" name="entryfield"
+                                        title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Respectful maternity care"
+                                        value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Respectful maternity care ]" />
+                        </div>
+
+                        <div class="a5">Combination of 2 or more of the above</div>
+
+                        <div class="b5"><input id="dbkK38teXGw-Wpe6GEjWrLc-val" name="entryfield"
+                                        title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Combination of 2 or more of the above"
+                                        value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Combination of 2 or more of the above ]" />
+                        </div>
+
+                        <div class="a6">Totals</div>
+
+                        <div class="b6"><input dataelementid="dbkK38teXGw" id="totaldbkK38teXGw" name="total"
+                                        readonly="readonly"
+                                        title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision"
+                                        value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision ]" />
+                        </div>
+                </div>
+        </div>
+</div>
