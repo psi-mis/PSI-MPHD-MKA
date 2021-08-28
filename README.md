@@ -1,8 +1,9 @@
 # PSI-MPHD
 https://dev-mka.psi-mis.org
-## MPHD Facility Monthly
+## MPHD Facility Monthly => Completed
+Column partial totals are missing
 
-.- Faltan totales parciales de las columnas
+lost 3 data elements CH + Nut.1
+lost 1 total CH + Nut. 1
 
-.- ? data_elements 3 CH+Nut.1
-.- ? totals 1 CH+Nut.1
+## MPHD Facility Monthly => Completed
