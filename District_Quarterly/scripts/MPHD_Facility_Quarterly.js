@@ -74,7 +74,7 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 
     me.selectedDataSetIdTag = $("#selectedDataSetId");
 
-    me.optionSetTermId = "vYRqe6FShDo";
+    me.optionSetTermId = "jTOufdWNDu1";
 
     me.loadedDataSetElementList = false;
     me.loadedOptionSetList = false;

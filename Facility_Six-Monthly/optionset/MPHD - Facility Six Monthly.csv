@@ -1,0 +1,23 @@
+OptionSetName;OptionSetUID;OptionSetCode;OptionName;OptionUID;OptionCode
+;;;Unknown;;col_1
+;;;< 20;;col_2
+;;;20 - 24;;col_3
+;;;> 25;;col_4
+;;;Totals;;Totals
+;;;MPHD Facility Six-monthly;;T1Title_1
+;;;Imm.2 Estimated number of children less than 12 months of age in MOMENTUM supported areas;;T1Text_1
+;;;Imm.4 Estimated number of children 12-24 months of age in MOMENTUM supported areas;;T1Text_2
+;;;PWI 1.1 / X.Cut.6 PSI Momentum Supervision suppoort received during the period (y/n);;T1Text_3
+;;;PWI 2.5 PSI MPHD Supported facilities/outlets initiated or improved reporting into national HMIS (y/n);;T1Text_4
+;;;X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities);;T1Text_5
+;;;MOMENTUM Supported facilities implementing QI;;T2Title_1
+;;;X.Cut.3 Total number of annual outpatient department visits;;T2Text_1
+;;;X.Cut.3 Total number of people residing in the catchment areas;;T2Text_1
+;;;MPHD - Age for facility;;T3Title_1
+;;;Number of children diagnosed with diarrhea;;T3Text_1
+;;;MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision;;T4Title_1
+;;;Empowerment;;T4Text_1
+;;;Gender-BV;;T4Text_2
+;;;Male engagement;;T4Text_3
+;;;Maternity care;;T4Text_4
+;;;Combination of 2 or more of the above;;T4Text_5
