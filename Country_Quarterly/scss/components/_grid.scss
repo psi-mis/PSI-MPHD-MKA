@@ -1,0 +1,1253 @@
+.grid-1 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 118px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title title"
+        "r1 i1"
+        "r2 i2";
+    padding: 8px 0 42px 0;
+
+    .title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: title;
+    }
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .r2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r2;
+    }
+
+    .i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+.grid-2 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 118px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title title"
+        "r1 i1";
+    padding: 8px 0 42px 0;
+
+    .title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: title;
+    }
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+.grid-3 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 118px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title title"
+        "r1 i1"
+        "r2 i2"
+        "r3 i3"
+        "r4 i4"
+        "r5 i5"
+        "r6 i6"
+        "r7 i7"
+        "r8 i8"
+        "r9 i9"
+        "r10 i10"
+        "r11 i11";
+    padding: 8px 0 42px 0;
+
+    .title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: title;
+    }
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .r2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r2;
+    }
+
+    .r3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r3;
+    }
+
+    .r4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r4;
+    }
+
+    .r5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r5;
+    }
+
+    .r6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r6;
+    }
+
+    .r7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r7;
+    }
+
+    .r8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r8;
+    }
+
+    .r9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r9;
+    }
+
+    .r10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r10;
+    }
+
+    .r11 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r11;
+    }
+
+    .i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i11 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i11;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+.grid-4 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 118px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title title"
+        "r1 i1"
+        "r2 i2"
+        "r3 i3"
+        "r4 i4"
+        "r5 i5"
+        "r6 i6"
+        "r7 i7"
+        "r8 i8"
+        "r9 i9"
+        "r10 i10"
+        "r11 i11";
+    padding: 8px 0 42px 0;
+
+    .title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: title;
+    }
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .r2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r2;
+    }
+
+    .r3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r3;
+    }
+
+    .r4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r4;
+    }
+
+    .r5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r5;
+    }
+
+    .r6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r6;
+    }
+
+    .r7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r7;
+    }
+
+    .r8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r8;
+    }
+
+    .r9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r9;
+    }
+
+    .r10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r10;
+    }
+
+    .r11 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r11;
+    }
+
+    .i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i5 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i6 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i7 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i9 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i9;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i10 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i10;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i11 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i11;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+.grid-5 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 118px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "r1 i1"
+        "r2 i2";
+    padding: 8px 0 42px 0;
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .r2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r2;
+    }
+
+    .i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: i2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
+.grid-6 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px 130px 130px 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title c1 c2 c3 c4"
+        "r1 c1i1 c2i1 c3i1 c4i1"
+        "r2 c1i2 c2i2 c3i2 c4i2"
+        "r3 c1i3 c2i3 c3i3 c4i3";
+    padding: 8px 0 42px 0;
+
+    .title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: title;
+    }
+
+    .c1 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c1;
+    }
+
+    .c2 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c2;
+    }
+
+    .c3 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c3;
+    }
+
+    .c4 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c4;
+    }
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .r2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r2;
+    }
+
+    .r3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r3;
+    }
+
+    .c1i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c1i1;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c1i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c1i2;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c1i3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c1i3;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c2i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c2i1;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c2i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c2i2;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c2i3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c2i3;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c3i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c3i1;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c3i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c3i2;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c3i3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c3i3;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c4i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c4i1;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c4i2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c4i2;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c4i3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c4i3;
+        
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
