@@ -836,7 +836,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1";
+  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2";
   padding: 8px 0 42px 0;
 }
 .cont-tb1g4 .a0 {
@@ -861,6 +861,18 @@
   border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a1;
+}
+.cont-tb1g4 .a2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 120px;
+  grid-area: a2;
 }
 .cont-tb1g4 .b0 {
   font-size: 1.1em !important;
@@ -890,6 +902,21 @@
   max-width: 104px;
   text-align: right;
 }
+.cont-tb1g4 .b2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  grid-area: b2;
+}
+.cont-tb1g4 .b2 input {
+  max-width: 104px;
+  text-align: right;
+}
 .cont-tb1g4 .c0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -915,6 +942,21 @@
   grid-area: c1;
 }
 .cont-tb1g4 .c1 input {
+  max-width: 104px;
+  text-align: right;
+}
+.cont-tb1g4 .c2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  grid-area: c2;
+}
+.cont-tb1g4 .c2 input {
   max-width: 104px;
   text-align: right;
 }
@@ -950,6 +992,21 @@
   max-width: 104px;
   text-align: right;
 }
+.cont-tb1g4 .d2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
+  min-width: 120px;
+  grid-area: d2;
+}
+.cont-tb1g4 .d2 input {
+  max-width: 104px;
+  text-align: right;
+}
 .cont-tb1g4 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -975,6 +1032,21 @@
   grid-area: e1;
 }
 .cont-tb1g4 .e1 input {
+  max-width: 104px;
+  text-align: right;
+}
+.cont-tb1g4 .e2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  grid-area: e2;
+}
+.cont-tb1g4 .e2 input {
   max-width: 104px;
   text-align: right;
 }
