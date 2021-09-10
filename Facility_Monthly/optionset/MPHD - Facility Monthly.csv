@@ -1,4 +1,4 @@
-﻿OptionSetName,OptionSetUID,OptionSetCode,OptionName,OptionUID,OptionCode
+OptionSetName,OptionSetUID,OptionSetCode,OptionName,OptionUID,OptionCode
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,0 - 59 days,,col_1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,2 - 59 months,,col_2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,> 5 years,,col_3
@@ -28,6 +28,7 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under f
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five admitted for treatment for severe acute malnutrition,,Tb1Tt3Tx2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five reached with direct food assistance,,Tb1Tt4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five reached with direct food assistance of fortified/specialized food products,,Tb1Tt4Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five (0-59 months) reached with USG nutrition programs,,Tb1Tt4Tx2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,G5/CH+Nut.1 Number of children under five reached with nutrition programs,,Tb1Tt5
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Multiple Micronutrient Powder (MNP) supplementation,,Tb1Tt5Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Social and behavior change (SBC),,Tb1Tt5Tx2
@@ -52,23 +53,22 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 POC,,Tb2Tt2Tx7
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 not specified,,Tb2Tt2Tx8
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 Number of women who receive post abortion care services,,Tb2Tt3
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 Number of women,,Tb2Tt3Tx1
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Number of women who receive post-abortion care services and initiate or leave with a voluntary modern contraceptiveTb2Title_4,,Tb2Tt4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Number of women who receive post-abortion care services and initiate or leave with a voluntary modern contraceptive,,Tb2Tt4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 condoms,,Tb2Tt4Tx1
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 condoms,,Tb2Tt4Tx2
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 copper UID,,Tb2Tt4Tx3
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 implant,,Tb2Tt4Tx4
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 LNG-IUD,,Tb2Tt4Tx5
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 pills,,Tb2Tt4Tx6
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 tubal ligation,,Tb2Tt4Tx7
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 not specified,,Tb2Tt4Tx8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 copper UID,,Tb2Tt4Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 implant,,Tb2Tt4Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 LNG-IUD,,Tb2Tt4Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 pills,,Tb2Tt4Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 tubal ligation,,Tb2Tt4Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 not specified,,Tb2Tt4Tx7
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.1 DPT,,Tb3Tt1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.1 Number of children receiving DPT1,,Tb3Tt1Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.1 tNumber of children receiving DPT3,,Tb3Tt1Tx2
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.3-4 Measles,,Tb3Title_2
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.3 Number of children receiving first dose of the measles vaccine,,Tb3Tx_3
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.4 Number of children receiving second dose of the measles vaccine,,Tb3Tx_4
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH.1 Maternal Health,,Tb4Title_1
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MN CH.1 Number of infants 0-59 days of age provided with first dose of antibiotics for treatment of PSBI in outpatient settings,,Tb4Tx_1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.3-4 Measles,,Tb3Tt2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.3 Number of children receiving first dose of the measles vaccine,,Tb3Tt2Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.4 Number of children receiving second dose of the measles vaccine,,Tb3Tt2Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH.1 Maternal Health,,Tb4Tt1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MN CH.1 Number of infants 0-59 days of age provided with first dose of antibiotics for treatment of PSBI in outpatient settings,,Tb4Tt1Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Number of newborns who die before discharge from facility due to,,Tb4Tt2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Acute intrapartum event,,Tb4Tt2Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Birth trauma,,Tb4Tt2Tx2
@@ -109,7 +109,7 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.5 Number of women giving birth/
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.6 Number of women who gave birth who received a prophylactic uterotonic,,Tb4Tt8Tx2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.7 Number of caesarean sections,,Tb4Tt8Tx3
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.9 Number of maternal deaths due to:,,Tb4Tt9
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Hypertensive disorders in pregnancy childbirth and the puerperium,,Tb4Tt9Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,"Hypertensive disorders in pregnancy, childbirth, and the puerperium",,Tb4Tt9Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Non-obstetric complications,,Tb4Tt9Tx2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Obstetric hemorrhage,,Tb4Tt9Tx3
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Other obstetric complications,,Tb4Tt9Tx4
