@@ -14,6 +14,7 @@ Server: https://dev-mka.psi-mis.org
 
 ## District Quarterly
 
+- [x] tabs => Family planning RH | X.Cut
 - [ ] terms
 
 ## District Six-month
