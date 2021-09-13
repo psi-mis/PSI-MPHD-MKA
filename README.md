@@ -1,22 +1,22 @@
 # PSI-MPHD
-# [checkbox:unchecked] URL Image Logo Momentum
+# [] URL Image Logo Momentum
 Server: https://dev-mka.psi-mis.org
 
 ## MPHD Facility Monthly => Completed
-# [checkbox:checked] terms
+- [x] terms
 
 ## MPHD Facility Six Monthly
 
-# [checkbox:checked] tabs => Facilities | X.Cut
+- [x] tabs => Facilities | X.Cut
 
 # [checkbox:unchecked] terms
 
 ## District Quarterly
-# [checkbox:unchecked] terms
+- [ ] terms
 
 ## District Six-month
-# [checkbox:unchecked] terms
+- [ ] terms
 
 ## Country Quarterly
 
-# [checkbox:unchecked] terms
+- [ ] terms
