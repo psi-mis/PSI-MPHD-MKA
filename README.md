@@ -3,10 +3,14 @@ Server: https://dev-mka.psi-mis.org
 
 ## MPHD Facility Monthly => Completed
 
+### Tasks
+
 - [ ] URL Image Logo Momentum
 - [x] terms
 
 ## MPHD Facility Six Monthly
+
+### Tasks
 
 - [ ] URL Image Logo Momentum
 - [x] tabs => Facilities | X.Cut
@@ -14,11 +18,15 @@ Server: https://dev-mka.psi-mis.org
 
 ## District Quarterly
 
+### Tasks
+
 - [ ] URL Image Logo Momentum
 - [x] tabs => Family planning RH | X.Cut
 - [ ] terms
 
 ## District Six-month
+
+### Tasks
 
 - [ ] URL Image Logo Momentum
 - [x] tabs => Supported | X.Cut
@@ -28,7 +36,10 @@ Server: https://dev-mka.psi-mis.org
 
 ## Country Quarterly
 
+### Tasks
+
 - [ ] URL Image Logo Momentum
 - [x] tabs => Supported | X.Cut
-- [ ] tab2 unify 2 grids: 2 & 3 => shocks and stresses | stresses or shocks
+- [x] tab2 unify 2 grids: 2 & 3 => shocks and stresses | stresses or shocks
+- [x] input text overflowed
 - [ ] terms
