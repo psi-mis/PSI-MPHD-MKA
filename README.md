@@ -1,5 +1,8 @@
 # PSI-MPHD
-Server: https://dev-mka.psi-mis.org
+* Server: https://dev-mphd.psi-mis.org
+* Server: https://mphd.psi-mis.org
+
+## Work in Dev
 
 ## MPHD Facility Monthly => Completed
 
