@@ -6,7 +6,7 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Male,,col_4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Female,,col_5
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unknown,,col_6
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,< 20,,col_7
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,20 - 40,,col_8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,20 - 24,,col_8
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,> 25,,col_9
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Totals,,Totals
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Child health,,TbTitle_1
@@ -35,7 +35,7 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Social and behavior change
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Vitamin A supplementation in the past 6 months,,Tb1Tt5Tx3
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Zinc supplementation during episodes of diarrhea,,Tb1Tt5Tx4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Ch+Nut.2 Number of children 6-59m seen,,Tb1Tt6
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.2 Number of children seen (well child or sick child visits,,Tb1Tt6Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.2 Number of children seen (well child or sick child visits),,Tb1Tt6Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Ch+Nut.2/3 Malnutrition,,Tb1Tt7
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.2 Number of children screened for acute malnutrition?(through MUAC or Height & Weight),,Tb1TtTx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.3 Number of children with Moderate Acute Malnutrition (MAM),,Tb1TtTx2
@@ -43,9 +43,9 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.3 Number of children with Se
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.2 Number of family planning client visits,,Tb2Tt1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.2 Number of family planning client visits (new acceptors and continuing clients),,Tb2Tt1Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Women who deliver and initiate or leave with a voluntary modern contraceptive method,,Tb2Tt2
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 condoms,,Tb2Tt2Tx1
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 copper IUD,,Tb2Tt2Tx2
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 implant,,Tb2Tt2Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Condoms,,Tb2Tt2Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Copper IUD,,Tb2Tt2Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Implant,,Tb2Tt2Tx3
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 LAM,,Tb2Tt2Tx4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 LNG-IUD,,Tb2Tt2Tx5
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 tubal ligation,,Tb2Tt2Tx6
@@ -85,11 +85,11 @@ MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Intrapartum,,Tb4Tt3Tx2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified (type of stillbirth),,Tb4Tt3Tx3
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.12 Number of newborns,,Tb4Tt4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Less than 2000gm delivered (live),,Tb4Tt4Tx1
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Less than 2000gm initiated in KMC,,Tb4Tt4Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Less than 2000gm initiated in Kangaroo Mother Care (KMC),,Tb4Tt4Tx2
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Greater than or equal 2000gm delivered (live),,Tb4Tt4Tx3
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Greater than or equal 2000gm initiated in KMC,,Tb4Tt4Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Greater than or equal 2000gm initiated in Kangaroo Mother Care (KMC),,Tb4Tt4Tx4
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified delivered (live),,Tb4Tt4Tx5
-MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified initiated in KMC,,Tb4Tt4Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified initiated in Kangaroo Mother Care (KMC),,Tb4Tt4Tx6
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.13/14 Number of newborns,,Tb4Tt5
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Breastfed within one hour of birth,,Tb4Tt5Tx1
 MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Who received postnatal care within two days of birth,,Tb4Tt5Tx2
