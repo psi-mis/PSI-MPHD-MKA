@@ -18,6 +18,10 @@
 - [ ] URL Image Logo Momentum
 - [x] tabs => Facilities | X.Cut
 - [ ] terms
+- [x] Did this facility/outlet initiate or improve reporting into the national HMIS (Y/N)
+- [x] MPHD - Age for facility => Number of children diagnosed with diarrhea (DELETE)
+- [x] Gender Based Violence
+- [x] Did this facility/outlet receive supervision support during this 6-month period? (Y/N)
 
 ## District Quarterly
 
