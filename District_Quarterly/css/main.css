@@ -87,7 +87,7 @@
 .t1g1 {
   clear: both;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 130px 130px 130px 130px 130px;
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -1125,7 +1125,7 @@
 .t1g2 {
   clear: both;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 130px 130px 130px 130px;
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -3706,14 +3706,15 @@
   grid-area: a8;
 }
 .tb1g6 .a9 {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 800;
   color: #333333;
   background-color: #d6e5ff;
   padding: 8px;
-  border-bottom: 1px solid #d6e5ff;
-  border-right: 1px solid #d6e5ff;
-  border-left: 1px solid #d6e5ff;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  display: flex;
+  align-items: center;
   grid-area: a9;
 }
 .tb1g6 .b0 {
@@ -3888,7 +3889,7 @@
 .t2g1 {
   clear: both;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 130px;
   grid-template-rows: auto;
   gap: 1px 1px;
   grid-template-areas: "title title" "rw1text rw1input" "rw2text rw2input";
