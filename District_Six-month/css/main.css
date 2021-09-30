@@ -310,6 +310,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t1-2;
 }
 .container-t1g1 .data .t1g1b .c_t1-3 {
@@ -325,6 +326,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t1-3;
 }
 .container-t1g1 .data .t1g1b .c_t1-4 {
@@ -340,6 +342,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t1-4;
 }
 .container-t1g1 .data .t1g1b .c_t2-1 {
@@ -355,6 +358,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t2-1;
 }
 .container-t1g1 .data .t1g1b .c_t2-2 {
@@ -370,6 +374,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t2-2;
 }
 .container-t1g1 .data .t1g1b .c_t3-1 {
@@ -385,6 +390,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t3-1;
 }
 .container-t1g1 .data .t1g1b .c_t3-2 {
@@ -400,6 +406,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t3-2;
 }
 .container-t1g1 .data .t1g1b .c_t3-3 {
@@ -415,6 +422,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   grid-area: c_t3-3;
 }
 .container-t1g1 .data .t1g1b .c_t1-1-i1 {
@@ -1492,7 +1500,7 @@
 .t1g2 {
   clear: both;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto 130px 130px 130px 130px;
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -1516,6 +1524,9 @@
   border-bottom: 2px solid #f7faff;
   border-right: 1px solid #f7faff;
   border-top: 1px solid #f7faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   grid-area: c1;
 }
@@ -1528,6 +1539,9 @@
   border-bottom: 2px solid #f7faff;
   border-right: 1px solid #f7faff;
   border-top: 1px solid #f7faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   grid-area: c2;
 }
@@ -1540,6 +1554,9 @@
   border-bottom: 2px solid #f7faff;
   border-right: 1px solid #f7faff;
   border-top: 1px solid #f7faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   grid-area: c3;
 }
@@ -1552,6 +1569,9 @@
   border-bottom: 2px solid #f7faff;
   border-right: 1px solid #f7faff;
   border-top: 1px solid #f7faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   grid-area: c4;
 }
