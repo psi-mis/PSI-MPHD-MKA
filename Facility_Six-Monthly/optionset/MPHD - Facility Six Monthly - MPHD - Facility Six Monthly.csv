@@ -1,0 +1,19 @@
+OptionSetName,OptionSetUID,OptionSetCode,OptionName,OptionUID,OptionCode
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Totals,,Totals
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Facilities,,TbTitle_1
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,X.Cut,,TbTitle_2
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,MPHD Facility Six-monthly,,Tb1Tt1
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Imm.2_Estimated number of children less than 12 months of age in MOMENTUM supported areas,,Tb1Tt1Tx1
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported areas,,Tb1Tt1Tx2
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,PWI 2.5_PSI_MPHD-Did this facility/outlet initiate or improve reporting into the national HMIS (Y/N),,Tb1Tt1Tx3
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision,,Tb1Tt2
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Empowerment,,Tb1Tt2Tx1
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Gender Based Violence,,Tb1Tt2Tx2
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Male engagement,,Tb1Tt2Tx3
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Maternity care,,Tb1Tt2Tx4
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,Combination of 2 or more of the above,,Tb1Tt2Tx5
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,MOMENTUM-supported facilities implementing QI,,T2Tt1
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,PWI 1.1 / X.Cut.6_PSI_Did this facility/outlet receive supervision support during this 6-month period? (Y/N),,Tb2Tt1Tx1
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities),,Tb2Tt1Tx2
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,X.Cut.3_Total number of annual outpatient department visits,,Tb2Tt1Tx3
+MPHD - Facility Six Monthly (terms),gNKfPnkgPGx,,X.Cut.3_Total number of people residing in the catchment areas,,Tb2Tt1Tx4
