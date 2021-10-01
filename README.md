@@ -8,34 +8,29 @@
 
 ### Tasks
 
-- [ ] URL Image Logo Momentum
 - [x] terms
 
 ## MPHD Facility Six Monthly
 
 ### Tasks
 
-- [ ] URL Image Logo Momentum
 - [ ] terms
 
 ## District Quarterly
 
 ### Tasks
 
-- [ ] URL Image Logo Momentum
 - [ ] terms
 
 ## District Six-month
 
 ### Tasks
 
-- [ ] URL Image Logo Momentum
 - [ ] terms
 
 ## Country Quarterly
 
 ### Tasks
 
-- [ ] URL Image Logo Momentum
 - [ ] terms
 - [ ] Feedback
