@@ -1,23 +1,119 @@
-OptionSetName;OptionSetUID;OptionSetCode;OptionName;OptionUID;OptionCode
-;;;Unknown;;col_1
-;;;< 20;;col_2
-;;;20 - 24;;col_3
-;;;> 25;;col_4
-;;;Totals;;Totals
-;;;MPHD Facility Six-monthly;;T1Title_1
-;;;Imm.2 Estimated number of children less than 12 months of age in MOMENTUM supported areas;;T1Text_1
-;;;Imm.4 Estimated number of children 12-24 months of age in MOMENTUM supported areas;;T1Text_2
-;;;PWI 1.1 / X.Cut.6 PSI Momentum Supervision suppoort received during the period (y/n);;T1Text_3
-;;;PWI 2.5 PSI MPHD Supported facilities/outlets initiated or improved reporting into national HMIS (y/n);;T1Text_4
-;;;X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities);;T1Text_5
-;;;MOMENTUM Supported facilities implementing QI;;T2Title_1
-;;;X.Cut.3 Total number of annual outpatient department visits;;T2Text_1
-;;;X.Cut.3 Total number of people residing in the catchment areas;;T2Text_1
-;;;MPHD - Age for facility;;T3Title_1
-;;;Number of children diagnosed with diarrhea;;T3Text_1
-;;;MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision;;T4Title_1
-;;;Empowerment;;T4Text_1
-;;;Gender-BV;;T4Text_2
-;;;Male engagement;;T4Text_3
-;;;Maternity care;;T4Text_4
-;;;Combination of 2 or more of the above;;T4Text_5
+OptionSetName,OptionSetUID,OptionSetCode,OptionName,OptionUID,OptionCode
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,0 - 59 days,,col_1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,2 - 59 months,,col_2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,> 5 years,,col_3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Male,,col_4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Female,,col_5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unknown,,col_6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,< 20,,col_7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,20 - 24,,col_8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,> 25,,col_9
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Totals,,Totals
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Child health,,TbTitle_1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Family planning,,TbTitle_2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Immunization,,TbTitle_3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Maternal Health,,TbTitle_4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH.1 Diarrhea Treatment,,Tb1Tt1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children diagnosed with diarrhea,,Tb1Tt1Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children treated with ORS,,Tb1Tt1Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children treated with ORS+Zinc,,Tb1Tt1Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH.1 Pneumonia Treatment,,Tb1Tt2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children diagnosed with pneumonia,,Tb1Tt2Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children treated with Amox DT,,Tb1Tt2Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children treated with antibiotics,,Tb1Tt2Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children with a positive malaria RDT that received ACT,,Tb1Tt2Tx7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Number of children with a positive malaria RDT,,Tb1Tt2Tx8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Malnutrition treatment,,Tb1Tt3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five admitted for treatment for moderate acute malnutrition,,Tb1Tt3Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five admitted for treatment for severe acute malnutrition,,Tb1Tt3Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five reached with direct food assistance,,Tb1Tt4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five reached with direct food assistance of fortified/specialized food products,,Tb1Tt4Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Number of children under five (0-59 months) reached with USG nutrition programs,,Tb1Tt4Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,G5/CH+Nut.1 Number of children under five reached with nutrition programs,,Tb1Tt5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Multiple Micronutrient Powder (MNP) supplementation,,Tb1Tt5Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Social and behavior change (SBC),,Tb1Tt5Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Vitamin A supplementation in the past 6 months,,Tb1Tt5Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.1 Zinc supplementation during episodes of diarrhea,,Tb1Tt5Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Ch+Nut.2 Number of children 6-59m seen,,Tb1Tt6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.2 Number of children seen (well child or sick child visits),,Tb1Tt6Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Ch+Nut.2/3 Malnutrition,,Tb1Tt7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.2 Number of children screened for acute malnutrition?(through MUAC or Height & Weight),,Tb1TtTx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.3 Number of children with Moderate Acute Malnutrition (MAM),,Tb1TtTx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH+Nut.3 Number of children with Severe Acute Malnutrition (MAM),,Tb1TtTx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.2 Number of family planning client visits,,Tb2Tt1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.2 Number of family planning client visits (new acceptors and continuing clients),,Tb2Tt1Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Women who deliver and initiate or leave with a voluntary modern contraceptive method,,Tb2Tt2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Condoms,,Tb2Tt2Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Copper IUD,,Tb2Tt2Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Implant,,Tb2Tt2Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 LAM,,Tb2Tt2Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 LNG-IUD,,Tb2Tt2Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 tubal ligation,,Tb2Tt2Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 POC,,Tb2Tt2Tx7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 not specified,,Tb2Tt2Tx8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 Number of women who receive post abortion care services,,Tb2Tt3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 Number of women,,Tb2Tt3Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.3 Number of women who receive post-abortion care services and initiate or leave with a voluntary modern contraceptive,,Tb2Tt4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 condoms,,Tb2Tt4Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 copper UID,,Tb2Tt4Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 implant,,Tb2Tt4Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 LNG-IUD,,Tb2Tt4Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 pills,,Tb2Tt4Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 tubal ligation,,Tb2Tt4Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,FP.RH.4 not specified,,Tb2Tt4Tx7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.1 DPT,,Tb3Tt1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.1 Number of children receiving DPT1,,Tb3Tt1Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.1 tNumber of children receiving DPT3,,Tb3Tt1Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.3-4 Measles,,Tb3Tt2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.3 Number of children receiving first dose of the measles vaccine,,Tb3Tt2Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Imm.4 Number of children receiving second dose of the measles vaccine,,Tb3Tt2Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,CH.1 Maternal Health,,Tb4Tt1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MN CH.1 Number of infants 0-59 days of age provided with first dose of antibiotics for treatment of PSBI in outpatient settings,,Tb4Tt1Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Number of newborns who die before discharge from facility due to,,Tb4Tt2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Acute intrapartum event,,Tb4Tt2Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Birth trauma,,Tb4Tt2Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Congenital malformation and chromosomal abnormalities,,Tb4Tt2Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Infection,,Tb4Tt2Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Low birthweight and prematurity,,Tb4Tt2Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Miscellaneous,,Tb4Tt2Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Neonatal death of unspecified cause,,Tb4Tt2Tx7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Other neonatal conditions,,Tb4Tt2Tx8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.10 Respiratory or cardiovascular disorders,,Tb4Tt2Tx9
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.11 Number of newborns,,Tb4Tt3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Antepartum,,Tb4Tt3Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Intrapartum,,Tb4Tt3Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified (type of stillbirth),,Tb4Tt3Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.12 Number of newborns,,Tb4Tt4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Less than 2000gm delivered (live),,Tb4Tt4Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Less than 2000gm initiated in Kangaroo Mother Care (KMC),,Tb4Tt4Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Greater than or equal 2000gm delivered (live),,Tb4Tt4Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Greater than or equal 2000gm initiated in Kangaroo Mother Care (KMC),,Tb4Tt4Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified delivered (live),,Tb4Tt4Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified initiated in Kangaroo Mother Care (KMC),,Tb4Tt4Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.13/14 Number of newborns,,Tb4Tt5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Breastfed within one hour of birth,,Tb4Tt5Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Who received postnatal care within two days of birth,,Tb4Tt5Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.2/3 Number of antenatal clients,,Tb4Tt6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.2_Number of antenatal clients with 1st visit before 12 weeks of gestational age,,Tb4Tt6Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.2_Number of antenatal clients with 1st visit,,Tb4Tt6Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.3_Number of antenatal clients with blood pressure measured,,Tb4Tt6Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.4 Number of pregnant women reached with nutrition-specific interventions,,Tb4Tt7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Calcium supplementation,,Tb4Tt7Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Direct food assistance of fortified/specialized food products,,Tb4Tt7Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Estimated total number of women reached,,Tb4Tt7Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Individual or small group counseling on maternal and/or child nutrition,,Tb4Tt7Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Iron and folic acid (IFA) supplementation,,Tb4Tt7Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Multiple micronutrient supplementation,,Tb4Tt7Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.5/6/7 Number of women giving birth,,Tb4Tt8
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.5 Number of women giving birth/ number of deliveries,,Tb4Tt8Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.6 Number of women who gave birth who received a prophylactic uterotonic,,Tb4Tt8Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.7 Number of caesarean sections,,Tb4Tt8Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,MNH.9 Number of maternal deaths due to:,,Tb4Tt9
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,"Hypertensive disorders in pregnancy, childbirth, and the puerperium",,Tb4Tt9Tx1
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Non-obstetric complications,,Tb4Tt9Tx2
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Obstetric hemorrhage,,Tb4Tt9Tx3
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Other obstetric complications,,Tb4Tt9Tx4
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Pregnancies with abortive outcome,,Tb4Tt9Tx5
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Pregnancy-related infection,,Tb4Tt9Tx6
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unanticipated complications of management,,Tb4Tt9Tx7
+MPHD - Facility Monthly (Terms),vYRqe6FShDo,,Unspecified,,Tb4Tt9Tx8
