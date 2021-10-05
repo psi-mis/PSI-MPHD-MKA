@@ -14,7 +14,7 @@
 
 ### Tasks
 
-- [ ] terms
+- [x] terms
 
 ## District Quarterly
 
