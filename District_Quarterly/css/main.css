@@ -2265,7 +2265,7 @@
 .tb1g3 {
   clear: both;
   display: grid;
-  grid-template-columns: auto 130px 130px;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-template-areas: "title c1 c2" "c1text_1 c1input_1 c2input_1" "c1text_2 c1input_2 c2input_2" "c1text_3 c1input_3 c2input_3" "c1text_4 c1input_4 c2input_4" "c1text_5 c1input_5 c2input_5" "c1text_6 c1input_6 c2input_6" "c1text_7 c1input_7 c2input_7" "c1text_8 c1input_8 c2input_8" "c1text_9 c1input_9 c2input_9";
