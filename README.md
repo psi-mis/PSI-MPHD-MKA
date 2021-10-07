@@ -30,6 +30,7 @@
 ### Tasks
 
 - [ ] terms
+- [x] move in MPHD - MNH.8_PSI_
 - [ ] No totals
 
 ## Country Quarterly
@@ -38,4 +39,5 @@
 
 - [ ] terms
 - [ ] No totals
+- [x] MPHD - MNH.8_PSI_ delete
 - [ ] Feedback

@@ -2545,6 +2545,176 @@
     }
 }
 
+.t1g4 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px 130px 130px 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title c1 c2 c3 c4"
+        "r1 c1i1 c2i1 c3i1 c4i1";
+    padding: 8px 0 42px 0;
+
+    .title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: title;
+    }
+
+    .c1 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c1;
+    }
+
+    .c2 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c2;
+    }
+
+    .c3 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c3;
+    }
+
+    .c4 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c4;
+    }
+
+    .c5 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c5;
+    }
+
+    .r1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: r1;
+    }
+
+    .c1i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c1i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c2i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c2i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c3i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c3i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .c4i1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: c4i1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+}
+
 .t2g1 {
     clear: both;
     display: grid;
