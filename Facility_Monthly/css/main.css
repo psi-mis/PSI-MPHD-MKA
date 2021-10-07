@@ -544,7 +544,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3";
+  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2";
   padding: 8px 0 42px 0;
 }
 .cont-tb1g3 .a0 {
@@ -581,17 +581,6 @@
   border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a2;
-}
-.cont-tb1g3 .a3 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a3;
 }
 .cont-tb1g3 .b0 {
   font-size: 1.1em !important;
@@ -636,21 +625,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb1g3 .b3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b3;
-}
-.cont-tb1g3 .b3 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb1g3 .c0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -691,21 +665,6 @@
   grid-area: c2;
 }
 .cont-tb1g3 .c2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb1g3 .c3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: c3;
-}
-.cont-tb1g3 .c3 input {
   max-width: 104px;
   text-align: right;
 }
@@ -756,21 +715,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb1g3 .d3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: d3;
-}
-.cont-tb1g3 .d3 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb1g3 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -811,21 +755,6 @@
   grid-area: e2;
 }
 .cont-tb1g3 .e2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb1g3 .e3 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: e3;
-}
-.cont-tb1g3 .e3 input {
   max-width: 104px;
   text-align: right;
 }
@@ -1057,7 +986,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3" "a4 b4 c4 d4 e4" "a5 b5 c5 d5 e5";
+  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3" "a4 b4 c4 d4 e4";
   padding: 8px 0 42px 0;
 }
 .cont-tb1g5 .a0 {
@@ -1204,21 +1133,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb1g5 .b5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b5;
-}
-.cont-tb1g5 .b5 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb1g5 .c0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -1289,21 +1203,6 @@
   grid-area: c4;
 }
 .cont-tb1g5 .c4 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb1g5 .c5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: c5;
-}
-.cont-tb1g5 .c5 input {
   max-width: 104px;
   text-align: right;
 }
@@ -1384,21 +1283,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb1g5 .d5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: d5;
-}
-.cont-tb1g5 .d5 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb1g5 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -1469,21 +1353,6 @@
   grid-area: e4;
 }
 .cont-tb1g5 .e4 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb1g5 .e5 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: e5;
-}
-.cont-tb1g5 .e5 input {
   max-width: 104px;
   text-align: right;
 }
@@ -1840,7 +1709,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8" "a9 b9 c9 d9 e9 f9";
+  grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8";
   padding: 8px 0 42px 0;
 }
 .cont-tb2g2 .a0 {
@@ -1949,18 +1818,6 @@
   border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a8;
-}
-.cont-tb2g2 .a9 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a9;
 }
 .cont-tb2g2 .b0 {
   font-size: 1.1em !important;
@@ -2095,21 +1952,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb2g2 .b9 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b9;
-}
-.cont-tb2g2 .b9 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb2g2 .c0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -2240,21 +2082,6 @@
   grid-area: c8;
 }
 .cont-tb2g2 .c8 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb2g2 .c9 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: c9;
-}
-.cont-tb2g2 .c9 input {
   max-width: 104px;
   text-align: right;
 }
@@ -2395,21 +2222,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb2g2 .d9 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 2px solid #f7faff;
-  min-width: 120px;
-  grid-area: d9;
-}
-.cont-tb2g2 .d9 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb2g2 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -2543,21 +2355,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb2g2 .e9 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: e9;
-}
-.cont-tb2g2 .e9 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb2g2 .f0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -2688,21 +2485,6 @@
   grid-area: f8;
 }
 .cont-tb2g2 .f8 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb2g2 .f9 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: f9;
-}
-.cont-tb2g2 .f9 input {
   max-width: 104px;
   text-align: right;
 }
@@ -2890,7 +2672,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8";
+  grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7";
   padding: 8px 0 42px 0;
 }
 .cont-tb2g4 .a0 {
@@ -2987,18 +2769,6 @@
   border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a7;
-}
-.cont-tb2g4 .a8 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a8;
 }
 .cont-tb2g4 .b0 {
   font-size: 1.1em !important;
@@ -3118,22 +2888,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb2g4 .b8 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b8;
-}
-.cont-tb2g4 .b8 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb2g4 .c0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -3249,22 +3003,6 @@
   grid-area: c7;
 }
 .cont-tb2g4 .c7 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb2g4 .c8 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: c8;
-}
-.cont-tb2g4 .c8 input {
   max-width: 104px;
   text-align: right;
 }
@@ -3390,22 +3128,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb2g4 .d8 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: d8;
-}
-.cont-tb2g4 .d8 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb2g4 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -3524,22 +3246,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb2g4 .e8 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: e8;
-}
-.cont-tb2g4 .e8 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb2g4 .f0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -3655,22 +3361,6 @@
   grid-area: f7;
 }
 .cont-tb2g4 .f7 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb2g4 .f8 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: f8;
-}
-.cont-tb2g4 .f8 input {
   max-width: 104px;
   text-align: right;
 }
@@ -3904,7 +3594,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4" "a5 b5" "a6 b6" "a7 b7" "a8 b8" "a9 b9" "a10 b10";
+  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4" "a5 b5" "a6 b6" "a7 b7" "a8 b8" "a9 b9";
   padding: 8px 0 42px 0;
 }
 .cont-tb4g2 .a0 {
@@ -4013,18 +3703,6 @@
   border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: a9;
-}
-.cont-tb4g2 .a10 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a10;
 }
 .cont-tb4g2 .b0 {
   font-size: 1em;
@@ -4169,22 +3847,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb4g2 .b10 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b10;
-}
-.cont-tb4g2 .b10 input {
-  max-width: 104px;
-  text-align: right;
-}
 
 .cont-tb4g3 {
   display: grid;
@@ -4192,7 +3854,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4";
+  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3";
   padding: 8px 0 42px 0;
 }
 .cont-tb4g3 .a0 {
@@ -4235,18 +3897,6 @@
   border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: a3;
-}
-.cont-tb4g3 .a4 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a4;
 }
 .cont-tb4g3 .b0 {
   font-size: 1em;
@@ -4301,22 +3951,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb4g3 .b4 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b4;
-}
-.cont-tb4g3 .b4 input {
-  max-width: 104px;
-  text-align: right;
-}
 
 .cont-tb4g4 {
   display: grid;
@@ -4324,7 +3958,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4" "a5 b5" "a6 b6" "a7 b7";
+  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4" "a5 b5" "a6 b6";
   padding: 8px 0 42px 0;
 }
 .cont-tb4g4 .a0 {
@@ -4400,18 +4034,6 @@
   border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: a6;
-}
-.cont-tb4g4 .a7 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a7;
 }
 .cont-tb4g4 .b0 {
   font-size: 1em;
@@ -4511,22 +4133,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb4g4 .b7 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b7;
-}
-.cont-tb4g4 .b7 input {
-  max-width: 104px;
-  text-align: right;
-}
 
 .cont-tb4g5 {
   display: grid;
@@ -4534,7 +4140,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3";
+  grid-template-areas: "a0 b0" "a1 b1" "a2 b2";
   padding: 8px 0 42px 0;
 }
 .cont-tb4g5 .a0 {
@@ -4566,18 +4172,6 @@
   border-right: 2px solid #f7faff;
   min-width: 120px;
   grid-area: a2;
-}
-.cont-tb4g5 .a3 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a3;
 }
 .cont-tb4g5 .b0 {
   font-size: 1em;
@@ -4614,22 +4208,6 @@
   grid-area: b2;
 }
 .cont-tb4g5 .b2 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb4g5 .b3 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b3;
-}
-.cont-tb4g5 .b3 input {
   max-width: 104px;
   text-align: right;
 }
@@ -4991,7 +4569,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6" "a7 b7 c7 d7 e7 f7" "a8 b8 c8 d8 e8 f8";
+  grid-template-areas: "a0 b0 c0 d0 e0 f0" "a1 b1 c1 d1 e1 f1" "a2 b2 c2 d2 e2 f2" "a3 b3 c3 d3 e3 f3" "a4 b4 c4 d4 e4 f4" "a5 b5 c5 d5 e5 f5" "a6 b6 c6 d6 e6 f6";
   padding: 8px 0 42px 0;
 }
 .cont-tb4g7 .a0 {
@@ -5076,18 +4654,6 @@
   border-left: 1px solid #f7faff;
   min-width: 120px;
   grid-area: a6;
-}
-.cont-tb4g7 .a7 {
-  font-size: 1.1em !important;
-  font-weight: 800 !important;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: a7;
 }
 .cont-tb4g7 .b0 {
   font-size: 1.1em !important;
@@ -5192,22 +4758,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb4g7 .b7 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: b7;
-}
-.cont-tb4g7 .b7 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb4g7 .c0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -5308,21 +4858,6 @@
   grid-area: c6;
 }
 .cont-tb4g7 .c6 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb4g7 .c7 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  grid-area: c7;
-}
-.cont-tb4g7 .c7 input {
   max-width: 104px;
   text-align: right;
 }
@@ -5433,22 +4968,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb4g7 .d7 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: d7;
-}
-.cont-tb4g7 .d7 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb4g7 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -5552,22 +5071,6 @@
   max-width: 104px;
   text-align: right;
 }
-.cont-tb4g7 .e7 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  border-left: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: e7;
-}
-.cont-tb4g7 .e7 input {
-  max-width: 104px;
-  text-align: right;
-}
 .cont-tb4g7 .f0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -5668,21 +5171,6 @@
   grid-area: f6;
 }
 .cont-tb4g7 .f6 input {
-  max-width: 104px;
-  text-align: right;
-}
-.cont-tb4g7 .f7 {
-  font-size: 1em;
-  font-weight: 400;
-  color: #333333;
-  background-color: #d6e5ff;
-  padding: 8px;
-  border-bottom: 1px solid #f7faff;
-  border-right: 1px solid #f7faff;
-  min-width: 120px;
-  grid-area: f7;
-}
-.cont-tb4g7 .f7 input {
   max-width: 104px;
   text-align: right;
 }

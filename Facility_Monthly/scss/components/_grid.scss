@@ -520,8 +520,7 @@
     grid-template-areas:
         "a0 b0 c0 d0 e0"
         "a1 b1 c1 d1 e1"
-        "a2 b2 c2 d2 e2"
-        "a3 b3 c3 d3 e3";
+        "a2 b2 c2 d2 e2";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -561,19 +560,6 @@
         min-width: 120px;
         grid-area: a2;
     }
-
-    .a3 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a3;
-    }
-
 
     .b0 {
         font-size: 1.1em!important;
@@ -623,23 +609,6 @@
         }
     }
 
-    .b3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b3;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .c0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -681,23 +650,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: c2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .c3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: c3;
 
         input {
             max-width: 104px;
@@ -758,23 +710,6 @@
         }
     }
 
-    .d3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: d3;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .e0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -816,23 +751,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: e2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .e3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: e3;
 
         input {
             max-width: 104px;
@@ -1102,8 +1020,7 @@
         "a1 b1 c1 d1 e1"
         "a2 b2 c2 d2 e2"
         "a3 b3 c3 d3 e3"
-        "a4 b4 c4 d4 e4"
-        "a5 b5 c5 d5 e5";
+        "a4 b4 c4 d4 e4";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -1265,23 +1182,6 @@
         }
     }
 
-    .b5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b5;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .c0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -1357,23 +1257,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: c4;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .c5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: c5;
 
         input {
             max-width: 104px;
@@ -1468,23 +1351,6 @@
         }
     }
 
-    .d5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: d5;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .e0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -1560,23 +1426,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: e4;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .e5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: e5;
 
         input {
             max-width: 104px;
@@ -1998,8 +1847,7 @@
         "a5 b5 c5 d5 e5 f5"
         "a6 b6 c6 d6 e6 f6"
         "a7 b7 c7 d7 e7 f7"
-        "a8 b8 c8 d8 e8 f8"
-        "a9 b9 c9 d9 e9 f9";
+        "a8 b8 c8 d8 e8 f8";
     padding: 8px 0 42px 0;
 
 
@@ -2117,19 +1965,6 @@
         border-left: 1px solid $Default-L;
         min-width: 120px;
         grid-area: a8;
-    }
-
-    .a9 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a9;
     }
 
     .b0 {
@@ -2282,23 +2117,6 @@
         }
     }
 
-    .b9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b9;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .c0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -2442,23 +2260,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: c8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .c9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: c9;
 
         input {
             max-width: 104px;
@@ -2621,23 +2422,6 @@
         }
     }
 
-    .d9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 2px solid $Default-L;
-        min-width: 120px;
-        grid-area: d9;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .e0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -2788,23 +2572,6 @@
         }
     }
 
-    .e9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: e9;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .f0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -2948,23 +2715,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: f8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .f9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: f9;
 
         input {
             max-width: 104px;
@@ -3186,8 +2936,7 @@
         "a4 b4 c4 d4 e4 f4"
         "a5 b5 c5 d5 e5 f5"
         "a6 b6 c6 d6 e6 f6"
-        "a7 b7 c7 d7 e7 f7"
-        "a8 b8 c8 d8 e8 f8";
+        "a7 b7 c7 d7 e7 f7";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -3291,19 +3040,6 @@
         border-left: 1px solid $Default-L;
         min-width: 120px;
         grid-area: a7;
-    }
-
-    .a8 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a8;
     }
 
     .b0 {
@@ -3439,24 +3175,6 @@
         }
     }
 
-    .b8 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .c0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -3583,24 +3301,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: c7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .c8 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: c8;
 
         input {
             max-width: 104px;
@@ -3746,24 +3446,6 @@
         }
     }
 
-    .d8 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: d8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .e0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -3897,24 +3579,6 @@
         }
     }
 
-    .e8 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: e8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .f0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -4041,24 +3705,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: f7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .f8 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: f8;
 
         input {
             max-width: 104px;
@@ -4344,8 +3990,7 @@
         "a6 b6"
         "a7 b7"
         "a8 b8"
-        "a9 b9"
-        "a10 b10";
+        "a9 b9";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -4463,19 +4108,6 @@
         border-right: 2px solid $Default-L;
         min-width: 120px;
         grid-area: a9;
-    }
-
-    .a10 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a10;
     }
 
 
@@ -4640,24 +4272,6 @@
             text-align: right;
         }
     }
-
-    .b10 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b10;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
 }
 
 //TAB: 4 ->G3
@@ -4671,8 +4285,7 @@
         "a0 b0"
         "a1 b1"
         "a2 b2"
-        "a3 b3"
-        "a4 b4";
+        "a3 b3";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -4718,19 +4331,6 @@
         border-right: 2px solid $Default-L;
         min-width: 120px;
         grid-area: a3;
-    }
-
-    .a4 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a4;
     }
 
     .b0 {
@@ -4792,24 +4392,6 @@
             text-align: right;
         }
     }
-
-    .b4 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b4;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
 }
 
 //TAB: 4 ->G4
@@ -4826,8 +4408,7 @@
         "a3 b3"
         "a4 b4"
         "a5 b5"
-        "a6 b6"
-        "a7 b7";
+        "a6 b6";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -4909,19 +4490,6 @@
         border-right: 2px solid $Default-L;
         min-width: 120px;
         grid-area: a6;
-    }
-
-    .a7 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a7;
     }
 
     .b0 {
@@ -5034,24 +4602,6 @@
             text-align: right;
         }
     }
-
-    .b7 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
 }
 
 //TAB: 4 ->G5
@@ -5064,8 +4614,7 @@
     grid-template-areas:
         "a0 b0"
         "a1 b1"
-        "a2 b2"
-        "a3 b3";
+        "a2 b2";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -5099,19 +4648,6 @@
         border-right: 2px solid $Default-L;
         min-width: 120px;
         grid-area: a2;
-    }
-
-    .a3 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a3;
     }
 
     .b0 {
@@ -5150,24 +4686,6 @@
         border-right: 2px solid $Default-L;
         min-width: 120px;
         grid-area: b2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .b3 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b3;
 
         input {
             max-width: 104px;
@@ -5586,9 +5104,7 @@
         "a3 b3 c3 d3 e3 f3"
         "a4 b4 c4 d4 e4 f4"
         "a5 b5 c5 d5 e5 f5"
-        "a6 b6 c6 d6 e6 f6"
-        "a7 b7 c7 d7 e7 f7"
-        "a8 b8 c8 d8 e8 f8";
+        "a6 b6 c6 d6 e6 f6";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -5679,19 +5195,6 @@
         border-left: 1px solid $Default-L;
         min-width: 120px;
         grid-area: a6;
-    }
-
-    .a7 {
-        font-size: 1.1em!important;
-        font-weight: 800!important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: a7;
     }
 
     .b0 {
@@ -5810,24 +5313,6 @@
         }
     }
 
-    .b7 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: b7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .c0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -5937,23 +5422,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: c6;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .c7 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: c7;
 
         input {
             max-width: 104px;
@@ -6082,24 +5550,6 @@
         }
     }
 
-    .d7 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: d7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .e0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -6216,24 +5666,6 @@
         }
     }
 
-    .e7 {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: e7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .f0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -6343,23 +5775,6 @@
         border-right: 1px solid $Default-L;
         min-width: 120px;
         grid-area: f6;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .f7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        min-width: 120px;
-        grid-area: f7;
 
         input {
             max-width: 104px;
