@@ -23,6 +23,7 @@
 ### Tasks
 
 - [ ] terms
+- [ ] option set
 - [x] No totals
 
 ## District Six-month
@@ -30,6 +31,7 @@
 ### Tasks
 
 - [ ] terms
+- [ ] option set
 - [x] move in MPHD - MNH.8_PSI_
 - [ ] No totals
 
@@ -38,6 +40,6 @@
 ### Tasks
 
 - [ ] terms
-- [ ] No totals
+- [x] option set
 - [x] MPHD - MNH.8_PSI_ delete
 - [ ] Feedback
