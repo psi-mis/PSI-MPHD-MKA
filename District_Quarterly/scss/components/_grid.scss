@@ -19,8 +19,7 @@
         "title_public rwcls3 rwcls3 rwcls3 rwcls3 rwcls3"
         "public_rw1 vc1_5 vc2_5 vc3_5 vc4_5 vc5_5"
         "public_rw2 vc1_6 vc2_6 vc3_6 vc4_6 vc5_6"
-        "public_rw3 vc1_7 vc2_7 vc3_7 vc4_7 vc5_7"
-        "totals t1 t2 t3 t4 t5";
+        "public_rw3 vc1_7 vc2_7 vc3_7 vc4_7 vc5_7";
     padding: 8px 0 42px 0;
 
     .title {
@@ -244,19 +243,6 @@
         grid-area: public_rw3;
     }
 
-    .totals {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: totals;
-    }
-
     .rwcls2 {
         background-color: $Default-GT;
         border-bottom: 1px solid $Default-L;
@@ -431,24 +417,6 @@
         }
     }
 
-    .t1 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t1;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .vc2_0 {
         font-size: 1em;
         font-weight: 400;
@@ -602,24 +570,6 @@
         justify-content: center;
         align-items: center;
         grid-area: vc2_7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .t2 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t2;
 
         input {
             max-width: 104px;
@@ -787,24 +737,6 @@
         }
     }
 
-    .t3 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t3;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .vc4_0 {
         font-size: 1em;
         font-weight: 400;
@@ -958,24 +890,6 @@
         justify-content: center;
         align-items: center;
         grid-area: vc4_7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .t4 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t4;
 
         input {
             max-width: 104px;
@@ -1142,24 +1056,6 @@
             text-align: right;
         }
     }
-
-    .t5 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t5;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
 }
 
 .t1g2 {
@@ -1182,8 +1078,7 @@
         "title_public rwcls3 rwcls3 rwcls3 rwcls3"
         "public_rw1 vc1_6 vc2_6 vc3_6 vc4_6"
         "public_rw2 vc1_7 vc2_7 vc3_7 vc4_7"
-        "public_rw3 vc1_8 vc2_8 vc3_8 vc4_8"
-        "totals t1 t2 t3 t4";
+        "public_rw3 vc1_8 vc2_8 vc3_8 vc4_8";
     padding: 8px 0 42px 0;
 
     .title {
@@ -1420,19 +1315,6 @@
         grid-area: public_rw3;
     }
 
-    .totals {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: totals;
-    }
-
     .rwcls2 {
         background-color: $Default-GT;
         border-bottom: 1px solid $Default-L;
@@ -1627,24 +1509,6 @@
         }
     }
 
-    .t1 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t1;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .vc2_0 {
         font-size: 1em;
         font-weight: 400;
@@ -1818,24 +1682,6 @@
         justify-content: center;
         align-items: center;
         grid-area: vc2_8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .t2 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t2;
 
         input {
             max-width: 104px;
@@ -2023,24 +1869,6 @@
         }
     }
 
-    .t3 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t3;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .vc4_0 {
         font-size: 1em;
         font-weight: 400;
@@ -2221,24 +2049,6 @@
         }
     }
 
-    .t4 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t4;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
     .vc5_0 {
         font-size: 1em;
         font-weight: 400;
@@ -2412,24 +2222,6 @@
         justify-content: center;
         align-items: center;
         grid-area: vc5_8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .t5 {
-        font-size: 1.1em;
-        font-weight: 800;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        grid-area: t5;
 
         input {
             max-width: 104px;

@@ -23,7 +23,7 @@
 ### Tasks
 
 - [ ] terms
-- [ ] No totals
+- [x] No totals
 
 ## District Six-month
 
