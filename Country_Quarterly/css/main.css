@@ -519,7 +519,7 @@
   text-align: right;
 }
 
-.t1g5 {
+.t1g4 {
   clear: both;
   display: grid;
   grid-template-columns: auto;
@@ -528,7 +528,7 @@
   grid-template-areas: "title c1 c2 c3 c4 c5" "r1 c1i1 c2i1 c3i1 c4i1 c5i1" "r2 c1i2 c2i2 c3i2 c4i2 c5i2";
   padding: 8px 0 42px 0;
 }
-.t1g5 .title {
+.t1g4 .title {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -536,7 +536,7 @@
   min-width: 90px;
   grid-area: title;
 }
-.t1g5 .c1 {
+.t1g4 .c1 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -548,7 +548,7 @@
   text-align: center;
   grid-area: c1;
 }
-.t1g5 .c2 {
+.t1g4 .c2 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -560,7 +560,7 @@
   text-align: center;
   grid-area: c2;
 }
-.t1g5 .c3 {
+.t1g4 .c3 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -572,7 +572,7 @@
   text-align: center;
   grid-area: c3;
 }
-.t1g5 .c4 {
+.t1g4 .c4 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -584,7 +584,7 @@
   text-align: center;
   grid-area: c4;
 }
-.t1g5 .c5 {
+.t1g4 .c5 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -596,7 +596,7 @@
   text-align: center;
   grid-area: c5;
 }
-.t1g5 .r1 {
+.t1g4 .r1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -607,7 +607,7 @@
   min-width: 90px;
   grid-area: r1;
 }
-.t1g5 .r2 {
+.t1g4 .r2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -618,7 +618,7 @@
   min-width: 90px;
   grid-area: r2;
 }
-.t1g5 .c1i1 {
+.t1g4 .c1i1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -630,11 +630,11 @@
   text-align: right;
   grid-area: c1i1;
 }
-.t1g5 .c1i1 input {
+.t1g4 .c1i1 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c2i1 {
+.t1g4 .c2i1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -646,11 +646,11 @@
   text-align: right;
   grid-area: c2i1;
 }
-.t1g5 .c2i1 input {
+.t1g4 .c2i1 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c3i1 {
+.t1g4 .c3i1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -662,11 +662,11 @@
   text-align: right;
   grid-area: c3i1;
 }
-.t1g5 .c3i1 input {
+.t1g4 .c3i1 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c4i1 {
+.t1g4 .c4i1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -678,11 +678,11 @@
   text-align: right;
   grid-area: c4i1;
 }
-.t1g5 .c4i1 input {
+.t1g4 .c4i1 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c5i1 {
+.t1g4 .c5i1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -694,11 +694,11 @@
   text-align: right;
   grid-area: c5i1;
 }
-.t1g5 .c5i1 input {
+.t1g4 .c5i1 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c1i2 {
+.t1g4 .c1i2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -710,11 +710,11 @@
   text-align: right;
   grid-area: c1i2;
 }
-.t1g5 .c1i2 input {
+.t1g4 .c1i2 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c2i2 {
+.t1g4 .c2i2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -726,11 +726,11 @@
   text-align: right;
   grid-area: c2i2;
 }
-.t1g5 .c2i2 input {
+.t1g4 .c2i2 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c3i2 {
+.t1g4 .c3i2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -742,11 +742,11 @@
   text-align: right;
   grid-area: c3i2;
 }
-.t1g5 .c3i2 input {
+.t1g4 .c3i2 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c4i2 {
+.t1g4 .c4i2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -758,11 +758,11 @@
   text-align: right;
   grid-area: c4i2;
 }
-.t1g5 .c4i2 input {
+.t1g4 .c4i2 input {
   max-width: 104px;
   text-align: right;
 }
-.t1g5 .c5i2 {
+.t1g4 .c5i2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -774,7 +774,7 @@
   text-align: right;
   grid-area: c5i2;
 }
-.t1g5 .c5i2 input {
+.t1g4 .c5i2 input {
   max-width: 104px;
   text-align: right;
 }
@@ -834,8 +834,7 @@
   grid-template-areas: "Tittle Tittle" "r1 i1" "t_area1 t_area1" "r2 i2" "t_area2 t_area2" "r3 i3" "t_area3 t_area3" "r4 i4" "t_area4 t_area4" "r5 i5" "t_area5 t_area5" "r6 i6" "t_area6 t_area6" "r7 i7" "t_area7 t_area7" "r8 i8" "t_area8 t_area8" "r9 i9" "t_area9 t_area9" "r10 i10" "t_area10 t_area10" "r11 i11" "t_area11 t_area11";
   padding: 8px 0 42px 0;
 }
-
-.Tittle {
+.t2g2 .Tittle {
   font-size: 1.1em !important;
   font-weight: 800 !important;
   color: #333333;
@@ -843,8 +842,7 @@
   min-width: 90px;
   grid-area: Tittle;
 }
-
-.r1 {
+.t2g2 .r1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -855,8 +853,7 @@
   min-width: 90px;
   grid-area: r1;
 }
-
-.t_area1 {
+.t2g2 .t_area1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -867,15 +864,14 @@
   min-width: 90px;
   grid-area: t_area1;
 }
-.t_area1 input {
+.t2g2 .t_area1 input {
   text-align: left !important;
   resize: both, importnt !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r2 {
+.t2g2 .r2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -886,8 +882,7 @@
   min-width: 90px;
   grid-area: r2;
 }
-
-.t_area2 {
+.t2g2 .t_area2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -898,14 +893,13 @@
   min-width: 90px;
   grid-area: t_area2;
 }
-.t_area2 input {
+.t2g2 .t_area2 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r3 {
+.t2g2 .r3 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -916,8 +910,7 @@
   min-width: 90px;
   grid-area: r3;
 }
-
-.t_area3 {
+.t2g2 .t_area3 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -928,14 +921,13 @@
   min-width: 90px;
   grid-area: t_area3;
 }
-.t_area3 input {
+.t2g2 .t_area3 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r4 {
+.t2g2 .r4 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -946,8 +938,7 @@
   min-width: 90px;
   grid-area: r4;
 }
-
-.t_area4 {
+.t2g2 .t_area4 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -958,14 +949,13 @@
   min-width: 90px;
   grid-area: t_area4;
 }
-.t_area4 input {
+.t2g2 .t_area4 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r5 {
+.t2g2 .r5 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -976,8 +966,7 @@
   min-width: 90px;
   grid-area: r5;
 }
-
-.t_area5 {
+.t2g2 .t_area5 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -988,14 +977,13 @@
   min-width: 90px;
   grid-area: t_area5;
 }
-.t_area5 input {
+.t2g2 .t_area5 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r6 {
+.t2g2 .r6 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1006,8 +994,7 @@
   min-width: 90px;
   grid-area: r6;
 }
-
-.t_area6 {
+.t2g2 .t_area6 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1018,14 +1005,13 @@
   min-width: 90px;
   grid-area: t_area6;
 }
-.t_area6 input {
+.t2g2 .t_area6 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r7 {
+.t2g2 .r7 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1036,8 +1022,7 @@
   min-width: 90px;
   grid-area: r7;
 }
-
-.t_area7 {
+.t2g2 .t_area7 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1048,14 +1033,13 @@
   min-width: 90px;
   grid-area: t_area7;
 }
-.t_area7 input {
+.t2g2 .t_area7 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r8 {
+.t2g2 .r8 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1066,8 +1050,7 @@
   min-width: 90px;
   grid-area: r8;
 }
-
-.t_area8 {
+.t2g2 .t_area8 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1078,14 +1061,13 @@
   min-width: 90px;
   grid-area: t_area8;
 }
-.t_area8 input {
+.t2g2 .t_area8 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r9 {
+.t2g2 .r9 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1096,8 +1078,7 @@
   min-width: 90px;
   grid-area: r9;
 }
-
-.t_area9 {
+.t2g2 .t_area9 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1108,14 +1089,13 @@
   min-width: 90px;
   grid-area: t_area9;
 }
-.t_area9 input {
+.t2g2 .t_area9 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r10 {
+.t2g2 .r10 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1126,8 +1106,7 @@
   min-width: 90px;
   grid-area: r10;
 }
-
-.t_area10 {
+.t2g2 .t_area10 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1138,14 +1117,13 @@
   min-width: 90px;
   grid-area: t_area10;
 }
-.t_area10 input {
+.t2g2 .t_area10 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.r11 {
+.t2g2 .r11 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1156,8 +1134,7 @@
   min-width: 90px;
   grid-area: r11;
 }
-
-.t_area11 {
+.t2g2 .t_area11 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1168,14 +1145,13 @@
   min-width: 90px;
   grid-area: t_area11;
 }
-.t_area11 input {
+.t2g2 .t_area11 input {
   text-align: left !important;
   width: calc(100% - 10px);
   resize: both !important;
   height: 100px !important;
 }
-
-.i1 {
+.t2g2 .i1 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1186,12 +1162,11 @@
   text-align: right;
   grid-area: i1;
 }
-.i1 input {
+.t2g2 .i1 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i2 {
+.t2g2 .i2 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1202,12 +1177,11 @@
   text-align: right;
   grid-area: i2;
 }
-.i2 input {
+.t2g2 .i2 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i3 {
+.t2g2 .i3 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1218,12 +1192,11 @@
   text-align: right;
   grid-area: i3;
 }
-.i3 input {
+.t2g2 .i3 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i4 {
+.t2g2 .i4 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1234,12 +1207,11 @@
   text-align: right;
   grid-area: i4;
 }
-.i4 input {
+.t2g2 .i4 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i5 {
+.t2g2 .i5 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1250,12 +1222,11 @@
   text-align: right;
   grid-area: i5;
 }
-.i5 input {
+.t2g2 .i5 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i6 {
+.t2g2 .i6 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1266,12 +1237,11 @@
   text-align: right;
   grid-area: i6;
 }
-.i6 input {
+.t2g2 .i6 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i7 {
+.t2g2 .i7 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1282,12 +1252,11 @@
   text-align: right;
   grid-area: i7;
 }
-.i7 input {
+.t2g2 .i7 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i8 {
+.t2g2 .i8 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1298,12 +1267,11 @@
   text-align: right;
   grid-area: i8;
 }
-.i8 input {
+.t2g2 .i8 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i9 {
+.t2g2 .i9 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1314,12 +1282,11 @@
   text-align: right;
   grid-area: i9;
 }
-.i9 input {
+.t2g2 .i9 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i10 {
+.t2g2 .i10 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1330,12 +1297,11 @@
   text-align: right;
   grid-area: i10;
 }
-.i10 input {
+.t2g2 .i10 input {
   max-width: 104px;
   text-align: right;
 }
-
-.i11 {
+.t2g2 .i11 {
   font-size: 1em;
   font-weight: 400;
   color: #333333;
@@ -1346,7 +1312,7 @@
   text-align: right;
   grid-area: i11;
 }
-.i11 input {
+.t2g2 .i11 input {
   max-width: 104px;
   text-align: right;
 }
