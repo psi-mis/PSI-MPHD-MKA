@@ -172,17 +172,17 @@
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-                "c_t1 c_t1 c_t1 c_t1 c_t2 c_t2 c_t3 c_t3 c_t3"
-                "c_t1-1 c_t1-2 c_t1-3 c_t1-4 c_t2-1 c_t2-2 c_t3-1 c_t3-2 c_t3-3"
-                "rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r"
-                "c_t1-1-i1 c_t1-2-i1 c_t1-3-i1 c_t1-4-i1 c_t2-1-i1 c_t2-2-i1 c_t3-1-i1 c_t3-2-i1 c_t3-3-i1"
-                "c_t1-1-i2 c_t1-2-i2 c_t1-3-i2 c_t1-4-i2 c_t2-1-i2 c_t2-2-i2 c_t3-1-i2 c_t3-2-i2 c_t3-3-i2"
-                "c_t1-1-i3 c_t1-2-i3 c_t1-3-i3 c_t1-4-i3 c_t2-1-i3 c_t2-2-i3 c_t3-1-i3 c_t3-2-i3 c_t3-3-i3"
-                "c_t1-1-i4 c_t1-2-i4 c_t1-3-i4 c_t1-4-i4 c_t2-1-i4 c_t2-2-i4 c_t3-1-i4 c_t3-2-i4 c_t3-3-i4"
-                "rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r"
-                "c_t1-1-i5 c_t1-2-i5 c_t1-3-i5 c_t1-4-i5 c_t2-1-i5 c_t2-2-i5 c_t3-1-i5 c_t3-2-i5 c_t3-3-i5"
-                "c_t1-1-i6 c_t1-2-i6 c_t1-3-i6 c_t1-4-i6 c_t2-1-i6 c_t2-2-i6 c_t3-1-i6 c_t3-2-i6 c_t3-3-i6"
-                "c_t1-1-i7 c_t1-2-i7 c_t1-3-i7 c_t1-4-i7 c_t2-1-i7 c_t2-2-i7 c_t3-1-i7 c_t3-2-i7 c_t3-3-i7";
+                "c_t1 c_t1 c_t1 c_t2 c_t3 c_t3 c_t3"
+                "c_t1-1 c_t1-2 c_t1-3 c_t2-1 c_t3-1 c_t3-2 c_t3-3"
+                "rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r"
+                "c_t1-1-i1 c_t1-2-i1 c_t1-3-i1 c_t2-1-i1 c_t3-1-i1 c_t3-2-i1 c_t3-3-i1"
+                "c_t1-1-i2 c_t1-2-i2 c_t1-3-i2 c_t2-1-i2 c_t3-1-i2 c_t3-2-i2 c_t3-3-i2"
+                "c_t1-1-i3 c_t1-2-i3 c_t1-3-i3 c_t2-1-i3 c_t3-1-i3 c_t3-2-i3 c_t3-3-i3"
+                "c_t1-1-i4 c_t1-2-i4 c_t1-3-i4 c_t2-1-i4 c_t3-1-i4 c_t3-2-i4 c_t3-3-i4"
+                "rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r"
+                "c_t1-1-i5 c_t1-2-i5 c_t1-3-i5 c_t2-1-i5 c_t3-1-i5 c_t3-2-i5 c_t3-3-i5"
+                "c_t1-1-i6 c_t1-2-i6 c_t1-3-i6 c_t2-1-i6 c_t3-1-i6 c_t3-2-i6 c_t3-3-i6"
+                "c_t1-1-i7 c_t1-2-i7 c_t1-3-i7 c_t2-1-i7 c_t3-1-i7 c_t3-2-i7 c_t3-3-i7";
 
             .rwt1r {
                 background-color: $Default-GT;
