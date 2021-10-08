@@ -22,7 +22,7 @@
 
 ### Tasks
 
-- [ ] terms
+- [x] terms
 - [x] option set
 - [x] No totals
 
@@ -31,7 +31,7 @@
 ### Tasks
 
 - [ ] terms
-- [ ] option set
+- [x] option set
 - [x] move in MPHD - MNH.8_PSI_
 - [ ] No totals
 
