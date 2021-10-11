@@ -89,10 +89,10 @@
   .t1g1 {
     clear: both;
     display: grid;
-    grid-template-columns: auto 130px;
+    grid-template-columns: auto 130px 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title title""r1 i1""r2 i2";
+    grid-template-areas: "title title totals""r1 i1 tls1""r2 i2 tls2";
     padding: 8px 0 42px 0;
   }
 
@@ -161,6 +161,53 @@
   }
 
   .t1g1 .i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g1 .totals {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: totals;
+  }
+
+  .t1g1 .tls1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: tls1;
+  }
+
+  .t1g1 .tls1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g1 .tls2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: tls2;
+  }
+
+  .t1g1 .tls2 input {
     max-width: 104px;
     text-align: right;
   }
@@ -1609,15 +1656,27 @@
 
           <div class="r1" keyword="opt_c:Tb1Tt1Tx1">Number of activities in Core Award work plans</div>
 
+          <div class="totals">Totals</div>
+
           <div class="i1"><input id="llgAZinnOdg-HllvX50cXC0-val" name="entryfield"
               title="MPHD - GEN.1_Number of discrete activities in the Core  Award work plans"
               value="[ MPHD - GEN.1_Number of discrete activities in the Core  Award work plans ]" /></div>
+
+          <div class="tls1"><input dataelementid="Cr38h6S6ULD" id="totalCr38h6S6ULD" name="total" readonly="readonly"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core ]" />
+          </div>
 
           <div class="r2" keyword="opt_c:Tb1Tt1Tx2">Number of activities in Field Award work plans</div>
 
           <div class="i2"><input id="J0Q2l95pmIS-HllvX50cXC0-val" name="entryfield"
               title="MPHD - GEN.1_Number of discrete activities in the Field Award work plans"
               value="[ MPHD - GEN.1_Number of discrete activities in the Field Award work plans ]" /></div>
+
+          <div class="tls2"><input dataelementid="nP9MrRee08K" id="totalnP9MrRee08K" name="total" readonly="readonly"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field ]" />
+          </div>
         </div>
 
         <div class="t1g2">

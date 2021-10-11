@@ -87,10 +87,10 @@
 .t1g1 {
   clear: both;
   display: grid;
-  grid-template-columns: auto 130px;
+  grid-template-columns: auto 130px 130px;
   grid-template-rows: auto;
   gap: 0px 0px;
-  grid-template-areas: "title title" "r1 i1" "r2 i2";
+  grid-template-areas: "title title totals" "r1 i1 tls1" "r2 i2 tls2";
   padding: 8px 0 42px 0;
 }
 .t1g1 .title {
@@ -152,6 +152,48 @@
   grid-area: i2;
 }
 .t1g1 .i2 input {
+  max-width: 104px;
+  text-align: right;
+}
+.t1g1 .totals {
+  font-size: 1.1em !important;
+  font-weight: 800 !important;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 2px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-top: 1px solid #f7faff;
+  text-align: center;
+  grid-area: totals;
+}
+.t1g1 .tls1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: tls1;
+}
+.t1g1 .tls1 input {
+  max-width: 104px;
+  text-align: right;
+}
+.t1g1 .tls2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: tls2;
+}
+.t1g1 .tls2 input {
   max-width: 104px;
   text-align: right;
 }
