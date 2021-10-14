@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+  $("body").on("focus", "input", function (event) {
+    $(this).attr('autocomplete', 'off')
+  });
+
   $('.custom_tab li').click(function (e) {
     tab_selected = $(this).find('a').attr('href');
     switch (tab_selected) {

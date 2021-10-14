@@ -2,43 +2,35 @@
 * Server: https://dev-mphd.psi-mis.org
 * Server: https://mphd.psi-mis.org
 
-## Work in Dev
-
-## MPHD Facility Monthly => Completed
+## Country Quarterly
 
 ### Tasks
 
-- [x] terms
-- [x] No totals
-
-## MPHD Facility Six Monthly
-
-### Tasks
-
-- [x] terms
-- [x] No totals (not applicable)
+- [x] Terms & Translation
+- [x] Autocomplete off
+- [x] Totals
 
 ## District Quarterly
 
 ### Tasks
 
-- [x] terms
-- [x] option set
-- [x] No totals
+- [x] Terms & Translation
+- [x] Autocomplete off
+- [x] Totals
 
-## District Six-month
-
-### Tasks
-
-- [ ] terms
-- [x] option set
-- [x] move in MPHD - MNH.8_PSI_
-- [ ] No totals
-
-## Country Quarterly
+## Facility monthly
 
 ### Tasks
 
-- [x] terms
-- [x] option set
-- [x] MPHD - MNH.8_PSI_ delete
+- [x] Terms & Translation
+- [x] Autocomplete off
+- [x] Totals
+
+## Facility six monthly
+
+### Tasks
+
+- [x] Terms & Translation
+- [x] Autocomplete off
+- [x] data elemenst 
+- [x] Totals
