@@ -1,13 +1,13 @@
 .t1g1 {
     clear: both;
     display: grid;
-    grid-template-columns: auto 130px 130px;
+    grid-template-columns: auto 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas:
-        "title title totals"
-        "r1 i1 tls1"
-        "r2 i2 tls2";
+        "title title"
+        "r1 i1"
+        "r2 i2";
     padding: 8px 0 42px 0;
 
     .title {
@@ -72,53 +72,6 @@
         min-width: 90px;
         text-align: right;
         grid-area: i2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .totals {
-        font-size: 1.1em !important;
-        font-weight: 800 !important;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
-        text-align: center;
-        grid-area: totals;
-    }
-
-    .tls1 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
-        grid-area: tls1;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .tls2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
-        grid-area: tls2;
 
         input {
             max-width: 104px;
@@ -606,13 +559,13 @@
 .t1g4 {
     clear: both;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto 130px 130px 130px 130px 130px 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas:
-        "title c1 c2 c3 c4 c5"
-        "r1 c1i1 c2i1 c3i1 c4i1 c5i1"
-        "r2 c1i2 c2i2 c3i2 c4i2 c5i2";
+        "title c1 c2 c3 c4 c5 totals"
+        "r1 c1i1 c2i1 c3i1 c4i1 c5i1 tt1"
+        "r2 c1i2 c2i2 c3i2 c4i2 c5i2 tt2";
     padding: 8px 0 42px 0;
 
     .title {
@@ -622,6 +575,55 @@
         padding: 8px;
         min-width: 90px;
         grid-area: title;
+    }
+
+    .totals {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: totals;
+    }
+
+    .tt1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: tt1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .tt2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: tt2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
     }
 
     .c1 {
