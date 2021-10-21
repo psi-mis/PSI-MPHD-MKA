@@ -25,7 +25,7 @@
 
     .title {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         padding: 8px;
         min-width: 90px;
@@ -34,7 +34,7 @@
 
     .c1 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -47,7 +47,7 @@
 
     .c2 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -60,7 +60,7 @@
 
     .c3 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -73,7 +73,7 @@
 
     .c4 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -86,7 +86,7 @@
 
     .c5 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -99,7 +99,7 @@
 
     .title_private {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         background-color: $Default-GT;
         color: $color2;
         padding: 8px;
@@ -170,7 +170,7 @@
 
     .title_unspecified {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         background-color: $Default-GT;
         color: $color2;
         padding: 8px;
@@ -195,7 +195,7 @@
 
     .title_public {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         background-color: $Default-GT;
         color: $color2;
         padding: 8px;
@@ -260,7 +260,7 @@
 
     .totals {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-T;
         padding: 8px;
@@ -1198,7 +1198,7 @@
 
     .title {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         padding: 8px;
         min-width: 90px;
@@ -1207,7 +1207,7 @@
 
     .totals {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-T;
         padding: 8px;
@@ -1220,7 +1220,7 @@
 
     .c1 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -1233,7 +1233,7 @@
 
     .c2 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -1246,7 +1246,7 @@
 
     .c3 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -1259,7 +1259,7 @@
 
     .c4 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -1272,7 +1272,7 @@
 
     .c5 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
@@ -1285,7 +1285,7 @@
 
     .title_private {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         background-color: $Default-GT;
         color: $color2;
         padding: 8px;
@@ -1356,7 +1356,7 @@
 
     .title_unspecified {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         background-color: $Default-GT;
         color: $color2;
         padding: 8px;
@@ -1394,7 +1394,7 @@
 
     .title_public {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         background-color: $Default-GT;
         color: $color2;
         padding: 8px;
@@ -2438,40 +2438,153 @@
     }
 }
 
-.tb1g3 {
+.t1g3 {
     clear: both;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
         "title c1 c2"
-        "c1text_1 c1input_1 c2input_1"
-        "c1text_2 c1input_2 c2input_2"
-        "c1text_3 c1input_3 c2input_3"
-        "c1text_4 c1input_4 c2input_4"
-        "c1text_5 c1input_5 c2input_5"
-        "c1text_6 c1input_6 c2input_6"
-        "c1text_7 c1input_7 c2input_7"
-        "c1text_8 c1input_8 c2input_8"
-        "c1text_9 c1input_9 c2input_9"
-        "tttext_10 tt1i_10 tt2i_10";
+        "prw1 pc1 pc2"
+        "hwrw1 hwpc1 hwpc2"
+        "title_private rwcls1 rwcls1"
+        "private_rw1 vc1_0 vc2_0"
+        "private_rw2 vc1_1 vc2_1"
+        "private_rw3 vc1_2 vc2_2"
+        "private_rw4 vc1_3 vc2_3"
+        "title_unspecified rwcls2 rwcls2"
+        "unspecified_rw1 vc1_4 vc2_4"
+        "unspecified_rw2 vc1_5 vc2_5"
+        "title_public rwcls3 rwcls3"
+        "public_rw1 vc1_6 vc2_6"
+        "public_rw2 vc1_7 vc2_7"
+        "public_rw3 vc1_8 vc2_8"
+        "totals tts1 tts2";
     padding: 8px 0 42px 0;
 
-    .title {
+    .prw1 {
         font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: prw1;
+    }
+
+    .pc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .pc2 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwrw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: hwrw1;
+    }
+
+    .hwpc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwpc2 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .title {
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
-        background-color: $colorT;
         padding: 8px;
-        border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        min-width: 90px;
         grid-area: title;
     }
 
-    .c1 {
+    .totals {
         font-size: 1em;
+        font-weight: 800;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        text-align: left;
+        grid-area: totals;
+    }
+
+    .c1 {
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
@@ -2479,14 +2592,12 @@
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-
-        display: flex;
-        text-align: center;
+        text-align: left;
         grid-area: c1;
     }
 
     .c2 {
-        font-size: 1em;
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
@@ -2494,36 +2605,195 @@
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-
-        text-align: center;
+        text-align: left;
         grid-area: c2;
     }
 
-    .c1text_1 {
-        font-size: 1em;
-        font-weight: 400;
+    .title_private {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
         color: $color2;
-        background-color: $Default-RW;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: c1text_1;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_private;
     }
 
-    .c1input_1 {
+    .rwcls1 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls1;
+    }
+
+    .private_rw1 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
         background-color: $Default-RW;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw1;
+    }
 
+    .private_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw2;
+    }
+
+    .private_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw3;
+    }
+
+    .private_rw4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw4;
+    }
+
+    .title_unspecified {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_unspecified;
+    }
+
+    .unspecified_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw1;
+    }
+
+    .unspecified_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw2;
+    }
+
+    .title_public {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_public;
+    }
+
+    .public_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw1;
+    }
+
+    .public_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw2;
+    }
+
+    .public_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw3;
+    }
+
+    .rwcls2 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls2;
+    }
+
+    .rwcls3 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls3;
+    }
+
+    .vc1_0 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_1;
+        grid-area: vc1_0;
 
         input {
             max-width: 104px;
@@ -2531,18 +2801,17 @@
         }
     }
 
-    .c2input_1 {
+    .vc1_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_1;
+        grid-area: vc1_1;
 
         input {
             max-width: 104px;
@@ -2550,31 +2819,17 @@
         }
     }
 
-    .c1text_2 {
+    .vc1_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_2;
-    }
-
-    .c1input_2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_2;
+        grid-area: vc1_2;
 
         input {
             max-width: 104px;
@@ -2582,18 +2837,17 @@
         }
     }
 
-    .c2input_2 {
+    .vc1_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_2;
+        grid-area: vc1_3;
 
         input {
             max-width: 104px;
@@ -2601,31 +2855,17 @@
         }
     }
 
-    .c1text_3 {
+    .vc1_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_3;
-    }
-
-    .c1input_3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_3;
+        grid-area: vc1_4;
 
         input {
             max-width: 104px;
@@ -2633,18 +2873,17 @@
         }
     }
 
-    .c2input_3 {
+    .vc1_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_3;
+        grid-area: vc1_5;
 
         input {
             max-width: 104px;
@@ -2652,31 +2891,17 @@
         }
     }
 
-    .c1text_4 {
+    .vc1_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_4;
-    }
-
-    .c1input_4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_4;
+        grid-area: vc1_6;
 
         input {
             max-width: 104px;
@@ -2684,18 +2909,17 @@
         }
     }
 
-    .c2input_4 {
+    .vc1_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_4;
+        grid-area: vc1_7;
 
         input {
             max-width: 104px;
@@ -2703,31 +2927,17 @@
         }
     }
 
-    .c1text_5 {
+    .vc1_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_5;
-    }
-
-    .c1input_5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_5;
+        grid-area: vc1_8;
 
         input {
             max-width: 104px;
@@ -2735,18 +2945,17 @@
         }
     }
 
-    .c2input_5 {
+    .vc2_0 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_5;
+        grid-area: vc2_0;
 
         input {
             max-width: 104px;
@@ -2754,18 +2963,17 @@
         }
     }
 
-    .c3input_5 {
+    .vc2_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c3input_5;
+        grid-area: vc2_1;
 
         input {
             max-width: 104px;
@@ -2773,18 +2981,17 @@
         }
     }
 
-    .c4input_5 {
+    .vc2_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c4input_5;
+        grid-area: vc2_2;
 
         input {
             max-width: 104px;
@@ -2792,31 +2999,17 @@
         }
     }
 
-    .c1text_6 {
+    .vc2_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_6;
-    }
-
-    .c1input_6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_6;
+        min-width: 90px;
+        text-align: right;;
+        grid-area: vc2_3;
 
         input {
             max-width: 104px;
@@ -2824,18 +3017,17 @@
         }
     }
 
-    .c2input_6 {
+    .vc2_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_6;
+        grid-area: vc2_4;
 
         input {
             max-width: 104px;
@@ -2843,18 +3035,17 @@
         }
     }
 
-    .c3input_6 {
+    .vc2_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c3input_6;
+        grid-area: vc2_5;
 
         input {
             max-width: 104px;
@@ -2862,18 +3053,17 @@
         }
     }
 
-    .c4input_6 {
+    .vc2_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c4input_6;
+        grid-area: vc2_6;
 
         input {
             max-width: 104px;
@@ -2881,31 +3071,17 @@
         }
     }
 
-    .c1text_7 {
+    .vc2_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_7;
-    }
-
-    .c1input_7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_7;
+        grid-area: vc2_7;
 
         input {
             max-width: 104px;
@@ -2913,18 +3089,17 @@
         }
     }
 
-    .c2input_7 {
+    .vc2_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_7;
+        grid-area: vc2_8;
 
         input {
             max-width: 104px;
@@ -2932,18 +3107,17 @@
         }
     }
 
-    .c3input_7 {
+    .vc5_0 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c3input_7;
+        grid-area: vc5_0;
 
         input {
             max-width: 104px;
@@ -2951,18 +3125,17 @@
         }
     }
 
-    .c4input_7 {
+    .vc5_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c4input_7;
+        grid-area: vc5_1;
 
         input {
             max-width: 104px;
@@ -2970,31 +3143,17 @@
         }
     }
 
-    .c1text_8 {
+    .vc5_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_8;
-    }
-
-    .c1input_8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_8;
+        grid-area: vc5_2;
 
         input {
             max-width: 104px;
@@ -3002,18 +3161,17 @@
         }
     }
 
-    .c2input_8 {
+    .vc5_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_8;
+        grid-area: vc5_3;
 
         input {
             max-width: 104px;
@@ -3021,18 +3179,17 @@
         }
     }
 
-    .c3input_8 {
+    .vc5_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c3input_8;
+        grid-area: vc5_4;
 
         input {
             max-width: 104px;
@@ -3040,18 +3197,17 @@
         }
     }
 
-    .c4input_8 {
+    .vc5_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c4input_8;
+        grid-area: vc5_5;
 
         input {
             max-width: 104px;
@@ -3059,31 +3215,17 @@
         }
     }
 
-    .c1text_9 {
+    .vc5_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_9;
-    }
-
-    .c1input_9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c1input_9;
+        grid-area: vc5_6;
 
         input {
             max-width: 104px;
@@ -3091,18 +3233,17 @@
         }
     }
 
-    .c2input_9 {
+    .vc5_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c2input_9;
+        grid-area: vc5_7;
 
         input {
             max-width: 104px;
@@ -3110,18 +3251,17 @@
         }
     }
 
-    .c3input_9 {
+    .vc5_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: c3input_9;
+        grid-area: vc5_8;
 
         input {
             max-width: 104px;
@@ -3129,50 +3269,17 @@
         }
     }
 
-    .c3input_9 {
+    .tts1 {
         font-size: 1em;
         font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_9;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .tttext_10 {
-        font-size: 1em;
-        font-weight: 500;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: tttext_10;
-    }
-
-    .tt1i_10 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: tt1i_10;
+        grid-area: tts1;
 
         input {
             max-width: 104px;
@@ -3180,60 +3287,246 @@
         }
     }
 
-    .tt2i_10 {
+    .tts2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
+        min-width: 90px;
         text-align: right;
-        grid-area: tt2i_10;
+        grid-area: tts2;
 
         input {
             max-width: 104px;
             text-align: right;
         }
+    
     }
 }
 
-.tb1g4_5 {
+.t1g45 {
     clear: both;
     display: grid;
     grid-template-columns: auto 130px 130px 130px 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
         "title c1 c2 c3 c4"
-        "c1text_1 c1input_1 c2input_1 c3input_1 c4input_1"
-        "c1text_2 c1input_2 c2input_2 c3input_2 c4input_2"
-        "c1text_3 c1input_3 c2input_3 c3input_3 c4input_3"
-        "c1text_4 c1input_4 c2input_4 c3input_4 c4input_4"
-        "c1text_5 c1input_5 c2input_5 c3input_5 c4input_5"
-        "c1text_6 c1input_6 c2input_6 c3input_6 c4input_6"
-        "c1text_7 c1input_7 c2input_7 c3input_7 c4input_7"
-        "c1text_8 c1input_8 c2input_8 c3input_8 c4input_8"
-        "c1text_9 c1input_9 c2input_9 c3input_9 c4input_9"
-        "totals ttsi1_10 ttsi2_10 ttsi3_10 ttsi4_10";
+        "prw1 pc1 pc2 pc3 pc4"
+        "hwrw1 hwpc1 hwpc2 hwpc3 hwpc4"
+        "title_private rwcls1 rwcls1 rwcls1 rwcls1"
+        "private_rw1 vc1_0 vc2_0 vc3_0 vc4_0"
+        "private_rw2 vc1_1 vc2_1 vc3_1 vc4_1"
+        "private_rw3 vc1_2 vc2_2 vc3_2 vc4_2"
+        "private_rw4 vc1_3 vc2_3 vc3_3 vc4_3"
+        "title_unspecified rwcls2 rwcls2 rwcls2 rwcls2"
+        "unspecified_rw1 vc1_4 vc2_4 vc3_4 vc4_4"
+        "unspecified_rw2 vc1_5 vc2_5 vc3_5 vc4_5"
+        "title_public rwcls3 rwcls3 rwcls3 rwcls3"
+        "public_rw1 vc1_6 vc2_6 vc3_6 vc4_6"
+        "public_rw2 vc1_7 vc2_7 vc3_7 vc4_7"
+        "public_rw3 vc1_8 vc2_8 vc3_8 vc4_8"
+        "totals tts1 tts2 tts3 tts4";
     padding: 8px 0 42px 0;
 
-    .title {
+    .prw1 {
         font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: prw1;
+    }
+
+    .pc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .pc2 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .pc3 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .pc4 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwrw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: hwrw1;
+    }
+
+    .hwpc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwpc2 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwpc3 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwpc4 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .title {
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
-        background-color: $colorT;
         padding: 8px;
-        border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        min-width: 90px;
         grid-area: title;
     }
 
-    .c1 {
+    .totals {
         font-size: 1em;
+        font-weight: 800;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: totals;
+    }
+
+    .c1 {
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
@@ -3241,13 +3534,12 @@
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-
         text-align: center;
         grid-area: c1;
     }
 
     .c2 {
-        font-size: 1em;
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
@@ -3255,13 +3547,12 @@
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-
         text-align: center;
         grid-area: c2;
     }
 
     .c3 {
-        font-size: 1em;
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
@@ -3269,13 +3560,12 @@
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-
         text-align: center;
         grid-area: c3;
     }
 
     .c4 {
-        font-size: 1em;
+        font-size: 1.1em !important;
         font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
@@ -3283,36 +3573,210 @@
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-
         text-align: center;
         grid-area: c4;
     }
 
-    .c1text_1 {
-        font-size: 1em;
-        font-weight: 400;
+    .c5 {
+        font-size: 1.1em !important;
+        font-weight: 800;
         color: $color2;
-        background-color: $Default-RW;
+        background-color: $Default-GT;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
+        border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: c1text_1;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: c5;
     }
 
-    .c1input_1 {
+    .title_private {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_private;
+    }
+
+    .rwcls1 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls1;
+    }
+
+    .private_rw1 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
         background-color: $Default-RW;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw1;
+    }
 
-        text-align: right;
-        grid-area: c1input_1;
+    .private_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw2;
+    }
+
+    .private_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw3;
+    }
+
+    .private_rw4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw4;
+    }
+
+    .title_unspecified {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_unspecified;
+    }
+
+    .unspecified_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw1;
+    }
+
+    .unspecified_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw2;
+    }
+
+    .title_public {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_public;
+    }
+
+    .public_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw1;
+    }
+
+    .public_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw2;
+    }
+
+    .public_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw3;
+    }
+
+    .rwcls2 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls2;
+    }
+
+    .rwcls3 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls3;
+    }
+
+    .vc1_0 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_0;
 
         input {
             max-width: 104px;
@@ -3320,18 +3784,19 @@
         }
     }
 
-    .c2input_1 {
+    .vc1_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_1;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_1;
 
         input {
             max-width: 104px;
@@ -3339,18 +3804,19 @@
         }
     }
 
-    .c3input_1 {
+    .vc1_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_1;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_2;
 
         input {
             max-width: 104px;
@@ -3358,18 +3824,19 @@
         }
     }
 
-    .c4input_1 {
+    .vc1_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_1;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_3;
 
         input {
             max-width: 104px;
@@ -3377,31 +3844,19 @@
         }
     }
 
-    .c1text_2 {
+    .vc1_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_2;
-    }
-
-    .c1input_2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_2;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_4;
 
         input {
             max-width: 104px;
@@ -3409,18 +3864,19 @@
         }
     }
 
-    .c2input_2 {
+    .vc1_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_2;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_5;
 
         input {
             max-width: 104px;
@@ -3428,18 +3884,19 @@
         }
     }
 
-    .c3input_2 {
+    .vc1_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_2;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_6;
 
         input {
             max-width: 104px;
@@ -3447,18 +3904,19 @@
         }
     }
 
-    .c4input_2 {
+    .vc1_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_2;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_7;
 
         input {
             max-width: 104px;
@@ -3466,31 +3924,19 @@
         }
     }
 
-    .c1text_3 {
+    .vc1_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_3;
-    }
-
-    .c1input_3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_3;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_8;
 
         input {
             max-width: 104px;
@@ -3498,18 +3944,19 @@
         }
     }
 
-    .c2input_3 {
+    .vc2_0 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_3;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_0;
 
         input {
             max-width: 104px;
@@ -3517,18 +3964,19 @@
         }
     }
 
-    .c3input_3 {
+    .vc2_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_3;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_1;
 
         input {
             max-width: 104px;
@@ -3536,18 +3984,19 @@
         }
     }
 
-    .c4input_3 {
+    .vc2_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_3;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_2;
 
         input {
             max-width: 104px;
@@ -3555,31 +4004,19 @@
         }
     }
 
-    .c1text_4 {
+    .vc2_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_4;
-    }
-
-    .c1input_4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_4;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_3;
 
         input {
             max-width: 104px;
@@ -3587,18 +4024,19 @@
         }
     }
 
-    .c2input_4 {
+    .vc2_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_4;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_4;
 
         input {
             max-width: 104px;
@@ -3606,18 +4044,19 @@
         }
     }
 
-    .c3input_4 {
+    .vc2_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_4;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_5;
 
         input {
             max-width: 104px;
@@ -3625,18 +4064,19 @@
         }
     }
 
-    .c4input_4 {
+    .vc2_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_4;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_6;
 
         input {
             max-width: 104px;
@@ -3644,31 +4084,19 @@
         }
     }
 
-    .c1text_5 {
+    .vc2_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_5;
-    }
-
-    .c1input_5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_5;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_7;
 
         input {
             max-width: 104px;
@@ -3676,18 +4104,19 @@
         }
     }
 
-    .c2input_5 {
+    .vc2_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_5;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc2_8;
 
         input {
             max-width: 104px;
@@ -3695,18 +4124,19 @@
         }
     }
 
-    .c3input_5 {
+    .vc3_0 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_5;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_0;
 
         input {
             max-width: 104px;
@@ -3714,18 +4144,19 @@
         }
     }
 
-    .c4input_5 {
+    .vc3_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_5;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_1;
 
         input {
             max-width: 104px;
@@ -3733,31 +4164,19 @@
         }
     }
 
-    .c1text_6 {
+    .vc3_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_6;
-    }
-
-    .c1input_6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_6;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_2;
 
         input {
             max-width: 104px;
@@ -3765,18 +4184,19 @@
         }
     }
 
-    .c2input_6 {
+    .vc3_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_6;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_3;
 
         input {
             max-width: 104px;
@@ -3784,18 +4204,19 @@
         }
     }
 
-    .c3input_6 {
+    .vc3_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_6;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_4;
 
         input {
             max-width: 104px;
@@ -3803,18 +4224,19 @@
         }
     }
 
-    .c4input_6 {
+    .vc3_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_6;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_5;
 
         input {
             max-width: 104px;
@@ -3822,31 +4244,19 @@
         }
     }
 
-    .c1text_7 {
+    .vc3_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_7;
-    }
-
-    .c1input_7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_7;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_6;
 
         input {
             max-width: 104px;
@@ -3854,18 +4264,19 @@
         }
     }
 
-    .c2input_7 {
+    .vc3_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_7;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_7;
 
         input {
             max-width: 104px;
@@ -3873,18 +4284,19 @@
         }
     }
 
-    .c3input_7 {
+    .vc3_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_7;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc3_8;
 
         input {
             max-width: 104px;
@@ -3892,18 +4304,19 @@
         }
     }
 
-    .c4input_7 {
+    .vc4_0 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_7;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_0;
 
         input {
             max-width: 104px;
@@ -3911,31 +4324,19 @@
         }
     }
 
-    .c1text_8 {
+    .vc4_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_8;
-    }
-
-    .c1input_8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_8;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_1;
 
         input {
             max-width: 104px;
@@ -3943,18 +4344,19 @@
         }
     }
 
-    .c2input_8 {
+    .vc4_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_8;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_2;
 
         input {
             max-width: 104px;
@@ -3962,18 +4364,19 @@
         }
     }
 
-    .c3input_8 {
+    .vc4_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_8;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_3;
 
         input {
             max-width: 104px;
@@ -3981,18 +4384,19 @@
         }
     }
 
-    .c4input_8 {
+    .vc4_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_8;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_4;
 
         input {
             max-width: 104px;
@@ -4000,31 +4404,19 @@
         }
     }
 
-    .c1text_9 {
+    .vc4_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: c1text_9;
-    }
-
-    .c1input_9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c1input_9;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_5;
 
         input {
             max-width: 104px;
@@ -4032,18 +4424,19 @@
         }
     }
 
-    .c2input_9 {
+    .vc4_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c2input_9;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_6;
 
         input {
             max-width: 104px;
@@ -4051,18 +4444,19 @@
         }
     }
 
-    .c3input_9 {
+    .vc4_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c3input_9;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_7;
 
         input {
             max-width: 104px;
@@ -4070,18 +4464,19 @@
         }
     }
 
-    .c4input_9 {
+    .vc4_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: c4input_9;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc4_8;
 
         input {
             max-width: 104px;
@@ -4089,31 +4484,199 @@
         }
     }
 
-    .totals {
+    .vc5_0 {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_2 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_3 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_4 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_5 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_6 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_7 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc5_8 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc5_8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .tts1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        grid-area: totals;
-    }
-
-    .ttsi1_10 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: ttsi1_10;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: tts1;
 
         input {
             max-width: 104px;
@@ -4121,18 +4684,19 @@
         }
     }
 
-    .ttsi2_10 {
+    .tts2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: ttsi2_10;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: tts2;
 
         input {
             max-width: 104px;
@@ -4140,18 +4704,19 @@
         }
     }
 
-    .ttsi3_10 {
+    .tts3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: ttsi3_10;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: tts3;
 
         input {
             max-width: 104px;
@@ -4159,18 +4724,19 @@
         }
     }
 
-    .ttsi4_10 {
+    .tts4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-
-        text-align: right;
-        grid-area: ttsi4_10;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: tts4;
 
         input {
             max-width: 104px;
@@ -4179,7 +4745,7 @@
     }
 }
 
-.tb1g6 {
+.t1g6 {
     clear: both;
     display: grid;
     grid-template-columns: auto 130px;
@@ -4187,136 +4753,65 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "a0 b0"
-        "a1 b1"
-        "a2 b2"
-        "a3 b3"
-        "a4 b4"
-        "a5 b5"
-        "a6 b6"
-        "a7 b7"
-        "a8 b8"
-        "a9 b9";
+        "title c1"
+        "prw1 pc1"
+        "title_private rwcls1"
+        "private_rw1 vc1_0"
+        "private_rw2 vc1_1"
+        "private_rw3 vc1_2"
+        "private_rw4 vc1_3"
+        "title_unspecified rwcls2"
+        "unspecified_rw1 vc1_4"
+        "unspecified_rw2 vc1_5"
+        "title_public rwcls3"
+        "public_rw1 vc1_6"
+        "public_rw2 vc1_7"
+        "public_rw3 vc1_8"
+        "totals tts1";
     padding: 8px 0 42px 0;
 
-    .a0 {
+    .prw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: prw1;
+    }
+
+    .pc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .title {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
-        background-color: $colorT;
         padding: 8px;
-        border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
-        grid-area: a0;
+        min-width: 90px;
+        grid-area: title;
     }
 
-    .a1 {
+    .totals {
         font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a1;
-    }
-
-    .a2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a2;
-    }
-
-    .a3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a3;
-    }
-
-    .a4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a4;
-    }
-
-    .a5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a5;
-    }
-
-    .a6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a6;
-    }
-
-    .a7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a7;
-    }
-
-    .a8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a8;
-    }
-
-    .a9 {
-        font-size: 1.1em;
         font-weight: 800;
         color: $color2;
         background-color: $Default-T;
@@ -4325,38 +4820,209 @@
         border-left: 1px solid $Default-L;
         display: flex;
         align-items: center;
-        grid-area: a9;
+        grid-area: totals;
     }
 
-    .b0 {
+    .c1 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
-        grid-area: b0;
+        grid-area: c1;
     }
 
-    .b1 {
+    .title_private {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_private;
+    }
+
+    .rwcls1 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls1;
+    }
+
+    .private_rw1 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
         background-color: $Default-RW;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
         display: flex;
         align-items: center;
+        grid-area: private_rw1;
+    }
+
+    .private_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw2;
+    }
+
+    .private_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw3;
+    }
+
+    .private_rw4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw4;
+    }
+
+    .title_unspecified {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_unspecified;
+    }
+
+    .unspecified_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw1;
+    }
+
+    .unspecified_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw2;
+    }
+
+    .title_public {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_public;
+    }
+
+    .public_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw1;
+    }
+
+    .public_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw2;
+    }
+
+    .public_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw3;
+    }
+
+    .rwcls2 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls2;
+    }
+
+    .rwcls3 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls3;
+    }
+
+    .vc1_0 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
         justify-content: center;
-        grid-area: b1;
+        align-items: center;
+        grid-area: vc1_0;
 
         input {
             max-width: 104px;
@@ -4364,19 +5030,19 @@
         }
     }
 
-    .b2 {
+    .vc1_1 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b2;
+        align-items: center;
+        grid-area: vc1_1;
 
         input {
             max-width: 104px;
@@ -4384,19 +5050,19 @@
         }
     }
 
-    .b3 {
+    .vc1_2 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b3;
+        align-items: center;
+        grid-area: vc1_2;
 
         input {
             max-width: 104px;
@@ -4404,19 +5070,19 @@
         }
     }
 
-    .b4 {
+    .vc1_3 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b4;
+        align-items: center;
+        grid-area: vc1_3;
 
         input {
             max-width: 104px;
@@ -4424,19 +5090,19 @@
         }
     }
 
-    .b5 {
+    .vc1_4 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b5;
+        align-items: center;
+        grid-area: vc1_4;
 
         input {
             max-width: 104px;
@@ -4444,19 +5110,19 @@
         }
     }
 
-    .b6 {
+    .vc1_5 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b6;
+        align-items: center;
+        grid-area: vc1_5;
 
         input {
             max-width: 104px;
@@ -4464,19 +5130,19 @@
         }
     }
 
-    .b7 {
+    .vc1_6 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b7;
+        align-items: center;
+        grid-area: vc1_6;
 
         input {
             max-width: 104px;
@@ -4484,19 +5150,19 @@
         }
     }
 
-    .b8 {
+    .vc1_7 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-RW;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b8;
+        align-items: center;
+        grid-area: vc1_7;
 
         input {
             max-width: 104px;
@@ -4504,19 +5170,39 @@
         }
     }
 
-    .b9 {
+    .vc1_8 {
         font-size: 1em;
         font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .tts1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-T;
-        border-right: 1px solid $Default-T;
-
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: b9;
+        align-items: center;
+        grid-area: tts1;
 
         input {
             max-width: 104px;
@@ -4541,7 +5227,7 @@
 
     .title {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $colorT;
         padding: 8px;
@@ -4619,24 +5305,63 @@
 .grid-container1 {
     clear: both;
     display: grid;
-    grid-template-columns: 380px auto;
-    grid-template-rows: 90px 36px 36px 36px 36px 36px 36px 36px;
+    grid-template-columns: 460px auto;
+    grid-template-rows: 90px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px;
     gap: 1px 1px;
     grid-template-areas:
         "rw1 gr_cont"
+        "title_private gr_cont"
         "rw2 gr_cont"
         "rw3 gr_cont"
         "rw4 gr_cont"
+        "title_unspecified gr_cont"
         "rw5 gr_cont"
+        "title_public gr_cont"
         "rw6 gr_cont"
         "rw7 gr_cont"
         "rw8 gr_cont"
         "totals gr_cont";
     padding: 8px 0 42px 0;
 
+    .title_private {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_private;
+    }
+
+    .title_unspecified {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_unspecified;
+    }
+
+    .title_public {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_public;
+    }
+
     .totals {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-T;
         padding: 8px;
@@ -4647,7 +5372,7 @@
 
     .rw1 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $colorT;
         padding: 8px;
@@ -4664,8 +5389,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw2;
     }
 
@@ -4677,8 +5400,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw3;
     }
 
@@ -4690,8 +5411,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw4;
     }
 
@@ -4703,8 +5422,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw5;
     }
 
@@ -4716,8 +5433,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw6;
     }
 
@@ -4729,8 +5444,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw7;
     }
 
@@ -4742,8 +5455,6 @@
         padding: 8px;
         border-bottom: 1px solid $Default-L;
         border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
         grid-area: rw8;
     }
 
@@ -4757,41 +5468,63 @@
 .t2g2 {
     clear: both;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 90px 36px 36px 36px 36px 36px 36px 36px;
+    grid-template-columns: 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px;
+    grid-template-rows: 90px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px;
     gap: 1px 1px;
     grid-template-areas:
-        "col_0 col_1 col_2 col_3 col_4 col_5 col_6 col_7 col_8 col_9 col_10 col_11"
-        "a1 b1 c1 d1 e1 f1 g1 h1 i1 j1 k1 m1"
-        "a2 b2 c2 d2 e2 f2 g2 h2 i2 j2 k2 m2"
-        "a3 b3 c3 d3 e3 f3 g3 h3 i3 j3 k3 m3"
-        "a4 b4 c4 d4 e4 f4 g4 h4 i4 j4 k4 m4"
-        "a5 b5 c5 d5 e5 f5 g5 h5 i5 j5 k5 m5"
-        "a6 b6 c6 d6 e6 f6 g6 h6 i6 j6 k6 m6"
-        "a7 b7 c7 d7 e7 f7 g7 h7 i7 j7 k7 m7"
-        "tta ttb ttc ttd tte ttf ttg tth tti ttj ttk ttm";
+        "col_1 col_2 col_3 col_4 col_5 col_6 col_7 col_8 col_9 col_10 col_11"
+        "rwcls1 rwcls1 rwcls1 rwcls1 rwcls1 rwcls1 rwcls1 rwcls1 rwcls1 rwcls1 rwcls1"
+        "b1 c1 d1 e1 f1 g1 h1 i1 j1 k1 m1"
+        "b2 c2 d2 e2 f2 g2 h2 i2 j2 k2 m2"
+        "b3 c3 d3 e3 f3 g3 h3 i3 j3 k3 m3"
+        "rwcls2 rwcls2 rwcls2 rwcls2 rwcls2 rwcls2 rwcls2 rwcls2 rwcls2 rwcls2 rwcls2"
+        "b4 c4 d4 e4 f4 g4 h4 i4 j4 k4 m4"
+        "rwcls3 rwcls3 rwcls3 rwcls3 rwcls3 rwcls3 rwcls3 rwcls3 rwcls3 rwcls3 rwcls3"
+        "b5 c5 d5 e5 f5 g5 h5 i5 j5 k5 m5"
+        "b6 c6 d6 e6 f6 g6 h6 i6 j6 k6 m6"
+        "b7 c7 d7 e7 f7 g7 h7 i7 j7 k7 m7"
+        "b8 c8 d8 e8 f8 g8 h8 i8 j8 k8 m8"
+        "ttb ttc ttd tte ttf ttg tth tti ttj ttk ttm";
+
+        .rwcls1 {
+            background-color: $Default-GT;
+            border-bottom: 1px solid $Default-L;
+            border-left: 1px solid $Default-L;
+            grid-area: rwcls1;
+        }
+
+        .rwcls2 {
+            background-color: $Default-GT;
+            border-bottom: 1px solid $Default-L;
+            border-left: 1px solid $Default-L;
+            grid-area: rwcls2;
+        }
+
+        .rwcls3 {
+            background-color: $Default-GT;
+            border-bottom: 1px solid $Default-L;
+            border-left: 1px solid $Default-L;
+            grid-area: rwcls3;
+        }
 
 
     .title {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $colorT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
         grid-area: title;
     }
 
     .col_0 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $colorT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4800,13 +5533,11 @@
 
     .col_1 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4815,13 +5546,11 @@
 
     .col_2 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4830,13 +5559,11 @@
 
     .col_3 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4845,13 +5572,11 @@
 
     .col_4 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4860,13 +5585,11 @@
 
     .col_5 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4875,13 +5598,11 @@
 
     .col_6 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4890,13 +5611,11 @@
 
     .col_7 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4905,13 +5624,11 @@
 
     .col_8 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4920,13 +5637,11 @@
 
     .col_9 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4935,13 +5650,11 @@
 
     .col_10 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4950,13 +5663,11 @@
 
     .col_11 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-top: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -4970,8 +5681,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: tta;
     }
 
@@ -4982,8 +5691,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttb;
 
         input {
@@ -4999,8 +5706,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttc;
 
         input {
@@ -5016,8 +5721,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttd;
 
         input {
@@ -5033,8 +5736,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: tte;
 
         input {
@@ -5050,8 +5751,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttf;
 
         input {
@@ -5067,8 +5766,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttg;
 
         input {
@@ -5084,8 +5781,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: tth;
 
         input {
@@ -5101,8 +5796,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: tti;
 
         input {
@@ -5118,8 +5811,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttj;
 
         input {
@@ -5135,8 +5826,6 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttk;
 
         input {
@@ -5152,105 +5841,12 @@
         background-color: $Default-T;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         grid-area: ttm;
 
         input {
             max-width: 104px;
             text-align: right;
         }
-    }
-
-    .a1 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a1;
-    }
-
-    .a2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a2;
-    }
-
-    .a3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a3;
-    }
-
-    .a4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a4;
-    }
-
-    .a5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a5;
-    }
-
-    .a6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a6;
-    }
-
-    .a7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: a7;
     }
 
     .b1 {
@@ -5260,8 +5856,6 @@
         background-color: $Default-RW;
         padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -5386,6 +5980,26 @@
         align-items: center;
         justify-content: center;
         grid-area: b7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: b8;
 
         input {
             max-width: 104px;
@@ -5533,6 +6147,26 @@
         }
     }
 
+    .c8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: c8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
     .d1 {
         font-size: 1em;
         font-weight: 400;
@@ -5672,6 +6306,27 @@
             text-align: right;
         }
     }
+
+    .d8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: d8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
 
     .e1 {
         font-size: 1em;
@@ -5813,6 +6468,26 @@
         }
     }
 
+    .e8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: e8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
     .f1 {
         font-size: 1em;
         font-weight: 400;
@@ -5944,6 +6619,26 @@
         align-items: center;
         justify-content: center;
         grid-area: f7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .f8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: f8;
 
         input {
             max-width: 104px;
@@ -6091,6 +6786,26 @@
         }
     }
 
+    .g8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: g8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
     .h1 {
         font-size: 1em;
         font-weight: 400;
@@ -6231,6 +6946,26 @@
         }
     }
 
+    .h8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: h8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
     .i1 {
         font-size: 1em;
         font-weight: 400;
@@ -6364,6 +7099,26 @@
         align-items: center;
         justify-content: center;
         grid-area: i7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .i8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: i8;
 
         input {
             max-width: 104px;
@@ -6511,6 +7266,26 @@
         }
     }
 
+    .j8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: j8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
     .k1 {
         font-size: 1em;
         font-weight: 400;
@@ -6644,6 +7419,26 @@
         align-items: center;
         justify-content: center;
         grid-area: k7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .k8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: k8;
 
         input {
             max-width: 104px;
@@ -6790,6 +7585,26 @@
             text-align: right;
         }
     }
+
+    .m8 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: m8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
 }
 
 .t2g3 {
@@ -6797,698 +7612,491 @@
     display: grid;
     grid-template-columns: auto 130px;
     grid-template-rows: auto;
-    gap: 1px 1px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
-        "title col_1"
-        "rw1 rwi1"
-        "rw2 rwi2"
-        "rw3 rwi3"
-        "rw4 rwi4"
-        "rw5 rwi5"
-        "rw6 rwi6"
-        "rw7 rwi7"
-        "rw8 rwi8"
-        "totals tts";
+        "title c1"
+        "prw1 pc1"
+        "hwrw1 hwpc1"
+        "title_private rwcls1"
+        "private_rw1 vc1_0"
+        "private_rw2 vc1_1"
+        "private_rw3 vc1_2"
+        "private_rw4 vc1_3"
+        "title_unspecified rwcls2"
+        "unspecified_rw1 vc1_4"
+        "unspecified_rw2 vc1_5"
+        "title_public rwcls3"
+        "public_rw1 vc1_6"
+        "public_rw2 vc1_7"
+        "public_rw3 vc1_8"
+        "totals tts1";
     padding: 8px 0 42px 0;
 
     .title {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
-        background-color: $colorT;
         padding: 8px;
-        border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
+        min-width: 90px;
         grid-area: title;
     }
 
-    .col_1 {
+    .prw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: prw1;
+    }
+
+    .pc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: pc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .hwrw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: hwrw1;
+    }
+
+    .hwpc1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        text-align: right;
+        grid-area: hwpc1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .totals {
+        font-size: 1em;
+        font-weight: 800;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: totals;
+    }
+
+    .c1 {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
         color: $color2;
         background-color: $Default-GT;
         padding: 8px;
         border-bottom: 2px solid $Default-L;
         border-right: 1px solid $Default-L;
         border-top: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: col_1;
+        text-align: center;
+        grid-area: c1;
     }
 
-    .totals {
-        font-size: 1em;
-        font-weight: 500;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: totals;
-    }
-
-    .rw1 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw1;
-    }
-
-    .rw2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw2;
-    }
-
-    .rw3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw3;
-    }
-
-    .rw4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw4;
-    }
-
-    .rw5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw5;
-    }
-
-    .rw6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw6;
-    }
-
-    .rw7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-
-        grid-area: rw7;
-    }
-
-    .rw8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw8;
-
-    }
-
-    .tts {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: tts;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi1 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi1;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi3;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi4;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi5;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi6;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rwi8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: rwi8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-}
-
-.t2g4 {
-    clear: both;
-    display: grid;
-    grid-template-columns: auto 130px;
-    grid-template-rows: auto;
-    gap: 0px 0px;
-    grid-template-areas:
-        "title title"
-        "rw1 i1"
-        "rw2 i2"
-        "rw3 i3"
-        "rw4 i4"
-        "rw5 i5"
-        "rw6 i6"
-        "rw7 i7"
-        "rw8 i8"
-        "rw9 i9"
-        "totals tts";
-    padding: 8px 0 42px 0;
-
-    .title {
-        width: 100%;
+    .title_private {
         font-size: 1.1em !important;
-        font-weight: 800 !important;
+        font-weight: 800;
+        background-color: $Default-GT;
         color: $color2;
-        background-color: $colorT;
         padding: 8px;
-        border-bottom: 2px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        grid-area: title;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_private;
     }
 
-    .totals {
+    .rwcls1 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls1;
+    }
+
+    .private_rw1 {
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw1;
+    }
+
+    .private_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw2;
+    }
+
+    .private_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw3;
+    }
+
+    .private_rw4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: private_rw4;
+    }
+
+    .title_unspecified {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_unspecified;
+    }
+
+    .unspecified_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw1;
+    }
+
+    .unspecified_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: unspecified_rw2;
+    }
+
+    .title_public {
+        font-size: 1.1em !important;
+        font-weight: 800;
+        background-color: $Default-GT;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        display: flex;
+        align-items: center;
+        grid-area: title_public;
+    }
+
+    .public_rw1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw1;
+    }
+
+    .public_rw2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw2;
+    }
+
+    .public_rw3 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        display: flex;
+        align-items: center;
+        grid-area: public_rw3;
+    }
+
+    .rwcls2 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls2;
+    }
+
+    .rwcls3 {
+        background-color: $Default-GT;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        grid-area: rwcls3;
+    }
+
+    .vc1_0 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_0;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_2 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_2;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_3 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_4 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_5 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_5;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_6 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_6;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_7 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_7;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .vc1_8 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
+        color: $color2;
+        background-color: $Default-RW;
+        border-bottom: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: vc1_8;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .tts1 {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 8px;
         color: $color2;
         background-color: $Default-T;
-        padding: 8px;
         border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
-        grid-area: totals;
-    }
-
-    .rw1 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw1;
-    }
-
-    .rw2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw2;
-    }
-
-    .rw3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw3;
-    }
-
-    .rw4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw4;
-    }
-
-    .rw5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw5;
-    }
-
-    .rw6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw6;
-    }
-
-    .rw7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw7;
-    }
-
-    .rw8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw8;
-    }
-
-    .rw9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        grid-area: rw9;
-    }
-
-    .tts {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-T;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
+        min-width: 90px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        grid-area: tts;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-
-    .i1 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
         align-items: center;
-        justify-content: center;
-        grid-area: i1;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i2;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i3;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i4 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i4;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i5 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i5;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i6 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i6;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i7 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i7;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i8 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i8;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .i9 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-right: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        grid-area: i9;
+        grid-area: tts1;
 
         input {
             max-width: 104px;
