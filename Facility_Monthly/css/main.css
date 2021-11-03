@@ -539,6 +539,7 @@
 }
 
 .cont-tb1g3 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -760,6 +761,7 @@
 }
 
 .cont-tb1g4 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -981,6 +983,7 @@
 }
 
 .cont-tb1g5 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -1358,6 +1361,7 @@
 }
 
 .cont-tb1g6 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -1415,6 +1419,7 @@
 }
 
 .cont-tb1g7 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -1704,6 +1709,7 @@
 }
 
 .cont-tb2g2 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -2490,6 +2496,7 @@
 }
 
 .cont-tb2g3 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -2667,6 +2674,7 @@
 }
 
 .cont-tb2g4 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -3450,6 +3458,7 @@
 }
 
 .cont-tb3g2 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -3589,6 +3598,7 @@
 }
 
 .cont-tb4g2 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -3849,6 +3859,7 @@
 }
 
 .cont-tb4g3 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -3953,6 +3964,7 @@
 }
 
 .cont-tb4g4 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -4135,6 +4147,7 @@
 }
 
 .cont-tb4g5 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -4213,6 +4226,7 @@
 }
 
 .cont-tb4g6 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -4564,6 +4578,7 @@
 }
 
 .cont-tb4g7 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -5176,6 +5191,7 @@
 }
 
 .cont-tb4g8 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -5527,6 +5543,7 @@
 }
 
 .cont-tb4g9 {
+  clear: both;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -6347,6 +6364,10 @@ rem {
   color: #f1f1f1f1;
   text-decoration: none;
   font-weight: 200;
+}
+
+.content_tabs {
+  min-height: 300px;
 }
 
 /*# sourceMappingURL=main.css.map */
