@@ -7086,8 +7086,6 @@
   .content_tabs {
     min-height: 300px;
   }
-
-  /*# sourceMappingURL=main.css.map */
 </style>
 <div id="MPHDCustomForm">
   <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
@@ -7104,10 +7102,10 @@
   <div id="MPHDCustomForm_Content">
     <div id="tabs" style="display:block;">
       <ul class="custom_tab">
-        <li><a catoption="JYaPYuioUJk" href="#CHTab" keyword="opt_c:TbTitle_1">Child health</a></li>
-        <li><a catoption="ytJ3YtA7PKb" href="#FPTab" keyword="opt_c:TbTitle_2">Family planning</a></li>
-        <li><a catoption="QQIwMnaLdXN" href="#IMMTab" keyword="opt_c:TbTitle_3">Immunization</a></li>
-        <li><a catoption="HCc7WYbkbtl" href="#MN" keyword="opt_c:TbTitle_4">Maternal Health</a></li>
+        <li id="tab1"><a catoption="JYaPYuioUJk" href="#CHTab" keyword="opt_c:TbTitle_1">Child health</a></li>
+        <li id="tab1"><a catoption="ytJ3YtA7PKb" href="#FPTab" keyword="opt_c:TbTitle_2">Family planning</a></li>
+        <li id="tab1"><a catoption="QQIwMnaLdXN" href="#IMMTab" keyword="opt_c:TbTitle_3">Immunization</a></li>
+        <li id="tab1"><a catoption="HCc7WYbkbtl" href="#MN" keyword="opt_c:TbTitle_4">Maternal Health</a></li>
       </ul>
       <!-- Infants Tab1 -->
 
@@ -9289,6 +9287,7 @@
               var found = me.searchOrgUnitPath(catOptOrgUnitList, path);
               if (found) {
                 me.showOneCatOptionPart(catOption.id);
+                me.UIshowElements();
               }
             }
 
@@ -9307,8 +9306,46 @@
       $("[catOption]").hide();
     }
 
+    var tab_swow = new Array();
     me.showOneCatOptionPart = function (catOptionId) {
+
+      //tab_swow.includes(2);
+      // true
+
+      switch (catOptionId) {
+        case "JYaPYuioUJk":
+          // Child health
+          if (tab_swow.includes(1) == false) {
+            tab_swow.push(1);
+          }
+          /*
+          $("#CHTab").css({
+            'display': 'block'
+          });
+          */
+          break;
+        case "ytJ3YtA7PKb":
+          // Family planning
+          if (tab_swow.includes(2) == false) {
+            tab_swow.push(2);
+          }
+          break;
+        case "QQIwMnaLdXN":
+          // Immunization
+          if (tab_swow.includes(3) == false) {
+            tab_swow.push(3);
+          }
+          break;
+        case "HCc7WYbkbtl":
+          // Maternal Health
+          if (tab_swow.includes(4) == false) {
+            tab_swow.push(4);
+          }
+          break;
+      }
+
       $("[catOption='" + catOptionId + "']").show();
+
     }
 
 
@@ -9338,6 +9375,47 @@
       }
 
       return item;
+    }
+
+    me.UIshowElements = function () {
+      var min = Math.min.apply(Math, tab_swow);
+
+      $('.content_tabs').css({
+        'display': 'none'
+      });
+
+
+      switch (min) {
+        case 1:
+          // Child health
+          //ui-tabs-active
+          $("#CHTab").css({
+            'display': 'block'
+          });
+          $("#tab1").addClass("ui-state-hover ui-tabs-active ui-state-active");
+          $("#tab1").attr('tabindex', i + 1)
+          break;
+        case 2:
+          // Family planning
+          $("#FPTab").css({
+            'display': 'block'
+          });
+          break;
+          $("#tab2").addClass("ui-state-hover ui-tabs-active ui-state-active");
+        case "3":
+          // Immunization
+          $("#IMMTab").css({
+            'display': 'block'
+          });
+          break;
+        case "4":
+          // Maternal Health
+          $("#MN").css({
+            'display': 'block'
+          });
+          $("#tab4").addClass("ui-state-hover ui-tabs-active ui-state-active");
+          break;
+      }
     }
 
 
