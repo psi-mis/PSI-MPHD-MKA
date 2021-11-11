@@ -9318,11 +9318,6 @@
           if (tab_swow.includes(1) == false) {
             tab_swow.push(1);
           }
-          /*
-          $("#CHTab").css({
-            'display': 'block'
-          });
-          */
           break;
         case "ytJ3YtA7PKb":
           // Family planning
@@ -9393,7 +9388,9 @@
             'display': 'block'
           });
           $("#tab1").addClass("ui-state-hover ui-tabs-active ui-state-active");
-          $("#tab1").attr('tabindex', i + 1)
+          $("#tab1").attr('tabindex', i + 1);
+          $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+          $("#tab1").attr('aria-selected', 'true').prop('selected', true);
           break;
         case 2:
           // Family planning
@@ -9402,6 +9399,9 @@
           });
           break;
           $("#tab2").addClass("ui-state-hover ui-tabs-active ui-state-active");
+          $("#tab2").attr('tabindex', i + 1);
+          $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+          $("#tab2").attr('aria-selected', 'true').prop('selected', true);
         case "3":
           // Immunization
           $("#IMMTab").css({
