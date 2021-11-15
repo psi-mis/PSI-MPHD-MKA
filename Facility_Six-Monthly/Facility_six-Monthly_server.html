@@ -639,16 +639,19 @@
         <div id="MPHDCustomForm_Content">
                 <div id="tabs" style="display:block;">
                         <ul class="custom_tab">
-                                <li><a href="#FACIL" keyword="opt_c:TbTitle_1">Facilities</a></li>
-                                <li><a href="#XCUT" keyword="opt_c:TbTitle_2">X.Cut</a></li>
+                                <li id="tab1"><a catoption="Sq2K2cKqCgJ" href="#FACIL"
+                                                keyword="opt_c:TbTitle_1">Facilities</a></li>
+                                <li id="tab2"><a catoption="RXB05TUtcpY" href="#XCUT"
+                                                keyword="opt_c:TbTitle_2">X.Cut</a></li>
                         </ul>
 
-                        <div id="FACIL">
-                                <div class="img_logo"><img alt="usaid" height="120px"
-                                                src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" />
-                                </div>
+                        <div class="img_logo"><img alt="usaid" height="120px"
+                                        src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" />
+                        </div>
 
-                                <div class="t1g1">
+                        <div catoption="Sq2K2cKqCgJ" class="content_tabs" id="FACIL">
+
+                                <div catoption="gzeT8vHSDIx" class="t1g1">
                                         <div class="a0" keyword="opt_c:Tb1Tt1">MPHD Facility Six-monthly</div>
 
                                         <div class="a1" keyword="opt_c:Tb1Tt1Tx1">Imm.2_Estimated number of children
@@ -679,7 +682,7 @@
                                         </div>
                                 </div>
 
-                                <div class="t1g2">
+                                <div catoption="X2oFP1Y9cSz" class="t1g2">
                                         <div class="a0" keyword="opt_c:Tb1Tt2">MPHD - PSI PWI 2.6_PSI_Number of
                                                 providers trained in high-quality service provision</div>
 
@@ -731,12 +734,9 @@
                                 </div>
                         </div>
 
-                        <div id="XCUT">
-                                <div class="img_logo"><img alt="usaid" height="120px"
-                                                src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" />
-                                </div>
+                        <div catoption="RXB05TUtcpY" class="content_tabs" id="XCUT">
 
-                                <div class="t2g1">
+                                <div catoption="uIV9qAbCPn6" class="t2g1">
                                         <div class="a0" keyword="opt_c:T2Tt1">MOMENTUM-supported facilities implementing
                                                 QI</div>
 
@@ -782,15 +782,15 @@
 <script>
         $(document).ready(function () {
 
-                $("body").on("focus", "input", function (event) {
+                $(".content_tabs").on("focus", "input", function (event) {
                         $(this).attr('autocomplete', 'off')
                 });
 
                 $('.custom_tab li').click(function (e) {
                         tab_selected = $(this).find('a').attr('href');
                         switch (tab_selected) {
-                                case '#CHTab':
-                                        $('#MN').css({
+                                case '#FACIL':
+                                        $('.content_tabs').css({
                                                 'display': 'none'
                                         });
                                         $(this).attr('tabindex', '0');
@@ -799,13 +799,13 @@
                                         $(this).addClass('ui-state-active');
                                         $(this).attr('aria-selected', 'true');
                                         $(this).attr('aria-expanded', 'true');
-                                        $('#CHTab').attr('aria-hidden', 'false');
-                                        $('#CHTab').css({
+                                        $('#FACIL').attr('aria-hidden', 'false');
+                                        $('#FACIL').css({
                                                 'display': 'block'
                                         });
                                         break;
-                                case '#FPTab':
-                                        $('#MN').css({
+                                case '#XCUT':
+                                        $('.content_tabs').css({
                                                 'display': 'none'
                                         });
                                         $(this).attr('tabindex', '0');
@@ -814,29 +814,19 @@
                                         $(this).addClass('ui-state-active');
                                         $(this).attr('aria-selected', 'true');
                                         $(this).attr('aria-expanded', 'true');
-                                        $('#FPTab').attr('aria-hidden', 'false');
-                                        $('#FPTab').css({
-                                                'display': 'block'
-                                        });
-                                        break;
-                                case '#IMMTab':
-                                        $('#MN').css({
-                                                'display': 'none'
-                                        });
-                                        $(this).attr('tabindex', '0');
-                                        $(this).addClass('ui-state-hover');
-                                        $(this).addClass('ui-tabs-active');
-                                        $(this).addClass('ui-state-active');
-                                        $(this).attr('aria-selected', 'true');
-                                        $(this).attr('aria-expanded', 'true');
-                                        $('#IMMTab').attr('aria-hidden', 'false');
-                                        $('#IMMTab').css({
+                                        $('#XCUT').attr('aria-hidden', 'false');
+                                        $('#XCUT').css({
                                                 'display': 'block'
                                         });
                                         break;
                         }
                 });
         });
+
+
+
+        var tab_swow = new Array();
+        var mphdCustomEntryFormObj = new MPHDCustomEntryForm();
 
         $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
                 if ($("#MPHDCustomForm").length > 0) {
@@ -845,10 +835,20 @@
                         $("#loaderDiv").show();
 
                         new MPHDTranslation(function () {
-                                $("#loaderDiv").hide();
-                                $("#MPHDCustomForm_Content").show();
+                                // $("#loaderDiv").hide();
+                                // $("#MPHDCustomForm_Content").show();
+
+                                console.log(" ========= INIT FORM ");
+                                mphdCustomEntryFormObj.retrieveCatOption(function () {
+                                        mphdCustomEntryFormObj.retrieveSelectedOrgUnitData();
+                                })
+
                         });
                 }
+
+                $(document).off('dhis2.de.event.dataValuesLoaded').on('dhis2.de.event.dataValuesLoaded', function () {
+                        mphdCustomEntryFormObj.retrieveSelectedOrgUnitData();
+                });
 
                 // ============================================================================================================
                 // GCACITranslation
@@ -1025,4 +1025,199 @@
                 }
 
         });
+        function UIshowElements() {
+                var min = Math.min.apply(Math, tab_swow);
+
+                $('.content_tabs').css({
+                        'display': 'none'
+                });
+
+
+                switch (min) {
+                        case 1:
+                                // Facilities
+                                //ui-tabs-active
+                                $("#FACIL").css({
+                                        'display': 'block'
+                                });
+                                $("#tab1").addClass("ui-state-hover ui-tabs-active ui-state-active");
+                                $("#tab1").attr('tabindex', function (index, attr) {
+                                        return index + 1;
+                                });
+                                $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+                                $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+                                break;
+                        case 2:
+                                // X.Cut
+                                $("#XCUT").css({
+                                        'display': 'block'
+                                });
+                                $("#tab2").addClass("ui-state-hover ui-tabs-active ui-state-active");
+                                $("#tab2").attr('tabindex', function (index, attr) {
+                                        return index + 1;
+                                });
+                                $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+                                $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+                                break;
+                }
+                return;
+        }
+
+        function MPHDCustomEntryForm() {
+                var me = this;
+
+                me.loaderDivTag = $("#loaderDiv");
+                me.mphdCustomFormTag = $("#MPHDCustomForm_Content");
+
+                // ------------------------------------------------------------------------------
+                // Variables
+
+                me.ID_CATEGORY_SHOW_HIDE_SUB_CONTENT = "pUlIhiys6jD";
+
+                me.showHideContentCatOptionList = {};
+
+                // ------------------------------------------------------------------------------
+                // URLs
+
+                me.PARAM_ORGUNIT_ID = "@PARAM_ORGUNIT_ID";
+
+                me.QUERY_URL_CATEGORY_SHOW_HIDE_SUB_CONTENT = "../api/categories/" + me.ID_CATEGORY_SHOW_HIDE_SUB_CONTENT + ".json?fields=categoryOptions[id,organisationUnits[id,path]]";
+                me.QUERY_URL_SELECTED_ORGUNIT = "../api/organisationUnits/" + me.PARAM_ORGUNIT_ID + ".json?fields=id,path";
+
+
+                // ------------------------------------------------------------------------------
+
+                me.init = function () {
+                        me.retrieveCatOption(function () {
+                                me.retrieveSelectedOrgUnitData();
+                        })
+                }
+
+
+                // ------------------------------------------------------------------------------
+                // Retreive data
+
+                me.retrieveCatOption = function (execFunc) {
+                        $.ajax({
+                                type: "GET"
+                                , url: me.QUERY_URL_CATEGORY_SHOW_HIDE_SUB_CONTENT
+                                , contentType: "application/json;charset=utf-8"
+                                , beforeSend: function (xhr) {
+                                        me.hideEntryForm();
+                                }
+                                , success: function (response) {
+
+                                        me.showHideContentCatOptionList = response.categoryOptions;
+                                        if (execFunc) execFunc();
+                                }
+                        });
+                }
+
+
+                me.retrieveSelectedOrgUnitData = function () {
+
+                        var selectedOrgUnitId = dhis2.de.currentOrganisationUnitId;
+
+                        if (selectedOrgUnitId != "") {
+                                me.hideAllCatOptionPart();
+
+                                var url = me.QUERY_URL_SELECTED_ORGUNIT;
+                                url = url.replace(me.PARAM_ORGUNIT_ID, selectedOrgUnitId);
+
+                                $.ajax({
+                                        type: "GET"
+                                        , url: url
+                                        , contentType: "application/json;charset=utf-8"
+                                        , beforeSend: function (xhr) {
+                                                me.hideEntryForm();
+                                        }
+                                        , success: function (response) {
+
+                                                var path = response.path;
+
+                                                var catOptionList = me.showHideContentCatOptionList;
+                                                for (var i in catOptionList) {
+                                                        var catOption = catOptionList[i];
+                                                        var catOptOrgUnitList = catOption.organisationUnits;
+                                                        var found = me.searchOrgUnitPath(catOptOrgUnitList, path);
+                                                        if (found) {
+                                                                me.showOneCatOptionPart(catOption.id);
+                                                                UIshowElements();
+                                                        }
+                                                }
+
+
+                                                me.showEntryForm();
+                                        }
+                                });
+                        }
+
+                }
+
+                // ------------------------------------------------------------------------------
+                // Supportive methods
+
+                me.hideAllCatOptionPart = function () {
+                        $("[catOption]").hide();
+                }
+
+                me.showOneCatOptionPart = function (catOptionId) {
+
+                        //tab_swow.includes(2);
+                        // true
+
+                        switch (catOptionId) {
+                                case "Sq2K2cKqCgJ":
+                                        // FACIL
+                                        if (tab_swow.includes(1) == false) {
+                                                tab_swow.push(1);
+                                        }
+                                        break;
+                                case "RXB05TUtcpY":
+                                        // X.Cut
+                                        if (tab_swow.includes(2) == false) {
+                                                tab_swow.push(2);
+                                        }
+                                        break;
+                        }
+
+                        $("[catOption='" + catOptionId + "']").show();
+
+                }
+
+
+                me.hideEntryForm = function () {
+                        me.loaderDivTag.show();
+                        me.mphdCustomFormTag.hide();
+                }
+
+                me.showEntryForm = function () {
+                        me.loaderDivTag.hide();
+                        me.mphdCustomFormTag.show();
+                }
+
+                me.searchOrgUnitPath = function (list, path) {
+                        let item;
+
+                        if (list) {
+
+                                for (let i = 0; i < list.length; i++) {
+                                        let listItem = list[i];
+
+                                        if (path.indexOf(listItem.path) == 0) {
+                                                item = listItem;
+                                                break;
+                                        }
+                                }
+                        }
+
+                        return item;
+                }
+
+
+                // ------------------------------------------------------------------------------
+
+                me.init();
+
+        }
 </script>
