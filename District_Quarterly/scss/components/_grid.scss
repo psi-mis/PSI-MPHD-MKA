@@ -1,6 +1,6 @@
 .t1grd1 {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 340px auto;
     grid-template-rows: auto 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -22,11 +22,12 @@
     .grd_left {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
             "h_title"
+            "lr0"
             "lr1"
             "lr2"
             "lr3"
@@ -44,6 +45,19 @@
         .h_title {
             padding: 8px;
             grid-area: h_title;
+        }
+
+        .lr0 {
+            font-size: 1em;
+            font-weight: 400;
+            color: $color2;
+            background-color: $Default-RW;
+            padding: 8px;
+            border-bottom: 1px solid $Default-L;
+            border-left: 1px solid $Default-L;
+            display: flex;
+            align-items: center;
+            grid-area: lr0;
         }
 
         .lr1 {
@@ -189,31 +203,33 @@
 
     .grd_right {
         overflow-x: auto;
+
+        //background-color: aqua;
         grid-area: grd_right;
 
         // XXX
         .container {
             display: grid;
-            grid-template-columns: 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto;
             grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-                "ct1 ct2 ct3 ct4 ct5 ct6 ct7 ct7 ct8 ct8 ct9 ct9 ct10 ct10"
-                "ct1 ct2 ct3 ct4 ct5 ct6 ct72c1 ct72c2 ct8c1 ct8c2 ct9c1 ct9c2 ct10c1 ct10c2"
-                "c1_1 c2_1 c3_1 c4_1 c5_1 c6_1 c7_1a c7_1b c8_1a c8_1b c9_1a c9_1b c10_1a c10_1b"
-                "c1_2 c2_2 c3_2 c4_2 c5_2 c6_2 c7_2a c7_2b c8_2a c8_2b c9_2a c9_2b c10_2a c10_2b"
-                "c1_3 c2_3 c3_3 c4_3 c5_3 c6_3 c7_3a c7_3b c8_3a c8_3b c9_3a c9_3b c10_3a c10_3b"
-                "c1_4 c2_4 c3_4 c4_4 c5_4 c6_4 c7_4a c7_4b c8_4a c8_4b c9_4a c9_4b c10_4a c10_4b"
-                "c1_5 c2_5 c3_5 c4_5 c5_5 c6_5 c7_5a c7_5b c8_5a c8_5b c9_5a c9_5b c10_5a c10_5b"
-                "c1_6 c2_6 c3_6 c4_6 c5_6 c6_6 c7_6a c7_6b c8_6a c8_6b c9_6a c9_6b c10_6a c10_6b"
-                "c1_7 c2_7 c3_7 c4_7 c5_7 c6_7 c7_7a c7_7b c8_7a c8_7b c9_7a c9_7b c10_7a c10_7b"
-                "c1_8 c2_8 c3_8 c4_8 c5_8 c6_8 c7_8a c7_8b c8_8a c8_8b c9_8a c9_8b c10_8a c10_8b"
-                "c1_9 c2_9 c3_9 c4_9 c5_9 c6_9 c7_9a c7_9b c8_9a c8_9b c9_9a c9_9b c10_9a c10_9b"
-                "c1_10 c2_10 c3_10 c4_10 c5_10 c6_10 c7_10a c7_10b c8_10a c8_10b c9_10a c9_10b c10_10a c10_10b"
-                "c1_11 c2_11 c3_11 c4_11 c5_11 c6_11 c7_11a c7_11b c8_11a c8_11b c9_11a c9_11b c10_11a c10_11b";
+                "ct1 ct2 ct3 ct4 ct5 ct6 ct7 ct8 ct9"
+                "c1_0 c2_0 c3_0 c4_0 c5_0 c6_0 c7_0 c8_0 c9_0"
+                "c1_1 c2_1 c3_1 c4_1 c5_1 c6_1 c7_1 c8_1 c9_1"
+                "c1_2 c2_2 c3_2 c4_2 c5_2 c6_2 c7_2 c8_2 c9_2"
+                "c1_3 c2_3 c3_3 c4_3 c5_3 c6_3 c7_3 c8_3 c9_3"
+                "c1_4 c2_4 c3_4 c4_4 c5_4 c6_4 c7_4 c8_4 c9_4"
+                "c1_5 c2_5 c3_5 c4_5 c5_5 c6_5 c7_5 c8_5 c9_5"
+                "c1_6 c2_6 c3_6 c4_6 c5_6 c6_6 c7_6 c8_6 c9_6"
+                "c1_7 c2_7 c3_7 c4_7 c5_7 c6_7 c7_7 c8_7 c9_7"
+                "c1_8 c2_8 c3_8 c4_8 c5_8 c6_8 c7_8 c8_8 c9_8"
+                "c1_9 c2_9 c3_9 c4_9 c5_9 c6_9 c7_9 c8_9 c9_9"
+                "c1_10 c2_10 c3_10 c4_10 c5_10 c6_10 c7_10 c8_10 c9_10"
+                "c1_11 c2_11 c3_11 c4_11 c5_11 c6_11 c7_11 c8_11 c9_11";
 
             .ct1 {
                 font-size: 1em;
@@ -225,6 +241,7 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct1;
             }
 
@@ -238,6 +255,7 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct2;
             }
 
@@ -251,6 +269,7 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct3;
             }
 
@@ -264,6 +283,7 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct4;
             }
 
@@ -277,6 +297,7 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct5;
             }
 
@@ -290,6 +311,7 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct6;
             }
 
@@ -303,44 +325,8 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
-                grid-area: ct72;
-            }
-
-            .ct7 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                border-top: 1px solid $Default-L;
-                text-align: center;
+                min-width: 130px;
                 grid-area: ct7;
-            }
-
-            .ct72c1 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct72c1;
-            }
-
-            .ct72c2 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct72c2;
             }
 
             .ct8 {
@@ -353,31 +339,8 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct8;
-            }
-
-            .ct8c1 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct8c1;
-            }
-
-            .ct8c2 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct8c2;
             }
 
             .ct9 {
@@ -390,31 +353,8 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct9;
-            }
-
-            .ct9c1 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct9c1;
-            }
-
-            .ct9c2 {
-                font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
-                padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct9c2;
             }
 
             .ct10 {
@@ -427,31 +367,178 @@
                 border-right: 1px solid $Default-L;
                 border-top: 1px solid $Default-L;
                 text-align: center;
+                min-width: 130px;
                 grid-area: ct10;
             }
 
-            .ct10c1 {
+            .c1_0{
                 font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
+                font-weight: 400;
                 padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct10c1;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c1_0;
             }
 
-            .ct10c2 {
+            .c2_0 {
                 font-size: 1em;
-                font-weight: 800;
-                color: $color2;
-                background-color: $Default-GT;
+                font-weight: 400;
                 padding: 8px;
-                border-bottom: 2px solid $Default-L;
-                border-right: 1px solid $Default-L;
-                text-align: center;
-                grid-area: ct10c2;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c2_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c3_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c3_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c4_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c4_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c5_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c5_0;
+            }
+
+            .c6_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c6_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c7_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c7_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c9_0 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c9_0;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
             }
 
             .c1_1 {
@@ -1629,7 +1716,7 @@
                 }
             }
 
-            .c7_1a {
+            .c7_1 {
                 font-size: 1em;
                 font-weight: 800;
                 background-color: $Default-GT;
@@ -1638,10 +1725,70 @@
                 min-width: 90px;
                 display: flex;
                 align-items: center;
-                grid-area: c7_1a;
+                grid-area: c7_1;
             }
 
-            .c7_1b {
+            .c7_2 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c7_2;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c7_3 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c7_3;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c7_4 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c7_4;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c7_5 {
                 font-size: 1em;
                 font-weight: 800;
                 background-color: $Default-GT;
@@ -1650,10 +1797,10 @@
                 min-width: 90px;
                 display: flex;
                 align-items: center;
-                grid-area: c7_1b;
+                grid-area: c7_5;
             }
 
-            .c7_2a {
+            .c7_6 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -1665,7 +1812,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c7_2a;
+                grid-area: c7_6;
 
                 input {
                     max-width: 104px;
@@ -1673,107 +1820,7 @@
                 }
             }
 
-            .c7_2b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_2b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_3a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_3a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_3b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_3b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_4a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_4a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_4b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_4b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_5a {
+            .c7_7 {
                 font-size: 1em;
                 font-weight: 800;
                 background-color: $Default-GT;
@@ -1782,22 +1829,10 @@
                 min-width: 90px;
                 display: flex;
                 align-items: center;
-                grid-area: c7_5a;
+                grid-area: c7_7;
             }
 
-            .c7_5b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c7_5b;
-            }
-
-            .c7_6a {
+            .c7_8 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -1809,7 +1844,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c7_6a;
+                grid-area: c7_8;
 
                 input {
                     max-width: 104px;
@@ -1817,7 +1852,7 @@
                 }
             }
 
-            .c7_6b {
+            .c7_9 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -1829,7 +1864,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c7_6b;
+                grid-area: c7_9;
 
                 input {
                     max-width: 104px;
@@ -1837,31 +1872,7 @@
                 }
             }
 
-            .c7_7a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c7_7a;
-            }
-
-            .c7_7b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c7_7b;
-            }
-
-            .c7_8a {
+            .c7_10 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -1873,115 +1884,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c7_8a;
+                grid-area: c7_10;
 
                 input {
                     max-width: 104px;
                     text-align: right;
                 }
-            }
+            } 
 
-            .c7_8b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_8b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_9a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_9a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_9b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_9b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_10a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_10a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_10b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c7_10b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c7_11a {
+            .c7_11 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -1993,7 +1904,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c7_11a;
+                grid-area: c7_11;
 
                 input {
                     max-width: 104px;
@@ -2001,7 +1912,183 @@
                 }
             }
 
-            .c7_11b {
+            .c8_1 {
+                font-size: 1em;
+                font-weight: 800;
+                background-color: $Default-GT;
+                color: $color2;
+                padding: 8px;
+                min-width: 90px;
+                display: flex;
+                align-items: center;
+                grid-area: c8_1;
+            }
+
+            .c8_2 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_2;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_3 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_3;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_4 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_4;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_5 {
+                font-size: 1em;
+                font-weight: 800;
+                background-color: $Default-GT;
+                color: $color2;
+                padding: 8px;
+                min-width: 90px;
+                display: flex;
+                align-items: center;
+                grid-area: c8_5;
+            }
+
+            .c8_6 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_6;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_7 {
+                font-size: 1em;
+                font-weight: 800;
+                background-color: $Default-GT;
+                color: $color2;
+                padding: 8px;
+                min-width: 90px;
+                display: flex;
+                align-items: center;
+                grid-area: c8_7;
+            }
+
+            .c8_8 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_8;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_9 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_9;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_10 {
+                font-size: 1em;
+                font-weight: 400;
+                padding: 8px;
+                color: $color2;
+                background-color: $Default-RW;
+                border-bottom: 1px solid $Default-L;
+                border-left: 1px solid $Default-L;
+                min-width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: c8_10;
+
+                input {
+                    max-width: 104px;
+                    text-align: right;
+                }
+            }
+
+            .c8_11 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2013,7 +2100,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c7_11b;
+                grid-area: c8_11;
 
                 input {
                     max-width: 104px;
@@ -2021,7 +2108,7 @@
                 }
             }
 
-            .c8_1a {
+            .c9_1 {
                 font-size: 1em;
                 font-weight: 800;
                 background-color: $Default-GT;
@@ -2030,10 +2117,10 @@
                 min-width: 90px;
                 display: flex;
                 align-items: center;
-                grid-area: c8_1a;
+                grid-area: c9_1;
             }
 
-            .c8_2a {
+            .c9_2 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2045,7 +2132,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_2a;
+                grid-area: c9_2;
 
                 input {
                     max-width: 104px;
@@ -2053,7 +2140,7 @@
                 }
             }
 
-            .c8_3a {
+            .c9_3 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2065,7 +2152,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_3a;
+                grid-area: c9_3;
 
                 input {
                     max-width: 104px;
@@ -2073,7 +2160,7 @@
                 }
             }
 
-            .c8_4a {
+            .c9_4 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2085,7 +2172,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_4a;
+                grid-area: c9_4;
 
                 input {
                     max-width: 104px;
@@ -2093,7 +2180,7 @@
                 }
             }
 
-            .c8_5a {
+            .c9_5 {
                 font-size: 1em;
                 font-weight: 800;
                 background-color: $Default-GT;
@@ -2102,10 +2189,10 @@
                 min-width: 90px;
                 display: flex;
                 align-items: center;
-                grid-area: c8_5a;
+                grid-area: c9_5;
             }
 
-            .c8_6a {
+            .c9_6 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2117,7 +2204,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_6a;
+                grid-area: c9_6;
 
                 input {
                     max-width: 104px;
@@ -2125,7 +2212,7 @@
                 }
             }
 
-            .c8_7a {
+            .c9_7 {
                 font-size: 1em;
                 font-weight: 800;
                 background-color: $Default-GT;
@@ -2134,10 +2221,10 @@
                 min-width: 90px;
                 display: flex;
                 align-items: center;
-                grid-area: c8_7a;
+                grid-area: c9_7;
             }
 
-            .c8_8a {
+            .c9_8 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2149,7 +2236,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_8a;
+                grid-area: c9_8;
 
                 input {
                     max-width: 104px;
@@ -2157,7 +2244,7 @@
                 }
             }
 
-            .c8_9a {
+            .c9_9 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2169,7 +2256,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_9a;
+                grid-area: c9_9;
 
                 input {
                     max-width: 104px;
@@ -2177,7 +2264,7 @@
                 }
             }
 
-            .c8_10a {
+            .c9_10 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2189,7 +2276,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_10a;
+                grid-area: c9_10;
 
                 input {
                     max-width: 104px;
@@ -2197,7 +2284,7 @@
                 }
             }
 
-            .c8_11a {
+            .c9_11 {
                 font-size: 1em;
                 font-weight: 400;
                 padding: 8px;
@@ -2209,987 +2296,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                grid-area: c8_11a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_1b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c8_1b;
-            }
-
-            .c8_2b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_2b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_3b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_3b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_4b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_4b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_5b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c8_5b;
-            }
-
-            .c8_6b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_6b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_7b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c8_7b;
-            }
-
-            .c8_8b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_8b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_9b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_9b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_10b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_10b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c8_11b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-T;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c8_11b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_1a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c9_1a;
-            }
-
-            .c9_2a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_2a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_3a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_3a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_4a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_4a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_5a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c9_5a;
-            }
-
-            .c9_6a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_6a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_7a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c9_7a;
-            }
-
-            .c9_8a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_8a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_9a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_9a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_10a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_10a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_11a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-T;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_11a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_1b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c9_1b;
-            }
-
-            .c9_2b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_2b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_3b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_3b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_4b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_4b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_5b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c9_5b;
-            }
-
-            .c9_6b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_6b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_7b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c9_7b;
-            }
-
-            .c9_8b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_8b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_9b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_9b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_10b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_10b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c9_11b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-T;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c9_11b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_1a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c10_1a;
-            }
-
-            .c10_2a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_2a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_3a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_3a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_4a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_4a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_5a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c10_5a;
-            }
-
-            .c10_6a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_6a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_7a {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c10_7a;
-            }
-
-            .c10_8a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_8a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_9a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_9a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_10a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_10a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_11a {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-T;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_11a;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_1b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c10_1b;
-            }
-
-            .c10_2b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_2b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_3b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_3b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_4b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_4b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_5b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c10_5b;
-            }
-
-            .c10_6b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_6b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_7b {
-                font-size: 1em;
-                font-weight: 800;
-                background-color: $Default-GT;
-                color: $color2;
-                padding: 8px;
-                min-width: 90px;
-                display: flex;
-                align-items: center;
-                grid-area: c10_7b;
-            }
-
-            .c10_8b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_8b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_9b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_9b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_10b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-RW;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_10b;
-
-                input {
-                    max-width: 104px;
-                    text-align: right;
-                }
-            }
-
-            .c10_11b {
-                font-size: 1em;
-                font-weight: 400;
-                padding: 8px;
-                color: $color2;
-                background-color: $Default-T;
-                border-bottom: 1px solid $Default-L;
-                border-left: 1px solid $Default-L;
-                min-width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-area: c10_11b;
+                grid-area: c9_11;
 
                 input {
                     max-width: 104px;
