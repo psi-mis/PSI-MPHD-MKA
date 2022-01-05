@@ -161,7 +161,7 @@
     }
 
     .data {
-        width: calc(100% - 250);
+        width: 100%;
         overflow-x: auto;
         grid-area: data;
 
@@ -2758,12 +2758,11 @@
     clear: both;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas:
         "title title"
-        "rw1 i1"
-        "rw2 i2";
+        "rw1 i1";
     padding: 8px 0 42px 0;
 
     .title {
@@ -2798,36 +2797,6 @@
         min-width: 90px;
         text-align: right;
         grid-area: i1;
-
-        input {
-            max-width: 104px;
-            text-align: right;
-        }
-    }
-
-    .rw2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
-        grid-area: rw2;
-    }
-
-    .i2 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
-        text-align: right;
-        grid-area: i2;
 
         input {
             max-width: 104px;

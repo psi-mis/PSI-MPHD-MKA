@@ -237,7 +237,7 @@
   }
 
   .container-t1g1 .data {
-    width: calc(100% - 250);
+    width: 100%;
     overflow-x: auto;
     grid-area: data;
   }
@@ -2807,9 +2807,9 @@
     clear: both;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title title""rw1 i1""rw2 i2";
+    grid-template-areas: "title title""rw1 i1";
     padding: 8px 0 42px 0;
   }
 
@@ -2848,36 +2848,6 @@
   }
 
   .t2g1 .i1 input {
-    max-width: 104px;
-    text-align: right;
-  }
-
-  .t2g1 .rw2 {
-    font-size: 1em;
-    font-weight: 400;
-    color: #333333;
-    background-color: #eff5ff;
-    padding: 8px;
-    border-bottom: 1px solid #f7faff;
-    border-left: 1px solid #f7faff;
-    min-width: 90px;
-    grid-area: rw2;
-  }
-
-  .t2g1 .i2 {
-    font-size: 1em;
-    font-weight: 400;
-    color: #333333;
-    background-color: #eff5ff;
-    padding: 8px;
-    border-bottom: 1px solid #f7faff;
-    border-left: 1px solid #f7faff;
-    min-width: 90px;
-    text-align: right;
-    grid-area: i2;
-  }
-
-  .t2g1 .i2 input {
     max-width: 104px;
     text-align: right;
   }
@@ -3814,38 +3784,50 @@
         <li><a href="#XCUT" keyword="opt_c:Tb2">X.Cut</a></li>
       </ul>
 
+      <div class="img_logo"><img alt="usaid" height="120px"
+          src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" />
+      </div>
+
       <div id="SPRT">
-        <div class="img_logo"><img alt="usaid" height="120px"
-            src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
         <div class="container-t1g1">
           <div class="rw">
             <div class="t1g1a">
               <div class="title">&nbsp;</div>
 
-              <div class="rwt1l" keyword="opt_c:G_CH2">MN CH.2 Number of facilities conducting audits</div>
+              <div class="rwt1l" keyword="opt_c:G_CH2">MN CH.2 Number of
+                facilities conducting audits</div>
 
-              <div class="rw1" keyword="opt_c:Tb1Gr1Tx1">Facilities conducting at least one Maternal death audit and
+              <div class="rw1" keyword="opt_c:Tb1Gr1Tx1">Facilities conducting
+                at least one Maternal death audit and
                 response</div>
 
-              <div class="rw2" keyword="opt_c:Tb1Gr1Tx2">Facilities conducting at least one Pediatric death audit and
+              <div class="rw2" keyword="opt_c:Tb1Gr1Tx2">Facilities conducting
+                at least one Pediatric death audit and
                 response</div>
 
-              <div class="rw3" keyword="opt_c:Tb1Gr1Tx3">Facilities conducting at least one Perinatal death audit and
+              <div class="rw3" keyword="opt_c:Tb1Gr1Tx3">Facilities conducting
+                at least one Perinatal death audit and
                 response</div>
 
-              <div class="rw4" keyword="opt_c:Tb1Gr1Tx4">Facilities reporting / supervised</div>
+              <div class="rw4" keyword="opt_c:Tb1Gr1Tx4">Facilities reporting
+                / supervised</div>
 
-              <div class="rwt2l" keyword="opt_c:G_WASH">MPHD - WASH 1 Number of facilities</div>
+              <div class="rwt2l" keyword="opt_c:G_WASH">MPHD - WASH 1 Number
+                of facilities</div>
 
-              <div class="rw5" keyword="opt_c:Tb1Gr1Tx5">Health facilities with soap and running water or alcohol-based
+              <div class="rw5" keyword="opt_c:Tb1Gr1Tx5">Health facilities
+                with soap and running water or alcohol-based
                 rub available on the day of superision visit</div>
 
-              <div class="rw6" keyword="opt_c:Tb1Gr1Tx6">Health Facilities with improved infection prevention readiness
+              <div class="rw6" keyword="opt_c:Tb1Gr1Tx6">Health Facilities
+                with improved infection prevention readiness
                 scores</div>
 
-              <div class="rw7" keyword="opt_c:Tb1Gr1Tx7">Health facilities that experience a stock out of Essential
-                Infection Prevention Supplies during the previous three months</div>
+              <div class="rw7" keyword="opt_c:Tb1Gr1Tx7">Health facilities
+                that experience a stock out of Essential
+                Infection Prevention Supplies during the previous three
+                months</div>
             </div>
           </div>
 
@@ -3859,19 +3841,24 @@
 
               <div class="t_cls">&nbsp;</div>
 
-              <div class="c_t1-1" keyword="opt_c:GpublTx1">Hospital NGO/FBO</div>
+              <div class="c_t1-1" keyword="opt_c:GpublTx1">Hospital NGO/FBO
+              </div>
 
-              <div class="c_t1-2" keyword="opt_c:GpublTx2">Health center/facility NGO/FBO</div>
+              <div class="c_t1-2" keyword="opt_c:GpublTx2">Health
+                center/facility NGO/FBO</div>
 
-              <div class="c_t1-3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+              <div class="c_t1-3" keyword="opt_c:GxTx3">Mobile clinic/services
+              </div>
 
               <div class="c_t2-1" keyword="opt_c:GunspTx1">Service site</div>
 
               <div class="c_t3-1" keyword="opt_c:GpublTx1">Hospital</div>
 
-              <div class="c_t3-2" keyword="opt_c:GpublTx2">Health center/facility</div>
+              <div class="c_t3-2" keyword="opt_c:GpublTx2">Health
+                center/facility</div>
 
-              <div class="c_t3-3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+              <div class="c_t3-3" keyword="opt_c:GxTx3">Mobile clinic/services
+              </div>
 
               <div class="totals" keyword="opt_c:totals">Totals</div>
 
@@ -4170,7 +4157,8 @@
         </div>
 
         <div class="t1g2">
-          <div class="title" keyword="opt_c:Tb1Gr2Tt1">GEN 3 - Percentage of women who report they communicate with
+          <div class="title" keyword="opt_c:Tb1Gr2Tt1">GEN 3 - Percentage of women who
+            report they communicate with
             their partner about MNCH/FP/RH topic(s) (couple communication)</div>
 
           <div class="c1" keyword="opt_c:Ag1">- 20</div>
@@ -4187,7 +4175,8 @@
 
           <div class="private_rw1" keyword="opt_c:Gpriv">Hospital NGO/FBO</div>
 
-          <div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO</div>
+          <div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO
+          </div>
 
           <div class="private_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
 
@@ -4376,8 +4365,10 @@
 
           <div class="totals" keyword="opt_c:totals">Totals</div>
 
-          <div class="r1" keyword="opt_c:Tb1Gr2Tx1">MPHD - MNH.8_PSI_Percentage recently delivered women who report a
-            high person-centered maternity care score[1] in MPHD-supported areas (facilities)</div>
+          <div class="r1" keyword="opt_c:Tb1Gr2Tx1">MPHD - MNH.8_PSI_Percentage recently
+            delivered women who report a
+            high person-centered maternity care score[1] in MPHD-supported areas
+            (facilities)</div>
 
           <div class="c1i1"><input id="vfKLPQG5xPF-vjZPre4Dzjf-val" name="entryfield"
               title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age below 20"
@@ -4407,38 +4398,29 @@
       </div>
 
       <div id="XCUT">
-        <div class="img_logo"><img alt="usaid" height="120px"
-            src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
         <div class="t2g1">
-          <div class="title" keyword="opt_c:Tb2Gr1Tt1">Service utilization rate in facilities implementing quality
-            improvement (QI)</div>
 
-          <div class="rw1" keyword="opt_c:Tb2Gr1Tx1">Number of annual outpatient department visits in facilities
-            implementing QI</div>
-
-          <div class="rw2" keyword="opt_c:Tb2Gr1Tx2">Total number of people residing in the catchment areas for the
-            facilities which are implementing QI</div>
+          <div class="rw1" keyword="opt_c:Tb2Gr1Tx1"> X.Cut.5_Total estimated population in areas receiving
+            MOMENTUM-support to deliver, improve or expand MNCH/FP/RH</div>
 
           <div class="i1"><input id="iCMsCCYcgsy-HllvX50cXC0-val" name="entryfield"
               title="MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI"
               value="[ MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI ]" />
           </div>
-
-          <div class="i2"><input id="Of8VzbMloSa-HllvX50cXC0-val" name="entryfield"
-              title="MPHD - X.Cut.5_Total estimated population in areas receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services"
-              value="[ MPHD - X.Cut.5_Total estimated population in areas receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services ]" />
-          </div>
         </div>
 
         <div class="t2g2">
-          <div class="title" keyword="opt_c:Tb2Gr1Tt2">MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and
+          <div class="title" keyword="opt_c:Tb2Gr1Tt2">MPHD - X.Cut.1 Number of
+            MOMENTUM-supported health facilities and
             community health worker (CHW)</div>
 
-          <div class="c1" keyword="opt_c:HWCl1">Sites required to report HMIS data to a higher level for the six month
+          <div class="c1" keyword="opt_c:HWCl1">Sites required to report HMIS data to a
+            higher level for the six month
             period</div>
 
-          <div class="c2" keyword="opt_c:HWCl2">Sites that completed and submitted HMIS reporting forms to higher level
+          <div class="c2" keyword="opt_c:HWCl2">Sites that completed and submitted HMIS
+            reporting forms to higher level
             for the six month period</div>
 
           <div class="title_private" keyword="opt_c:Gpriv">Private</div>
@@ -4451,7 +4433,8 @@
 
           <div class="private_rw1" keyword="opt_c:GprivTx1">Hospital NGO/FBO</div>
 
-          <div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO</div>
+          <div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO
+          </div>
 
           <div class="private_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
 
