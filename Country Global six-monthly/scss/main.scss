@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import 'abstracts/_var.scss',
+'abstracts/_typography.scss';
+
+@import 'components/_grid.scss',
+'components/_tabs.scss';
+
+.totals {
+  input {
+    background-color: #DCDCDC !important;
+  }
+}
+
+i,
+rem {
+  color: rgb(138, 116, 116);
+  font-weight: 300;
+  font-size: 0.5em;
+}
+
+.img_logo {
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+
+  img {
+    float: left;
+  }
+}
+
+#hide_tab {
+  padding: 8px;
+  float: right;
+
+  a {
+    color: #f1f1f1f1;
+    text-decoration: none;
+    font-weight: 200;
+  }
+}
