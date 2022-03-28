@@ -1424,7 +1424,7 @@
 .t3g1 {
   clear: both;
   display: grid;
-  grid-template-columns: 1fr auto auto auto auto;
+  grid-template-columns: 1fr 132px 132px 1fr;
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -1883,7 +1883,8 @@
   grid-area: desc1;
 }
 .t3g1 .desc1 input {
-  max-width: 104px;
+  width: calc(100% - 10px) !important;
+  max-height: 100px !important;
   text-align: right;
 }
 .t3g1 .desc2 {
