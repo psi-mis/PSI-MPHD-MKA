@@ -11,429 +11,843 @@
 
 <div id="MPHDCustomForm">
         <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
-
+      
         <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
-                <br />
-                <br />
-                <img src="../images/ajax-loader-circle.gif" /><br />
-                <br />
-                &nbsp;
-                <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+          <br />
+          <br />
+          <img src="../images/ajax-loader-circle.gif" /><br />
+          <br />
+          &nbsp;
+          <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
         </div>
-
+      
         <div id="MPHDCustomForm_Content">
-                <div id="tabs" style="display:block;">
-                        <ul class="custom_tab">
-                                <li><a href="#SPRT" keyword="opt_c:TbTitle_1">Project Wide Indicators </a></li>
-                                <li><a href="#XCUT" keyword="opt_c:TbTitle_2">X.Cut</a></li>
-                        </ul>
-
-                        <div id="SPRT">
-                                <div class="img_logo"><img alt="usaid" height="120px"
-                                                src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" />
-                                </div>
-
-                                <div class="t1g1">
-                                        <div class="title" keyword="opt_c:Tb1Tt1">Gen.1: Activities integrating gender
-                                        </div>
-
-                                        <div class="r1" keyword="opt_c:Tb1Tt1Tx1">Number of activities in Core Award
-                                                work plans</div>
-
-                                        <div class="i1"><input id="llgAZinnOdg-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of discrete activities in the Core  Award work plans"
-                                                        value="[ MPHD - GEN.1_Number of discrete activities in the Core  Award work plans ]" />
-                                        </div>
-
-                                        <div class="r2" keyword="opt_c:Tb1Tt1Tx2">Number of activities in Field Award
-                                                work plans</div>
-
-                                        <div class="i2"><input id="J0Q2l95pmIS-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of discrete activities in the Field Award work plans"
-                                                        value="[ MPHD - GEN.1_Number of discrete activities in the Field Award work plans ]" />
-                                        </div>
-                                </div>
-
-                                <div class="t1g2">
-                                        <div class="title" keyword="opt_c:Tb1Tt2">Organizational Capacity Development
-                                        </div>
-
-                                        <div class="r1" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations
-                                                receiving organizational capacity
-                                                development support</div>
-
-                                        <div class="i1"><input id="wKjLFq0098r-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - XX 2.2-D Number of USG-assisted organizations receiving organizational capacity development support"
-                                                        value="[ MPHD - XX 2.2-D Number of USG-assisted organizations receiving organizational capacity development support ]" />
-                                        </div>
-
-                                        <div class="r2" keyword="opt_c:Tb1Tt23Tx2">PWI 2.2 D Number of organizations
-                                                with improved performance</div>
-
-                                        <div class="i2"><input id="ogbfDAk7gxl-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance"
-                                                        value="[ MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance ]" />
-                                        </div>
-                                </div>
-
-                                <div class="t1g3">
-                                        <div class="title" keyword="opt_c:Tb1Tt3">Organization type</div>
-
-                                        <div class="c1" keyword="opt_c:Tb1Tt3Cl1">Private (CSO, NGO, for-profit)</div>
-
-                                        <div class="c2" keyword="opt_c:Tb1Tt3Cl2">Parastatal</div>
-
-                                        <div class="c3" keyword="opt_c:Tb1Tt3Cl3">Governmental</div>
-
-                                        <div class="c4" keyword="opt_c:Tb1Tt3Cl4">Other (not specified)</div>
-
-                                        <div class="r1" keyword="opt_c:Tb1Tt23Tx2">PWI 2.2 D Number of organizations
-                                                with improved performance</div>
-
-                                        <div class="r2" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations
-                                                receiving organizational capacity
-                                                development support</div>
-
-                                        <div class="r3" keyword="opt_c:Tb1Tt3Tx3">MPHD - X.Cut.7_Number of organizations
-                                                with MOMENTUM support</div>
-
-                                        <div class="totals">Totals</div>
-
-                                        <div class="c1i1"><input id="iklcVwdl7ld-IUEU60iLuOa-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Private (CSO, NGO, for-profit)"
-                                                        value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Private (CSO, NGO, for-profit) ]" />
-                                        </div>
-
-                                        <div class="c1i2"><input id="aE7gShU5C8X-IUEU60iLuOa-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Private (CSO, NGO, for-profit)"
-                                                        value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Private (CSO, NGO, for-profit) ]" />
-                                        </div>
-
-                                        <div class="c1i3"><input id="Y3zqJuZdi2c-IUEU60iLuOa-val" name="entryfield"
-                                                        title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Private (CSO, NGO, for-profit)"
-                                                        value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Private (CSO, NGO, for-profit) ]" />
-                                        </div>
-
-                                        <div class="c2i1"><input id="iklcVwdl7ld-hDP9qVcsssp-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Parastatal"
-                                                        value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Parastatal ]" />
-                                        </div>
-
-                                        <div class="tt1"><input dataelementid="iklcVwdl7ld" id="totaliklcVwdl7ld"
-                                                        name="total" readonly="readonly"
-                                                        title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance"
-                                                        value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance ]" />
-                                        </div>
-
-                                        <div class="tt2"><input dataelementid="aE7gShU5C8X" id="totalaE7gShU5C8X"
-                                                        name="total" readonly="readonly"
-                                                        title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support"
-                                                        value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support ]" />
-                                        </div>
-
-                                        <div class="tt3"><input dataelementid="Y3zqJuZdi2c" id="totalY3zqJuZdi2c"
-                                                        name="total" readonly="readonly"
-                                                        title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support"
-                                                        value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support ]" />
-                                        </div>
-
-                                        <div class="c2i2"><input id="aE7gShU5C8X-hDP9qVcsssp-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Parastatal"
-                                                        value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Parastatal ]" />
-                                        </div>
-
-                                        <div class="c2i3"><input id="Y3zqJuZdi2c-hDP9qVcsssp-val" name="entryfield"
-                                                        title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Parastatal"
-                                                        value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Parastatal ]" />
-                                        </div>
-
-                                        <div class="c3i1"><input id="iklcVwdl7ld-YyfwOagKPSG-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Governmental"
-                                                        value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Governmental ]" />
-                                        </div>
-
-                                        <div class="c3i2"><input id="aE7gShU5C8X-YyfwOagKPSG-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Governmental"
-                                                        value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Governmental ]" />
-                                        </div>
-
-                                        <div class="c3i3"><input id="Y3zqJuZdi2c-YyfwOagKPSG-val" name="entryfield"
-                                                        title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Governmental"
-                                                        value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Governmental ]" />
-                                        </div>
-
-                                        <div class="c4i1"><input id="iklcVwdl7ld-ENMVqc4Un4B-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Other (not specified)"
-                                                        value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Other (not specified) ]" />
-                                        </div>
-
-                                        <div class="c4i2"><input id="aE7gShU5C8X-ENMVqc4Un4B-val" name="entryfield"
-                                                        title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Other (not specified)"
-                                                        value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Other (not specified) ]" />
-                                        </div>
-
-                                        <div class="c4i3"><input id="Y3zqJuZdi2c-ENMVqc4Un4B-val" name="entryfield"
-                                                        title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified)"
-                                                        value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified) ]" />
-                                        </div>
-                                </div>
-
-                                <div class="t1g4">
-                                        <div class="title" keyword="opt_c:Tb1Tt4">Gender Programming</div>
-
-                                        <div class="c1" keyword="opt_c:Tb1Tt4Cl1">Empowerment (or reproductive
-                                                empowerment)</div>
-
-                                        <div class="c2" keyword="opt_c:Tb1Tt4Cl2">Gender-based violence</div>
-
-                                        <div class="c3" keyword="opt_c:Tb1Tt4Cl3">Male engagement</div>
-
-                                        <div class="c4" keyword="opt_c:Tb1Tt4Cl4">Respectful maternity care</div>
-
-                                        <div class="c5" keyword="opt_c:Tb1Tt4Cl5">Combination of 2 or more of the above
-                                        </div>
-
-                                        <div class="totals" keyword="opt_c:totals">Totals</div>
-
-                                        <div class="r1" keyword="opt_c:Tb1Tt4Tx1">Number of activities that include a
-                                                gender programming component for
-                                                Core Workplans</div>
-
-                                        <div class="r2" keyword="opt_c:Tb1Tt4Tx2">Number of activities that include a
-                                                gender programming component for
-                                                Field Workplans</div>
-
-                                        <div class="c1i1"><input id="Cr38h6S6ULD-lXcGx74jYwB-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Empowerment (or reproductive empowerment)"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Empowerment (or reproductive empowerment) ]" />
-                                        </div>
-
-                                        <div class="c2i1"><input id="Cr38h6S6ULD-V0eWeTr4iS0-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Gender-based violence"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Gender-based violence ]" />
-                                        </div>
-
-                                        <div class="c3i1"><input id="Cr38h6S6ULD-IyEEYnSY6vl-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Male engagement"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Male engagement ]" />
-                                        </div>
-
-                                        <div class="c4i1"><input id="Cr38h6S6ULD-bbPo5zgHCCE-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Respectful maternity care"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Respectful maternity care ]" />
-                                        </div>
-
-                                        <div class="c5i1"><input id="Cr38h6S6ULD-Wpe6GEjWrLc-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Combination of 2 or more of the above"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Combination of 2 or more of the above ]" />
-                                        </div>
-
-                                        <div class="tt1"><input dataelementid="Cr38h6S6ULD" id="totalCr38h6S6ULD"
-                                                        name="total" readonly="readonly"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core ]" />
-                                        </div>
-
-                                        <div class="tt2"><input dataelementid="nP9MrRee08K" id="totalnP9MrRee08K"
-                                                        name="total" readonly="readonly"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field ]" />
-                                        </div>
-
-                                        <div class="c1i2"><input id="nP9MrRee08K-lXcGx74jYwB-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Empowerment (or reproductive empowerment)"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Empowerment (or reproductive empowerment) ]" />
-                                        </div>
-
-                                        <div class="c2i2"><input id="nP9MrRee08K-V0eWeTr4iS0-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Gender-based violence"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Gender-based violence ]" />
-                                        </div>
-
-                                        <div class="c3i2"><input id="nP9MrRee08K-IyEEYnSY6vl-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Male engagement"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Male engagement ]" />
-                                        </div>
-
-                                        <div class="c4i2"><input id="nP9MrRee08K-bbPo5zgHCCE-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Respectful maternity care"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Respectful maternity care ]" />
-                                        </div>
-
-                                        <div class="c5i2"><input id="nP9MrRee08K-Wpe6GEjWrLc-val" name="entryfield"
-                                                        title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Combination of 2 or more of the above"
-                                                        value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Combination of 2 or more of the above ]" />
-                                        </div>
-                                </div>
-                        </div>
-
-                        <div id="XCUT">
-                                <div class="img_logo"><img alt="usaid" height="120px"
-                                                src="https://beckolsystem.com/momentum/momentum.png" />
-                                </div>
-
-                                <div class="t2g1">
-                                        <div class="title" keyword="opt_c:Tb2Tt1">Districts receiving support</div>
-
-                                        <div class="r1" keyword="opt_c:Tb2Tt1Tx1">Number of districts receiving MPHD
-                                                support</div>
-
-                                        <div class="i1"><input id="btTOOxZY29P-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.4_Number of districts receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services "
-                                                        value="[ MPHD - X.Cut.4_Number of districts receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services  ]" />
-                                        </div>
-                                </div>
-
-                                <div class="t2g2">
-                                        <div class="Tittle" keyword="opt_c:Tb2Tt2">MPHD - X.Cut.8_Number of stresses or
-                                                shocks occurring in
-                                                MOMENTUM-supported districts due to</div>
-
-                                        <div class="r1" keyword="opt_c:Tb2Tt2Tx1">Insecurity (such as post-election
-                                                violence, terrorism, violent
-                                                extremism, civil conflict)</div>
-
-                                        <div class="t_area1"><input id="BXJl1qNUMO8-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict)"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict) ]" />
-                                        </div>
-
-                                        <div class="r2" keyword="opt_c:Tb2Tt2Tx2">Conflict (intercommunal and internal
-                                                anti-government, ethnic
-                                                violence)</div>
-
-                                        <div class="t_area2"><input id="vB73NYPauHo-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict (intercommunal and internal anti-government, ethnic violence)"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict (intercommunal and internal anti-government, ethnic violence) ]" />
-                                        </div>
-
-                                        <div class="r3" keyword="opt_c:Tb2Tt2Tx3">Conflict induced displacement</div>
-
-                                        <div class="t_area3"><input id="xKp8FVMianp-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict induced displacement"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict induced displacement ]" />
-                                        </div>
-
-                                        <div class="r4" keyword="opt_c:Tb2Tt2Tx4">Economic shocks (such as price
-                                                shocks/spikes, currency devaluation
-                                                or economic recession)</div>
-
-                                        <div class="t_area4"><input id="MtL4LarbawH-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Economic shocks (such as price shocks/spikes, currency devaluation or economic recession)"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Economic shocks (such as price shocks/spikes, currency devaluation or economic recession) ]" />
-                                        </div>
-
-                                        <div class="r5" keyword="opt_c:Tb2Tt2Tx5">General strikes or protests</div>
-
-                                        <div class="t_area5"><input id="MVrpy2RdK0C-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for General strikes or protests"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for General strikes or protests ]" />
-                                        </div>
-
-                                        <div class="r6" keyword="opt_c:Tb2Tt2Tx6">Influx of refugees</div>
-
-                                        <div class="t_area6"><input id="mBop6ldK4Zk-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Influx of refugees"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Influx of refugees ]" />
-                                        </div>
-
-                                        <div class="r7" keyword="opt_c:Tb2Tt2Tx7">Natural Disasters (floods, fires,
-                                                earthquakes, volcanic eruptions,
-                                                tsunamis, droughts)</div>
-
-                                        <div class="t_area7"><input id="ybab28Armss-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts)"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts) ]" />
-                                        </div>
-
-                                        <div class="r8" keyword="opt_c:Tb2Tt2Tx8">Pandemics/outbreaks of infections
-                                                diseases (such as COVID, measles,
-                                                cholera or VD-polio)</div>
-
-                                        <div class="t_area8"><input id="yl626DK4bE3-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio)"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio) ]" />
-                                        </div>
-
-                                        <div class="r9" keyword="opt_c:Tb2Tt2Tx9">Shocks to food supply (such as locusts
-                                                or livestock disease
-                                                outbreaks)</div>
-
-                                        <div class="t_area9"><input id="l6xGidFOD8Q-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Shocks to food supply (such as locusts or livestock disease outbreaks)"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Shocks to food supply (such as locusts or livestock disease outbreaks) ]" />
-                                        </div>
-
-                                        <div class="r10" keyword="opt_c:Tb2Tt2Tx10">Strikes of health workers</div>
-
-                                        <div class="t_area10"><input id="Q3PV7wFT4f0-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Strikes of health workers"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Strikes of health workers ]" />
-                                        </div>
-
-                                        <div class="r11" keyword="opt_c:Tb2Tt2Tx11">Unspecified/Other</div>
-
-                                        <div class="t_area11"><input id="af7PbsUGxpS-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Unspecified/Other"
-                                                        value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Unspecified/Other ]" />
-                                        </div>
-
-                                        <div class="i1"><input id="QmUibpww1Ql-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict)"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict) ]" />
-                                        </div>
-
-                                        <div class="i2"><input id="s1UsZSWVki3-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict (intercommunal and internal anti-government, ethnic violence)"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict (intercommunal and internal anti-government, ethnic violence) ]" />
-                                        </div>
-
-                                        <div class="i3"><input id="JA2FzmNyERO-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict induced displacement"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict induced displacement ]" />
-                                        </div>
-
-                                        <div class="i4"><input id="aQeqxfvcNFX-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Economic shocks (such as price shocks/spikes, currency devaluation or economic recession)"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Economic shocks (such as price shocks/spikes, currency devaluation or economic recession) ]" />
-                                        </div>
-
-                                        <div class="i5"><input id="Oas2B6sAIDB-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to General strikes or protests"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to General strikes or protests ]" />
-                                        </div>
-
-                                        <div class="i6"><input id="WBwv8gBKeVX-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Influx of refugees"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Influx of refugees ]" />
-                                        </div>
-
-                                        <div class="i7"><input id="SPIOgtFkd2v-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts)"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts) ]" />
-                                        </div>
-
-                                        <div class="i8"><input id="lOiaRQpfHAq-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio)"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio) ]" />
-                                        </div>
-
-                                        <div class="i9"><input id="BMSYWU6khHC-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Shocks to food supply (such as locusts or livestock disease outbreaks)"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Shocks to food supply (such as locusts or livestock disease outbreaks) ]" />
-                                        </div>
-
-                                        <div class="i10"><input id="YMUEsK6ecIK-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Strikes of health workers"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Strikes of health workers ]" />
-                                        </div>
-
-                                        <div class="i11"><input id="nhXbbBg57Gw-HllvX50cXC0-val" name="entryfield"
-                                                        title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Unspecified/Other"
-                                                        value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Unspecified/Other ]" />
-                                        </div>
-                                </div>
-                        </div>
+          <div id="tabs" style="display:block;">
+            <ul class="custom_tab">
+              <li><a href="#SPRT" keyword="opt_c:TbTitle_1">Project Wide Indicators </a></li>
+              <li><a href="#XCUT" keyword="opt_c:TbTitle_2">X.Cut</a></li>
+              <li><a href="#CAP" keyword="opt_c:TbTitle_3">CAP</a></li>
+              <li><a href="#CE_AL" keyword="opt_c:TbTitle_4">CE and AL</a></li>
+            </ul>
+      
+            <div id="SPRT">
+              <div class="img_logo"><img alt="usaid" height="120px"
+                  src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+      
+              <div class="t1g1">
+                <div class="title" keyword="opt_c:Tb1Tt1">Gen.1: Activities integrating gender</div>
+      
+                <div class="r1" keyword="opt_c:Tb1Tt1Tx1">Number of activities in Core Award work plans</div>
+      
+                <div class="i1"><input id="llgAZinnOdg-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of discrete activities in the Core  Award work plans"
+                    value="[ MPHD - GEN.1_Number of discrete activities in the Core  Award work plans ]" /></div>
+      
+                <div class="r2" keyword="opt_c:Tb1Tt1Tx2">Number of activities in Field Award work plans</div>
+      
+                <div class="i2"><input id="J0Q2l95pmIS-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of discrete activities in the Field Award work plans"
+                    value="[ MPHD - GEN.1_Number of discrete activities in the Field Award work plans ]" /></div>
+              </div>
+      
+              <div class="t1g2">
+                <div class="title" keyword="opt_c:Tb1Tt2">Organizational Capacity Development</div>
+      
+                <div class="r1" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations receiving organizational capacity
+                  development support</div>
+      
+                <div class="i1"><input id="wKjLFq0098r-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - XX 2.2-D Number of USG-assisted organizations receiving organizational capacity development support"
+                    value="[ MPHD - XX 2.2-D Number of USG-assisted organizations receiving organizational capacity development support ]" />
                 </div>
+      
+                <div class="r2" keyword="opt_c:Tb1Tt23Tx2">PWI 2.2 D Number of organizations with improved performance</div>
+      
+                <div class="i2"><input id="ogbfDAk7gxl-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance"
+                    value="[ MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance ]" /></div>
+              </div>
+      
+              <div class="t1g3">
+                <div class="title" keyword="opt_c:Tb1Tt3">Organization type</div>
+      
+                <div class="c1" keyword="opt_c:Tb1Tt3Cl1">Private (CSO, NGO, for-profit)</div>
+      
+                <div class="c2" keyword="opt_c:Tb1Tt3Cl2">Parastatal</div>
+      
+                <div class="c3" keyword="opt_c:Tb1Tt3Cl3">Governmental</div>
+      
+                <div class="c4" keyword="opt_c:Tb1Tt3Cl4">Other (not specified)</div>
+      
+                <div class="r1" keyword="opt_c:Tb1Tt23Tx2">PWI 2.2 D Number of organizations with improved performance</div>
+      
+                <div class="r2" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations receiving organizational capacity
+                  development support</div>
+      
+                <div class="r3" keyword="opt_c:Tb1Tt3Tx3">MPHD - X.Cut.7_Number of organizations with MOMENTUM support</div>
+      
+                <div class="totals">Totals</div>
+      
+                <div class="c1i1"><input id="iklcVwdl7ld-IUEU60iLuOa-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Private (CSO, NGO, for-profit)"
+                    value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Private (CSO, NGO, for-profit) ]" />
+                </div>
+      
+                <div class="c1i2"><input id="aE7gShU5C8X-IUEU60iLuOa-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Private (CSO, NGO, for-profit)"
+                    value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Private (CSO, NGO, for-profit) ]" />
+                </div>
+      
+                <div class="c1i3"><input id="Y3zqJuZdi2c-IUEU60iLuOa-val" name="entryfield"
+                    title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Private (CSO, NGO, for-profit)"
+                    value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Private (CSO, NGO, for-profit) ]" />
+                </div>
+      
+                <div class="c2i1"><input id="iklcVwdl7ld-hDP9qVcsssp-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Parastatal"
+                    value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Parastatal ]" />
+                </div>
+      
+                <div class="tt1"><input dataelementid="iklcVwdl7ld" id="totaliklcVwdl7ld" name="total" readonly="readonly"
+                    title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance"
+                    value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance ]" />
+                </div>
+      
+                <div class="tt2"><input dataelementid="aE7gShU5C8X" id="totalaE7gShU5C8X" name="total" readonly="readonly"
+                    title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support"
+                    value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support ]" />
+                </div>
+      
+                <div class="tt3"><input dataelementid="Y3zqJuZdi2c" id="totalY3zqJuZdi2c" name="total" readonly="readonly"
+                    title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support"
+                    value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support ]" /></div>
+      
+                <div class="c2i2"><input id="aE7gShU5C8X-hDP9qVcsssp-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Parastatal"
+                    value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Parastatal ]" />
+                </div>
+      
+                <div class="c2i3"><input id="Y3zqJuZdi2c-hDP9qVcsssp-val" name="entryfield"
+                    title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Parastatal"
+                    value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Parastatal ]" /></div>
+      
+                <div class="c3i1"><input id="iklcVwdl7ld-YyfwOagKPSG-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Governmental"
+                    value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Governmental ]" />
+                </div>
+      
+                <div class="c3i2"><input id="aE7gShU5C8X-YyfwOagKPSG-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Governmental"
+                    value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Governmental ]" />
+                </div>
+      
+                <div class="c3i3"><input id="Y3zqJuZdi2c-YyfwOagKPSG-val" name="entryfield"
+                    title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Governmental"
+                    value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Governmental ]" /></div>
+      
+                <div class="c4i1"><input id="iklcVwdl7ld-ENMVqc4Un4B-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Other (not specified)"
+                    value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Other (not specified) ]" />
+                </div>
+      
+                <div class="c4i2"><input id="aE7gShU5C8X-ENMVqc4Un4B-val" name="entryfield"
+                    title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Other (not specified)"
+                    value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Other (not specified) ]" />
+                </div>
+      
+                <div class="c4i3"><input id="Y3zqJuZdi2c-ENMVqc4Un4B-val" name="entryfield"
+                    title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified)"
+                    value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified) ]" /></div>
+              </div>
+      
+              <div class="t1g4">
+                <div class="title" keyword="opt_c:Tb1Tt4">Gender Programming</div>
+      
+                <div class="c1" keyword="opt_c:Tb1Tt4Cl1">Empowerment (or reproductive empowerment)</div>
+      
+                <div class="c2" keyword="opt_c:Tb1Tt4Cl2">Gender-based violence</div>
+      
+                <div class="c3" keyword="opt_c:Tb1Tt4Cl3">Male engagement</div>
+      
+                <div class="c4" keyword="opt_c:Tb1Tt4Cl4">Respectful maternity care</div>
+      
+                <div class="c5" keyword="opt_c:Tb1Tt4Cl5">Combination of 2 or more of the above</div>
+      
+                <div class="totals" keyword="opt_c:totals">Totals</div>
+      
+                <div class="r1" keyword="opt_c:Tb1Tt4Tx1">Number of activities that include a gender programming component for
+                  Core Workplans</div>
+      
+                <div class="r2" keyword="opt_c:Tb1Tt4Tx2">Number of activities that include a gender programming component for
+                  Field Workplans</div>
+      
+                <div class="c1i1"><input id="Cr38h6S6ULD-lXcGx74jYwB-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Empowerment (or reproductive empowerment)"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Empowerment (or reproductive empowerment) ]" />
+                </div>
+      
+                <div class="c2i1"><input id="Cr38h6S6ULD-V0eWeTr4iS0-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Gender-based violence"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Gender-based violence ]" />
+                </div>
+      
+                <div class="c3i1"><input id="Cr38h6S6ULD-IyEEYnSY6vl-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Male engagement"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Male engagement ]" />
+                </div>
+      
+                <div class="c4i1"><input id="Cr38h6S6ULD-bbPo5zgHCCE-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Respectful maternity care"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Respectful maternity care ]" />
+                </div>
+      
+                <div class="c5i1"><input id="Cr38h6S6ULD-Wpe6GEjWrLc-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Combination of 2 or more of the above"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Combination of 2 or more of the above ]" />
+                </div>
+      
+                <div class="tt1"><input dataelementid="Cr38h6S6ULD" id="totalCr38h6S6ULD" name="total" readonly="readonly"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core ]" />
+                </div>
+      
+                <div class="tt2"><input dataelementid="nP9MrRee08K" id="totalnP9MrRee08K" name="total" readonly="readonly"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field ]" />
+                </div>
+      
+                <div class="c1i2"><input id="nP9MrRee08K-lXcGx74jYwB-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Empowerment (or reproductive empowerment)"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Empowerment (or reproductive empowerment) ]" />
+                </div>
+      
+                <div class="c2i2"><input id="nP9MrRee08K-V0eWeTr4iS0-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Gender-based violence"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Gender-based violence ]" />
+                </div>
+      
+                <div class="c3i2"><input id="nP9MrRee08K-IyEEYnSY6vl-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Male engagement"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Male engagement ]" />
+                </div>
+      
+                <div class="c4i2"><input id="nP9MrRee08K-bbPo5zgHCCE-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Respectful maternity care"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Respectful maternity care ]" />
+                </div>
+      
+                <div class="c5i2"><input id="nP9MrRee08K-Wpe6GEjWrLc-val" name="entryfield"
+                    title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Combination of 2 or more of the above"
+                    value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Combination of 2 or more of the above ]" />
+                </div>
+              </div>
+            </div>
+      
+            <div id="XCUT">
+              <div class="img_logo"><img alt="usaid" height="120px"
+                  src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+      
+              <div class="t2g1">
+                <div class="title" keyword="opt_c:Tb2Tt1">Districts receiving support</div>
+      
+                <div class="r1" keyword="opt_c:Tb2Tt1Tx1">Number of districts receiving MPHD support</div>
+      
+                <div class="i1"><input id="btTOOxZY29P-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.4_Number of districts receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services"
+                    value="[ MPHD - X.Cut.4_Number of districts receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services ]" />
+                </div>
+              </div>
+      
+              <div class="t2g2">
+                <div class="Tittle" keyword="opt_c:Tb2Tt2">MPHD - X.Cut.8_Number of stresses or shocks occurring in
+                  MOMENTUM-supported districts due to</div>
+      
+                <div class="r1" keyword="opt_c:Tb2Tt2Tx1">Insecurity (such as post-election violence, terrorism, violent
+                  extremism, civil conflict)</div>
+      
+                <div class="t_area1"><input id="BXJl1qNUMO8-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict)"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict) ]" />
+                </div>
+      
+                <div class="r2" keyword="opt_c:Tb2Tt2Tx2">Conflict (intercommunal and internal anti-government, ethnic
+                  violence)</div>
+      
+                <div class="t_area2"><input id="vB73NYPauHo-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict (intercommunal and internal anti-government, ethnic violence)"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict (intercommunal and internal anti-government, ethnic violence) ]" />
+                </div>
+      
+                <div class="r3" keyword="opt_c:Tb2Tt2Tx3">Conflict induced displacement</div>
+      
+                <div class="t_area3"><input id="xKp8FVMianp-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict induced displacement"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict induced displacement ]" />
+                </div>
+      
+                <div class="r4" keyword="opt_c:Tb2Tt2Tx4">Economic shocks (such as price shocks/spikes, currency devaluation
+                  or economic recession)</div>
+      
+                <div class="t_area4"><input id="MtL4LarbawH-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Economic shocks (such as price shocks/spikes, currency devaluation or economic recession)"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Economic shocks (such as price shocks/spikes, currency devaluation or economic recession) ]" />
+                </div>
+      
+                <div class="r5" keyword="opt_c:Tb2Tt2Tx5">General strikes or protests</div>
+      
+                <div class="t_area5"><input id="MVrpy2RdK0C-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for General strikes or protests"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for General strikes or protests ]" />
+                </div>
+      
+                <div class="r6" keyword="opt_c:Tb2Tt2Tx6">Influx of refugees</div>
+      
+                <div class="t_area6"><input id="mBop6ldK4Zk-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Influx of refugees"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Influx of refugees ]" />
+                </div>
+      
+                <div class="r7" keyword="opt_c:Tb2Tt2Tx7">Natural Disasters (floods, fires, earthquakes, volcanic eruptions,
+                  tsunamis, droughts)</div>
+      
+                <div class="t_area7"><input id="ybab28Armss-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts)"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts) ]" />
+                </div>
+      
+                <div class="r8" keyword="opt_c:Tb2Tt2Tx8">Pandemics/outbreaks of infections diseases (such as COVID, measles,
+                  cholera or VD-polio)</div>
+      
+                <div class="t_area8"><input id="yl626DK4bE3-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio)"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio) ]" />
+                </div>
+      
+                <div class="r9" keyword="opt_c:Tb2Tt2Tx9">Shocks to food supply (such as locusts or livestock disease
+                  outbreaks)</div>
+      
+                <div class="t_area9"><input id="l6xGidFOD8Q-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Shocks to food supply (such as locusts or livestock disease outbreaks)"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Shocks to food supply (such as locusts or livestock disease outbreaks) ]" />
+                </div>
+      
+                <div class="r10" keyword="opt_c:Tb2Tt2Tx10">Strikes of health workers</div>
+      
+                <div class="t_area10"><input id="Q3PV7wFT4f0-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Strikes of health workers"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Strikes of health workers ]" />
+                </div>
+      
+                <div class="r11" keyword="opt_c:Tb2Tt2Tx11">Unspecified/Other</div>
+      
+                <div class="t_area11"><input id="af7PbsUGxpS-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Unspecified/Other"
+                    value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Unspecified/Other ]" />
+                </div>
+      
+                <div class="i1"><input id="QmUibpww1Ql-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict)"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict) ]" />
+                </div>
+      
+                <div class="i2"><input id="s1UsZSWVki3-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict (intercommunal and internal anti-government, ethnic violence)"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict (intercommunal and internal anti-government, ethnic violence) ]" />
+                </div>
+      
+                <div class="i3"><input id="JA2FzmNyERO-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict induced displacement"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict induced displacement ]" />
+                </div>
+      
+                <div class="i4"><input id="aQeqxfvcNFX-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Economic shocks (such as price shocks/spikes, currency devaluation or economic recession)"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Economic shocks (such as price shocks/spikes, currency devaluation or economic recession) ]" />
+                </div>
+      
+                <div class="i5"><input id="Oas2B6sAIDB-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to General strikes or protests"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to General strikes or protests ]" />
+                </div>
+      
+                <div class="i6"><input id="WBwv8gBKeVX-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Influx of refugees"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Influx of refugees ]" />
+                </div>
+      
+                <div class="i7"><input id="SPIOgtFkd2v-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts)"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts) ]" />
+                </div>
+      
+                <div class="i8"><input id="lOiaRQpfHAq-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio)"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio) ]" />
+                </div>
+      
+                <div class="i9"><input id="BMSYWU6khHC-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Shocks to food supply (such as locusts or livestock disease outbreaks)"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Shocks to food supply (such as locusts or livestock disease outbreaks) ]" />
+                </div>
+      
+                <div class="i10"><input id="YMUEsK6ecIK-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Strikes of health workers"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Strikes of health workers ]" />
+                </div>
+      
+                <div class="i11"><input id="nhXbbBg57Gw-HllvX50cXC0-val" name="entryfield"
+                    title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Unspecified/Other"
+                    value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Unspecified/Other ]" />
+                </div>
+              </div>
+            </div>
+      
+            <div id="CAP">
+              <div class="img_logo"><img alt="usaid" height="120px"
+                  src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+      
+              <div class="t3g1">
+                <div class="Title">Organization assessed for organizational performance</div>
+      
+                <div class="Type">Type</div>
+      
+                <div class="asd">Organizations assessed for organizational performance</div>
+      
+                <div class="incr">Organizations with increased organizational performance</div>
+      
+                <div class="desc">Description</div>
+      
+                <div class="ty1">Civil society organizations</div>
+      
+                <div class="ty2">Educational Institutions</div>
+      
+                <div class="ty3">Faith based organizations</div>
+      
+                <div class="ty4">Governmental agencies</div>
+      
+                <div class="ty5">Health service delivery</div>
+      
+                <div class="ty6">Non-governmental and not-for profit</div>
+      
+                <div class="ty7">Private sector firms</div>
+      
+                <div class="ty8">Research Institutions</div>
+      
+                <div class="ty9">Other</div>
+      
+                <div class="asd1"><input id="VVkUhIYSj3S-RAdEUEz61e6-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Civil society organizations (CSOs)"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Civil society organizations (CSOs) ]" />
+                </div>
+      
+                <div class="asd2"><input id="VVkUhIYSj3S-dPW3cB6V33R-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Educational Institutions"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Educational Institutions ]" />
+                </div>
+      
+                <div class="asd3"><input id="VVkUhIYSj3S-HV9SWzTsiqA-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Faith based organizations"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Faith based organizations ]" />
+                </div>
+      
+                <div class="asd4"><input id="VVkUhIYSj3S-uBZMRAMiUdN-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Governmental agencies"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Governmental agencies ]" />
+                </div>
+      
+                <div class="asd5"><input id="VVkUhIYSj3S-nCA5A3nn0nA-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Health service delivery"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Health service delivery ]" />
+                </div>
+      
+                <div class="asd6"><input id="VVkUhIYSj3S-josS0l7sw4r-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Non-governmental and not-for profit organizations"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Non-governmental and not-for profit organizations ]" />
+                </div>
+      
+                <div class="asd7"><input id="VVkUhIYSj3S-gCL0YMwzvRB-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Private sector firms"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Private sector firms ]" />
+                </div>
+      
+                <div class="asd8"><input id="VVkUhIYSj3S-qGasiFELPOR-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Research Institutions"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Research Institutions ]" />
+                </div>
+      
+                <div class="asd9"><input id="VVkUhIYSj3S-j4AcOyMnwDj-val" name="entryfield"
+                    title="CAP.5_Number of organizations assessed for organizational performance Other"
+                    value="[ CAP.5_Number of organizations assessed for organizational performance Other ]" /></div>
+      
+                <div class="incr1"><input id="ruqVQXTo4NY-RAdEUEz61e6-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Civil society organizations (CSOs)"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Civil society organizations (CSOs) ]" />
+                </div>
+      
+                <div class="incr2"><input id="ruqVQXTo4NY-dPW3cB6V33R-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Educational Institutions"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Educational Institutions ]" />
+                </div>
+      
+                <div class="incr3"><input id="ruqVQXTo4NY-HV9SWzTsiqA-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Faith based organizations"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Faith based organizations ]" />
+                </div>
+      
+                <div class="incr4"><input id="ruqVQXTo4NY-uBZMRAMiUdN-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Governmental agencies"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Governmental agencies ]" />
+                </div>
+      
+                <div class="incr5"><input id="ruqVQXTo4NY-nCA5A3nn0nA-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Health service delivery"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Health service delivery ]" />
+                </div>
+      
+                <div class="incr6"><input id="ruqVQXTo4NY-josS0l7sw4r-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Non-governmental and not-for profit organizations"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Non-governmental and not-for profit organizations ]" />
+                </div>
+      
+                <div class="incr7"><input id="ruqVQXTo4NY-gCL0YMwzvRB-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Private sector firms"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Private sector firms ]" />
+                </div>
+      
+                <div class="incr8"><input id="ruqVQXTo4NY-qGasiFELPOR-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Research Institutions"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Research Institutions ]" />
+                </div>
+      
+                <div class="incr9"><input id="ruqVQXTo4NY-j4AcOyMnwDj-val" name="entryfield"
+                    title="CAP.5_Number of organizations with increased organizational performance Other"
+                    value="[ CAP.5_Number of organizations with increased organizational performance Other ]" /></div>
+      
+                <div class="desc1"><input id="Wmcso12W4PJ-RAdEUEz61e6-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Civil society organizations (CSOs)"
+                    value="[ CAP.5_Description of organization and increased performance Civil society organizations (CSOs) ]" />
+                </div>
+      
+                <div class="desc2"><input id="Wmcso12W4PJ-dPW3cB6V33R-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Educational Institutions"
+                    value="[ CAP.5_Description of organization and increased performance Educational Institutions ]" /></div>
+      
+                <div class="desc3"><input id="Wmcso12W4PJ-HV9SWzTsiqA-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Faith based organizations"
+                    value="[ CAP.5_Description of organization and increased performance Faith based organizations ]" /></div>
+      
+                <div class="desc4"><input id="Wmcso12W4PJ-uBZMRAMiUdN-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Governmental agencies"
+                    value="[ CAP.5_Description of organization and increased performance Governmental agencies ]" /></div>
+      
+                <div class="desc5"><input id="Wmcso12W4PJ-nCA5A3nn0nA-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Health service delivery"
+                    value="[ CAP.5_Description of organization and increased performance Health service delivery ]" /></div>
+      
+                <div class="desc6"><input id="Wmcso12W4PJ-josS0l7sw4r-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Non-governmental and not-for profit organizations"
+                    value="[ CAP.5_Description of organization and increased performance Non-governmental and not-for profit organizations ]" />
+                </div>
+      
+                <div class="desc7"><input id="Wmcso12W4PJ-gCL0YMwzvRB-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Private sector firms"
+                    value="[ CAP.5_Description of organization and increased performance Private sector firms ]" /></div>
+      
+                <div class="desc8"><input id="Wmcso12W4PJ-qGasiFELPOR-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Research Institutions"
+                    value="[ CAP.5_Description of organization and increased performance Research Institutions ]" /></div>
+      
+                <div class="desc9"><input id="Wmcso12W4PJ-j4AcOyMnwDj-val" name="entryfield"
+                    title="CAP.5_Description of organization and increased performance Other"
+                    value="[ CAP.5_Description of organization and increased performance Other ]" /></div>
+              </div>
+      
+              <div class="t3g1">
+                <div class="Title">Organizations and technical capacity</div>
+      
+                <div class="Type">Type</div>
+      
+                <div class="asd">Number of organizations assessed for organizational performance or technical capacity</div>
+      
+                <div class="incr">Number of organizations with increased organizational and/or technical capacity</div>
+      
+                <div class="desc">Description</div>
+      
+                <div class="ty1">Civil society organizations</div>
+      
+                <div class="ty2">Educational Institutions</div>
+      
+                <div class="ty3">Faith based organizations</div>
+      
+                <div class="ty4">Governmental agencies</div>
+      
+                <div class="ty5">Health service delivery</div>
+      
+                <div class="ty6">Non-governmental and not-for profit</div>
+      
+                <div class="ty7">Private sector firms</div>
+      
+                <div class="ty8">Research Institutions</div>
+      
+                <div class="ty9">Other</div>
+      
+                <div class="asd1"><input id="K4XN4b1nmAc-RAdEUEz61e6-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Civil society organizations (CSOs)"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Civil society organizations (CSOs) ]" />
+                </div>
+      
+                <div class="asd2"><input id="K4XN4b1nmAc-dPW3cB6V33R-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Educational Institutions"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Educational Institutions ]" />
+                </div>
+      
+                <div class="asd3"><input id="K4XN4b1nmAc-HV9SWzTsiqA-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Faith based organizations"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Faith based organizations ]" />
+                </div>
+      
+                <div class="asd4"><input id="K4XN4b1nmAc-uBZMRAMiUdN-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Governmental agencies"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Governmental agencies ]" />
+                </div>
+      
+                <div class="asd5"><input id="K4XN4b1nmAc-nCA5A3nn0nA-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Health service delivery"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Health service delivery ]" />
+                </div>
+      
+                <div class="asd6"><input id="K4XN4b1nmAc-josS0l7sw4r-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Non-governmental and not-for profit organizations"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Non-governmental and not-for profit organizations ]" />
+                </div>
+      
+                <div class="asd7"><input id="K4XN4b1nmAc-gCL0YMwzvRB-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Private sector firms"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Private sector firms ]" />
+                </div>
+      
+                <div class="asd8"><input id="K4XN4b1nmAc-qGasiFELPOR-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Research Institutions"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Research Institutions ]" />
+                </div>
+      
+                <div class="asd9"><input id="K4XN4b1nmAc-j4AcOyMnwDj-val" name="entryfield"
+                    title="CAP.6_Number of organizations assessed for organizational or technical capacity Other"
+                    value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Other ]" /></div>
+      
+                <div class="incr1"><input id="wBPog87rkzn-RAdEUEz61e6-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Civil society organizations (CSOs)"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Civil society organizations (CSOs) ]" />
+                </div>
+      
+                <div class="incr2"><input id="wBPog87rkzn-dPW3cB6V33R-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Educational Institutions"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Educational Institutions ]" />
+                </div>
+      
+                <div class="incr3"><input id="wBPog87rkzn-HV9SWzTsiqA-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Faith based organizations"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Faith based organizations ]" />
+                </div>
+      
+                <div class="incr4"><input id="wBPog87rkzn-uBZMRAMiUdN-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Governmental agencies"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Governmental agencies ]" />
+                </div>
+      
+                <div class="incr5"><input id="wBPog87rkzn-nCA5A3nn0nA-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Health service delivery"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Health service delivery ]" />
+                </div>
+      
+                <div class="incr6"><input id="wBPog87rkzn-josS0l7sw4r-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Non-governmental and not-for profit organizations"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Non-governmental and not-for profit organizations ]" />
+                </div>
+      
+                <div class="incr7"><input id="wBPog87rkzn-gCL0YMwzvRB-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Private sector firms"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Private sector firms ]" />
+                </div>
+      
+                <div class="incr8"><input id="wBPog87rkzn-qGasiFELPOR-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Research Institutions"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Research Institutions ]" />
+                </div>
+      
+                <div class="incr9"><input id="wBPog87rkzn-j4AcOyMnwDj-val" name="entryfield"
+                    title="CAP.6_Number of organizations with increased organizational and/or technical capacity Other"
+                    value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Other ]" />
+                </div>
+      
+                <div class="desc1"><input id="UntEYfYCpcz-RAdEUEz61e6-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Civil society organizations (CSOs)"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Civil society organizations (CSOs) ]" />
+                </div>
+      
+                <div class="desc2"><input id="UntEYfYCpcz-dPW3cB6V33R-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Educational Institutions"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Educational Institutions ]" />
+                </div>
+      
+                <div class="desc3"><input id="UntEYfYCpcz-HV9SWzTsiqA-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Faith based organizations"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Faith based organizations ]" />
+                </div>
+      
+                <div class="desc4"><input id="UntEYfYCpcz-uBZMRAMiUdN-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Governmental agencies"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Governmental agencies ]" />
+                </div>
+      
+                <div class="desc5"><input id="UntEYfYCpcz-nCA5A3nn0nA-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Health service delivery"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Health service delivery ]" />
+                </div>
+      
+                <div class="desc6"><input id="UntEYfYCpcz-josS0l7sw4r-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Non-governmental and not-for profit organizations"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Non-governmental and not-for profit organizations ]" />
+                </div>
+      
+                <div class="desc7"><input id="UntEYfYCpcz-gCL0YMwzvRB-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Private sector firms"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Private sector firms ]" />
+                </div>
+      
+                <div class="desc8"><input id="UntEYfYCpcz-qGasiFELPOR-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Research Institutions"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Research Institutions ]" />
+                </div>
+      
+                <div class="desc9"><input id="UntEYfYCpcz-j4AcOyMnwDj-val" name="entryfield"
+                    title="CAP.6_Description of organization and increased organizational or technical capacity Other"
+                    value="[ CAP.6_Description of organization and increased organizational or technical capacity Other ]" />
+                </div>
+              </div>
+            </div>
+      
+            <div id="CE_AL">
+              <div class="img_logo"><img alt="usaid" height="120px"
+                  src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+      
+              <div class="t4g1">
+                <div class="Title">Approaches implemented by MOMENTUM that engage the community</div>
+      
+                <div class="app">Approach</div>
+      
+                <div class="nap">Number of approaches implemented</div>
+      
+                <div class="des">Description</div>
+      
+                <div class="app1">Access to information</div>
+      
+                <div class="app2">Accountability of Institutions</div>
+      
+                <div class="app3">Assessment</div>
+      
+                <div class="app4">Decision making</div>
+      
+                <div class="app5">Local capacity to advocate</div>
+      
+                <div class="app6">Referral mechanisms</div>
+      
+                <div class="app7">Other</div>
+      
+                <div class="nap1"><input id="rSeXRVt49je-hiHS7d3nzLL-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Access to information"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Access to information ]" />
+                </div>
+      
+                <div class="nap2"><input id="rSeXRVt49je-D2daheqhKQA-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Accountability of institutions to the public"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Accountability of institutions to the public ]" />
+                </div>
+      
+                <div class="nap3"><input id="rSeXRVt49je-LauCg5uKoMf-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Assessment"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Assessment ]" />
+                </div>
+      
+                <div class="nap4"><input id="rSeXRVt49je-oa4EhwzkbQe-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Decision making"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Decision making ]" />
+                </div>
+      
+                <div class="nap5"><input id="rSeXRVt49je-evmD7TRK7e9-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Local capacity to advocate"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Local capacity to advocate ]" />
+                </div>
+      
+                <div class="nap6"><input id="rSeXRVt49je-EMeJHyU3Jbp-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Referral mechanisms"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Referral mechanisms ]" />
+                </div>
+      
+                <div class="nap7"><input id="rSeXRVt49je-qB9Vxu8XWHM-val" name="entryfield"
+                    title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Other"
+                    value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Other ]" /></div>
+      
+                <div class="des1"><input id="EbddzwFoNZN-hiHS7d3nzLL-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Access to information"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Access to information ]" />
+                </div>
+      
+                <div class="des2"><input id="EbddzwFoNZN-D2daheqhKQA-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Accountability of institutions to the public"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Accountability of institutions to the public ]" />
+                </div>
+      
+                <div class="des3"><input id="EbddzwFoNZN-LauCg5uKoMf-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Assessment"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Assessment ]" />
+                </div>
+      
+                <div class="des4"><input id="EbddzwFoNZN-oa4EhwzkbQe-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Decision making"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Decision making ]" />
+                </div>
+      
+                <div class="des5"><input id="EbddzwFoNZN-evmD7TRK7e9-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Local capacity to advocate"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Local capacity to advocate ]" />
+                </div>
+      
+                <div class="des6"><input id="EbddzwFoNZN-EMeJHyU3Jbp-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Referral mechanisms"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Referral mechanisms ]" />
+                </div>
+      
+                <div class="des7"><input id="EbddzwFoNZN-qB9Vxu8XWHM-val" name="entryfield"
+                    title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Other"
+                    value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Other ]" />
+                </div>
+              </div>
+      
+              <div class="t4g2">
+                <div class="Title">Entities receiving MOMENTUM-support</div>
+      
+                <div class="t1">Targeted actors receiving AL support from MOMENTUM</div>
+      
+                <div class="t2">Targeted actors using data generated through their monitoring systems to modify activities or
+                  strategies</div>
+      
+                <div class="t3">Description of targeted actor, data used and program modifications</div>
+      
+                <div class="a1"><input id="JWdzIG5Vb5X-HllvX50cXC0-val" name="entryfield"
+                    title="AL.2_Number of targeted actors receiving AL support from MOMENTUM"
+                    value="[ AL.2_Number of targeted actors receiving AL support from MOMENTUM ]" /></div>
+      
+                <div class="a2"><input id="CGxPo9OhrSy-HllvX50cXC0-val" name="entryfield"
+                    title="AL.2_Number of targeted actors using data generated through their monitoring systems to modify activities or strategies"
+                    value="[ AL.2_Number of targeted actors using data generated through their monitoring systems to modify activities or strategies ]" />
+                </div>
+      
+                <div class="a3"><input id="e8NmoOxtaJM-HllvX50cXC0-val" name="entryfield"
+                    title="AL.2_Description of targeted actor, data used and program modifications"
+                    value="[ AL.2_Description of targeted actor, data used and program modifications ]" /></div>
+              </div>
+            </div>
+          </div>
         </div>
-</div>
+      </div>

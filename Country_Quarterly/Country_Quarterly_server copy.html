@@ -1,0 +1,3880 @@
+<style type="text/css">
+  @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+  .ty_h1 {
+    color: #333333;
+    font-size: 2rem;
+  }
+
+  .ty_h3 {
+    font-size: 1.2rem;
+    color: #0072B2;
+  }
+
+  .ty_h4 {
+    padding-top: 18px;
+    font-size: 1rem;
+    color: #0072B2;
+  }
+
+  .ta_left {
+    text-align: left !important;
+    font-weight: 400 !important;
+  }
+
+  .ta_left_b {
+    text-align: left !important;
+    font-weight: 600 !important;
+    color: #007F93;
+    border-top: 1px solid #007F93;
+    background-color: rgba(0, 0, 0, 0.089);
+  }
+
+  .ta_center {
+    text-align: center !important;
+  }
+
+  .ta_right {
+    text-align: right !important;
+    background-color: blueviolet !important;
+    max-width: 150px !important;
+  }
+
+  .text-overflow {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: "liga";
+  }
+
+  .material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+  }
+
+  .material-icons.md-light {
+    color: white;
+  }
+
+  .material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .t1g1 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: "title title""r1 i1""r2 i2";
+    padding: 8px 0 42px 0;
+  }
+
+  .t1g1 .title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title;
+  }
+
+  .t1g1 .r1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r1;
+  }
+
+  .t1g1 .i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: i1;
+  }
+
+  .t1g1 .i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g1 .r2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r2;
+  }
+
+  .t1g1 .i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: i2;
+  }
+
+  .t1g1 .i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g2 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: "title title""r1 i1""r2 i2";
+    padding: 8px 0 42px 0;
+  }
+
+  .t1g2 .title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title;
+  }
+
+  .t1g2 .r1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r1;
+  }
+
+  .t1g2 .i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: i1;
+  }
+
+  .t1g2 .i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g2 .r2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r2;
+  }
+
+  .t1g2 .i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: i2;
+  }
+
+  .t1g2 .i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px 130px 130px 130px 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: "title c1 c2 c3 c4 totals""r1 c1i1 c2i1 c3i1 c4i1 tt1""r2 c1i2 c2i2 c3i2 c4i2 tt2""r3 c1i3 c2i3 c3i3 c4i3 tt3";
+    padding: 8px 0 42px 0;
+  }
+
+  .t1g3 .title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title;
+  }
+
+  .t1g3 .c1 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c1;
+  }
+
+  .t1g3 .c2 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c2;
+  }
+
+  .t1g3 .c3 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c3;
+  }
+
+  .t1g3 .c4 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c4;
+  }
+
+  .t1g3 .totals {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: totals;
+  }
+
+  .t1g3 .r1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r1;
+  }
+
+  .t1g3 .r2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r2;
+  }
+
+  .t1g3 .r3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r3;
+  }
+
+  .t1g3 .c1i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c1i1;
+  }
+
+  .t1g3 .c1i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c1i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c1i2;
+  }
+
+  .t1g3 .c1i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c1i3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c1i3;
+  }
+
+  .t1g3 .c1i3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c2i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c2i1;
+  }
+
+  .t1g3 .c2i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c2i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c2i2;
+  }
+
+  .t1g3 .c2i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c2i3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c2i3;
+  }
+
+  .t1g3 .c2i3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c3i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c3i1;
+  }
+
+  .t1g3 .c3i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c3i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c3i2;
+  }
+
+  .t1g3 .c3i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c3i3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c3i3;
+  }
+
+  .t1g3 .c3i3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c4i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c4i1;
+  }
+
+  .t1g3 .c4i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c4i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c4i2;
+  }
+
+  .t1g3 .c4i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .c4i3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c4i3;
+  }
+
+  .t1g3 .c4i3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .tt1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: tt1;
+  }
+
+  .t1g3 .tt1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .tt2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: tt2;
+  }
+
+  .t1g3 .tt2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g3 .tt3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: tt3;
+  }
+
+  .t1g3 .tt3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px 130px 130px 130px 130px 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: "title c1 c2 c3 c4 c5 totals""r1 c1i1 c2i1 c3i1 c4i1 c5i1 tt1""r2 c1i2 c2i2 c3i2 c4i2 c5i2 tt2";
+    padding: 8px 0 42px 0;
+  }
+
+  .t1g4 .title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title;
+  }
+
+  .t1g4 .totals {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: totals;
+  }
+
+  .t1g4 .tt1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: tt1;
+  }
+
+  .t1g4 .tt1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .tt2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #d6e5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: tt2;
+  }
+
+  .t1g4 .tt2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c1 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c1;
+  }
+
+  .t1g4 .c2 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c2;
+  }
+
+  .t1g4 .c3 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c3;
+  }
+
+  .t1g4 .c4 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c4;
+  }
+
+  .t1g4 .c5 {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: c5;
+  }
+
+  .t1g4 .r1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r1;
+  }
+
+  .t1g4 .r2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r2;
+  }
+
+  .t1g4 .c1i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c1i1;
+  }
+
+  .t1g4 .c1i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c2i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c2i1;
+  }
+
+  .t1g4 .c2i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c3i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c3i1;
+  }
+
+  .t1g4 .c3i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c4i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c4i1;
+  }
+
+  .t1g4 .c4i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c5i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c5i1;
+  }
+
+  .t1g4 .c5i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c1i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c1i2;
+  }
+
+  .t1g4 .c1i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c2i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c2i2;
+  }
+
+  .t1g4 .c2i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c3i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c3i2;
+  }
+
+  .t1g4 .c3i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c4i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c4i2;
+  }
+
+  .t1g4 .c4i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t1g4 .c5i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: c5i2;
+  }
+
+  .t1g4 .c5i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g1 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: "title title""r1 i1";
+    padding: 8px 0 42px 0;
+  }
+
+  .t2g1 .title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title;
+  }
+
+  .t2g1 .r1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r1;
+  }
+
+  .t2g1 .i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: i1;
+  }
+
+  .t2g1 .i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 130px;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Tittle Tittle""r1 i1""t_area1 t_area1""r2 i2""t_area2 t_area2""r3 i3""t_area3 t_area3""r4 i4""t_area4 t_area4""r5 i5""t_area5 t_area5""r6 i6""t_area6 t_area6""r7 i7""t_area7 t_area7""r8 i8""t_area8 t_area8""r9 i9""t_area9 t_area9""r10 i10""t_area10 t_area10""r11 i11""t_area11 t_area11";
+    padding: 8px 0 42px 0;
+  }
+
+  .t2g2 .Tittle {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Tittle;
+  }
+
+  .t2g2 .r1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r1;
+  }
+
+  .t2g2 .t_area1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area1;
+  }
+
+  .t2g2 .t_area1 input {
+    text-align: left !important;
+    resize: both, importnt !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r2;
+  }
+
+  .t2g2 .t_area2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area2;
+  }
+
+  .t2g2 .t_area2 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r3;
+  }
+
+  .t2g2 .t_area3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area3;
+  }
+
+  .t2g2 .t_area3 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r4;
+  }
+
+  .t2g2 .t_area4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area4;
+  }
+
+  .t2g2 .t_area4 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r5;
+  }
+
+  .t2g2 .t_area5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area5;
+  }
+
+  .t2g2 .t_area5 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r6;
+  }
+
+  .t2g2 .t_area6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area6;
+  }
+
+  .t2g2 .t_area6 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r7;
+  }
+
+  .t2g2 .t_area7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area7;
+  }
+
+  .t2g2 .t_area7 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r8;
+  }
+
+  .t2g2 .t_area8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area8;
+  }
+
+  .t2g2 .t_area8 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r9;
+  }
+
+  .t2g2 .t_area9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area9;
+  }
+
+  .t2g2 .t_area9 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r10 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r10;
+  }
+
+  .t2g2 .t_area10 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area10;
+  }
+
+  .t2g2 .t_area10 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .r11 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: r11;
+  }
+
+  .t2g2 .t_area11 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t_area11;
+  }
+
+  .t2g2 .t_area11 input {
+    text-align: left !important;
+    width: calc(100% - 10px);
+    resize: both !important;
+    height: 100px !important;
+  }
+
+  .t2g2 .i1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i1;
+  }
+
+  .t2g2 .i1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i2;
+  }
+
+  .t2g2 .i2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i3;
+  }
+
+  .t2g2 .i3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i4;
+  }
+
+  .t2g2 .i4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i5;
+  }
+
+  .t2g2 .i5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i6;
+  }
+
+  .t2g2 .i6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i7;
+  }
+
+  .t2g2 .i7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i8;
+  }
+
+  .t2g2 .i8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i9;
+  }
+
+  .t2g2 .i9 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i10 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i10;
+  }
+
+  .t2g2 .i10 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t2g2 .i11 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    text-align: right;
+    grid-area: i11;
+  }
+
+  .t2g2 .i11 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Title Title Title Title""Type asd incr desc""ty1 asd1 incr1 desc1""ty2 asd2 incr2 desc2""ty3 asd3 incr3 desc3""ty4 asd4 incr4 desc4""ty5 asd5 incr5 desc5""ty6 asd6 incr6 desc6""ty7 asd7 incr7 desc7""ty8 asd8 incr8 desc8""ty9 asd9 incr9 desc9";
+    padding: 8px 16px 42px 16px;
+  }
+
+  .t3g1 .Title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Title;
+  }
+
+  .t3g1 .Type {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Type;
+  }
+
+  .t3g1 .asd {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: asd;
+  }
+
+  .t3g1 .incr {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: incr;
+  }
+
+  .t3g1 .desc {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: desc;
+  }
+
+  .t3g1 .ty1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty1;
+  }
+
+  .t3g1 .ty2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty2;
+  }
+
+  .t3g1 .ty3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty3;
+  }
+
+  .t3g1 .ty4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty4;
+  }
+
+  .t3g1 .ty5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty5;
+  }
+
+  .t3g1 .ty6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty6;
+  }
+
+  .t3g1 .ty7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty7;
+  }
+
+  .t3g1 .ty8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty8;
+  }
+
+  .t3g1 .ty9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: ty9;
+  }
+
+  .t3g1 .asd1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd1;
+  }
+
+  .t3g1 .asd1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd2;
+  }
+
+  .t3g1 .asd2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd3;
+  }
+
+  .t3g1 .asd3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd4;
+  }
+
+  .t3g1 .asd4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd5;
+  }
+
+  .t3g1 .asd5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd6;
+  }
+
+  .t3g1 .asd6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd7;
+  }
+
+  .t3g1 .asd7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd8;
+  }
+
+  .t3g1 .asd8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .asd9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd9;
+  }
+
+  .t3g1 .asd9 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr1;
+  }
+
+  .t3g1 .incr1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr2;
+  }
+
+  .t3g1 .incr2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr3;
+  }
+
+  .t3g1 .incr3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr4;
+  }
+
+  .t3g1 .incr4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr5;
+  }
+
+  .t3g1 .incr5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr6;
+  }
+
+  .t3g1 .incr6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr7;
+  }
+
+  .t3g1 .incr7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr8;
+  }
+
+  .t3g1 .incr8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .incr9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr9;
+  }
+
+  .t3g1 .incr9 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc1;
+  }
+
+  .t3g1 .desc1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc2;
+  }
+
+  .t3g1 .desc2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc3;
+  }
+
+  .t3g1 .desc3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc4;
+  }
+
+  .t3g1 .desc4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc5;
+  }
+
+  .t3g1 .desc5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc6;
+  }
+
+  .t3g1 .desc6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc7;
+  }
+
+  .t3g1 .desc7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc8;
+  }
+
+  .t3g1 .desc8 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t3g1 .desc9 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc9;
+  }
+
+  .t3g1 .desc9 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Title Title Title""app nap des""app1 nap1 des1""app2 nap2 des2""app3 nap3 des3""app4 nap4 des4""app5 nap5 des5""app6 nap6 des6""app7 nap7 des7";
+    padding: 8px 16px 42px 16px;
+  }
+
+  .t4g1 .Title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Title;
+  }
+
+  .t4g1 .app {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: app;
+  }
+
+  .t4g1 .nap {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: nap;
+  }
+
+  .t4g1 .des {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    background-color: #e7efff;
+    padding: 8px;
+    border-bottom: 2px solid #f7faff;
+    border-right: 1px solid #f7faff;
+    border-top: 1px solid #f7faff;
+    text-align: center;
+    grid-area: des;
+  }
+
+  .t4g1 .app1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app1;
+  }
+
+  .t4g1 .app2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app2;
+  }
+
+  .t4g1 .app3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app3;
+  }
+
+  .t4g1 .app4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app4;
+  }
+
+  .t4g1 .app5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app5;
+  }
+
+  .t4g1 .app6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app6;
+  }
+
+  .t4g1 .app7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: app7;
+  }
+
+  .t4g1 .nap1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap1;
+  }
+
+  .t4g1 .nap1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .nap2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap2;
+  }
+
+  .t4g1 .nap2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .nap3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap3;
+  }
+
+  .t4g1 .nap3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .nap4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap4;
+  }
+
+  .t4g1 .nap4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .nap5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap5;
+  }
+
+  .t4g1 .nap5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .nap6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap6;
+  }
+
+  .t4g1 .nap6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .nap7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap7;
+  }
+
+  .t4g1 .nap7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des1;
+  }
+
+  .t4g1 .des1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des2;
+  }
+
+  .t4g1 .des2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des3;
+  }
+
+  .t4g1 .des3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des4;
+  }
+
+  .t4g1 .des4 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des5;
+  }
+
+  .t4g1 .des5 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des6;
+  }
+
+  .t4g1 .des6 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g1 .des7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des7;
+  }
+
+  .t4g1 .des7 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Title Title""t1 a1""t2 a2""t3 a3";
+  }
+
+  .t4g2 .Title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: #333333;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Title;
+  }
+
+  .t4g2 .t1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t1;
+  }
+
+  .t4g2 .t2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t2;
+  }
+
+  .t4g2 .t3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    grid-area: t3;
+  }
+
+  .t4g2 .a1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: a1;
+  }
+
+  .t4g2 .a1 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g2 .a2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: a2;
+  }
+
+  .t4g2 .a2 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .t4g2 .a3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    background-color: #eff5ff;
+    padding: 8px;
+    border-bottom: 1px solid #f7faff;
+    border-left: 1px solid #f7faff;
+    min-width: 90px;
+    text-align: right;
+    grid-area: a3;
+  }
+
+  .t4g2 .a3 input {
+    max-width: 104px;
+    text-align: right;
+  }
+
+  .custom_tab {
+    border: 1px solid #d6e5ff;
+    background: #d6e5ff;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .totals input {
+    background-color: #DCDCDC !important;
+  }
+
+  i,
+  rem {
+    color: #8a7474;
+    font-weight: 300;
+    font-size: 0.5em;
+  }
+
+  .img_logo {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+  }
+
+  .img_logo img {
+    float: left;
+  }
+
+  #hide_tab {
+    padding: 8px;
+    float: right;
+  }
+
+  #hide_tab a {
+    color: #f1f1f1f1;
+    text-decoration: none;
+    font-weight: 200;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #B3AFB3;
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B3AFB3;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
+
+  /*# sourceMappingURL=main.css.map */
+</style>
+<div id="MPHDCustomForm">
+  <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+
+  <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+    <br />
+    <br />
+    <img src="../images/ajax-loader-circle.gif" /><br />
+    <br />
+    &nbsp;
+    <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+  </div>
+
+  <div id="MPHDCustomForm_Content">
+    <div id="tabs" style="display:block;">
+      <ul class="custom_tab">
+        <li><a href="#SPRT" keyword="opt_c:TbTitle_1">Project Wide Indicators </a></li>
+        <li><a href="#XCUT" keyword="opt_c:TbTitle_2">X.Cut</a></li>
+        <li><a href="#CAP" keyword="opt_c:TbTitle_3">CAP</a></li>
+        <li><a href="#CE_AL" keyword="opt_c:TbTitle_4">CE and AL</a></li>
+      </ul>
+
+      <div id="SPRT">
+        <div class="img_logo"><img alt="usaid" height="120px"
+            src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+
+        <div class="t1g1">
+          <div class="title" keyword="opt_c:Tb1Tt1">Gen.1: Activities integrating gender</div>
+
+          <div class="r1" keyword="opt_c:Tb1Tt1Tx1">Number of activities in Core Award work plans</div>
+
+          <div class="i1"><input id="llgAZinnOdg-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - GEN.1_Number of discrete activities in the Core  Award work plans"
+              value="[ MPHD - GEN.1_Number of discrete activities in the Core  Award work plans ]" /></div>
+
+          <div class="r2" keyword="opt_c:Tb1Tt1Tx2">Number of activities in Field Award work plans</div>
+
+          <div class="i2"><input id="J0Q2l95pmIS-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - GEN.1_Number of discrete activities in the Field Award work plans"
+              value="[ MPHD - GEN.1_Number of discrete activities in the Field Award work plans ]" /></div>
+        </div>
+
+        <div class="t1g2">
+          <div class="title" keyword="opt_c:Tb1Tt2">Organizational Capacity Development</div>
+
+          <div class="r1" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations receiving organizational capacity
+            development support</div>
+
+          <div class="i1"><input id="wKjLFq0098r-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - XX 2.2-D Number of USG-assisted organizations receiving organizational capacity development support"
+              value="[ MPHD - XX 2.2-D Number of USG-assisted organizations receiving organizational capacity development support ]" />
+          </div>
+
+          <div class="r2" keyword="opt_c:Tb1Tt23Tx2">PWI 2.2 D Number of organizations with improved performance</div>
+
+          <div class="i2"><input id="ogbfDAk7gxl-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance"
+              value="[ MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance ]" /></div>
+        </div>
+
+        <div class="t1g3">
+          <div class="title" keyword="opt_c:Tb1Tt3">Organization type</div>
+
+          <div class="c1" keyword="opt_c:Tb1Tt3Cl1">Private (CSO, NGO, for-profit)</div>
+
+          <div class="c2" keyword="opt_c:Tb1Tt3Cl2">Parastatal</div>
+
+          <div class="c3" keyword="opt_c:Tb1Tt3Cl3">Governmental</div>
+
+          <div class="c4" keyword="opt_c:Tb1Tt3Cl4">Other (not specified)</div>
+
+          <div class="r1" keyword="opt_c:Tb1Tt23Tx2">PWI 2.2 D Number of organizations with improved performance</div>
+
+          <div class="r2" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations receiving organizational capacity
+            development support</div>
+
+          <div class="r3" keyword="opt_c:Tb1Tt3Tx3">MPHD - X.Cut.7_Number of organizations with MOMENTUM support</div>
+
+          <div class="totals">Totals</div>
+
+          <div class="c1i1"><input id="iklcVwdl7ld-IUEU60iLuOa-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Private (CSO, NGO, for-profit)"
+              value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Private (CSO, NGO, for-profit) ]" />
+          </div>
+
+          <div class="c1i2"><input id="aE7gShU5C8X-IUEU60iLuOa-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Private (CSO, NGO, for-profit)"
+              value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Private (CSO, NGO, for-profit) ]" />
+          </div>
+
+          <div class="c1i3"><input id="Y3zqJuZdi2c-IUEU60iLuOa-val" name="entryfield"
+              title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Private (CSO, NGO, for-profit)"
+              value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Private (CSO, NGO, for-profit) ]" />
+          </div>
+
+          <div class="c2i1"><input id="iklcVwdl7ld-hDP9qVcsssp-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Parastatal"
+              value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Parastatal ]" />
+          </div>
+
+          <div class="tt1"><input dataelementid="iklcVwdl7ld" id="totaliklcVwdl7ld" name="total" readonly="readonly"
+              title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance"
+              value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance ]" />
+          </div>
+
+          <div class="tt2"><input dataelementid="aE7gShU5C8X" id="totalaE7gShU5C8X" name="total" readonly="readonly"
+              title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support"
+              value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support ]" />
+          </div>
+
+          <div class="tt3"><input dataelementid="Y3zqJuZdi2c" id="totalY3zqJuZdi2c" name="total" readonly="readonly"
+              title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support"
+              value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support ]" /></div>
+
+          <div class="c2i2"><input id="aE7gShU5C8X-hDP9qVcsssp-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Parastatal"
+              value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Parastatal ]" />
+          </div>
+
+          <div class="c2i3"><input id="Y3zqJuZdi2c-hDP9qVcsssp-val" name="entryfield"
+              title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Parastatal"
+              value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Parastatal ]" /></div>
+
+          <div class="c3i1"><input id="iklcVwdl7ld-YyfwOagKPSG-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Governmental"
+              value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Governmental ]" />
+          </div>
+
+          <div class="c3i2"><input id="aE7gShU5C8X-YyfwOagKPSG-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Governmental"
+              value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Governmental ]" />
+          </div>
+
+          <div class="c3i3"><input id="Y3zqJuZdi2c-YyfwOagKPSG-val" name="entryfield"
+              title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Governmental"
+              value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Governmental ]" /></div>
+
+          <div class="c4i1"><input id="iklcVwdl7ld-ENMVqc4Un4B-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Other (not specified)"
+              value="[ MPHD - PSI PWI 2.2_PSI_Number of MPHD-supported organizations with improved performance Other (not specified) ]" />
+          </div>
+
+          <div class="c4i2"><input id="aE7gShU5C8X-ENMVqc4Un4B-val" name="entryfield"
+              title="MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Other (not specified)"
+              value="[ MPHD - PSI PWI 2.2D_PSI_Number of USG-assisted organizations receiving organizational capacity development support Other (not specified) ]" />
+          </div>
+
+          <div class="c4i3"><input id="Y3zqJuZdi2c-ENMVqc4Un4B-val" name="entryfield"
+              title="MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified)"
+              value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified) ]" /></div>
+        </div>
+
+        <div class="t1g4">
+          <div class="title" keyword="opt_c:Tb1Tt4">Gender Programming</div>
+
+          <div class="c1" keyword="opt_c:Tb1Tt4Cl1">Empowerment (or reproductive empowerment)</div>
+
+          <div class="c2" keyword="opt_c:Tb1Tt4Cl2">Gender-based violence</div>
+
+          <div class="c3" keyword="opt_c:Tb1Tt4Cl3">Male engagement</div>
+
+          <div class="c4" keyword="opt_c:Tb1Tt4Cl4">Respectful maternity care</div>
+
+          <div class="c5" keyword="opt_c:Tb1Tt4Cl5">Combination of 2 or more of the above</div>
+
+          <div class="totals" keyword="opt_c:totals">Totals</div>
+
+          <div class="r1" keyword="opt_c:Tb1Tt4Tx1">Number of activities that include a gender programming component for
+            Core Workplans</div>
+
+          <div class="r2" keyword="opt_c:Tb1Tt4Tx2">Number of activities that include a gender programming component for
+            Field Workplans</div>
+
+          <div class="c1i1"><input id="Cr38h6S6ULD-lXcGx74jYwB-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Empowerment (or reproductive empowerment)"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Empowerment (or reproductive empowerment) ]" />
+          </div>
+
+          <div class="c2i1"><input id="Cr38h6S6ULD-V0eWeTr4iS0-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Gender-based violence"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Gender-based violence ]" />
+          </div>
+
+          <div class="c3i1"><input id="Cr38h6S6ULD-IyEEYnSY6vl-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Male engagement"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Male engagement ]" />
+          </div>
+
+          <div class="c4i1"><input id="Cr38h6S6ULD-bbPo5zgHCCE-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Respectful maternity care"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Respectful maternity care ]" />
+          </div>
+
+          <div class="c5i1"><input id="Cr38h6S6ULD-Wpe6GEjWrLc-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Combination of 2 or more of the above"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core Combination of 2 or more of the above ]" />
+          </div>
+
+          <div class="tt1"><input dataelementid="Cr38h6S6ULD" id="totalCr38h6S6ULD" name="total" readonly="readonly"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Core ]" />
+          </div>
+
+          <div class="tt2"><input dataelementid="nP9MrRee08K" id="totalnP9MrRee08K" name="total" readonly="readonly"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field ]" />
+          </div>
+
+          <div class="c1i2"><input id="nP9MrRee08K-lXcGx74jYwB-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Empowerment (or reproductive empowerment)"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Empowerment (or reproductive empowerment) ]" />
+          </div>
+
+          <div class="c2i2"><input id="nP9MrRee08K-V0eWeTr4iS0-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Gender-based violence"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Gender-based violence ]" />
+          </div>
+
+          <div class="c3i2"><input id="nP9MrRee08K-IyEEYnSY6vl-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Male engagement"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Male engagement ]" />
+          </div>
+
+          <div class="c4i2"><input id="nP9MrRee08K-bbPo5zgHCCE-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Respectful maternity care"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Respectful maternity care ]" />
+          </div>
+
+          <div class="c5i2"><input id="nP9MrRee08K-Wpe6GEjWrLc-val" name="entryfield"
+              title="MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Combination of 2 or more of the above"
+              value="[ MPHD - GEN.1_Number of MOMENTUM-supported activities that integrate gender/include a component to support gender programming for Field Combination of 2 or more of the above ]" />
+          </div>
+        </div>
+      </div>
+
+      <div id="XCUT">
+        <div class="img_logo"><img alt="usaid" height="120px"
+            src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+
+        <div class="t2g1">
+          <div class="title" keyword="opt_c:Tb2Tt1">Districts receiving support</div>
+
+          <div class="r1" keyword="opt_c:Tb2Tt1Tx1">Number of districts receiving MPHD support</div>
+
+          <div class="i1"><input id="btTOOxZY29P-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.4_Number of districts receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services"
+              value="[ MPHD - X.Cut.4_Number of districts receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH services ]" />
+          </div>
+        </div>
+
+        <div class="t2g2">
+          <div class="Tittle" keyword="opt_c:Tb2Tt2">MPHD - X.Cut.8_Number of stresses or shocks occurring in
+            MOMENTUM-supported districts due to</div>
+
+          <div class="r1" keyword="opt_c:Tb2Tt2Tx1">Insecurity (such as post-election violence, terrorism, violent
+            extremism, civil conflict)</div>
+
+          <div class="t_area1"><input id="BXJl1qNUMO8-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict)"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict) ]" />
+          </div>
+
+          <div class="r2" keyword="opt_c:Tb2Tt2Tx2">Conflict (intercommunal and internal anti-government, ethnic
+            violence)</div>
+
+          <div class="t_area2"><input id="vB73NYPauHo-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict (intercommunal and internal anti-government, ethnic violence)"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict (intercommunal and internal anti-government, ethnic violence) ]" />
+          </div>
+
+          <div class="r3" keyword="opt_c:Tb2Tt2Tx3">Conflict induced displacement</div>
+
+          <div class="t_area3"><input id="xKp8FVMianp-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict induced displacement"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for conflict induced displacement ]" />
+          </div>
+
+          <div class="r4" keyword="opt_c:Tb2Tt2Tx4">Economic shocks (such as price shocks/spikes, currency devaluation
+            or economic recession)</div>
+
+          <div class="t_area4"><input id="MtL4LarbawH-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Economic shocks (such as price shocks/spikes, currency devaluation or economic recession)"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Economic shocks (such as price shocks/spikes, currency devaluation or economic recession) ]" />
+          </div>
+
+          <div class="r5" keyword="opt_c:Tb2Tt2Tx5">General strikes or protests</div>
+
+          <div class="t_area5"><input id="MVrpy2RdK0C-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for General strikes or protests"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for General strikes or protests ]" />
+          </div>
+
+          <div class="r6" keyword="opt_c:Tb2Tt2Tx6">Influx of refugees</div>
+
+          <div class="t_area6"><input id="mBop6ldK4Zk-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Influx of refugees"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Influx of refugees ]" />
+          </div>
+
+          <div class="r7" keyword="opt_c:Tb2Tt2Tx7">Natural Disasters (floods, fires, earthquakes, volcanic eruptions,
+            tsunamis, droughts)</div>
+
+          <div class="t_area7"><input id="ybab28Armss-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts)"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts) ]" />
+          </div>
+
+          <div class="r8" keyword="opt_c:Tb2Tt2Tx8">Pandemics/outbreaks of infections diseases (such as COVID, measles,
+            cholera or VD-polio)</div>
+
+          <div class="t_area8"><input id="yl626DK4bE3-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio)"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio) ]" />
+          </div>
+
+          <div class="r9" keyword="opt_c:Tb2Tt2Tx9">Shocks to food supply (such as locusts or livestock disease
+            outbreaks)</div>
+
+          <div class="t_area9"><input id="l6xGidFOD8Q-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Shocks to food supply (such as locusts or livestock disease outbreaks)"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Shocks to food supply (such as locusts or livestock disease outbreaks) ]" />
+          </div>
+
+          <div class="r10" keyword="opt_c:Tb2Tt2Tx10">Strikes of health workers</div>
+
+          <div class="t_area10"><input id="Q3PV7wFT4f0-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Strikes of health workers"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Strikes of health workers ]" />
+          </div>
+
+          <div class="r11" keyword="opt_c:Tb2Tt2Tx11">Unspecified/Other</div>
+
+          <div class="t_area11"><input id="af7PbsUGxpS-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Unspecified/Other"
+              value="[ MPHD - X.Cut.8_Description of shocks and stresses occurring in MOMENTUM-supported districts for Unspecified/Other ]" />
+          </div>
+
+          <div class="i1"><input id="QmUibpww1Ql-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict)"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to  Insecurity (such as post-election violence, terrorism, violent extremism, civil conflict) ]" />
+          </div>
+
+          <div class="i2"><input id="s1UsZSWVki3-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict (intercommunal and internal anti-government, ethnic violence)"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict (intercommunal and internal anti-government, ethnic violence) ]" />
+          </div>
+
+          <div class="i3"><input id="JA2FzmNyERO-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict induced displacement"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to conflict induced displacement ]" />
+          </div>
+
+          <div class="i4"><input id="aQeqxfvcNFX-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Economic shocks (such as price shocks/spikes, currency devaluation or economic recession)"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Economic shocks (such as price shocks/spikes, currency devaluation or economic recession) ]" />
+          </div>
+
+          <div class="i5"><input id="Oas2B6sAIDB-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to General strikes or protests"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to General strikes or protests ]" />
+          </div>
+
+          <div class="i6"><input id="WBwv8gBKeVX-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Influx of refugees"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Influx of refugees ]" />
+          </div>
+
+          <div class="i7"><input id="SPIOgtFkd2v-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts)"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Natural Disasters (floods, fires, earthquakes, volcanic eruptions, tsunamis, droughts) ]" />
+          </div>
+
+          <div class="i8"><input id="lOiaRQpfHAq-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio)"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Pandemics/outbreaks of infections diseases (such as COVID, measles, cholera or VD-polio) ]" />
+          </div>
+
+          <div class="i9"><input id="BMSYWU6khHC-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Shocks to food supply (such as locusts or livestock disease outbreaks)"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Shocks to food supply (such as locusts or livestock disease outbreaks) ]" />
+          </div>
+
+          <div class="i10"><input id="YMUEsK6ecIK-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Strikes of health workers"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Strikes of health workers ]" />
+          </div>
+
+          <div class="i11"><input id="nhXbbBg57Gw-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Unspecified/Other"
+              value="[ MPHD - X.Cut.8_Number of stresses or shocks occurring in MOMENTUM-supported districts due to Unspecified/Other ]" />
+          </div>
+        </div>
+      </div>
+
+      <div id="CAP">
+        <div class="img_logo"><img alt="usaid" height="120px"
+            src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+
+        <div class="t3g1">
+          <div class="Title">Organization assessed for organizational performance</div>
+
+          <div class="Type">Type</div>
+
+          <div class="asd">Organizations assessed for organizational performance</div>
+
+          <div class="incr">Organizations with increased organizational performance</div>
+
+          <div class="desc">Description</div>
+
+          <div class="ty1">Civil society organizations</div>
+
+          <div class="ty2">Educational Institutions</div>
+
+          <div class="ty3">Faith based organizations</div>
+
+          <div class="ty4">Governmental agencies</div>
+
+          <div class="ty5">Health service delivery</div>
+
+          <div class="ty6">Non-governmental and not-for profit</div>
+
+          <div class="ty7">Private sector firms</div>
+
+          <div class="ty8">Research Institutions</div>
+
+          <div class="ty9">Other</div>
+
+          <div class="asd1"><input id="VVkUhIYSj3S-RAdEUEz61e6-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Civil society organizations (CSOs)"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Civil society organizations (CSOs) ]" />
+          </div>
+
+          <div class="asd2"><input id="VVkUhIYSj3S-dPW3cB6V33R-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Educational Institutions"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Educational Institutions ]" />
+          </div>
+
+          <div class="asd3"><input id="VVkUhIYSj3S-HV9SWzTsiqA-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Faith based organizations"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Faith based organizations ]" />
+          </div>
+
+          <div class="asd4"><input id="VVkUhIYSj3S-uBZMRAMiUdN-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Governmental agencies"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Governmental agencies ]" />
+          </div>
+
+          <div class="asd5"><input id="VVkUhIYSj3S-nCA5A3nn0nA-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Health service delivery"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Health service delivery ]" />
+          </div>
+
+          <div class="asd6"><input id="VVkUhIYSj3S-josS0l7sw4r-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Non-governmental and not-for profit organizations"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Non-governmental and not-for profit organizations ]" />
+          </div>
+
+          <div class="asd7"><input id="VVkUhIYSj3S-gCL0YMwzvRB-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Private sector firms"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Private sector firms ]" />
+          </div>
+
+          <div class="asd8"><input id="VVkUhIYSj3S-qGasiFELPOR-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Research Institutions"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Research Institutions ]" />
+          </div>
+
+          <div class="asd9"><input id="VVkUhIYSj3S-j4AcOyMnwDj-val" name="entryfield"
+              title="CAP.5_Number of organizations assessed for organizational performance Other"
+              value="[ CAP.5_Number of organizations assessed for organizational performance Other ]" /></div>
+
+          <div class="incr1"><input id="ruqVQXTo4NY-RAdEUEz61e6-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Civil society organizations (CSOs)"
+              value="[ CAP.5_Number of organizations with increased organizational performance Civil society organizations (CSOs) ]" />
+          </div>
+
+          <div class="incr2"><input id="ruqVQXTo4NY-dPW3cB6V33R-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Educational Institutions"
+              value="[ CAP.5_Number of organizations with increased organizational performance Educational Institutions ]" />
+          </div>
+
+          <div class="incr3"><input id="ruqVQXTo4NY-HV9SWzTsiqA-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Faith based organizations"
+              value="[ CAP.5_Number of organizations with increased organizational performance Faith based organizations ]" />
+          </div>
+
+          <div class="incr4"><input id="ruqVQXTo4NY-uBZMRAMiUdN-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Governmental agencies"
+              value="[ CAP.5_Number of organizations with increased organizational performance Governmental agencies ]" />
+          </div>
+
+          <div class="incr5"><input id="ruqVQXTo4NY-nCA5A3nn0nA-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Health service delivery"
+              value="[ CAP.5_Number of organizations with increased organizational performance Health service delivery ]" />
+          </div>
+
+          <div class="incr6"><input id="ruqVQXTo4NY-josS0l7sw4r-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Non-governmental and not-for profit organizations"
+              value="[ CAP.5_Number of organizations with increased organizational performance Non-governmental and not-for profit organizations ]" />
+          </div>
+
+          <div class="incr7"><input id="ruqVQXTo4NY-gCL0YMwzvRB-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Private sector firms"
+              value="[ CAP.5_Number of organizations with increased organizational performance Private sector firms ]" />
+          </div>
+
+          <div class="incr8"><input id="ruqVQXTo4NY-qGasiFELPOR-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Research Institutions"
+              value="[ CAP.5_Number of organizations with increased organizational performance Research Institutions ]" />
+          </div>
+
+          <div class="incr9"><input id="ruqVQXTo4NY-j4AcOyMnwDj-val" name="entryfield"
+              title="CAP.5_Number of organizations with increased organizational performance Other"
+              value="[ CAP.5_Number of organizations with increased organizational performance Other ]" /></div>
+
+          <div class="desc1"><input id="Wmcso12W4PJ-RAdEUEz61e6-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Civil society organizations (CSOs)"
+              value="[ CAP.5_Description of organization and increased performance Civil society organizations (CSOs) ]" />
+          </div>
+
+          <div class="desc2"><input id="Wmcso12W4PJ-dPW3cB6V33R-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Educational Institutions"
+              value="[ CAP.5_Description of organization and increased performance Educational Institutions ]" /></div>
+
+          <div class="desc3"><input id="Wmcso12W4PJ-HV9SWzTsiqA-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Faith based organizations"
+              value="[ CAP.5_Description of organization and increased performance Faith based organizations ]" /></div>
+
+          <div class="desc4"><input id="Wmcso12W4PJ-uBZMRAMiUdN-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Governmental agencies"
+              value="[ CAP.5_Description of organization and increased performance Governmental agencies ]" /></div>
+
+          <div class="desc5"><input id="Wmcso12W4PJ-nCA5A3nn0nA-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Health service delivery"
+              value="[ CAP.5_Description of organization and increased performance Health service delivery ]" /></div>
+
+          <div class="desc6"><input id="Wmcso12W4PJ-josS0l7sw4r-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Non-governmental and not-for profit organizations"
+              value="[ CAP.5_Description of organization and increased performance Non-governmental and not-for profit organizations ]" />
+          </div>
+
+          <div class="desc7"><input id="Wmcso12W4PJ-gCL0YMwzvRB-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Private sector firms"
+              value="[ CAP.5_Description of organization and increased performance Private sector firms ]" /></div>
+
+          <div class="desc8"><input id="Wmcso12W4PJ-qGasiFELPOR-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Research Institutions"
+              value="[ CAP.5_Description of organization and increased performance Research Institutions ]" /></div>
+
+          <div class="desc9"><input id="Wmcso12W4PJ-j4AcOyMnwDj-val" name="entryfield"
+              title="CAP.5_Description of organization and increased performance Other"
+              value="[ CAP.5_Description of organization and increased performance Other ]" /></div>
+        </div>
+
+        <div class="t3g1">
+          <div class="Title">Organizations and technical capacity</div>
+
+          <div class="Type">Type</div>
+
+          <div class="asd">Number of organizations assessed for organizational performance or technical capacity</div>
+
+          <div class="incr">Number of organizations with increased organizational and/or technical capacity</div>
+
+          <div class="desc">Description</div>
+
+          <div class="ty1">Civil society organizations</div>
+
+          <div class="ty2">Educational Institutions</div>
+
+          <div class="ty3">Faith based organizations</div>
+
+          <div class="ty4">Governmental agencies</div>
+
+          <div class="ty5">Health service delivery</div>
+
+          <div class="ty6">Non-governmental and not-for profit</div>
+
+          <div class="ty7">Private sector firms</div>
+
+          <div class="ty8">Research Institutions</div>
+
+          <div class="ty9">Other</div>
+
+          <div class="asd1"><input id="K4XN4b1nmAc-RAdEUEz61e6-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Civil society organizations (CSOs)"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Civil society organizations (CSOs) ]" />
+          </div>
+
+          <div class="asd2"><input id="K4XN4b1nmAc-dPW3cB6V33R-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Educational Institutions"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Educational Institutions ]" />
+          </div>
+
+          <div class="asd3"><input id="K4XN4b1nmAc-HV9SWzTsiqA-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Faith based organizations"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Faith based organizations ]" />
+          </div>
+
+          <div class="asd4"><input id="K4XN4b1nmAc-uBZMRAMiUdN-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Governmental agencies"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Governmental agencies ]" />
+          </div>
+
+          <div class="asd5"><input id="K4XN4b1nmAc-nCA5A3nn0nA-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Health service delivery"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Health service delivery ]" />
+          </div>
+
+          <div class="asd6"><input id="K4XN4b1nmAc-josS0l7sw4r-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Non-governmental and not-for profit organizations"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Non-governmental and not-for profit organizations ]" />
+          </div>
+
+          <div class="asd7"><input id="K4XN4b1nmAc-gCL0YMwzvRB-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Private sector firms"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Private sector firms ]" />
+          </div>
+
+          <div class="asd8"><input id="K4XN4b1nmAc-qGasiFELPOR-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Research Institutions"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Research Institutions ]" />
+          </div>
+
+          <div class="asd9"><input id="K4XN4b1nmAc-j4AcOyMnwDj-val" name="entryfield"
+              title="CAP.6_Number of organizations assessed for organizational or technical capacity Other"
+              value="[ CAP.6_Number of organizations assessed for organizational or technical capacity Other ]" /></div>
+
+          <div class="incr1"><input id="wBPog87rkzn-RAdEUEz61e6-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Civil society organizations (CSOs)"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Civil society organizations (CSOs) ]" />
+          </div>
+
+          <div class="incr2"><input id="wBPog87rkzn-dPW3cB6V33R-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Educational Institutions"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Educational Institutions ]" />
+          </div>
+
+          <div class="incr3"><input id="wBPog87rkzn-HV9SWzTsiqA-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Faith based organizations"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Faith based organizations ]" />
+          </div>
+
+          <div class="incr4"><input id="wBPog87rkzn-uBZMRAMiUdN-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Governmental agencies"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Governmental agencies ]" />
+          </div>
+
+          <div class="incr5"><input id="wBPog87rkzn-nCA5A3nn0nA-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Health service delivery"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Health service delivery ]" />
+          </div>
+
+          <div class="incr6"><input id="wBPog87rkzn-josS0l7sw4r-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Non-governmental and not-for profit organizations"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Non-governmental and not-for profit organizations ]" />
+          </div>
+
+          <div class="incr7"><input id="wBPog87rkzn-gCL0YMwzvRB-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Private sector firms"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Private sector firms ]" />
+          </div>
+
+          <div class="incr8"><input id="wBPog87rkzn-qGasiFELPOR-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Research Institutions"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Research Institutions ]" />
+          </div>
+
+          <div class="incr9"><input id="wBPog87rkzn-j4AcOyMnwDj-val" name="entryfield"
+              title="CAP.6_Number of organizations with increased organizational and/or technical capacity Other"
+              value="[ CAP.6_Number of organizations with increased organizational and/or technical capacity Other ]" />
+          </div>
+
+          <div class="desc1"><input id="UntEYfYCpcz-RAdEUEz61e6-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Civil society organizations (CSOs)"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Civil society organizations (CSOs) ]" />
+          </div>
+
+          <div class="desc2"><input id="UntEYfYCpcz-dPW3cB6V33R-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Educational Institutions"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Educational Institutions ]" />
+          </div>
+
+          <div class="desc3"><input id="UntEYfYCpcz-HV9SWzTsiqA-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Faith based organizations"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Faith based organizations ]" />
+          </div>
+
+          <div class="desc4"><input id="UntEYfYCpcz-uBZMRAMiUdN-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Governmental agencies"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Governmental agencies ]" />
+          </div>
+
+          <div class="desc5"><input id="UntEYfYCpcz-nCA5A3nn0nA-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Health service delivery"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Health service delivery ]" />
+          </div>
+
+          <div class="desc6"><input id="UntEYfYCpcz-josS0l7sw4r-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Non-governmental and not-for profit organizations"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Non-governmental and not-for profit organizations ]" />
+          </div>
+
+          <div class="desc7"><input id="UntEYfYCpcz-gCL0YMwzvRB-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Private sector firms"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Private sector firms ]" />
+          </div>
+
+          <div class="desc8"><input id="UntEYfYCpcz-qGasiFELPOR-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Research Institutions"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Research Institutions ]" />
+          </div>
+
+          <div class="desc9"><input id="UntEYfYCpcz-j4AcOyMnwDj-val" name="entryfield"
+              title="CAP.6_Description of organization and increased organizational or technical capacity Other"
+              value="[ CAP.6_Description of organization and increased organizational or technical capacity Other ]" />
+          </div>
+        </div>
+      </div>
+
+      <div id="CE_AL">
+        <div class="img_logo"><img alt="usaid" height="120px"
+            src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+
+        <div class="t4g1">
+          <div class="Title">Approaches implemented by MOMENTUM that engage the community</div>
+
+          <div class="app">Approach</div>
+
+          <div class="nap">Number of approaches implemented</div>
+
+          <div class="des">Description</div>
+
+          <div class="app1">Access to information</div>
+
+          <div class="app2">Accountability of Institutions</div>
+
+          <div class="app3">Assessment</div>
+
+          <div class="app4">Decision making</div>
+
+          <div class="app5">Local capacity to advocate</div>
+
+          <div class="app6">Referral mechanisms</div>
+
+          <div class="app7">Other</div>
+
+          <div class="nap1"><input id="rSeXRVt49je-hiHS7d3nzLL-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Access to information"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Access to information ]" />
+          </div>
+
+          <div class="nap2"><input id="rSeXRVt49je-D2daheqhKQA-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Accountability of institutions to the public"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Accountability of institutions to the public ]" />
+          </div>
+
+          <div class="nap3"><input id="rSeXRVt49je-LauCg5uKoMf-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Assessment"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Assessment ]" />
+          </div>
+
+          <div class="nap4"><input id="rSeXRVt49je-oa4EhwzkbQe-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Decision making"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Decision making ]" />
+          </div>
+
+          <div class="nap5"><input id="rSeXRVt49je-evmD7TRK7e9-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Local capacity to advocate"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Local capacity to advocate ]" />
+          </div>
+
+          <div class="nap6"><input id="rSeXRVt49je-EMeJHyU3Jbp-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Referral mechanisms"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Referral mechanisms ]" />
+          </div>
+
+          <div class="nap7"><input id="rSeXRVt49je-qB9Vxu8XWHM-val" name="entryfield"
+              title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Other"
+              value="[ CE.2_Number of approaches implemented by MOMENTUM that engage the community Other ]" /></div>
+
+          <div class="des1"><input id="EbddzwFoNZN-hiHS7d3nzLL-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Access to information"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Access to information ]" />
+          </div>
+
+          <div class="des2"><input id="EbddzwFoNZN-D2daheqhKQA-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Accountability of institutions to the public"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Accountability of institutions to the public ]" />
+          </div>
+
+          <div class="des3"><input id="EbddzwFoNZN-LauCg5uKoMf-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Assessment"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Assessment ]" />
+          </div>
+
+          <div class="des4"><input id="EbddzwFoNZN-oa4EhwzkbQe-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Decision making"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Decision making ]" />
+          </div>
+
+          <div class="des5"><input id="EbddzwFoNZN-evmD7TRK7e9-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Local capacity to advocate"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Local capacity to advocate ]" />
+          </div>
+
+          <div class="des6"><input id="EbddzwFoNZN-EMeJHyU3Jbp-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Referral mechanisms"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Referral mechanisms ]" />
+          </div>
+
+          <div class="des7"><input id="EbddzwFoNZN-qB9Vxu8XWHM-val" name="entryfield"
+              title="CE.2_Name/description of approach implemented by MOMENTUM that engage the community Other"
+              value="[ CE.2_Name/description of approach implemented by MOMENTUM that engage the community Other ]" />
+          </div>
+        </div>
+
+        <div class="t4g2">
+          <div class="Title">Entities receiving MOMENTUM-support</div>
+
+          <div class="t1">Targeted actors receiving AL support from MOMENTUM</div>
+
+          <div class="t2">Targeted actors using data generated through their monitoring systems to modify activities or
+            strategies</div>
+
+          <div class="t3">Description of targeted actor, data used and program modifications</div>
+
+          <div class="a1"><input id="JWdzIG5Vb5X-HllvX50cXC0-val" name="entryfield"
+              title="AL.2_Number of targeted actors receiving AL support from MOMENTUM"
+              value="[ AL.2_Number of targeted actors receiving AL support from MOMENTUM ]" /></div>
+
+          <div class="a2"><input id="CGxPo9OhrSy-HllvX50cXC0-val" name="entryfield"
+              title="AL.2_Number of targeted actors using data generated through their monitoring systems to modify activities or strategies"
+              value="[ AL.2_Number of targeted actors using data generated through their monitoring systems to modify activities or strategies ]" />
+          </div>
+
+          <div class="a3"><input id="e8NmoOxtaJM-HllvX50cXC0-val" name="entryfield"
+              title="AL.2_Description of targeted actor, data used and program modifications"
+              value="[ AL.2_Description of targeted actor, data used and program modifications ]" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+
+    $("body").on("focus", "input", function (event) {
+      $(this).attr('autocomplete', 'off')
+    });
+
+    $('.custom_tab li').click(function (e) {
+      tab_selected = $(this).find('a').attr('href');
+      switch (tab_selected) {
+        case '#CHTab':
+          $('#MN').css({
+            'display': 'none'
+          });
+          $(this).attr('tabindex', '0');
+          $(this).addClass('ui-state-hover');
+          $(this).addClass('ui-tabs-active');
+          $(this).addClass('ui-state-active');
+          $(this).attr('aria-selected', 'true');
+          $(this).attr('aria-expanded', 'true');
+          $('#CHTab').attr('aria-hidden', 'false');
+          $('#CHTab').css({
+            'display': 'block'
+          });
+          break;
+        case '#FPTab':
+          $('#MN').css({
+            'display': 'none'
+          });
+          $(this).attr('tabindex', '0');
+          $(this).addClass('ui-state-hover');
+          $(this).addClass('ui-tabs-active');
+          $(this).addClass('ui-state-active');
+          $(this).attr('aria-selected', 'true');
+          $(this).attr('aria-expanded', 'true');
+          $('#FPTab').attr('aria-hidden', 'false');
+          $('#FPTab').css({
+            'display': 'block'
+          });
+          break;
+        case '#IMMTab':
+          $('#MN').css({
+            'display': 'none'
+          });
+          $(this).attr('tabindex', '0');
+          $(this).addClass('ui-state-hover');
+          $(this).addClass('ui-tabs-active');
+          $(this).addClass('ui-state-active');
+          $(this).attr('aria-selected', 'true');
+          $(this).attr('aria-expanded', 'true');
+          $('#IMMTab').attr('aria-hidden', 'false');
+          $('#IMMTab').css({
+            'display': 'block'
+          });
+          break;
+      }
+    });
+  });
+
+  $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
+    if ($("#MPHDCustomForm").length > 0) {
+      $("#tabs").tabs();
+      $("#MPHDCustomForm_Content").hide();
+      $("#loaderDiv").show();
+
+      new MPHDTranslation(function () {
+        $("#loaderDiv").hide();
+        $("#MPHDCustomForm_Content").show();
+      });
+    }
+
+    // ============================================================================================================
+    // Translation
+
+    function MPHDTranslation(_exeFunc) {
+      var me = this;
+
+      me.exeFunc = _exeFunc;
+
+      me.selectedDataSetIdTag = $("#selectedDataSetId");
+
+      me.optionSetTermId = "dXcCE7zpqwu";
+
+      me.loadedDataSetElementList = false;
+      me.loadedOptionSetList = false;
+
+      me.DATAELEMENT_KEY = "de_id";
+      me.INDICATOR_KEY = "ind_id";
+      me.CATOPTION_KEY = "catOpt_id";
+      me.OPTION_KEY = "opt_c";
+
+
+      // ----------------------------------------------------------------------------------------------
+      // URLs
+
+      me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
+      console.log(me.PARAM_DATASET_ID);
+      console.log(me.optionSetTermId);
+
+      // me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription],categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
+      me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
+      me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId + ".json?fields=options[code,displayName]&paging=false";
+
+
+      // ----------------------------------------------------------------------------------------------
+      // HTML Element
+
+
+      me.tableTag = $("body");
+
+      // ----------------------------------------------------------------------------------------------
+      // Init method
+
+      me.init = function () {
+        console.log("INIT translation ... ");
+        me.translateDataSetElementList();
+        me.translateOptionSetList();
+      }
+
+      // ----------------------------------------------------------------------------------------------
+      // Supportive methods
+
+      me.translateDataSetElementList = function () {
+        var url = encodeURI(me.QUERY_URL_DATASET);
+        url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
+
+        me.loadMetadata(url, function (response) {
+
+          // Translate Data elements & Get CatOptions Map
+          var catOptionMap = {};
+          var dataSetElements = response.dataSetElements;
+
+          for (var i in dataSetElements) {
+            var dataElement = dataSetElements[i].dataElement;
+
+            // Translation for FORMNAME of DEs
+            var deDivTag = me.tableTag.find("[keyword='" + me.DATAELEMENT_KEY + ":" + dataElement.id + "']");
+            deDivTag.html(dataElement.displayFormName);
+
+            // Translation for DESCRIPTION of DEs
+            var descriptionDivTag = deDivTag.closest("div").find(".cta_dg");
+            if (descriptionDivTag.length > 0 && dataElement.displayDescription != undefined) {
+              descriptionDivTag.attr("description", dataElement.displayDescription);
+            }
+
+            // Get CatOptions Map
+            var categories = dataElement.categoryCombo.categories;
+            for (var i in categories) {
+              var categoryOptions = categories[i].categoryOptions;
+              for (var j in categoryOptions) {
+                var categoryOption = categoryOptions[j];
+                catOptionMap[categoryOption.id] = categoryOption;
+              }
+            }
+
+          }
+
+          // Translation categories
+          for (var key in catOptionMap) {
+            var catOption = catOptionMap[key];
+
+            // For CatOption NAME
+            var catOptionDivTag = me.tableTag.find("[keyword='" + me.CATOPTION_KEY + ":" + key + "']");
+            catOptionDivTag.html(catOption.displayName);
+
+            // For CatOption Description
+            var descriptionDivTag = catOptionDivTag.closest("div").find(".cta_dg");
+            if (descriptionDivTag.length > 0 && catOption.displayDescription != undefined) {
+              descriptionDivTag.attr("description", catOption.displayDescription);
+            }
+
+
+          }
+
+
+          // Translate Indicators
+          var indicators = response.indicators;
+          for (var i in indicators) {
+            var indicator = indicators[i];
+            // Translation for NAME of Indicator
+            var indicatorDivTag = me.tableTag.find("[keyword='" + me.INDICATOR_KEY + ":" + indicator.id + "']");
+            indicatorDivTag.html(indicator.displayName);
+
+            // Translation for DESCRIPTION of Indicator
+            var descriptionDivTag = indicatorDivTag.closest("div").find(".cta_dg");
+            if (descriptionDivTag.length > 0 && indicator.displayDescription != undefined) {
+              descriptionDivTag.attr("description", indicator.displayDescription);
+            }
+          }
+
+
+          me.loadedDataSetElementList = true;
+          me.afterLoadedTranslationData();
+
+        });
+
+      }
+
+      me.translateOptionSetList = function () {
+        var url = encodeURI(me.QUERY_URL_TERMS);
+        me.loadMetadata(url, function (response) {
+
+          var options = response.options;
+          for (var j in options) {
+            var option = options[j];
+            var value = option.displayName;
+            me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']").html(value);
+            me.tableTag.find("[keyword-data='" + me.OPTION_KEY + ":" + option.code + "']").attr("keyword-data", value);
+          }
+
+          me.loadedOptionSetList = true;
+          me.afterLoadedTranslationData();
+        });
+      }
+
+      me.afterLoadedTranslationData = function () {
+        if (me.loadedDataSetElementList && me.loadedOptionSetList) {
+
+          me.exeFunc();
+        }
+      }
+
+      me.loadMetadata = function (url, exeFunc) {
+        $.ajax({
+          type: "GET"
+          , url: url
+          , contentType: "application/json;charset=utf-8"
+          , beforeSend: function (xhr) {
+            //me.hideReportTag();
+          }
+          , success: function (response) {
+            exeFunc(response);
+          }
+        });
+
+      }
+      // ----------------------------------------------------------------------------------------------
+      // init
+
+      me.init();
+
+    }
+
+  });
+</script>

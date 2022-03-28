@@ -1521,3 +1521,1131 @@
         }
     }
 }
+.t3g1{ 
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 132px     132px 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Title Title Title Title"
+    "Type asd incr desc"
+      "ty1 asd1 incr1 desc1"
+      "ty2 asd2 incr2 desc2"
+      "ty3 asd3 incr3 desc3"
+      "ty4 asd4 incr4 desc4"
+      "ty5 asd5 incr5 desc5"
+      "ty6 asd6 incr6 desc6"
+      "ty7 asd7 incr7 desc7"
+      "ty8 asd8 incr8 desc8"
+      "ty9 asd9 incr9 desc9";
+      padding: 8px 16px 42px 16px;
+
+.Title {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: Title;
+    }
+
+  .Type {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;  
+    grid-area: Type; }
+
+  .asd {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: $color2;
+    background-color: $Default-GT;
+    padding: 8px;
+    border-bottom: 2px solid $Default-L;
+    border-right: 1px solid $Default-L;
+    border-top: 1px solid $Default-L;
+    text-align: center;  
+    grid-area: asd;}
+  
+  .incr { 
+    font-size: 1.1em;
+    font-weight: 800;
+    color: $color2;
+    background-color: $Default-GT;
+    padding: 8px;
+    border-bottom: 2px solid $Default-L;
+    border-right: 1px solid $Default-L;
+    border-top: 1px solid $Default-L;
+    text-align: center;  
+    grid-area: incr; }
+  
+  .desc { 
+    font-size: 1.1em;
+    font-weight: 800;
+    color: $color2;
+    background-color: $Default-GT;
+    padding: 8px;
+    border-bottom: 2px solid $Default-L;
+    border-right: 1px solid $Default-L;
+    border-top: 1px solid $Default-L;
+    text-align: center;  
+    grid-area: desc; }
+  
+  .ty1 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty1; }
+  
+  .ty2 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty2; }
+  
+  .ty3 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty3; }
+  
+  .ty4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty4;
+    }
+  
+  .ty5 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty5;
+    }
+  
+  .ty6 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty6;
+}
+  
+  .ty7 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty7;
+}
+  
+  .ty8 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty8;
+}
+  
+  .ty9 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;  
+    grid-area: ty9;
+}
+  
+  .asd1 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd1;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .asd2 {         
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd2;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .asd3 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd3;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .asd4 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd4;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .asd5 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd5;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .asd6 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd6;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .asd7 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd7;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}      
+  .asd8 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd8;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .asd9 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: asd9;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .incr1 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr1;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .incr2 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr2;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .incr3 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr3;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .incr4 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr4;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .incr5 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr5;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .incr6 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr6;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .incr7 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr7;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .incr8 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr8;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  
+  .incr9 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: incr9;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .desc1 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc1;
+
+    input {
+        width: calc(100% - 10px) !important;
+        max-height: 100px !important;
+        text-align: right;
+    }
+}
+  .desc2 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc2;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .desc3 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc3;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .desc4 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc4;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .desc5 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc5;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .desc6 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc6;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .desc7 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc7;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+  .desc8 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc8;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .desc9 { 
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    border-right: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: desc9;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+}
+.t4g1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Title Title Title"
+      "app nap des"
+      "app1 nap1 des1"
+      "app2 nap2 des2"
+      "app3 nap3 des3"
+      "app4 nap4 des4"
+      "app5 nap5 des5"
+      "app6 nap6 des6"
+      "app7 nap7 des7";
+      padding: 8px 16px 42px 16px;
+  
+  .Title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Title;
+}
+  .app {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: app;
+}
+  .nap {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        background-color: $Default-GT;
+        padding: 8px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
+        text-align: center;
+        grid-area: nap;
+    }
+  .des {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: $color2;
+    background-color: $Default-GT;
+    padding: 8px;
+    border-bottom: 2px solid $Default-L;
+    border-right: 1px solid $Default-L;
+    border-top: 1px solid $Default-L;
+    text-align: center;
+    grid-area: des;
+}
+  .app1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app1;
+}  
+  .app2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app2;
+}  
+  .app3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app3;
+}  
+  .app4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app4;
+}  
+  .app5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app5;
+}  
+  .app6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app6;
+}  
+  .app7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: app7;
+}  
+  .nap1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap1;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .nap2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap2;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .nap3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap3;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .nap4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap4;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .nap5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap5;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .nap6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap6;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .nap7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: nap7;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des1;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des2;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des3;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des4;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des5;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des6;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .des7 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: des7;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+}
+.t4g2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Title Title"
+      "t1 a1"
+      "t2 a2"
+      "t3 a3";
+  
+  .Title {
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: Title;
+}
+  .t1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: t1;
+}
+  .t2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: t2;
+}  
+  .t3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    grid-area: t3;
+}  
+  .a1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: a1;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .a2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: a2;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}  
+  .a3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    text-align: right;
+    grid-area: a3;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+}
