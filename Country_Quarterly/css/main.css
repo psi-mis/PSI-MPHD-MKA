@@ -2151,12 +2151,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap1;
 }
 .t4g1 .nap1 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .nap2 {
   font-size: 1em;
@@ -2167,12 +2167,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap2;
 }
 .t4g1 .nap2 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .nap3 {
   font-size: 1em;
@@ -2183,12 +2183,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap3;
 }
 .t4g1 .nap3 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .nap4 {
   font-size: 1em;
@@ -2199,12 +2199,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap4;
 }
 .t4g1 .nap4 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .nap5 {
   font-size: 1em;
@@ -2215,12 +2215,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap5;
 }
 .t4g1 .nap5 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .nap6 {
   font-size: 1em;
@@ -2231,12 +2231,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap6;
 }
 .t4g1 .nap6 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .nap7 {
   font-size: 1em;
@@ -2247,12 +2247,12 @@
   border-bottom: 1px solid #f7faff;
   border-left: 1px solid #f7faff;
   min-width: 90px;
-  text-align: right;
+  text-align: center;
   grid-area: nap7;
 }
 .t4g1 .nap7 input {
   max-width: 104px;
-  text-align: right;
+  text-align: center;
 }
 .t4g1 .des1 {
   font-size: 1em;
