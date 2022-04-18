@@ -91,68 +91,67 @@
 		grid-template-rows: auto;
 		gap: 0px 0px;
 		grid-auto-flow: row;
-		grid-template-areas: "a b c d e""a01 b01 c01 d01 e01""a02 b02 b02 b02 b02""a03 b03 c03 d03 e03""a04 b04 b04 b04 b04""a05 b05 c05 d05 e05""a06 b06 b06 b06 b06""a07 b07 c07 d07 e07""a08 b08 b08 b08 b08""a09 b09 c09 d09 e09""a10 b10 b10 b10 b10";
+		grid-template-areas: "a b c d e" "a01 b01 c01 d01 e01" "a02 b02 b02 b02 b02" "a03 b03 c03 d03 e03" "a04 b04 b04 b04 b04" "a05 b05 c05 d05 e05" "a06 b06 b06 b06 b06" "a07 b07 c07 d07 e07" "a08 b08 b08 b08 b08" "a09 b09 c09 d09 e09" "a10 b10 b10 b10 b10";
 		padding: 8px 0 42px 0;
 	}
 
 	.grid_1 .a {
-		font-size: 1.4em;
-		font-weight: 500;
+		font-size: 1.1em !important;
+		font-weight: 800 !important;
 		color: #333333;
 		padding: 8px;
 		min-width: 90px;
-		text-align: center;
 		grid-area: a;
 	}
 
 	.grid_1 .b {
-		font-size: 1.4em;
-		font-weight: 500;
+		font-size: 1.1em !important;
+		font-weight: 800 !important;
 		color: #333333;
-		background-color: #eff5ff;
+		background-color: #e7efff;
 		padding: 8px;
-		border-bottom: 1px solid #f7faff;
-		border-left: 1px solid #f7faff;
-		min-width: 90px;
+		border-bottom: 2px solid #f7faff;
+		border-right: 1px solid #f7faff;
+		border-top: 1px solid #f7faff;
 		text-align: center;
 		grid-area: b;
 	}
 
 	.grid_1 .c {
-		font-size: 1.4em;
-		font-weight: 500;
+		font-size: 1.1em !important;
+		font-weight: 800 !important;
 		color: #333333;
-		background-color: #eff5ff;
+		background-color: #e7efff;
 		padding: 8px;
-		border-bottom: 1px solid #f7faff;
-		border-left: 1px solid #f7faff;
-		min-width: 90px;
+		border-bottom: 2px solid #f7faff;
+		border-right: 1px solid #f7faff;
+		border-top: 1px solid #f7faff;
 		text-align: center;
 		grid-area: c;
 	}
 
 	.grid_1 .d {
-		font-size: 1.4em;
-		font-weight: 500;
+		font-size: 1.1em !important;
+		font-weight: 800 !important;
 		color: #333333;
-		background-color: #eff5ff;
+		background-color: #e7efff;
 		padding: 8px;
-		border-bottom: 1px solid #f7faff;
-		border-left: 1px solid #f7faff;
-		min-width: 90px;
+		border-bottom: 2px solid #f7faff;
+		border-right: 1px solid #f7faff;
+		border-top: 1px solid #f7faff;
 		text-align: center;
 		grid-area: d;
 	}
 
 	.grid_1 .e {
-		font-size: 1.4em;
-		font-weight: 500;
+		font-size: 1.1em !important;
+		font-weight: 800 !important;
 		color: #333333;
-		background-color: #eff5ff;
+		background-color: #e7efff;
 		padding: 8px;
-		border-bottom: 1px solid #f7faff;
-		border-left: 1px solid #f7faff;
-		min-width: 90px;
+		border-bottom: 2px solid #f7faff;
+		border-right: 1px solid #f7faff;
+		border-top: 1px solid #f7faff;
 		text-align: center;
 		grid-area: e;
 	}
@@ -744,7 +743,7 @@
 		grid-template-rows: auto;
 		gap: 0px 0px;
 		grid-auto-flow: row;
-		grid-template-areas: "a01 b01""a02 b02";
+		grid-template-areas: "a01 b01" "a02 b02";
 		padding: 8px 0 42px 0;
 	}
 
@@ -812,9 +811,12 @@
 
 	.title {
 		clear: both;
-		font-size: 1.4em;
-		font-weight: 500;
+		font-size: 1.1em !important;
+		font-weight: 800 !important;
 		color: #333333;
+		padding: 8px;
+		min-width: 90px;
+		grid-area: app;
 	}
 
 	.custom_tab {
@@ -873,46 +875,45 @@
 	<div id="MPHDCustomForm_Content">
 		<div id="tabs" style="display:block;">
 			<ul class="custom_tab">
-				<li><a href="#CAP" keyword="opt_c:JMC">CAP</a></li>
-				<li><a href="#AL" keyword="opt_c:xxx">AL</a></li>
+				<li><a href="#CAP" keyword="opt_c:Tb1">Capacity</a></li>
 			</ul>
 
 			<div class="img_logo"><img alt="usaid" height="120px"
 					src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
 			<div id="CAP">
-				<div class="title">Number of country representative and their descriptions</div>
+				<div class="title" keyword="opt_c:Tb1Tl1">Number of country representative and their descriptions</div>
 
 				<div class="grid_1">
 					<div class="a">&nbsp;</div>
 
-					<div class="b" keyword="GLTab1">Female</div>
+					<div class="b" keyword="opt_c:Tb1b">Female</div>
 
-					<div class="c">Male</div>
+					<div class="c" keyword="opt_c:Tb1c">Male</div>
 
-					<div class="d">Unspecified</div>
+					<div class="d" keyword="opt_c:Tb1d">Unspecified</div>
 
-					<div class="e">Total</div>
+					<div class="e" keyword="opt_c:Tb1e">Total</div>
 
-					<div class="a01">Global or regional conferences</div>
+					<div class="a01" keyword="opt_c:Tb1a01">Global or regional conferences</div>
 
-					<div class="a02">Description</div>
+					<div class="a02" keyword="opt_c:Tb1a02">Description</div>
 
-					<div class="a03">Technical group</div>
+					<div class="a03" keyword="opt_c:Tb1a03">Technical group</div>
 
-					<div class="a04">Description</div>
+					<div class="a04" keyword="opt_c:Tb1a04">Description</div>
 
-					<div class="a05">Technical meeting</div>
+					<div class="a05" keyword="opt_c:Tb1a05">Technical meeting</div>
 
-					<div class="a06">Description</div>
+					<div class="a06" keyword="opt_c:Tb1a06">Description</div>
 
-					<div class="a07">Panels organized or convened by organizations</div>
+					<div class="a07" keyword="opt_c:Tb1a07">Panels organized or convened by organizations</div>
 
-					<div class="a08">Description</div>
+					<div class="a08" keyword="opt_c:Tb1a08">Description</div>
 
-					<div class="a09">Other</div>
+					<div class="a09" keyword="opt_c:Tb1a09">Other</div>
 
-					<div class="a10">Description</div>
+					<div class="a10" keyword="opt_c:Tb1a10">Description</div>
 
 					<div class="b01"><input id="qFpMLSk8Tti-RaDA18EdM3O-val" name="entryfield"
 							title="GL.1_Number of country representatives- Global or regional conferences Female"
@@ -1041,23 +1042,20 @@
 							value="[ GL.1_Number of country representatives- Other ]" />
 					</div>
 				</div>
-			</div>
 
-			<div id="AL">
-				<div class="title" keyword="opt_c:TGPTab1Text1">Technical guidance</div>
+				<div class="title" keyword="opt_c:Tb2Tl1">Technical guidance</div>
 
 				<div class="grid_2">
-					<div class="a01">Technical guidance and technical area name</div>
+					<div class="a01" keyword="opt_c:Tb2a01">Number of technical guidance/guidelines/strategies/standards</div>
 
-					<div class="a02">Number of technical guidance/guidelines/strategies/standards
-					</div>
+					<div class="a02" keyword="opt_c:Tb2a02">Technical guidance and technical area name</div>
 
-					<div class="b01"><input id="iC1jm6kc1Uw-HllvX50cXC0-val" name="entryfield"
+					<div class="b02"><input id="iC1jm6kc1Uw-HllvX50cXC0-val" name="entryfield"
 							title="GL.2_Name of technical guidance and technical area"
 							value="[ GL.2_Name of technical guidance and technical area ]" />
 					</div>
 
-					<div class="b02"><input id="LY7XkbKtLhP-HllvX50cXC0-val" name="entryfield"
+					<div class="b01"><input id="LY7XkbKtLhP-HllvX50cXC0-val" name="entryfield"
 							title="GL.2_Number of technical guidance/guidelines/strategies/standards"
 							value="[ GL.2_Number of technical guidance/guidelines/strategies/standards ]" />
 					</div>

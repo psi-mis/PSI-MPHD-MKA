@@ -92,7 +92,7 @@
     grid-template-columns: auto 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title title""r1 i1""r2 i2";
+    grid-template-areas: "title title" "r1 i1" "r2 i2";
     padding: 8px 0 42px 0;
   }
 
@@ -171,7 +171,7 @@
     grid-template-columns: auto 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title title""r1 i1""r2 i2";
+    grid-template-areas: "title title" "r1 i1" "r2 i2";
     padding: 8px 0 42px 0;
   }
 
@@ -250,7 +250,7 @@
     grid-template-columns: auto 130px 130px 130px 130px 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title c1 c2 c3 c4 totals""r1 c1i1 c2i1 c3i1 c4i1 tt1""r2 c1i2 c2i2 c3i2 c4i2 tt2""r3 c1i3 c2i3 c3i3 c4i3 tt3";
+    grid-template-areas: "title c1 c2 c3 c4 totals" "r1 c1i1 c2i1 c3i1 c4i1 tt1" "r2 c1i2 c2i2 c3i2 c4i2 tt2" "r3 c1i3 c2i3 c3i3 c4i3 tt3";
     padding: 8px 0 42px 0;
   }
 
@@ -640,7 +640,7 @@
     grid-template-columns: auto 130px 130px 130px 130px 130px 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title c1 c2 c3 c4 c5 totals""r1 c1i1 c2i1 c3i1 c4i1 c5i1 tt1""r2 c1i2 c2i2 c3i2 c4i2 c5i2 tt2";
+    grid-template-areas: "title c1 c2 c3 c4 c5 totals" "r1 c1i1 c2i1 c3i1 c4i1 c5i1 tt1" "r2 c1i2 c2i2 c3i2 c4i2 c5i2 tt2";
     padding: 8px 0 42px 0;
   }
 
@@ -977,7 +977,7 @@
     grid-template-columns: auto 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title title""r1 i1";
+    grid-template-areas: "title title" "r1 i1";
     padding: 8px 0 42px 0;
   }
 
@@ -1027,7 +1027,7 @@
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "Tittle Tittle""r1 i1""t_area1 t_area1""r2 i2""t_area2 t_area2""r3 i3""t_area3 t_area3""r4 i4""t_area4 t_area4""r5 i5""t_area5 t_area5""r6 i6""t_area6 t_area6""r7 i7""t_area7 t_area7""r8 i8""t_area8 t_area8""r9 i9""t_area9 t_area9""r10 i10""t_area10 t_area10""r11 i11""t_area11 t_area11";
+    grid-template-areas: "Tittle Tittle" "r1 i1" "t_area1 t_area1" "r2 i2" "t_area2 t_area2" "r3 i3" "t_area3 t_area3" "r4 i4" "t_area4 t_area4" "r5 i5" "t_area5 t_area5" "r6 i6" "t_area6 t_area6" "r7 i7" "t_area7 t_area7" "r8 i8" "t_area8 t_area8" "r9 i9" "t_area9 t_area9" "r10 i10" "t_area10 t_area10" "r11 i11" "t_area11 t_area11";
     padding: 8px 0 42px 0;
   }
 
@@ -1572,11 +1572,11 @@
   .t3g1 {
     clear: both;
     display: grid;
-    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-columns: 1fr 132px 132px 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "Title Title Title Title""Type asd incr desc""ty1 asd1 incr1 desc1""ty2 asd2 incr2 desc2""ty3 asd3 incr3 desc3""ty4 asd4 incr4 desc4""ty5 asd5 incr5 desc5""ty6 asd6 incr6 desc6""ty7 asd7 incr7 desc7""ty8 asd8 incr8 desc8""ty9 asd9 incr9 desc9";
+    grid-template-areas: "Title Title Title Title" "Type asd incr desc" "ty1 asd1 incr1 desc1" "ty2 asd2 incr2 desc2" "ty3 asd3 incr3 desc3" "ty4 asd4 incr4 desc4" "ty5 asd5 incr5 desc5" "ty6 asd6 incr6 desc6" "ty7 asd7 incr7 desc7" "ty8 asd8 incr8 desc8" "ty9 asd9 incr9 desc9";
     padding: 8px 16px 42px 16px;
   }
 
@@ -2083,7 +2083,7 @@
   }
 
   .t3g1 .desc1 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2101,7 +2101,7 @@
   }
 
   .t3g1 .desc2 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2119,7 +2119,7 @@
   }
 
   .t3g1 .desc3 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2137,7 +2137,7 @@
   }
 
   .t3g1 .desc4 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2155,7 +2155,7 @@
   }
 
   .t3g1 .desc5 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2173,7 +2173,7 @@
   }
 
   .t3g1 .desc6 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2191,7 +2191,7 @@
   }
 
   .t3g1 .desc7 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2209,7 +2209,7 @@
   }
 
   .t3g1 .desc8 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2228,7 +2228,7 @@
   }
 
   .t3g1 .desc9 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2238,7 +2238,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "Title Title Title""app nap des""app1 nap1 des1""app2 nap2 des2""app3 nap3 des3""app4 nap4 des4""app5 nap5 des5""app6 nap6 des6""app7 nap7 des7";
+    grid-template-areas: "Title Title Title" "app nap des" "app1 nap1 des1" "app2 nap2 des2" "app3 nap3 des3" "app4 nap4 des4" "app5 nap5 des5" "app6 nap6 des6" "app7 nap7 des7";
     padding: 8px 16px 42px 16px;
   }
 
@@ -2379,13 +2379,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap1;
   }
 
   .t4g1 .nap1 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .nap2 {
@@ -2397,13 +2397,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap2;
   }
 
   .t4g1 .nap2 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .nap3 {
@@ -2415,13 +2415,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap3;
   }
 
   .t4g1 .nap3 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .nap4 {
@@ -2433,13 +2433,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap4;
   }
 
   .t4g1 .nap4 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .nap5 {
@@ -2451,13 +2451,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap5;
   }
 
   .t4g1 .nap5 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .nap6 {
@@ -2469,13 +2469,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap6;
   }
 
   .t4g1 .nap6 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .nap7 {
@@ -2487,13 +2487,13 @@
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap7;
   }
 
   .t4g1 .nap7 input {
     max-width: 104px;
-    text-align: right;
+    text-align: center;
   }
 
   .t4g1 .des1 {
@@ -2510,7 +2510,7 @@
   }
 
   .t4g1 .des1 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2528,7 +2528,7 @@
   }
 
   .t4g1 .des2 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2546,7 +2546,7 @@
   }
 
   .t4g1 .des3 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2564,7 +2564,7 @@
   }
 
   .t4g1 .des4 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2582,7 +2582,7 @@
   }
 
   .t4g1 .des5 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2600,7 +2600,7 @@
   }
 
   .t4g1 .des6 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2618,7 +2618,7 @@
   }
 
   .t4g1 .des7 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -2628,7 +2628,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "Title Title""t1 a1""t2 a2""t3 a3";
+    grid-template-areas: "Title Title" "t1 a1" "t2 a2" "t3 a3";
   }
 
   .t4g2 .Title {
@@ -2726,7 +2726,7 @@
   }
 
   .t4g2 .a3 input {
-    max-width: 104px;
+    width: calc(100% - 10px) !important;
     text-align: right;
   }
 
@@ -3189,33 +3189,33 @@
             src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
         <div class="t3g1">
-          <div class="Title">Organization assessed for organizational performance</div>
+          <div class="Title" keyword="opt_c:Tb3Title1">Organization assessed for organizational performance</div>
 
-          <div class="Type">Type</div>
+          <div class="Type" keyword="opt_c:Tb3Ty">Type</div>
 
-          <div class="asd">Organizations assessed for organizational performance</div>
+          <div class="asd" keyword="opt_c:Tb3asd">Organizations assessed for organizational performance</div>
 
-          <div class="incr">Organizations with increased organizational performance</div>
+          <div class="incr" keyword="opt_c:Tb3incr">Organizations with increased organizational performance</div>
 
-          <div class="desc">Description</div>
+          <div class="desc" keyword="opt_c:Tb3desc">Description</div>
 
-          <div class="ty1">Civil society organizations</div>
+          <div class="ty1" keyword="opt_c:Tb3Ty1">Civil society organizations</div>
 
-          <div class="ty2">Educational Institutions</div>
+          <div class="ty2" keyword="opt_c:Tb3Ty2">Educational Institutions</div>
 
-          <div class="ty3">Faith based organizations</div>
+          <div class="ty3" keyword="opt_c:Tb3Ty3">Faith based organizations</div>
 
-          <div class="ty4">Governmental agencies</div>
+          <div class="ty4" keyword="opt_c:Tb3Ty4">Governmental agencies</div>
 
-          <div class="ty5">Health service delivery</div>
+          <div class="ty5" keyword="opt_c:Tb3Ty5">Health service delivery</div>
 
-          <div class="ty6">Non-governmental and not-for profit</div>
+          <div class="ty6" keyword="opt_c:Tb3Ty6">Non-governmental and not-for profit</div>
 
-          <div class="ty7">Private sector firms</div>
+          <div class="ty7" keyword="opt_c:Tb3Ty7">Private sector firms</div>
 
-          <div class="ty8">Research Institutions</div>
+          <div class="ty8" keyword="opt_c:Tb3Ty8">Research Institutions</div>
 
-          <div class="ty9">Other</div>
+          <div class="ty9" keyword="opt_c:Tb3Ty9">Other</div>
 
           <div class="asd1"><input id="VVkUhIYSj3S-RAdEUEz61e6-val" name="entryfield"
               title="CAP.5_Number of organizations assessed for organizational performance Civil society organizations (CSOs)"
@@ -3345,33 +3345,36 @@
         </div>
 
         <div class="t3g1">
-          <div class="Title">Organizations and technical capacity</div>
+          <div class="Title" keyword="opt_c:Tb3Title2">Organizations and technical capacity</div>
 
-          <div class="Type">Type</div>
+          <div class="Type" keyword="opt_c:Tb3Ty">Type</div>
 
-          <div class="asd">Number of organizations assessed for organizational performance or technical capacity</div>
+          <div class="asd" keyword="opt_c:Tb3Title3">Number of organizations assessed for organizational performance or
+            technical capacity</div>
 
-          <div class="incr">Number of organizations with increased organizational and/or technical capacity</div>
+          <div class="incr" keyword="opt_c:Tb3Title4">Number of organizations with increased organizational and/or
+            technical
+            capacity</div>
 
-          <div class="desc">Description</div>
+          <div class="desc" keyword="opt_c:Tb3desc">Description</div>
 
-          <div class="ty1">Civil society organizations</div>
+          <div class="ty1" keyword="opt_c:Tb3Ty1">Civil society organizations</div>
 
-          <div class="ty2">Educational Institutions</div>
+          <div class="ty2" keyword="opt_c:Tb3Ty2">Educational Institutions</div>
 
-          <div class="ty3">Faith based organizations</div>
+          <div class="ty3" keyword="opt_c:Tb3Ty3">Faith based organizations</div>
 
-          <div class="ty4">Governmental agencies</div>
+          <div class="ty4" keyword="opt_c:Tb3Ty4">Governmental agencies</div>
 
-          <div class="ty5">Health service delivery</div>
+          <div class="ty5" keyword="opt_c:Tb3Ty5">Health service delivery</div>
 
-          <div class="ty6">Non-governmental and not-for profit</div>
+          <div class="ty6" keyword="opt_c:Tb3Ty6">Non-governmental and not-for profit</div>
 
-          <div class="ty7">Private sector firms</div>
+          <div class="ty7" keyword="opt_c:Tb3Ty7">Private sector firms</div>
 
-          <div class="ty8">Research Institutions</div>
+          <div class="ty8" keyword="opt_c:Tb3Ty8">Research Institutions</div>
 
-          <div class="ty9">Other</div>
+          <div class="ty9" keyword="opt_c:Tb3Ty9">Other</div>
 
           <div class="asd1"><input id="K4XN4b1nmAc-RAdEUEz61e6-val" name="entryfield"
               title="CAP.6_Number of organizations assessed for organizational or technical capacity Civil society organizations (CSOs)"
@@ -3514,27 +3517,28 @@
             src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
         <div class="t4g1">
-          <div class="Title">Approaches implemented by MOMENTUM that engage the community</div>
+          <div class="Title" keyword="opt_c:Tb4Title1">Approaches implemented by MOMENTUM that engage the community
+          </div>
 
-          <div class="app">Approach</div>
+          <div class="app" keyword="opt_c:Tb4app">Approach</div>
 
-          <div class="nap">Number of approaches implemented</div>
+          <div class="nap" keyword="opt_c:Tb4nap">Number of approaches implemented</div>
 
-          <div class="des">Description</div>
+          <div class="des" keyword="opt_c:Tb4des">Description</div>
 
-          <div class="app1">Access to information</div>
+          <div class="app1" keyword="opt_c:Tb4nap1">Access to information</div>
 
-          <div class="app2">Accountability of Institutions</div>
+          <div class="app2" keyword="opt_c:Tb4nap2">Accountability of Institutions</div>
 
-          <div class="app3">Assessment</div>
+          <div class="app3" keyword="opt_c:Tb4nap3">Assessment</div>
 
-          <div class="app4">Decision making</div>
+          <div class="app4" keyword="opt_c:Tb4nap4">Decision making</div>
 
-          <div class="app5">Local capacity to advocate</div>
+          <div class="app5" keyword="opt_c:Tb4nap5">Local capacity to advocate</div>
 
-          <div class="app6">Referral mechanisms</div>
+          <div class="app6" keyword="opt_c:Tb4nap6">Referral mechanisms</div>
 
-          <div class="app7">Other</div>
+          <div class="app7" keyword="opt_c:Tb4nap7">Other</div>
 
           <div class="nap1"><input id="rSeXRVt49je-hiHS7d3nzLL-val" name="entryfield"
               title="CE.2_Number of approaches implemented by MOMENTUM that engage the community Access to information"
@@ -3607,14 +3611,16 @@
         </div>
 
         <div class="t4g2">
-          <div class="Title">Entities receiving MOMENTUM-support</div>
+          <div class="Title" keyword="opt_c:Tb4Title2">Entities receiving MOMENTUM-support</div>
 
-          <div class="t1">Targeted actors receiving AL support from MOMENTUM</div>
+          <div class="t1" keyword="opt_c:Tb4SubTt1">Targeted actors receiving AL support from MOMENTUM</div>
 
-          <div class="t2">Targeted actors using data generated through their monitoring systems to modify activities or
-            strategies</div>
+          <div class="t2" keyword="opt_c:Tb4SubTt2">Targeted actors using data generated through their monitoring
+            systems to
+            modify activities or strategies</div>
 
-          <div class="t3">Description of targeted actor, data used and program modifications</div>
+          <div class="t3" keyword="opt_c:Tb4SubTt3">Description of targeted actor, data used and program modifications
+          </div>
 
           <div class="a1"><input id="JWdzIG5Vb5X-HllvX50cXC0-val" name="entryfield"
               title="AL.2_Number of targeted actors receiving AL support from MOMENTUM"

@@ -1524,7 +1524,7 @@
 .t3g1{ 
     clear: both;
     display: grid;
-    grid-template-columns: 1fr 132px     132px 1fr;
+    grid-template-columns: 1fr 132px 132px 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -2030,7 +2030,6 @@
 
     input {
         width: calc(100% - 10px) !important;
-        max-height: 100px !important;
         text-align: right;
     }
 }
@@ -2047,7 +2046,7 @@
     grid-area: desc2;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
@@ -2064,7 +2063,7 @@
     grid-area: desc3;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
@@ -2081,7 +2080,7 @@
     grid-area: desc4;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
@@ -2098,7 +2097,7 @@
     grid-area: desc5;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
@@ -2115,7 +2114,7 @@
     grid-area: desc6;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
@@ -2132,7 +2131,7 @@
     grid-area: desc7;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
@@ -2149,7 +2148,7 @@
     grid-area: desc8;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2167,12 +2166,13 @@
     grid-area: desc9;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
 }
-.t4g1 {  display: grid;
+.t4g1 {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -2315,12 +2315,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap1;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center;
     }
 }  
   .nap2 {
@@ -2332,12 +2332,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap2;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center;
     }
 }  
   .nap3 {
@@ -2349,12 +2349,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap3;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center;
     }
 }  
   .nap4 {
@@ -2366,12 +2366,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap4;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center;
     }
 }  
   .nap5 {
@@ -2383,12 +2383,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap5;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center;
     }
 }  
   .nap6 {
@@ -2400,12 +2400,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap6;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center;
     }
 }  
   .nap7 {
@@ -2417,12 +2417,12 @@
     border-bottom: 1px solid $Default-L;
     border-left: 1px solid $Default-L;
     min-width: 90px;
-    text-align: right;
+    text-align: center;
     grid-area: nap7;
 
     input {
         max-width: 104px;
-        text-align: right;
+        text-align: center
     }
 }  
   .des1 {
@@ -2438,7 +2438,7 @@
     grid-area: des1;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2455,7 +2455,7 @@
     grid-area: des2;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2472,7 +2472,7 @@
     grid-area: des3;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2489,7 +2489,7 @@
     grid-area: des4;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2506,7 +2506,7 @@
     grid-area: des5;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2523,7 +2523,7 @@
     grid-area: des6;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }  
@@ -2540,12 +2540,13 @@
     grid-area: des7;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }
 }
-.t4g2 {  display: grid;
+.t4g2 {  
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -2613,7 +2614,7 @@
         max-width: 104px;
         text-align: right;
     }
-}  
+}
   .a2 {
     font-size: 1em;
     font-weight: 400;
@@ -2644,7 +2645,7 @@
     grid-area: a3;
 
     input {
-        max-width: 104px;
+        width: calc(100% - 10px) !important;
         text-align: right;
     }
 }

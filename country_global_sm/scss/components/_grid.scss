@@ -21,63 +21,62 @@
     padding: 8px 0 42px 0;
 
     .a {
-        font-size: 1.4em ;
-        font-weight: 500;
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
         color: $color2;
         padding: 8px;
         min-width: 90px;
-        text-align: center;
         grid-area: a;
     }
 
     .b {
-        font-size: 1.4em ;
-        font-weight: 500;
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
         color: $color2;
-        background-color: $Default-RW;
+        background-color: $Default-GT;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
         text-align: center;
         grid-area: b;
     }
 
     .c {
-        font-size: 1.4em ;
-        font-weight: 500;
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
         color: $color2;
-        background-color: $Default-RW;
+        background-color: $Default-GT;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
         text-align: center;
         grid-area: c;
     }
 
     .d {
-        font-size: 1.4em ;
-        font-weight: 500;
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
         color: $color2;
-        background-color: $Default-RW;
+        background-color: $Default-GT;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
         text-align: center;
         grid-area: d;
     }
 
     .e {
-        font-size: 1.4em ;
-        font-weight: 500;
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
         color: $color2;
-        background-color: $Default-RW;
+        background-color: $Default-GT;
         padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
+        border-bottom: 2px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-top: 1px solid $Default-L;
         text-align: center;
         grid-area: e;
     }
@@ -718,7 +717,10 @@
 
 .title{
     clear: both;
-    font-size: 1.4em;
-    font-weight: 500;
+    font-size: 1.1em !important;
+    font-weight: 800 !important;
     color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: app;
 }
