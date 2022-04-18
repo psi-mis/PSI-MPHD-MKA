@@ -1428,7 +1428,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "Title Title Title Title" "Type asd incr desc" "ty1 asd1 incr1 desc1" "ty2 asd2 incr2 desc2" "ty3 asd3 incr3 desc3" "ty4 asd4 incr4 desc4" "ty5 asd5 incr5 desc5" "ty6 asd6 incr6 desc6" "ty7 asd7 incr7 desc7" "ty8 asd8 incr8 desc8" "ty9 asd9 incr9 desc9";
+  grid-template-areas: "Title Title Title Title" "SubTitle SubTitle SubTitle SubTitle" "Type asd incr desc" "ty1 asd1 incr1 desc1" "ty2 asd2 incr2 desc2" "ty3 asd3 incr3 desc3" "ty4 asd4 incr4 desc4" "ty5 asd5 incr5 desc5" "ty6 asd6 incr6 desc6" "ty7 asd7 incr7 desc7" "ty8 asd8 incr8 desc8" "ty9 asd9 incr9 desc9";
   padding: 8px 16px 42px 16px;
 }
 .t3g1 .Title {
@@ -1438,6 +1438,16 @@
   padding: 8px;
   min-width: 90px;
   grid-area: Title;
+}
+.t3g1 .SubTitle {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: SubTitle;
 }
 .t3g1 .Type {
   font-size: 1.1em;
@@ -1884,7 +1894,10 @@
 }
 .t3g1 .desc1 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 100px !important;
+  resize: none;
 }
 .t3g1 .desc2 {
   font-size: 1em;
@@ -2022,7 +2035,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "Title Title Title" "app nap des" "app1 nap1 des1" "app2 nap2 des2" "app3 nap3 des3" "app4 nap4 des4" "app5 nap5 des5" "app6 nap6 des6" "app7 nap7 des7";
+  grid-template-areas: "Title Title Title" "SubT SubT SubT" "SubT1 SubT1 SubT1" "SubT2 SubT2 SubT2" "app nap des" "app1 nap1 des1" "app2 nap2 des2" "app3 nap3 des3" "app4 nap4 des4" "app5 nap5 des5" "app6 nap6 des6" "app7 nap7 des7";
   padding: 8px 16px 42px 16px;
 }
 .t4g1 .Title {
@@ -2032,6 +2045,44 @@
   padding: 8px;
   min-width: 90px;
   grid-area: Title;
+}
+.t4g1 .SubT {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: SubT;
+}
+.t4g1 .SubT1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: SubT1;
+}
+.t4g1 .SubT2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: SubT2;
+}
+.t4g1 .Type {
+  font-size: 1.1em;
+  font-weight: 800;
+  color: #333333;
+  padding: 8px;
+  min-width: 90px;
+  grid-area: Type;
 }
 .t4g1 .app {
   font-size: 1.1em !important;
@@ -2373,7 +2424,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "Title Title" "t1 a1" "t2 a2" "t3 a3";
+  grid-template-areas: "Title Title" "SubTitle SubTitle" "t1 a1" "t2 a2" "t3 a3";
 }
 .t4g2 .Title {
   font-size: 1.1em !important;
@@ -2382,6 +2433,16 @@
   padding: 8px;
   min-width: 90px;
   grid-area: Title;
+}
+.t4g2 .SubTitle {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: SubTitle;
 }
 .t4g2 .t1 {
   font-size: 1em;
