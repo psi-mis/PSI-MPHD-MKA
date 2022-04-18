@@ -722,5 +722,35 @@
     color: $color2;
     padding: 8px;
     min-width: 90px;
-    grid-area: app;
+    grid-area: title;
+}
+
+.title1{
+    clear: both;
+    font-size: 1.0em !important;
+    font-weight: 800 !important;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title1;
+}
+
+.title2{
+    clear: both;
+    font-size: 1.0em !important;
+    font-weight: 800 !important;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title2;
+}
+
+.title3{
+    clear: both;
+    font-size: 1.0em !important;
+    font-weight: 800 !important;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title2;
 }
