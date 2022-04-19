@@ -10520,7 +10520,8 @@
     }
 }
 
-.t2g3plus {  display: grid;
+.t2g3plus {  
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-auto-columns: 1fr;
@@ -10530,15 +10531,15 @@
     grid-template-areas:
       "Test Test"
       "de de1";
-
+      padding: 8px 0px;
   
-  .Test {
+.Test {
     font-size: 1em;
     font-weight: 800;
     color: $color2;
     padding: 8px;
     min-width: 90px;
-    grid-area: title;
+    grid-area: Test;
 }
 .de {
     font-size: 1em;
@@ -10565,12 +10566,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: de1;
+    grid-area: vc1_6;
 
     input {
         max-width: 104px;
         text-align: right;
     }
 }
-
 }

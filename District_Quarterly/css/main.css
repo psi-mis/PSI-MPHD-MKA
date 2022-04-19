@@ -9442,6 +9442,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "Test Test" "de de1";
+  padding: 8px 0px;
 }
 .t2g3plus .Test {
   font-size: 1em;
@@ -9449,7 +9450,7 @@
   color: #333333;
   padding: 8px;
   min-width: 90px;
-  grid-area: title;
+  grid-area: Test;
 }
 .t2g3plus .de {
   font-size: 1em;
@@ -9475,7 +9476,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: de1;
+  grid-area: vc1_6;
 }
 .t2g3plus .de1 input {
   max-width: 104px;
