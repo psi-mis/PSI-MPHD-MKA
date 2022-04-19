@@ -10519,3 +10519,58 @@
         }
     }
 }
+
+.t2g3plus {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Test Test"
+      "de de1";
+
+  
+  .Test {
+    font-size: 1em;
+    font-weight: 800;
+    color: $color2;
+    padding: 8px;
+    min-width: 90px;
+    grid-area: title;
+}
+.de {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color2;
+    background-color: $Default-RW;
+    padding: 8px;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    display: flex;
+    align-items: center;
+    grid-area: de;
+}
+  
+.de1 {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 8px;
+    color: $color2;
+    background-color: $Default-RW;
+    border-bottom: 1px solid $Default-L;
+    border-left: 1px solid $Default-L;
+    min-width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: de1;
+
+    input {
+        max-width: 104px;
+        text-align: right;
+    }
+}
+
+}
