@@ -1896,7 +1896,7 @@
   width: calc(100% - 10px) !important;
   text-align: left;
   overflow-y: auto !important;
-  height: 100px !important;
+  height: 50px !important;
   resize: none;
 }
 .t3g1 .desc2 {
@@ -1913,7 +1913,10 @@
 }
 .t3g1 .desc2 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc3 {
   font-size: 1em;
@@ -1929,7 +1932,10 @@
 }
 .t3g1 .desc3 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc4 {
   font-size: 1em;
@@ -1945,7 +1951,10 @@
 }
 .t3g1 .desc4 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc5 {
   font-size: 1em;
@@ -1961,7 +1970,10 @@
 }
 .t3g1 .desc5 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc6 {
   font-size: 1em;
@@ -1977,7 +1989,10 @@
 }
 .t3g1 .desc6 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc7 {
   font-size: 1em;
@@ -1993,7 +2008,10 @@
 }
 .t3g1 .desc7 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc8 {
   font-size: 1em;
@@ -2009,7 +2027,10 @@
 }
 .t3g1 .desc8 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 .t3g1 .desc9 {
   font-size: 1em;
@@ -2026,7 +2047,10 @@
 }
 .t3g1 .desc9 input {
   width: calc(100% - 10px) !important;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto !important;
+  height: 50px !important;
+  resize: none;
 }
 
 .t4g1 {
