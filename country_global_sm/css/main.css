@@ -719,6 +719,8 @@
 .grid_2 .b01 input {
   width: 98%;
   text-align: right;
+  overflow-y: scroll;
+  resize: none;
 }
 .grid_2 .b02 {
   font-size: 1em;
@@ -734,7 +736,10 @@
 }
 .grid_2 .b02 input {
   width: 98%;
-  text-align: right;
+  text-align: left;
+  overflow-y: auto;
+  resize: none;
+  height: 100px;
 }
 
 .title {

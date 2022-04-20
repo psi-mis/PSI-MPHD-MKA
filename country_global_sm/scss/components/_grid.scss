@@ -694,6 +694,8 @@
         input {
             width: 98%;
             text-align: right;
+            overflow-y: scroll;
+            resize: none;
         }
     }
 
@@ -710,7 +712,10 @@
         grid-area: b02;
         input {
             width: 98%;
-            text-align: right;
+            text-align: left;
+            overflow-y:auto;
+            resize: none;
+            height: 100px;
         }
     }
 }
