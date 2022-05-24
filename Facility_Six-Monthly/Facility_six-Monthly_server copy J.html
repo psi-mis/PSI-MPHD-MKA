@@ -1,0 +1,1287 @@
+<style type="text/css">@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+        .ty_h1 {
+          color: #333333;
+          font-size: 2rem;
+        }
+        
+        .ty_h3 {
+          font-size: 1.2rem;
+          color: #0072B2;
+        }
+        
+        .ty_h4 {
+          padding-top: 18px;
+          font-size: 1rem;
+          color: #0072B2;
+        }
+        
+        .ta_left {
+          text-align: left !important;
+          font-weight: 400 !important;
+        }
+        
+        .ta_left_b {
+          text-align: left !important;
+          font-weight: 600 !important;
+          color: #007F93;
+          border-top: 1px solid #007F93;
+          background-color: rgba(0, 0, 0, 0.089);
+        }
+        
+        .ta_center {
+          text-align: center !important;
+        }
+        
+        .ta_right {
+          text-align: right !important;
+          background-color: blueviolet !important;
+          max-width: 150px !important;
+        }
+        
+        .text-overflow {
+          display: block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        
+        .material-icons {
+          font-family: "Material Icons";
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          /* Preferred icon size */
+          display: inline-block;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          word-wrap: normal;
+          white-space: nowrap;
+          direction: ltr;
+          /* Support for all WebKit browsers. */
+          -webkit-font-smoothing: antialiased;
+          /* Support for Safari and Chrome. */
+          text-rendering: optimizeLegibility;
+          /* Support for Firefox. */
+          -moz-osx-font-smoothing: grayscale;
+          /* Support for IE. */
+          font-feature-settings: "liga";
+        }
+        
+        .material-icons.md-dark {
+          color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+          color: rgba(0, 0, 0, 0.26);
+        }
+        
+        .material-icons.md-light {
+          color: white;
+        }
+        
+        .material-icons.md-light.md-inactive {
+          color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .t1g1 {
+          clear: both;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3";
+          padding: 8px 0 42px 0;
+        }
+        .t1g1 .a0 {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          padding: 8px;
+          min-width: 90px;
+          grid-area: a0;
+        }
+        .t1g1 .a1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a1;
+        }
+        .t1g1 .a2 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a2;
+        }
+        .t1g1 .a3 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a3;
+        }
+        .t1g1 .b0 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          padding: 8px;
+          min-width: 90px;
+          grid-area: b0;
+        }
+        .t1g1 .b0 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g1 .b1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b1;
+        }
+        .t1g1 .b1 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g1 .b2 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b2;
+        }
+        .t1g1 .b2 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g1 .b3 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b3;
+        }
+        .t1g1 .b3 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        
+        .t1g2 {
+          clear: both;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4" "a5 b5" "a6 b6";
+          padding: 8px 0 42px 0;
+        }
+        .t1g2 .a0 {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          background-color: transparent;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a0;
+        }
+        .t1g2 .a1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a1;
+        }
+        .t1g2 .a2 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a2;
+        }
+        .t1g2 .a3 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a3;
+        }
+        .t1g2 .a4 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a4;
+        }
+        .t1g2 .a5 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a5;
+        }
+        .t1g2 .a6 {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          background-color: #d6e5ff;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-top: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 110px;
+          grid-area: a6;
+        }
+        .t1g2 .b0 {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          background-color: transparent;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-top: 1px solid #f7faff;
+          min-width: 110px;
+          text-align: center;
+          grid-area: b0;
+        }
+        .t1g2 .b1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: b1;
+        }
+        .t1g2 .b1 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g2 .b2 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: b2;
+        }
+        .t1g2 .b2 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g2 .b3 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: b3;
+        }
+        .t1g2 .b3 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g2 .b4 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: b4;
+        }
+        .t1g2 .b4 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g2 .b5 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: b5;
+        }
+        .t1g2 .b5 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g2 .b6 {
+          font-size: 1.1em !important;
+          font-weight: 500 !important;
+          color: #333333;
+          background-color: #d6e5ff;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-top: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 110px;
+          text-align: right;
+        }
+        .t1g2 .b6 input {
+          float: right;
+          max-width: 104px;
+          text-align: right;
+        }
+        
+        .t1g3 {
+          clear: both;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas: "title title1" "fem fem1" "male male1" "unspec unspec1" "total total1";
+          padding: 8px 0 42px 0;
+        }
+        .t1g3 .title {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          background-color: transparent;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: title;
+        }
+        .t1g3 .fem {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: fem;
+        }
+        .t1g3 .male {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: male;
+        }
+        .t1g3 .unspec {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: unspec;
+        }
+        .t1g3 .total {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          background-color: #d6e5ff;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-top: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 110px;
+          grid-area: total;
+        }
+        .t1g3 .title1 {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          background-color: transparent;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-top: 1px solid #f7faff;
+          min-width: 110px;
+          text-align: center;
+          grid-area: title1;
+        }
+        .t1g3 .fem1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: fem1;
+        }
+        .t1g3 .fem1 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g3 .male1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: male1;
+        }
+        .t1g3 .male1 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g3 .unspec1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 90px;
+          text-align: right;
+          grid-area: unspec1;
+        }
+        .t1g3 .unspec1 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t1g3 .total1 {
+          font-size: 1.1em !important;
+          font-weight: 500 !important;
+          color: #333333;
+          background-color: #d6e5ff;
+          padding: 8px;
+          border-bottom: 2px solid #f7faff;
+          border-top: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          min-width: 110px;
+          text-align: right;
+          grid-area: total1;
+        }
+        .t1g3 .total1 input {
+          float: right;
+          max-width: 104px;
+          text-align: right;
+        }
+        
+        .t2g1 {
+          clear: both;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas: "a0 b0" "a1 b1" "a2 b2" "a3 b3" "a4 b4";
+          padding: 8px 0 42px 0;
+        }
+        .t2g1 .a0 {
+          font-size: 1.1em !important;
+          font-weight: 800 !important;
+          color: #333333;
+          padding: 8px;
+          min-width: 90px;
+          grid-area: a0;
+        }
+        .t2g1 .a1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a1;
+        }
+        .t2g1 .a2 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a2;
+        }
+        .t2g1 .a3 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a3;
+        }
+        .t2g1 .a4 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: a4;
+        }
+        .t2g1 .b0 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          padding: 8px;
+          min-width: 90px;
+          grid-area: b0;
+        }
+        .t2g1 .b0 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t2g1 .b1 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-right: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b1;
+        }
+        .t2g1 .b1 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t2g1 .b2 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b2;
+        }
+        .t2g1 .b2 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t2g1 .b3 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b3;
+        }
+        .t2g1 .b3 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        .t2g1 .b4 {
+          font-size: 1em;
+          font-weight: 400;
+          color: #333333;
+          background-color: #eff5ff;
+          padding: 8px;
+          border-bottom: 1px solid #f7faff;
+          border-left: 1px solid #f7faff;
+          min-width: 90px;
+          grid-area: b4;
+        }
+        .t2g1 .b4 input {
+          max-width: 104px;
+          text-align: right;
+        }
+        
+        .custom_tab {
+          border: 1px solid #d6e5ff;
+          background: #d6e5ff;
+          color: #ffffff;
+          font-weight: bold;
+        }
+        
+        .totals input {
+          background-color: #DCDCDC !important;
+        }
+        
+        i,
+        rem {
+          color: #8a7474;
+          font-weight: 300;
+          font-size: 0.5em;
+        }
+        
+        .img_logo {
+          width: 100%;
+          height: max-content;
+          box-sizing: border-box;
+        }
+        .img_logo img {
+          float: left;
+        }
+        
+        #hide_tab {
+          padding: 8px;
+          float: right;
+        }
+        #hide_tab a {
+          color: #f1f1f1f1;
+          text-decoration: none;
+          font-weight: 200;
+        }
+        
+        /*# sourceMappingURL=main.css.map */
+</style>
+<div id="MPHDCustomForm">
+<div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+
+<div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+<br />
+<br />
+<img src="../images/ajax-loader-circle.gif" /><br />
+<br />
+&nbsp;
+<p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+</div>
+
+<div id="MPHDCustomForm_Content">
+<div id="tabs" style="display:block;">
+<ul class="custom_tab">
+	<li id="tab1"><a catoption="Sq2K2cKqCgJ" href="#FACIL" keyword="opt_c:TbTitle_1">Facilities</a></li>
+	<li id="tab2"><a catoption="RXB05TUtcpY" href="#XCUT" keyword="opt_c:TbTitle_2">X.Cut</a></li>
+</ul>
+
+<div class="img_logo"><img alt="usaid" height="120px" src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+
+<div catoption="Sq2K2cKqCgJ" class="content_tabs" id="FACIL">
+
+<div catoption="gzeT8vHSDIx" class="t1g1">
+<div class="a0" keyword="opt_c:Tb1Tt1">MPHD Facility Six-monthly</div>
+
+<div class="a1" keyword="opt_c:Tb1Tt1Tx1">Imm.2_Estimated number of children less than 12 months of age in MOMENTUM supported areas</div>
+
+<div class="a2" keyword="opt_c:Tb1Tt1Tx2">Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported areas</div>
+
+<div class="a3" keyword="opt_c:Tb1Tt1Tx3">PWI 2.5_PSI_MPHD-Did this facility/outlet initiate or improve reporting into the national HMIS (Y/N)</div>
+
+<div class="b0">&nbsp;</div>
+
+<div class="b1"><input id="o5ofu8ng6pZ-HllvX50cXC0-val" name="entryfield" title="MPHD - Imm.2_Estimated number of children less than 12 months of age in MOMENTUM supported areas" value="[ MPHD - Imm.2_Estimated number of children less than 12 months of age in MOMENTUM supported areas ]" /></div>
+
+<div class="b2"><input id="PMysiLAYZKZ-HllvX50cXC0-val" name="entryfield" title="MPHD - Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported areas" value="[ MPHD - Imm.4_Estimated number of children 12-24 months of age in MOMENTUM supported areas ]" /></div>
+
+<div class="b3"><input id="iZfas7VFeNB-HllvX50cXC0-val" name="entryfield" title="MPHD - PSI PWI 2.5_PSI_MPHD-supported facilities/outlets  initiated or improved reporting into national HMIS (y/n)" value="[ MPHD - PSI PWI 2.5_PSI_MPHD-supported facilities/outlets  initiated or improved reporting into national HMIS (y/n) ]" /></div>
+</div>
+
+<div catoption="X2oFP1Y9cSz" class="t1g2">
+<div class="a0" keyword="opt_c:Tb1Tt2">MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision</div>
+
+<div class="b0">&nbsp;</div>
+
+<div class="a1" keyword="opt_c:Tb1Tt2Tx1">Empowerment</div>
+
+<div class="b1"><input id="dbkK38teXGw-lXcGx74jYwB-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Empowerment (or reproductive empowerment)" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Empowerment (or reproductive empowerment) ]" /></div>
+
+<div class="a2" keyword="opt_c:Tb1Tt2Tx2">Gender Based Violence</div>
+
+<div class="b2"><input id="dbkK38teXGw-V0eWeTr4iS0-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Gender-based violence" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Gender-based violence ]" /></div>
+
+<div class="a3" keyword="opt_c:Tb1Tt2Tx3">Male engagement</div>
+
+<div class="b3"><input id="dbkK38teXGw-IyEEYnSY6vl-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Male engagement" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Male engagement ]" /></div>
+
+<div class="a4" keyword="opt_c:Tb1Tt2Tx4">Maternity care</div>
+
+<div class="b4"><input id="dbkK38teXGw-bbPo5zgHCCE-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Respectful maternity care" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Respectful maternity care ]" /></div>
+
+<div class="a5" keyword="opt_c:Tb1Tt2Tx5">Combination of 2 or more of the above</div>
+
+<div class="b5"><input id="dbkK38teXGw-Wpe6GEjWrLc-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Combination of 2 or more of the above" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision Combination of 2 or more of the above ]" /></div>
+
+<div class="a6" keyword="opt_c:Totals">Totals</div>
+
+<div class="b6"><input dataelementid="dbkK38teXGw" id="totaldbkK38teXGw" name="total" readonly="readonly" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision ]" /></div>
+</div>
+
+<div catoption="WsZxuqdjqxK" class="t1g3">
+<div class="title" keyword="opt_c:Tb1Tt2">MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision</div>
+
+<div class="title1">&nbsp;</div>
+
+<div class="fem" keyword="opt_c:Tb1Tt2Fem">Female</div>
+
+<div class="fem1"><input id="sQvpaUNTM2z-RaDA18EdM3O-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW Female" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW Female ]" /></div>
+
+<div class="male" keyword="opt_c:Tb1Tt2Male">Male</div>
+
+<div class="male1"><input id="sQvpaUNTM2z-GhdeQuQT3pI-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW Male" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW Male ]" /></div>
+
+<div class="unspec" keyword="opt_c:Tb1Tt2Unspecified">Unspecified (Sex)</div>
+
+<div class="unspec1"><input id="sQvpaUNTM2z-ZOFzuGOXt0U-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW Unspecified (sex)" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW Unspecified (sex) ]" /></div>
+
+<div class="total" keyword="opt_c:Totals">Total</div>
+
+<div class="total1"><input dataelementid="sQvpaUNTM2z" id="totalsQvpaUNTM2z" name="total" readonly="readonly" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision NEW ]" /></div>
+</div>
+
+</div>
+</div>
+
+<div catoption="RXB05TUtcpY" class="content_tabs" id="XCUT">
+<div catoption="uIV9qAbCPn6" class="t2g1">
+<div class="a0" keyword="opt_c:T2Tt1">MOMENTUM-supported facilities implementing QI</div>
+
+<div class="a1" keyword="opt_c:Tb2Tt1Tx1">PWI 1.1 / X.Cut.6_PSI_Did this facility/outlet receive supervision support during this 6-month period? (Y/N)</div>
+
+<div class="a2" keyword="opt_c:Tb2Tt1Tx2">X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities)</div>
+
+<div class="a3" keyword="opt_c:Tb2Tt1Tx3">X.Cut.3_Total number of annual outpatient department visits</div>
+
+<div class="a4" keyword="opt_c:Tb2Tt1Tx4">X.Cut.3_Total number of people residing in the catchment areas</div>
+
+<div class="b0">&nbsp;</div>
+
+<div class="b1"><input id="SINMQ7EXz0x-HllvX50cXC0-val" name="entryfield" title="MPHD - PSI PWI 1.1 / X.Cut.6_PSI_Momentum Supervision suppoort received during the period (y/n)" value="[ MPHD - PSI PWI 1.1 / X.Cut.6_PSI_Momentum Supervision suppoort received during the period (y/n) ]" /></div>
+
+<div class="b2"><input id="ngNzhyU3LMB-HllvX50cXC0-val" name="entryfield" title="MPHD - X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities) " value="[ MPHD - X.Cut.2 Estimated number of live births in MOMENTUM-supported areas (in and outside of facilities)  ]" /></div>
+
+<div class="b3"><input id="iCMsCCYcgsy-HllvX50cXC0-val" name="entryfield" title="MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI" value="[ MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI ]" /></div>
+
+<div class="b4"><input id="aB2GGd4PrEU-HllvX50cXC0-val" name="entryfield" title="MPHD - X.Cut.3_Total number of people residing in the catchment areas for the MOMENTUM-supported facilities which are implementing QI" value="[ MPHD - X.Cut.3_Total number of people residing in the catchment areas for the MOMENTUM-supported facilities which are implementing QI ]" /></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+        $(document).ready(function () {
+
+                $(".content_tabs").on("focus", "input", function (event) {
+                        $(this).attr('autocomplete', 'off')
+                });
+
+                $('.custom_tab li').click(function (e) {
+                        tab_selected = $(this).find('a').attr('href');
+                        switch (tab_selected) {
+                                case '#FACIL':
+                                        $('.content_tabs').css({
+                                                'display': 'none'
+                                        });
+                                        $(this).attr('tabindex', '0');
+                                        $(this).addClass('ui-state-hover');
+                                        $(this).addClass('ui-tabs-active');
+                                        $(this).addClass('ui-state-active');
+                                        $(this).attr('aria-selected', 'true');
+                                        $(this).attr('aria-expanded', 'true');
+                                        $('#FACIL').attr('aria-hidden', 'false');
+                                        $('#FACIL').css({
+                                                'display': 'block'
+                                        });
+                                        break;
+                                case '#XCUT':
+                                        $('.content_tabs').css({
+                                                'display': 'none'
+                                        });
+                                        $(this).attr('tabindex', '0');
+                                        $(this).addClass('ui-state-hover');
+                                        $(this).addClass('ui-tabs-active');
+                                        $(this).addClass('ui-state-active');
+                                        $(this).attr('aria-selected', 'true');
+                                        $(this).attr('aria-expanded', 'true');
+                                        $('#XCUT').attr('aria-hidden', 'false');
+                                        $('#XCUT').css({
+                                                'display': 'block'
+                                        });
+                                        break;
+                        }
+                });
+        });
+
+
+
+        var tab_swow = new Array();
+        var mphdCustomEntryFormObj = new MPHDCustomEntryForm();
+
+        $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
+                if ($("#MPHDCustomForm").length > 0) {
+                        $("#tabs").tabs();
+                        $("#MPHDCustomForm_Content").hide();
+                        $("#loaderDiv").show();
+
+                        new MPHDTranslation(function () {
+                                // $("#loaderDiv").hide();
+                                // $("#MPHDCustomForm_Content").show();
+
+                                console.log(" ========= INIT FORM ");
+                                mphdCustomEntryFormObj.retrieveCatOption(function () {
+                                        mphdCustomEntryFormObj.retrieveSelectedOrgUnitData();
+                                })
+
+                        });
+                }
+
+                $(document).off('dhis2.de.event.dataValuesLoaded').on('dhis2.de.event.dataValuesLoaded', function () {
+                        mphdCustomEntryFormObj.retrieveSelectedOrgUnitData();
+                });
+
+                // ============================================================================================================
+                // GCACITranslation
+
+                function MPHDTranslation(_exeFunc) {
+                        var me = this;
+
+                        me.exeFunc = _exeFunc;
+
+                        me.selectedDataSetIdTag = $("#selectedDataSetId");
+
+                        me.optionSetTermId = "gNKfPnkgPGx";
+
+                        me.loadedDataSetElementList = false;
+                        me.loadedOptionSetList = false;
+
+                        me.DATAELEMENT_KEY = "de_id";
+                        me.INDICATOR_KEY = "ind_id";
+                        me.CATOPTION_KEY = "catOpt_id";
+                        me.OPTION_KEY = "opt_c";
+
+
+                        // ----------------------------------------------------------------------------------------------
+                        // URLs
+
+                        me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
+                        console.log(me.PARAM_DATASET_ID);
+                        console.log(me.optionSetTermId);
+
+                        // me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription],categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
+                        me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
+                        me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId + ".json?fields=options[code,displayName]&paging=false";
+
+
+                        // ----------------------------------------------------------------------------------------------
+                        // HTML Element
+
+
+                        me.tableTag = $("body");
+
+                        // ----------------------------------------------------------------------------------------------
+                        // Init method
+
+                        me.init = function () {
+                                console.log("INIT translation ... ");
+                                me.translateDataSetElementList();
+                                me.translateOptionSetList();
+                        }
+
+                        // ----------------------------------------------------------------------------------------------
+                        // Supportive methods
+
+                        me.translateDataSetElementList = function () {
+                                var url = encodeURI(me.QUERY_URL_DATASET);
+                                url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
+
+                                me.loadMetadata(url, function (response) {
+
+                                        // Translate Data elements & Get CatOptions Map
+                                        var catOptionMap = {};
+                                        var dataSetElements = response.dataSetElements;
+
+                                        for (var i in dataSetElements) {
+                                                var dataElement = dataSetElements[i].dataElement;
+
+                                                // Translation for FORMNAME of DEs
+                                                var deDivTag = me.tableTag.find("[keyword='" + me.DATAELEMENT_KEY + ":" + dataElement.id + "']");
+                                                deDivTag.html(dataElement.displayFormName);
+
+                                                // Translation for DESCRIPTION of DEs
+                                                var descriptionDivTag = deDivTag.closest("div").find(".cta_dg");
+                                                if (descriptionDivTag.length > 0 && dataElement.displayDescription != undefined) {
+                                                        descriptionDivTag.attr("description", dataElement.displayDescription);
+                                                }
+
+                                                // Get CatOptions Map
+                                                var categories = dataElement.categoryCombo.categories;
+                                                for (var i in categories) {
+                                                        var categoryOptions = categories[i].categoryOptions;
+                                                        for (var j in categoryOptions) {
+                                                                var categoryOption = categoryOptions[j];
+                                                                catOptionMap[categoryOption.id] = categoryOption;
+                                                        }
+                                                }
+
+                                        }
+
+                                        // Translation categories
+                                        for (var key in catOptionMap) {
+                                                var catOption = catOptionMap[key];
+
+                                                // For CatOption NAME
+                                                var catOptionDivTag = me.tableTag.find("[keyword='" + me.CATOPTION_KEY + ":" + key + "']");
+                                                catOptionDivTag.html(catOption.displayName);
+
+                                                // For CatOption Description
+                                                var descriptionDivTag = catOptionDivTag.closest("div").find(".cta_dg");
+                                                if (descriptionDivTag.length > 0 && catOption.displayDescription != undefined) {
+                                                        descriptionDivTag.attr("description", catOption.displayDescription);
+                                                }
+
+
+                                        }
+
+
+                                        // Translate Indicators
+                                        var indicators = response.indicators;
+                                        for (var i in indicators) {
+                                                var indicator = indicators[i];
+                                                // Translation for NAME of Indicator
+                                                var indicatorDivTag = me.tableTag.find("[keyword='" + me.INDICATOR_KEY + ":" + indicator.id + "']");
+                                                indicatorDivTag.html(indicator.displayName);
+
+                                                // Translation for DESCRIPTION of Indicator
+                                                var descriptionDivTag = indicatorDivTag.closest("div").find(".cta_dg");
+                                                if (descriptionDivTag.length > 0 && indicator.displayDescription != undefined) {
+                                                        descriptionDivTag.attr("description", indicator.displayDescription);
+                                                }
+                                        }
+
+
+                                        me.loadedDataSetElementList = true;
+                                        me.afterLoadedTranslationData();
+
+                                });
+
+                        }
+
+                        me.translateOptionSetList = function () {
+                                var url = encodeURI(me.QUERY_URL_TERMS);
+                                me.loadMetadata(url, function (response) {
+
+                                        var options = response.options;
+                                        for (var j in options) {
+                                                var option = options[j];
+                                                var value = option.displayName;
+                                                me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']").html(value);
+                                                me.tableTag.find("[keyword-data='" + me.OPTION_KEY + ":" + option.code + "']").attr("keyword-data", value);
+                                        }
+
+                                        me.loadedOptionSetList = true;
+                                        me.afterLoadedTranslationData();
+                                });
+                        }
+
+                        me.afterLoadedTranslationData = function () {
+                                if (me.loadedDataSetElementList && me.loadedOptionSetList) {
+
+                                        me.exeFunc();
+                                }
+                        }
+
+                        me.loadMetadata = function (url, exeFunc) {
+                                $.ajax({
+                                        type: "GET"
+                                        , url: url
+                                        , contentType: "application/json;charset=utf-8"
+                                        , beforeSend: function (xhr) {
+                                                //me.hideReportTag();
+                                        }
+                                        , success: function (response) {
+                                                exeFunc(response);
+                                        }
+                                });
+
+                        }
+
+
+                        // ----------------------------------------------------------------------------------------------
+                        // init
+
+                        me.init();
+
+                }
+
+        });
+        function UIshowElements() {
+                var min = Math.min.apply(Math, tab_swow);
+
+                $('.content_tabs').css({
+                        'display': 'none'
+                });
+
+
+                switch (min) {
+                        case 1:
+                                // Facilities
+                                //ui-tabs-active
+                                $("#FACIL").css({
+                                        'display': 'block'
+                                });
+                                $("#tab1").addClass("ui-state-hover ui-tabs-active ui-state-active");
+                                $("#tab1").attr('tabindex', function (index, attr) {
+                                        return index + 1;
+                                });
+                                $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+                                $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+                                break;
+                        case 2:
+                                // X.Cut
+                                $("#XCUT").css({
+                                        'display': 'block'
+                                });
+                                $("#tab2").addClass("ui-state-hover ui-tabs-active ui-state-active");
+                                $("#tab2").attr('tabindex', function (index, attr) {
+                                        return index + 1;
+                                });
+                                $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+                                $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+                                break;
+                }
+                return;
+        }
+
+        function MPHDCustomEntryForm() {
+                var me = this;
+
+                me.loaderDivTag = $("#loaderDiv");
+                me.mphdCustomFormTag = $("#MPHDCustomForm_Content");
+
+                // ------------------------------------------------------------------------------
+                // Variables
+
+                me.ID_CATEGORY_SHOW_HIDE_SUB_CONTENT = "pUlIhiys6jD";
+
+                me.showHideContentCatOptionList = {};
+
+                // ------------------------------------------------------------------------------
+                // URLs
+
+                me.PARAM_ORGUNIT_ID = "@PARAM_ORGUNIT_ID";
+
+                me.QUERY_URL_CATEGORY_SHOW_HIDE_SUB_CONTENT = "../api/categories/" + me.ID_CATEGORY_SHOW_HIDE_SUB_CONTENT + ".json?fields=categoryOptions[id,organisationUnits[id,path]]";
+                me.QUERY_URL_SELECTED_ORGUNIT = "../api/organisationUnits/" + me.PARAM_ORGUNIT_ID + ".json?fields=id,path";
+
+
+                // ------------------------------------------------------------------------------
+
+                me.init = function () {
+                        me.retrieveCatOption(function () {
+                                me.retrieveSelectedOrgUnitData();
+                        })
+                }
+
+
+                // ------------------------------------------------------------------------------
+                // Retreive data
+
+                me.retrieveCatOption = function (execFunc) {
+                        $.ajax({
+                                type: "GET"
+                                , url: me.QUERY_URL_CATEGORY_SHOW_HIDE_SUB_CONTENT
+                                , contentType: "application/json;charset=utf-8"
+                                , beforeSend: function (xhr) {
+                                        me.hideEntryForm();
+                                }
+                                , success: function (response) {
+
+                                        me.showHideContentCatOptionList = response.categoryOptions;
+                                        if (execFunc) execFunc();
+                                }
+                        });
+                }
+
+
+                me.retrieveSelectedOrgUnitData = function () {
+
+                        var selectedOrgUnitId = dhis2.de.currentOrganisationUnitId;
+
+                        if (selectedOrgUnitId != "") {
+                                me.hideAllCatOptionPart();
+
+                                var url = me.QUERY_URL_SELECTED_ORGUNIT;
+                                url = url.replace(me.PARAM_ORGUNIT_ID, selectedOrgUnitId);
+
+                                $.ajax({
+                                        type: "GET"
+                                        , url: url
+                                        , contentType: "application/json;charset=utf-8"
+                                        , beforeSend: function (xhr) {
+                                                me.hideEntryForm();
+                                        }
+                                        , success: function (response) {
+
+                                                var path = response.path;
+
+                                                var catOptionList = me.showHideContentCatOptionList;
+                                                for (var i in catOptionList) {
+                                                        var catOption = catOptionList[i];
+                                                        var catOptOrgUnitList = catOption.organisationUnits;
+                                                        var found = me.searchOrgUnitPath(catOptOrgUnitList, path);
+                                                        if (found) {
+                                                                me.showOneCatOptionPart(catOption.id);
+                                                                UIshowElements();
+                                                        }
+                                                }
+
+
+                                                me.showEntryForm();
+                                        }
+                                });
+                        }
+
+                }
+
+                // ------------------------------------------------------------------------------
+                // Supportive methods
+
+                me.hideAllCatOptionPart = function () {
+                        $("[catOption]").hide();
+                }
+
+                me.showOneCatOptionPart = function (catOptionId) {
+
+                        //tab_swow.includes(2);
+                        // true
+
+                        switch (catOptionId) {
+                                case "Sq2K2cKqCgJ":
+                                        // FACIL
+                                        if (tab_swow.includes(1) == false) {
+                                                tab_swow.push(1);
+                                        }
+                                        break;
+                                case "RXB05TUtcpY":
+                                        // X.Cut
+                                        if (tab_swow.includes(2) == false) {
+                                                tab_swow.push(2);
+                                        }
+                                        break;
+                        }
+
+                        $("[catOption='" + catOptionId + "']").show();
+
+                }
+
+
+                me.hideEntryForm = function () {
+                        me.loaderDivTag.show();
+                        me.mphdCustomFormTag.hide();
+                }
+
+                me.showEntryForm = function () {
+                        me.loaderDivTag.hide();
+                        me.mphdCustomFormTag.show();
+                }
+
+                me.searchOrgUnitPath = function (list, path) {
+                        let item;
+
+                        if (list) {
+
+                                for (let i = 0; i < list.length; i++) {
+                                        let listItem = list[i];
+
+                                        if (path.indexOf(listItem.path) == 0) {
+                                                item = listItem;
+                                                break;
+                                        }
+                                }
+                        }
+
+                        return item;
+                }
+
+
+                // ------------------------------------------------------------------------------
+
+                me.init();
+
+        }
+</script>

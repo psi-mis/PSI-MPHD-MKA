@@ -398,6 +398,155 @@
   text-align: right;
 }
 
+.t1g3 {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "title title1" "fem fem1" "male male1" "unspec unspec1" "total total1";
+  padding: 8px 0 42px 0;
+}
+.t1g3 .title {
+  font-size: 1.1em !important;
+  font-weight: 800 !important;
+  color: #333333;
+  background-color: transparent;
+  padding: 8px;
+  border-bottom: 2px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: title;
+}
+.t1g3 .fem {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: fem;
+}
+.t1g3 .male {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: male;
+}
+.t1g3 .unspec {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-left: 1px solid #f7faff;
+  min-width: 90px;
+  grid-area: unspec;
+}
+.t1g3 .total {
+  font-size: 1.1em !important;
+  font-weight: 800 !important;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 2px solid #f7faff;
+  border-top: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 110px;
+  grid-area: total;
+}
+.t1g3 .title1 {
+  font-size: 1.1em !important;
+  font-weight: 800 !important;
+  color: #333333;
+  background-color: transparent;
+  padding: 8px;
+  border-bottom: 2px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  border-top: 1px solid #f7faff;
+  min-width: 110px;
+  text-align: center;
+  grid-area: title1;
+}
+.t1g3 .fem1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 90px;
+  text-align: right;
+  grid-area: fem1;
+}
+.t1g3 .fem1 input {
+  max-width: 104px;
+  text-align: right;
+}
+.t1g3 .male1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 90px;
+  text-align: right;
+  grid-area: male1;
+}
+.t1g3 .male1 input {
+  max-width: 104px;
+  text-align: right;
+}
+.t1g3 .unspec1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 90px;
+  text-align: right;
+  grid-area: unspec1;
+}
+.t1g3 .unspec1 input {
+  max-width: 104px;
+  text-align: right;
+}
+.t1g3 .total1 {
+  font-size: 1.1em !important;
+  font-weight: 500 !important;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 2px solid #f7faff;
+  border-top: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 110px;
+  text-align: right;
+  grid-area: total1;
+}
+.t1g3 .total1 input {
+  float: right;
+  max-width: 104px;
+  text-align: right;
+}
+
 .t2g1 {
   clear: both;
   display: grid;
