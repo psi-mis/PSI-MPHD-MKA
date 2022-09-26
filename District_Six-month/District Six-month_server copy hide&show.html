@@ -4051,6 +4051,9 @@
     });
   });
 
+  var tab_swow = new Array();
+  var customEntryForm = new MPHDCustomEntryForm();
+
   $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
     if ($("#MPHDCustomForm").length > 0) {
       $("#tabs").tabs();
