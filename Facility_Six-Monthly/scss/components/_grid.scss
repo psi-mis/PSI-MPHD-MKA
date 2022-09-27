@@ -9,8 +9,7 @@
     grid-template-areas:
         "a0 b0"
         "a1 b1"
-        "a2 b2"
-        "a3 b3";
+        "a2 b2";
     padding: 8px 0 42px 0;
 
     .a0 {
@@ -44,18 +43,6 @@
         border-left: 1px solid $Default-L;
         min-width: 90px;
         grid-area: a2;
-    }
-
-    .a3 {
-        font-size: 1em;
-        font-weight: 400;
-        color: $color2;
-        background-color: $Default-RW;
-        padding: 8px;
-        border-bottom: 1px solid $Default-L;
-        border-left: 1px solid $Default-L;
-        min-width: 90px;
-        grid-area: a3;
     }
 
     .b0 {
@@ -106,8 +93,30 @@
             text-align: right;
         }
     }
+}
 
-    .b3 {
+.t1g15 {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a0 a0"
+        "a1 b1";
+    padding: 8px 0 42px 0;
+
+    .a0 {
+        font-size: 1.1em !important;
+        font-weight: 800 !important;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: a0;
+    }
+
+    .a1 {
         font-size: 1em;
         font-weight: 400;
         color: $color2;
@@ -116,13 +125,41 @@
         border-bottom: 1px solid $Default-L;
         border-left: 1px solid $Default-L;
         min-width: 90px;
-        grid-area: b3;
+        grid-area: a1;
+    }
+
+    .b0 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        padding: 8px;
+        min-width: 90px;
+        grid-area: b0;
 
         input {
             max-width: 104px;
             text-align: right;
         }
     }
+
+    .b1 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        border-left: 1px solid $Default-L;
+        min-width: 90px;
+        grid-area: b1;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
 }
 
 .t1g2 {
