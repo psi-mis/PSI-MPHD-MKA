@@ -1,25 +1,27 @@
-<style type="text/css">@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+<style type="text/css">
+  @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
   .ty_h1 {
     color: #333333;
     font-size: 2rem;
   }
-  
+
   .ty_h3 {
     font-size: 1.2rem;
     color: #0072B2;
   }
-  
+
   .ty_h4 {
     padding-top: 18px;
     font-size: 1rem;
     color: #0072B2;
   }
-  
+
   .ta_left {
     text-align: left !important;
     font-weight: 400 !important;
   }
-  
+
   .ta_left_b {
     text-align: left !important;
     font-weight: 600 !important;
@@ -27,24 +29,24 @@
     border-top: 1px solid #007F93;
     background-color: rgba(0, 0, 0, 0.089);
   }
-  
+
   .ta_center {
     text-align: center !important;
   }
-  
+
   .ta_right {
     text-align: right !important;
     background-color: blueviolet !important;
     max-width: 150px !important;
   }
-  
+
   .text-overflow {
     display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  
+
   .material-icons {
     font-family: "Material Icons";
     font-weight: normal;
@@ -67,23 +69,23 @@
     /* Support for IE. */
     font-feature-settings: "liga";
   }
-  
+
   .material-icons.md-dark {
     color: rgba(0, 0, 0, 0.54);
   }
-  
+
   .material-icons.md-dark.md-inactive {
     color: rgba(0, 0, 0, 0.26);
   }
-  
+
   .material-icons.md-light {
     color: white;
   }
-  
+
   .material-icons.md-light.md-inactive {
     color: rgba(255, 255, 255, 0.3);
   }
-  
+
   .container-t1g1 {
     clear: both;
     display: grid;
@@ -94,17 +96,20 @@
     grid-template-areas: "rw data";
     padding: 8px 0 42px 0;
   }
+
   .container-t1g1 .rw {
     grid-area: rw;
   }
+
   .container-t1g1 .rw .t1g1a {
     display: grid;
     grid-template-columns: 250px auto;
     grid-template-rows: 114px 54px 85px 85px 85px 85px 54px 85px 85px 85px;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "title" "rwt1l" "rw1" "rw2" "rw3" "rw4" "rwt2l" "rw5" "rw6" "rw7";
+    grid-template-areas: "title""rwt1l""rw1""rw2""rw3""rw4""rwt2l""rw5""rw6""rw7";
   }
+
   .container-t1g1 .rw .t1g1a .title {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -115,6 +120,7 @@
     align-items: center;
     grid-area: title;
   }
+
   .container-t1g1 .rw .t1g1a .rwt1l {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -126,6 +132,7 @@
     align-items: center;
     grid-area: rwt1l;
   }
+
   .container-t1g1 .rw .t1g1a .rwt2l {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -137,6 +144,7 @@
     align-items: center;
     grid-area: rwt2l;
   }
+
   .container-t1g1 .rw .t1g1a .rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -149,6 +157,7 @@
     align-items: center;
     grid-area: rw1;
   }
+
   .container-t1g1 .rw .t1g1a .rw2 {
     font-size: 1em;
     font-weight: 400;
@@ -161,6 +170,7 @@
     align-items: center;
     grid-area: rw2;
   }
+
   .container-t1g1 .rw .t1g1a .rw3 {
     font-size: 1em;
     font-weight: 400;
@@ -173,6 +183,7 @@
     align-items: center;
     grid-area: rw3;
   }
+
   .container-t1g1 .rw .t1g1a .rw4 {
     font-size: 1em;
     font-weight: 400;
@@ -185,6 +196,7 @@
     align-items: center;
     grid-area: rw4;
   }
+
   .container-t1g1 .rw .t1g1a .rw5 {
     font-size: 1em;
     font-weight: 400;
@@ -197,6 +209,7 @@
     align-items: center;
     grid-area: rw5;
   }
+
   .container-t1g1 .rw .t1g1a .rw6 {
     font-size: 1em;
     font-weight: 400;
@@ -209,6 +222,7 @@
     align-items: center;
     grid-area: rw6;
   }
+
   .container-t1g1 .rw .t1g1a .rw7 {
     font-size: 1em;
     font-weight: 400;
@@ -221,31 +235,36 @@
     align-items: center;
     grid-area: rw7;
   }
+
   .container-t1g1 .data {
     width: 100%;
     overflow-x: auto;
     grid-area: data;
   }
+
   .container-t1g1 .data .t1g1b {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 38px 76px 54px 85px 85px 85px 85px 54px 85px 85px 85px;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "c_t1 c_t1 c_t1 c_t2 c_t3 c_t3 c_t3 t_cls" "c_t1-1 c_t1-2 c_t1-3 c_t2-1 c_t3-1 c_t3-2 c_t3-3 totals" "rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r" "c_t1-1-i1 c_t1-2-i1 c_t1-3-i1 c_t2-1-i1 c_t3-1-i1 c_t3-2-i1 c_t3-3-i1 c_tt1" "c_t1-1-i2 c_t1-2-i2 c_t1-3-i2 c_t2-1-i2 c_t3-1-i2 c_t3-2-i2 c_t3-3-i2 c_tt2" "c_t1-1-i3 c_t1-2-i3 c_t1-3-i3 c_t2-1-i3 c_t3-1-i3 c_t3-2-i3 c_t3-3-i3 c_tt3" "c_t1-1-i4 c_t1-2-i4 c_t1-3-i4 c_t2-1-i4 c_t3-1-i4 c_t3-2-i4 c_t3-3-i4 c_tt4" "rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r" "c_t1-1-i5 c_t1-2-i5 c_t1-3-i5 c_t2-1-i5 c_t3-1-i5 c_t3-2-i5 c_t3-3-i5 c_tt5" "c_t1-1-i6 c_t1-2-i6 c_t1-3-i6 c_t2-1-i6 c_t3-1-i6 c_t3-2-i6 c_t3-3-i6 c_tt6" "c_t1-1-i7 c_t1-2-i7 c_t1-3-i7 c_t2-1-i7 c_t3-1-i7 c_t3-2-i7 c_t3-3-i7 c_tt7";
+    grid-template-areas: "c_t1 c_t1 c_t1 c_t2 c_t3 c_t3 c_t3 t_cls""c_t1-1 c_t1-2 c_t1-3 c_t2-1 c_t3-1 c_t3-2 c_t3-3 totals""rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r rwt1r""c_t1-1-i1 c_t1-2-i1 c_t1-3-i1 c_t2-1-i1 c_t3-1-i1 c_t3-2-i1 c_t3-3-i1 c_tt1""c_t1-1-i2 c_t1-2-i2 c_t1-3-i2 c_t2-1-i2 c_t3-1-i2 c_t3-2-i2 c_t3-3-i2 c_tt2""c_t1-1-i3 c_t1-2-i3 c_t1-3-i3 c_t2-1-i3 c_t3-1-i3 c_t3-2-i3 c_t3-3-i3 c_tt3""c_t1-1-i4 c_t1-2-i4 c_t1-3-i4 c_t2-1-i4 c_t3-1-i4 c_t3-2-i4 c_t3-3-i4 c_tt4""rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r rwt2r""c_t1-1-i5 c_t1-2-i5 c_t1-3-i5 c_t2-1-i5 c_t3-1-i5 c_t3-2-i5 c_t3-3-i5 c_tt5""c_t1-1-i6 c_t1-2-i6 c_t1-3-i6 c_t2-1-i6 c_t3-1-i6 c_t3-2-i6 c_t3-3-i6 c_tt6""c_t1-1-i7 c_t1-2-i7 c_t1-3-i7 c_t2-1-i7 c_t3-1-i7 c_t3-2-i7 c_t3-3-i7 c_tt7";
   }
+
   .container-t1g1 .data .t1g1b .rwt1r {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwt1r;
   }
+
   .container-t1g1 .data .t1g1b .rwt2r {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwt2r;
   }
+
   .container-t1g1 .data .t1g1b .c_t1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -258,6 +277,7 @@
     text-align: center;
     grid-area: c_t1;
   }
+
   .container-t1g1 .data .t1g1b .c_t2 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -270,6 +290,7 @@
     text-align: center;
     grid-area: c_t2;
   }
+
   .container-t1g1 .data .t1g1b .c_t3 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -282,6 +303,7 @@
     text-align: center;
     grid-area: c_t3;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -297,6 +319,7 @@
     justify-content: center;
     grid-area: c_t1-1;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -313,6 +336,7 @@
     text-align: center;
     grid-area: c_t1-2;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -329,6 +353,7 @@
     text-align: center;
     grid-area: c_t1-3;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -345,6 +370,7 @@
     text-align: center;
     grid-area: c_t1-4;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -361,6 +387,7 @@
     text-align: center;
     grid-area: c_t2-1;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -377,6 +404,7 @@
     text-align: center;
     grid-area: c_t2-2;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -393,6 +421,7 @@
     text-align: center;
     grid-area: c_t3-1;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -409,6 +438,7 @@
     text-align: center;
     grid-area: c_t3-2;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -425,6 +455,7 @@
     text-align: center;
     grid-area: c_t3-3;
   }
+
   .container-t1g1 .data .t1g1b .totals {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -441,6 +472,7 @@
     text-align: center;
     grid-area: totals;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -454,10 +486,12 @@
     justify-content: center;
     grid-area: c_t1-1-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -471,10 +505,12 @@
     justify-content: center;
     grid-area: c_t1-1-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -488,10 +524,12 @@
     align-items: center;
     grid-area: c_t1-1-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -505,10 +543,12 @@
     align-items: center;
     grid-area: c_t1-1-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -522,10 +562,12 @@
     align-items: center;
     grid-area: c_t1-1-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -539,10 +581,12 @@
     align-items: center;
     grid-area: c_t1-1-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -556,10 +600,12 @@
     align-items: center;
     grid-area: c_t1-1-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-1-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -573,10 +619,12 @@
     align-items: center;
     grid-area: c_t1-2-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -590,10 +638,12 @@
     align-items: center;
     grid-area: c_t1-2-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -607,10 +657,12 @@
     align-items: center;
     grid-area: c_t1-2-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -624,10 +676,12 @@
     align-items: center;
     grid-area: c_t1-2-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -641,10 +695,12 @@
     align-items: center;
     grid-area: c_t1-2-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -658,10 +714,12 @@
     align-items: center;
     grid-area: c_t1-2-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -675,10 +733,12 @@
     align-items: center;
     grid-area: c_t1-2-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-2-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -692,10 +752,12 @@
     align-items: center;
     grid-area: c_t1-3-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -709,10 +771,12 @@
     align-items: center;
     grid-area: c_t1-3-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -726,10 +790,12 @@
     align-items: center;
     grid-area: c_t1-3-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -743,10 +809,12 @@
     align-items: center;
     grid-area: c_t1-3-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -760,10 +828,12 @@
     align-items: center;
     grid-area: c_t1-3-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -777,10 +847,12 @@
     align-items: center;
     grid-area: c_t1-3-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -794,10 +866,12 @@
     align-items: center;
     grid-area: c_t1-3-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-3-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -811,10 +885,12 @@
     align-items: center;
     grid-area: c_t1-4-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -828,10 +904,12 @@
     align-items: center;
     grid-area: c_t1-4-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -845,10 +923,12 @@
     align-items: center;
     grid-area: c_t1-4-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -862,10 +942,12 @@
     align-items: center;
     grid-area: c_t1-4-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -879,10 +961,12 @@
     align-items: center;
     grid-area: c_t1-4-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -896,10 +980,12 @@
     align-items: center;
     grid-area: c_t1-4-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -913,10 +999,12 @@
     align-items: center;
     grid-area: c_t1-4-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t1-4-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -930,10 +1018,12 @@
     align-items: center;
     grid-area: c_t2-1-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -947,10 +1037,12 @@
     align-items: center;
     grid-area: c_t2-1-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -964,10 +1056,12 @@
     align-items: center;
     grid-area: c_t2-1-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -981,10 +1075,12 @@
     align-items: center;
     grid-area: c_t2-1-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -998,10 +1094,12 @@
     align-items: center;
     grid-area: c_t2-1-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -1015,10 +1113,12 @@
     align-items: center;
     grid-area: c_t2-1-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -1032,10 +1132,12 @@
     align-items: center;
     grid-area: c_t2-1-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-1-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -1049,10 +1151,12 @@
     align-items: center;
     grid-area: c_t2-2-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -1066,10 +1170,12 @@
     align-items: center;
     grid-area: c_t2-2-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -1083,10 +1189,12 @@
     align-items: center;
     grid-area: c_t2-2-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -1100,10 +1208,12 @@
     align-items: center;
     grid-area: c_t2-2-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -1117,10 +1227,12 @@
     align-items: center;
     grid-area: c_t2-2-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -1134,10 +1246,12 @@
     align-items: center;
     grid-area: c_t2-2-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -1151,10 +1265,12 @@
     align-items: center;
     grid-area: c_t2-2-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t2-2-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -1168,10 +1284,12 @@
     align-items: center;
     grid-area: c_t3-1-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -1185,10 +1303,12 @@
     align-items: center;
     grid-area: c_t3-1-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -1202,10 +1322,12 @@
     align-items: center;
     grid-area: c_t3-1-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -1219,10 +1341,12 @@
     align-items: center;
     grid-area: c_t3-1-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -1236,10 +1360,12 @@
     align-items: center;
     grid-area: c_t3-1-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -1253,10 +1379,12 @@
     align-items: center;
     grid-area: c_t3-1-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -1270,10 +1398,12 @@
     align-items: center;
     grid-area: c_t3-1-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-1-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -1287,10 +1417,12 @@
     align-items: center;
     grid-area: c_t3-2-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i2 {
     font-size: 1em;
     font-weight: 400;
@@ -1304,10 +1436,12 @@
     align-items: center;
     grid-area: c_t3-2-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -1321,10 +1455,12 @@
     align-items: center;
     grid-area: c_t3-2-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -1338,10 +1474,12 @@
     align-items: center;
     grid-area: c_t3-2-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -1355,10 +1493,12 @@
     align-items: center;
     grid-area: c_t3-2-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -1372,10 +1512,12 @@
     align-items: center;
     grid-area: c_t3-2-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -1389,10 +1531,12 @@
     align-items: center;
     grid-area: c_t3-2-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-2-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i1 {
     font-size: 1em;
     font-weight: 400;
@@ -1406,10 +1550,12 @@
     align-items: center;
     grid-area: c_t3-3-i1;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i2 {
     font-size: 1em;
     font-weight: 500;
@@ -1423,10 +1569,12 @@
     align-items: center;
     grid-area: c_t3-3-i2;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i3 {
     font-size: 1em;
     font-weight: 400;
@@ -1440,10 +1588,12 @@
     align-items: center;
     grid-area: c_t3-3-i3;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i4 {
     font-size: 1em;
     font-weight: 400;
@@ -1457,10 +1607,12 @@
     align-items: center;
     grid-area: c_t3-3-i4;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i5 {
     font-size: 1em;
     font-weight: 400;
@@ -1474,10 +1626,12 @@
     align-items: center;
     grid-area: c_t3-3-i5;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i6 {
     font-size: 1em;
     font-weight: 400;
@@ -1491,10 +1645,12 @@
     align-items: center;
     grid-area: c_t3-3-i6;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i7 {
     font-size: 1em;
     font-weight: 400;
@@ -1508,10 +1664,12 @@
     align-items: center;
     grid-area: c_t3-3-i7;
   }
+
   .container-t1g1 .data .t1g1b .c_t3-3-i7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt1 {
     font-size: 1em;
     font-weight: 400;
@@ -1525,10 +1683,12 @@
     align-items: center;
     grid-area: c_tt1;
   }
+
   .container-t1g1 .data .t1g1b .c_tt1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt2 {
     font-size: 1em;
     font-weight: 400;
@@ -1542,10 +1702,12 @@
     align-items: center;
     grid-area: c_tt2;
   }
+
   .container-t1g1 .data .t1g1b .c_tt2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt3 {
     font-size: 1em;
     font-weight: 400;
@@ -1559,10 +1721,12 @@
     align-items: center;
     grid-area: c_tt3;
   }
+
   .container-t1g1 .data .t1g1b .c_tt3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt4 {
     font-size: 1em;
     font-weight: 400;
@@ -1576,10 +1740,12 @@
     align-items: center;
     grid-area: c_tt4;
   }
+
   .container-t1g1 .data .t1g1b .c_tt4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt5 {
     font-size: 1em;
     font-weight: 400;
@@ -1593,10 +1759,12 @@
     align-items: center;
     grid-area: c_tt5;
   }
+
   .container-t1g1 .data .t1g1b .c_tt5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt6 {
     font-size: 1em;
     font-weight: 400;
@@ -1610,10 +1778,12 @@
     align-items: center;
     grid-area: c_tt6;
   }
+
   .container-t1g1 .data .t1g1b .c_tt6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .container-t1g1 .data .t1g1b .c_tt7 {
     font-size: 1em;
     font-weight: 400;
@@ -1627,11 +1797,12 @@
     align-items: center;
     grid-area: c_tt7;
   }
+
   .container-t1g1 .data .t1g1b .c_tt7 input {
     max-width: 104px;
     text-align: right;
   }
-  
+
   .t1g2 {
     clear: both;
     display: grid;
@@ -1639,9 +1810,10 @@
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "title c1 c2 c3 c4" "title_private rwcls1 rwcls1 rwcls1 rwcls1" "private_rw1 vc1_0 vc2_0 vc3_0 vc4_0" "private_rw2 vc1_1 vc2_1 vc3_1 vc4_1" "private_rw3 vc1_2 vc2_2 vc3_2 vc4_2" "title_unspecified rwcls2 rwcls2 rwcls2 rwcls2" "unspecified_rw1 vc1_4 vc2_4 vc3_4 vc4_4" "title_public rwcls3 rwcls3 rwcls3 rwcls3" "public_rw1 vc1_6 vc2_6 vc3_6 vc4_6" "public_rw2 vc1_7 vc2_7 vc3_7 vc4_7" "public_rw3 vc1_8 vc2_8 vc3_8 vc4_8" "totals tls tls tls tls";
+    grid-template-areas: "title c1 c2 c3 c4""title_private rwcls1 rwcls1 rwcls1 rwcls1""private_rw1 vc1_0 vc2_0 vc3_0 vc4_0""private_rw2 vc1_1 vc2_1 vc3_1 vc4_1""private_rw3 vc1_2 vc2_2 vc3_2 vc4_2""title_unspecified rwcls2 rwcls2 rwcls2 rwcls2""unspecified_rw1 vc1_4 vc2_4 vc3_4 vc4_4""title_public rwcls3 rwcls3 rwcls3 rwcls3""public_rw1 vc1_6 vc2_6 vc3_6 vc4_6""public_rw2 vc1_7 vc2_7 vc3_7 vc4_7""public_rw3 vc1_8 vc2_8 vc3_8 vc4_8""totals tls tls tls tls";
     padding: 8px 0 42px 0;
   }
+
   .t1g2 .title {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1650,6 +1822,7 @@
     min-width: 90px;
     grid-area: title;
   }
+
   .t1g2 .c1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1665,6 +1838,7 @@
     text-align: center;
     grid-area: c1;
   }
+
   .t1g2 .c2 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1680,6 +1854,7 @@
     text-align: center;
     grid-area: c2;
   }
+
   .t1g2 .c3 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1695,6 +1870,7 @@
     text-align: center;
     grid-area: c3;
   }
+
   .t1g2 .c4 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1710,6 +1886,7 @@
     text-align: center;
     grid-area: c4;
   }
+
   .t1g2 .title_private {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1721,12 +1898,14 @@
     align-items: center;
     grid-area: title_private;
   }
+
   .t1g2 .rwcls1 {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwcls1;
   }
+
   .t1g2 .private_rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -1739,6 +1918,7 @@
     align-items: center;
     grid-area: private_rw1;
   }
+
   .t1g2 .private_rw2 {
     font-size: 1em;
     font-weight: 400;
@@ -1751,6 +1931,7 @@
     align-items: center;
     grid-area: private_rw2;
   }
+
   .t1g2 .private_rw3 {
     font-size: 1em;
     font-weight: 400;
@@ -1763,6 +1944,7 @@
     align-items: center;
     grid-area: private_rw3;
   }
+
   .t1g2 .title_unspecified {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1774,6 +1956,7 @@
     align-items: center;
     grid-area: title_unspecified;
   }
+
   .t1g2 .unspecified_rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -1786,6 +1969,7 @@
     align-items: center;
     grid-area: unspecified_rw1;
   }
+
   .t1g2 .title_public {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -1797,6 +1981,7 @@
     align-items: center;
     grid-area: title_public;
   }
+
   .t1g2 .public_rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -1809,6 +1994,7 @@
     align-items: center;
     grid-area: public_rw1;
   }
+
   .t1g2 .public_rw2 {
     font-size: 1em;
     font-weight: 400;
@@ -1821,6 +2007,7 @@
     align-items: center;
     grid-area: public_rw2;
   }
+
   .t1g2 .public_rw3 {
     font-size: 1em;
     font-weight: 400;
@@ -1833,6 +2020,7 @@
     align-items: center;
     grid-area: public_rw3;
   }
+
   .t1g2 .totals {
     font-size: 1em;
     font-weight: 500;
@@ -1845,6 +2033,7 @@
     align-items: center;
     grid-area: totals;
   }
+
   .t1g2 .tls {
     font-size: 1em;
     font-weight: 400;
@@ -1856,22 +2045,26 @@
     text-align: center;
     grid-area: tls;
   }
+
   .t1g2 .tls input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .rwcls2 {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwcls2;
   }
+
   .t1g2 .rwcls3 {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwcls3;
   }
+
   .t1g2 .vc1_0 {
     font-size: 1em;
     font-weight: 400;
@@ -1885,10 +2078,12 @@
     align-items: center;
     grid-area: vc1_0;
   }
+
   .t1g2 .vc1_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc1_1 {
     font-size: 1em;
     font-weight: 400;
@@ -1902,10 +2097,12 @@
     align-items: center;
     grid-area: vc1_1;
   }
+
   .t1g2 .vc1_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc1_2 {
     font-size: 1em;
     font-weight: 400;
@@ -1919,10 +2116,12 @@
     align-items: center;
     grid-area: vc1_2;
   }
+
   .t1g2 .vc1_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc1_4 {
     font-size: 1em;
     font-weight: 400;
@@ -1936,10 +2135,12 @@
     align-items: center;
     grid-area: vc1_4;
   }
+
   .t1g2 .vc1_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc1_6 {
     font-size: 1em;
     font-weight: 400;
@@ -1953,10 +2154,12 @@
     align-items: center;
     grid-area: vc1_6;
   }
+
   .t1g2 .vc1_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc1_7 {
     font-size: 1em;
     font-weight: 400;
@@ -1970,10 +2173,12 @@
     align-items: center;
     grid-area: vc1_7;
   }
+
   .t1g2 .vc1_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc1_8 {
     font-size: 1em;
     font-weight: 400;
@@ -1987,10 +2192,12 @@
     align-items: center;
     grid-area: vc1_8;
   }
+
   .t1g2 .vc1_8 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_0 {
     font-size: 1em;
     font-weight: 400;
@@ -2004,10 +2211,12 @@
     align-items: center;
     grid-area: vc2_0;
   }
+
   .t1g2 .vc2_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_1 {
     font-size: 1em;
     font-weight: 400;
@@ -2021,10 +2230,12 @@
     align-items: center;
     grid-area: vc2_1;
   }
+
   .t1g2 .vc2_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_2 {
     font-size: 1em;
     font-weight: 400;
@@ -2038,10 +2249,12 @@
     align-items: center;
     grid-area: vc2_2;
   }
+
   .t1g2 .vc2_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_4 {
     font-size: 1em;
     font-weight: 400;
@@ -2055,10 +2268,12 @@
     align-items: center;
     grid-area: vc2_4;
   }
+
   .t1g2 .vc2_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_6 {
     font-size: 1em;
     font-weight: 400;
@@ -2072,10 +2287,12 @@
     align-items: center;
     grid-area: vc2_6;
   }
+
   .t1g2 .vc2_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_7 {
     font-size: 1em;
     font-weight: 400;
@@ -2089,10 +2306,12 @@
     align-items: center;
     grid-area: vc2_7;
   }
+
   .t1g2 .vc2_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc2_8 {
     font-size: 1em;
     font-weight: 400;
@@ -2106,10 +2325,12 @@
     align-items: center;
     grid-area: vc2_8;
   }
+
   .t1g2 .vc2_8 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_0 {
     font-size: 1em;
     font-weight: 400;
@@ -2123,10 +2344,12 @@
     align-items: center;
     grid-area: vc3_0;
   }
+
   .t1g2 .vc3_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_1 {
     font-size: 1em;
     font-weight: 400;
@@ -2140,10 +2363,12 @@
     align-items: center;
     grid-area: vc3_1;
   }
+
   .t1g2 .vc3_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_2 {
     font-size: 1em;
     font-weight: 400;
@@ -2157,10 +2382,12 @@
     align-items: center;
     grid-area: vc3_2;
   }
+
   .t1g2 .vc3_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_4 {
     font-size: 1em;
     font-weight: 400;
@@ -2174,10 +2401,12 @@
     align-items: center;
     grid-area: vc3_4;
   }
+
   .t1g2 .vc3_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_6 {
     font-size: 1em;
     font-weight: 400;
@@ -2191,10 +2420,12 @@
     align-items: center;
     grid-area: vc3_6;
   }
+
   .t1g2 .vc3_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_7 {
     font-size: 1em;
     font-weight: 400;
@@ -2208,10 +2439,12 @@
     align-items: center;
     grid-area: vc3_7;
   }
+
   .t1g2 .vc3_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc3_8 {
     font-size: 1em;
     font-weight: 400;
@@ -2225,10 +2458,12 @@
     align-items: center;
     grid-area: vc3_8;
   }
+
   .t1g2 .vc3_8 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_0 {
     font-size: 1em;
     font-weight: 400;
@@ -2242,10 +2477,12 @@
     align-items: center;
     grid-area: vc4_0;
   }
+
   .t1g2 .vc4_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_1 {
     font-size: 1em;
     font-weight: 400;
@@ -2259,10 +2496,12 @@
     align-items: center;
     grid-area: vc4_1;
   }
+
   .t1g2 .vc4_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_2 {
     font-size: 1em;
     font-weight: 400;
@@ -2276,10 +2515,12 @@
     align-items: center;
     grid-area: vc4_2;
   }
+
   .t1g2 .vc4_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_4 {
     font-size: 1em;
     font-weight: 400;
@@ -2293,10 +2534,12 @@
     align-items: center;
     grid-area: vc4_4;
   }
+
   .t1g2 .vc4_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_6 {
     font-size: 1em;
     font-weight: 400;
@@ -2310,10 +2553,12 @@
     align-items: center;
     grid-area: vc4_6;
   }
+
   .t1g2 .vc4_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_7 {
     font-size: 1em;
     font-weight: 400;
@@ -2327,10 +2572,12 @@
     align-items: center;
     grid-area: vc4_7;
   }
+
   .t1g2 .vc4_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g2 .vc4_8 {
     font-size: 1em;
     font-weight: 400;
@@ -2344,20 +2591,22 @@
     align-items: center;
     grid-area: vc4_8;
   }
+
   .t1g2 .vc4_8 input {
     max-width: 104px;
     text-align: right;
   }
-  
+
   .t1g4 {
     clear: both;
     display: grid;
     grid-template-columns: auto 130px 130px 130px 130px 130px;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title c1 c2 c3 c4 totals" "r1 c1i1 c2i1 c3i1 c4i1 ctt1";
+    grid-template-areas: "title c1 c2 c3 c4 totals""r1 c1i1 c2i1 c3i1 c4i1 ctt1";
     padding: 8px 0 42px 0;
   }
+
   .t1g4 .title {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2366,6 +2615,7 @@
     min-width: 90px;
     grid-area: title;
   }
+
   .t1g4 .c1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2378,6 +2628,7 @@
     text-align: center;
     grid-area: c1;
   }
+
   .t1g4 .c2 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2390,6 +2641,7 @@
     text-align: center;
     grid-area: c2;
   }
+
   .t1g4 .c3 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2402,6 +2654,7 @@
     text-align: center;
     grid-area: c3;
   }
+
   .t1g4 .c4 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2414,6 +2667,7 @@
     text-align: center;
     grid-area: c4;
   }
+
   .t1g4 .c5 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2426,6 +2680,7 @@
     text-align: center;
     grid-area: c5;
   }
+
   .t1g4 .totals {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2441,6 +2696,7 @@
     text-align: center;
     grid-area: totals;
   }
+
   .t1g4 .r1 {
     font-size: 1em;
     font-weight: 400;
@@ -2452,6 +2708,7 @@
     min-width: 90px;
     grid-area: r1;
   }
+
   .t1g4 .c1i1 {
     font-size: 1em;
     font-weight: 400;
@@ -2465,10 +2722,12 @@
     align-items: center;
     grid-area: c1i1;
   }
+
   .t1g4 .c1i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g4 .c2i1 {
     font-size: 1em;
     font-weight: 400;
@@ -2482,10 +2741,12 @@
     align-items: center;
     grid-area: c2i1;
   }
+
   .t1g4 .c2i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g4 .c3i1 {
     font-size: 1em;
     font-weight: 400;
@@ -2499,10 +2760,12 @@
     align-items: center;
     grid-area: c3i1;
   }
+
   .t1g4 .c3i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g4 .c4i1 {
     font-size: 1em;
     font-weight: 400;
@@ -2516,10 +2779,12 @@
     align-items: center;
     grid-area: c4i1;
   }
+
   .t1g4 .c4i1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g4 .ctt1 {
     font-size: 1em;
     font-weight: 400;
@@ -2532,11 +2797,12 @@
     align-items: center;
     grid-area: ctt1;
   }
+
   .t1g4 .ctt1 input {
     max-width: 104px;
     text-align: right;
   }
-  
+
   .t1g5 {
     clear: both;
     display: grid;
@@ -2544,9 +2810,10 @@
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "title title1" "fem fem1" "male male1" "unspec unspec1" "total total1";
+    grid-template-areas: "title title1""fem fem1""male male1""unspec unspec1""total total1";
     padding: 8px 0 42px 0;
   }
+
   .t1g5 .title {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2558,6 +2825,7 @@
     min-width: 90px;
     grid-area: title;
   }
+
   .t1g5 .fem {
     font-size: 1em;
     font-weight: 400;
@@ -2570,6 +2838,7 @@
     min-width: 90px;
     grid-area: fem;
   }
+
   .t1g5 .male {
     font-size: 1em;
     font-weight: 400;
@@ -2582,6 +2851,7 @@
     min-width: 90px;
     grid-area: male;
   }
+
   .t1g5 .unspec {
     font-size: 1em;
     font-weight: 400;
@@ -2594,6 +2864,7 @@
     min-width: 90px;
     grid-area: unspec;
   }
+
   .t1g5 .total {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2606,6 +2877,7 @@
     min-width: 110px;
     grid-area: total;
   }
+
   .t1g5 .title1 {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2619,6 +2891,7 @@
     text-align: center;
     grid-area: title1;
   }
+
   .t1g5 .fem1 {
     font-size: 1em;
     font-weight: 400;
@@ -2631,10 +2904,12 @@
     text-align: right;
     grid-area: fem1;
   }
+
   .t1g5 .fem1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g5 .male1 {
     font-size: 1em;
     font-weight: 400;
@@ -2647,10 +2922,12 @@
     text-align: right;
     grid-area: male1;
   }
+
   .t1g5 .male1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g5 .unspec1 {
     font-size: 1em;
     font-weight: 400;
@@ -2663,10 +2940,12 @@
     text-align: right;
     grid-area: unspec1;
   }
+
   .t1g5 .unspec1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t1g5 .total1 {
     font-size: 1.1em !important;
     font-weight: 500 !important;
@@ -2680,21 +2959,23 @@
     text-align: right;
     grid-area: total1;
   }
+
   .t1g5 .total1 input {
     float: right;
     max-width: 104px;
     text-align: right;
   }
-  
+
   .t2g1 {
     clear: both;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "title title" "rw1 i1";
+    grid-template-areas: "title title""rw1 i1";
     padding: 8px 0 42px 0;
   }
+
   .t2g1 .title {
     font-size: 1.1em !important;
     font-weight: 800 !important;
@@ -2703,6 +2984,7 @@
     min-width: 90px;
     grid-area: title;
   }
+
   .t2g1 .rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -2714,6 +2996,7 @@
     min-width: 90px;
     grid-area: rw1;
   }
+
   .t2g1 .i1 {
     font-size: 1em;
     font-weight: 400;
@@ -2726,11 +3009,12 @@
     text-align: right;
     grid-area: i1;
   }
+
   .t2g1 .i1 input {
     max-width: 104px;
     text-align: right;
   }
-  
+
   .t2g2 {
     clear: both;
     display: grid;
@@ -2738,9 +3022,10 @@
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "title c1 c2" "prw1 pc1 pc2" "hwrw1 hwpc1 hwpc2" "title_private rwcls1 rwcls1" "private_rw1 vc1_0 vc2_0" "private_rw2 vc1_1 vc2_1" "private_rw3 vc1_2 vc2_2" "private_rw4 vc1_3 vc2_3" "title_unspecified rwcls2 rwcls2" "unspecified_rw1 vc1_4 vc2_4" "unspecified_rw2 vc1_5 vc2_5" "title_public rwcls3 rwcls3" "public_rw1 vc1_6 vc2_6" "public_rw2 vc1_7 vc2_7" "public_rw3 vc1_8 vc2_8" "totals tts1 tts2";
+    grid-template-areas: "title c1 c2""prw1 pc1 pc2""hwrw1 hwpc1 hwpc2""title_private rwcls1 rwcls1""private_rw1 vc1_0 vc2_0""private_rw2 vc1_1 vc2_1""private_rw3 vc1_2 vc2_2""private_rw4 vc1_3 vc2_3""title_unspecified rwcls2 rwcls2""unspecified_rw1 vc1_4 vc2_4""unspecified_rw2 vc1_5 vc2_5""title_public rwcls3 rwcls3""public_rw1 vc1_6 vc2_6""public_rw2 vc1_7 vc2_7""public_rw3 vc1_8 vc2_8""totals tts1 tts2";
     padding: 8px 0 42px 0;
   }
+
   .t2g2 .prw1 {
     font-size: 1em;
     font-weight: 400;
@@ -2753,6 +3038,7 @@
     align-items: center;
     grid-area: prw1;
   }
+
   .t2g2 .pc1 {
     font-size: 1em;
     font-weight: 400;
@@ -2765,10 +3051,12 @@
     text-align: right;
     grid-area: pc1;
   }
+
   .t2g2 .pc1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .pc2 {
     font-size: 1em;
     font-weight: 400;
@@ -2781,10 +3069,12 @@
     text-align: right;
     grid-area: pc2;
   }
+
   .t2g2 .pc2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .hwrw1 {
     font-size: 1em;
     font-weight: 400;
@@ -2797,6 +3087,7 @@
     align-items: center;
     grid-area: hwrw1;
   }
+
   .t2g2 .hwpc1 {
     font-size: 1em;
     font-weight: 400;
@@ -2809,10 +3100,12 @@
     text-align: right;
     grid-area: hwpc1;
   }
+
   .t2g2 .hwpc1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .hwpc2 {
     font-size: 1em;
     font-weight: 400;
@@ -2825,10 +3118,12 @@
     text-align: right;
     grid-area: hwpc2;
   }
+
   .t2g2 .hwpc2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .title {
     font-size: 1.1em !important;
     font-weight: 800;
@@ -2837,6 +3132,7 @@
     min-width: 90px;
     grid-area: title;
   }
+
   .t2g2 .totals {
     font-size: 1em;
     font-weight: 800;
@@ -2848,6 +3144,7 @@
     text-align: left;
     grid-area: totals;
   }
+
   .t2g2 .c1 {
     font-size: 1.1em !important;
     font-weight: 800;
@@ -2860,6 +3157,7 @@
     text-align: left;
     grid-area: c1;
   }
+
   .t2g2 .c2 {
     font-size: 1.1em !important;
     font-weight: 800;
@@ -2872,6 +3170,7 @@
     text-align: left;
     grid-area: c2;
   }
+
   .t2g2 .title_private {
     font-size: 1.1em !important;
     font-weight: 800;
@@ -2883,12 +3182,14 @@
     align-items: center;
     grid-area: title_private;
   }
+
   .t2g2 .rwcls1 {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwcls1;
   }
+
   .t2g2 .private_rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -2901,6 +3202,7 @@
     align-items: center;
     grid-area: private_rw1;
   }
+
   .t2g2 .private_rw2 {
     font-size: 1em;
     font-weight: 400;
@@ -2913,6 +3215,7 @@
     align-items: center;
     grid-area: private_rw2;
   }
+
   .t2g2 .private_rw3 {
     font-size: 1em;
     font-weight: 400;
@@ -2925,6 +3228,7 @@
     align-items: center;
     grid-area: private_rw3;
   }
+
   .t2g2 .private_rw4 {
     font-size: 1em;
     font-weight: 400;
@@ -2937,6 +3241,7 @@
     align-items: center;
     grid-area: private_rw4;
   }
+
   .t2g2 .title_unspecified {
     font-size: 1.1em !important;
     font-weight: 800;
@@ -2948,6 +3253,7 @@
     align-items: center;
     grid-area: title_unspecified;
   }
+
   .t2g2 .unspecified_rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -2960,6 +3266,7 @@
     align-items: center;
     grid-area: unspecified_rw1;
   }
+
   .t2g2 .unspecified_rw2 {
     font-size: 1em;
     font-weight: 400;
@@ -2972,6 +3279,7 @@
     align-items: center;
     grid-area: unspecified_rw2;
   }
+
   .t2g2 .title_public {
     font-size: 1.1em !important;
     font-weight: 800;
@@ -2983,6 +3291,7 @@
     align-items: center;
     grid-area: title_public;
   }
+
   .t2g2 .public_rw1 {
     font-size: 1em;
     font-weight: 400;
@@ -2995,6 +3304,7 @@
     align-items: center;
     grid-area: public_rw1;
   }
+
   .t2g2 .public_rw2 {
     font-size: 1em;
     font-weight: 400;
@@ -3007,6 +3317,7 @@
     align-items: center;
     grid-area: public_rw2;
   }
+
   .t2g2 .public_rw3 {
     font-size: 1em;
     font-weight: 400;
@@ -3019,18 +3330,21 @@
     align-items: center;
     grid-area: public_rw3;
   }
+
   .t2g2 .rwcls2 {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwcls2;
   }
+
   .t2g2 .rwcls3 {
     background-color: #e7efff;
     border-bottom: 1px solid #f7faff;
     border-left: 1px solid #f7faff;
     grid-area: rwcls3;
   }
+
   .t2g2 .vc1_0 {
     font-size: 1em;
     font-weight: 400;
@@ -3043,10 +3357,12 @@
     text-align: right;
     grid-area: vc1_0;
   }
+
   .t2g2 .vc1_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_1 {
     font-size: 1em;
     font-weight: 400;
@@ -3059,10 +3375,12 @@
     text-align: right;
     grid-area: vc1_1;
   }
+
   .t2g2 .vc1_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_2 {
     font-size: 1em;
     font-weight: 400;
@@ -3075,10 +3393,12 @@
     text-align: right;
     grid-area: vc1_2;
   }
+
   .t2g2 .vc1_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_3 {
     font-size: 1em;
     font-weight: 400;
@@ -3091,10 +3411,12 @@
     text-align: right;
     grid-area: vc1_3;
   }
+
   .t2g2 .vc1_3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_4 {
     font-size: 1em;
     font-weight: 400;
@@ -3107,10 +3429,12 @@
     text-align: right;
     grid-area: vc1_4;
   }
+
   .t2g2 .vc1_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_5 {
     font-size: 1em;
     font-weight: 400;
@@ -3123,10 +3447,12 @@
     text-align: right;
     grid-area: vc1_5;
   }
+
   .t2g2 .vc1_5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_6 {
     font-size: 1em;
     font-weight: 400;
@@ -3139,10 +3465,12 @@
     text-align: right;
     grid-area: vc1_6;
   }
+
   .t2g2 .vc1_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_7 {
     font-size: 1em;
     font-weight: 400;
@@ -3155,10 +3483,12 @@
     text-align: right;
     grid-area: vc1_7;
   }
+
   .t2g2 .vc1_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc1_8 {
     font-size: 1em;
     font-weight: 400;
@@ -3171,10 +3501,12 @@
     text-align: right;
     grid-area: vc1_8;
   }
+
   .t2g2 .vc1_8 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_0 {
     font-size: 1em;
     font-weight: 400;
@@ -3187,10 +3519,12 @@
     text-align: right;
     grid-area: vc2_0;
   }
+
   .t2g2 .vc2_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_1 {
     font-size: 1em;
     font-weight: 400;
@@ -3203,10 +3537,12 @@
     text-align: right;
     grid-area: vc2_1;
   }
+
   .t2g2 .vc2_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_2 {
     font-size: 1em;
     font-weight: 400;
@@ -3219,10 +3555,12 @@
     text-align: right;
     grid-area: vc2_2;
   }
+
   .t2g2 .vc2_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_3 {
     font-size: 1em;
     font-weight: 400;
@@ -3235,10 +3573,12 @@
     text-align: right;
     grid-area: vc2_3;
   }
+
   .t2g2 .vc2_3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_4 {
     font-size: 1em;
     font-weight: 400;
@@ -3251,10 +3591,12 @@
     text-align: right;
     grid-area: vc2_4;
   }
+
   .t2g2 .vc2_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_5 {
     font-size: 1em;
     font-weight: 400;
@@ -3267,10 +3609,12 @@
     text-align: right;
     grid-area: vc2_5;
   }
+
   .t2g2 .vc2_5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_6 {
     font-size: 1em;
     font-weight: 400;
@@ -3283,10 +3627,12 @@
     text-align: right;
     grid-area: vc2_6;
   }
+
   .t2g2 .vc2_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_7 {
     font-size: 1em;
     font-weight: 400;
@@ -3299,10 +3645,12 @@
     text-align: right;
     grid-area: vc2_7;
   }
+
   .t2g2 .vc2_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc2_8 {
     font-size: 1em;
     font-weight: 400;
@@ -3315,10 +3663,12 @@
     text-align: right;
     grid-area: vc2_8;
   }
+
   .t2g2 .vc2_8 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_0 {
     font-size: 1em;
     font-weight: 400;
@@ -3331,10 +3681,12 @@
     text-align: right;
     grid-area: vc5_0;
   }
+
   .t2g2 .vc5_0 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_1 {
     font-size: 1em;
     font-weight: 400;
@@ -3347,10 +3699,12 @@
     text-align: right;
     grid-area: vc5_1;
   }
+
   .t2g2 .vc5_1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_2 {
     font-size: 1em;
     font-weight: 400;
@@ -3363,10 +3717,12 @@
     text-align: right;
     grid-area: vc5_2;
   }
+
   .t2g2 .vc5_2 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_3 {
     font-size: 1em;
     font-weight: 400;
@@ -3379,10 +3735,12 @@
     text-align: right;
     grid-area: vc5_3;
   }
+
   .t2g2 .vc5_3 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_4 {
     font-size: 1em;
     font-weight: 400;
@@ -3395,10 +3753,12 @@
     text-align: right;
     grid-area: vc5_4;
   }
+
   .t2g2 .vc5_4 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_5 {
     font-size: 1em;
     font-weight: 400;
@@ -3411,10 +3771,12 @@
     text-align: right;
     grid-area: vc5_5;
   }
+
   .t2g2 .vc5_5 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_6 {
     font-size: 1em;
     font-weight: 400;
@@ -3427,10 +3789,12 @@
     text-align: right;
     grid-area: vc5_6;
   }
+
   .t2g2 .vc5_6 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_7 {
     font-size: 1em;
     font-weight: 400;
@@ -3443,10 +3807,12 @@
     text-align: right;
     grid-area: vc5_7;
   }
+
   .t2g2 .vc5_7 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .vc5_8 {
     font-size: 1em;
     font-weight: 400;
@@ -3459,10 +3825,12 @@
     text-align: right;
     grid-area: vc5_8;
   }
+
   .t2g2 .vc5_8 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .tts1 {
     font-size: 1em;
     font-weight: 400;
@@ -3475,10 +3843,12 @@
     text-align: right;
     grid-area: tts1;
   }
+
   .t2g2 .tts1 input {
     max-width: 104px;
     text-align: right;
   }
+
   .t2g2 .tts2 {
     font-size: 1em;
     font-weight: 400;
@@ -3491,506 +3861,875 @@
     text-align: right;
     grid-area: tts2;
   }
+
   .t2g2 .tts2 input {
     max-width: 104px;
     text-align: right;
   }
-  
+
   .custom_tab {
     border: 1px solid #d6e5ff;
     background: #d6e5ff;
     color: #ffffff;
     font-weight: bold;
   }
-  
+
   .totals input {
     background-color: #DCDCDC !important;
   }
-  
+
   i,
   rem {
     color: #8a7474;
     font-weight: 300;
     font-size: 0.5em;
   }
-  
+
   .img_logo {
     width: 100%;
     height: 120px;
     box-sizing: border-box;
   }
+
   .img_logo img {
     float: left;
   }
-  
+
   #hide_tab {
     padding: 8px;
     float: right;
   }
+
   #hide_tab a {
     color: #f1f1f1f1;
     text-decoration: none;
     font-weight: 200;
   }
-  
+
   ::-webkit-scrollbar {
     width: 2px;
     height: 2px;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: #B3AFB3;
     border-radius: 0px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background: #B3AFB3;
   }
-  
+
   ::-webkit-scrollbar-track {
     background: #F0F0F0;
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
   }
-  
+
   /*# sourceMappingURL=main.css.map */
 </style>
 <div id="MPHDCustomForm">
-<div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+  <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
 
-<div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
-<br />
-<br />
-<img src="../images/ajax-loader-circle.gif" /><br />
-<br />
-&nbsp;
-<p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
-</div>
+  <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+    <br />
+    <br />
+    <img src="../images/ajax-loader-circle.gif" /><br />
+    <br />
+    &nbsp;
+    <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+  </div>
 
-<div id="MPHDCustomForm_Content">
-<div id="tabs" style="display:block;">
-<ul class="custom_tab">
-	<li><a catoption="TB97rk3iwCg" href="#SPRT" keyword="opt_c:Tb1">Supported</a></li>
-	<li><a catoption="kI2lPuAHQrF" href="#XCUT" keyword="opt_c:Tb2">X.Cut</a></li>
-</ul>
+  <div id="MPHDCustomForm_Content">
+    <div id="tabs" style="display:block;">
+      <ul class="custom_tab">
+        <li><a catoption="TB97rk3iwCg" href="#SPRT" keyword="opt_c:Tb1">Supported</a></li>
+        <li><a catoption="kI2lPuAHQrF" href="#XCUT" keyword="opt_c:Tb2">X.Cut</a></li>
+      </ul>
 
-<div class="img_logo"><img alt="usaid" height="120px" src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
+      <div class="img_logo"><img alt="usaid" height="120px"
+          src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
-<div catoption="TB97rk3iwCg" class="content_tabs" id="SPRT">
-<div catoption="qJhppOiz4HS" class="container-t1g1">
-<div class="rw">
-<div class="t1g1a">
-<div class="title">&nbsp;</div>
+      <div catoption="TB97rk3iwCg" class="content_tabs" id="SPRT">
+        <div catoption="qJhppOiz4HS" class="container-t1g1">
+          <div class="rw">
+            <div class="t1g1a">
+              <div class="title">&nbsp;</div>
 
-<div class="rwt1l" keyword="opt_c:G_CH2">MN CH.2 Number of facilities conducting audits</div>
+              <div class="rwt1l" keyword="opt_c:G_CH2">MN CH.2 Number of facilities conducting audits</div>
 
-<div class="rw1" keyword="opt_c:Tb1Gr1Tx1">Facilities conducting at least one Maternal death audit and response</div>
+              <div class="rw1" keyword="opt_c:Tb1Gr1Tx1">Facilities conducting at least one Maternal death audit and
+                response</div>
 
-<div class="rw2" keyword="opt_c:Tb1Gr1Tx2">Facilities conducting at least one Pediatric death audit and response</div>
+              <div class="rw2" keyword="opt_c:Tb1Gr1Tx2">Facilities conducting at least one Pediatric death audit and
+                response</div>
 
-<div class="rw3" keyword="opt_c:Tb1Gr1Tx3">Facilities conducting at least one Perinatal death audit and response</div>
+              <div class="rw3" keyword="opt_c:Tb1Gr1Tx3">Facilities conducting at least one Perinatal death audit and
+                response</div>
 
-<div class="rw4" keyword="opt_c:Tb1Gr1Tx4">Facilities reporting / supervised</div>
+              <div class="rw4" keyword="opt_c:Tb1Gr1Tx4">Facilities reporting / supervised</div>
 
-<div class="rwt2l" keyword="opt_c:G_WASH">MPHD - WASH 1 Number of facilities</div>
+              <div class="rwt2l" keyword="opt_c:G_WASH">MPHD - WASH 1 Number of facilities</div>
 
-<div class="rw5" keyword="opt_c:Tb1Gr1Tx5">Health facilities with soap and running water or alcohol-based rub available on the day of superision visit</div>
+              <div class="rw5" keyword="opt_c:Tb1Gr1Tx5">Health facilities with soap and running water or alcohol-based
+                rub available on the day of superision visit</div>
 
-<div class="rw6" keyword="opt_c:Tb1Gr1Tx6">Health Facilities with improved infection prevention readiness scores</div>
+              <div class="rw6" keyword="opt_c:Tb1Gr1Tx6">Health Facilities with improved infection prevention readiness
+                scores</div>
 
-<div class="rw7" keyword="opt_c:Tb1Gr1Tx7">Health facilities that experience a stock out of Essential Infection Prevention Supplies during the previous three months</div>
-</div>
-</div>
+              <div class="rw7" keyword="opt_c:Tb1Gr1Tx7">Health facilities that experience a stock out of Essential
+                Infection Prevention Supplies during the previous three months</div>
+            </div>
+          </div>
 
-<div class="data">
-<div class="t1g1b">
-<div class="c_t1" keyword="opt_c:Gpriv">Private</div>
+          <div class="data">
+            <div class="t1g1b">
+              <div class="c_t1" keyword="opt_c:Gpriv">Private</div>
 
-<div class="c_t2" keyword="opt_c:Gunsp">Unspecified</div>
+              <div class="c_t2" keyword="opt_c:Gunsp">Unspecified</div>
 
-<div class="c_t3" keyword="opt_c:Gpubl">Public</div>
+              <div class="c_t3" keyword="opt_c:Gpubl">Public</div>
 
-<div class="t_cls">&nbsp;</div>
+              <div class="t_cls">&nbsp;</div>
 
-<div class="c_t1-1" keyword="opt_c:GpublTx1">Hospital NGO/FBO</div>
+              <div class="c_t1-1" keyword="opt_c:GpublTx1">Hospital NGO/FBO</div>
 
-<div class="c_t1-2" keyword="opt_c:GpublTx2">Health center/facility NGO/FBO</div>
+              <div class="c_t1-2" keyword="opt_c:GpublTx2">Health center/facility NGO/FBO</div>
 
-<div class="c_t1-3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+              <div class="c_t1-3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
 
-<div class="c_t2-1" keyword="opt_c:GunspTx1">Service site</div>
+              <div class="c_t2-1" keyword="opt_c:GunspTx1">Service site</div>
 
-<div class="c_t3-1" keyword="opt_c:GpublTx1">Hospital</div>
+              <div class="c_t3-1" keyword="opt_c:GpublTx1">Hospital</div>
 
-<div class="c_t3-2" keyword="opt_c:GpublTx2">Health center/facility</div>
+              <div class="c_t3-2" keyword="opt_c:GpublTx2">Health center/facility</div>
 
-<div class="c_t3-3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+              <div class="c_t3-3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
 
-<div class="totals" keyword="opt_c:totals">Totals</div>
+              <div class="totals" keyword="opt_c:totals">Totals</div>
 
-<div class="rwt1r">&nbsp;</div>
+              <div class="rwt1r">&nbsp;</div>
 
-<div class="rwt2r">&nbsp;</div>
+              <div class="rwt2r">&nbsp;</div>
 
-<div class="c_t1-1-i1"><input id="b9hdbRkjjCp-zTQfDQVZjyr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - private/NGO/FBO ]" /></div>
+              <div class="c_t1-1-i1"><input id="b9hdbRkjjCp-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - private/NGO/FBO ]" />
+              </div>
 
-<div class="c_t1-1-i2"><input id="XbbeoFHvCRz-zTQfDQVZjyr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - private/NGO/FBO ]" /></div>
+              <div class="c_t1-1-i2"><input id="XbbeoFHvCRz-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - private/NGO/FBO ]" />
+              </div>
 
-<div class="c_t1-1-i3"><input id="Wk9oUqPxnvi-zTQfDQVZjyr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - private/NGO/FBO ]" /></div>
+              <div class="c_t1-1-i3"><input id="Wk9oUqPxnvi-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - private/NGO/FBO ]" />
+              </div>
 
-<div class="c_t1-1-i4"><input id="jhFolbnhe5Q-zTQfDQVZjyr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-1-i5"><input id="NKK6Gu4YLwx-zTQfDQVZjyr-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - private/NGO/FBO" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-1-i6"><input id="vaMdM92FYAK-zTQfDQVZjyr-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - private/NGO/FBO" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-1-i7"><input id="KqZ65d3nqO3-zTQfDQVZjyr-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - private/NGO/FBO" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - private/NGO/FBO ]" /></div>
-
-<div class="c_tt1"><input dataelementid="b9hdbRkjjCp" id="totalb9hdbRkjjCp" name="total" readonly="readonly" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months  " value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   ]" /></div>
-
-<div class="c_t1-2-i1"><input id="b9hdbRkjjCp-VqFQqaUry9M-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-2-i2"><input id="XbbeoFHvCRz-VqFQqaUry9M-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-2-i3"><input id="Wk9oUqPxnvi-VqFQqaUry9M-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-2-i4"><input id="jhFolbnhe5Q-VqFQqaUry9M-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - private/NGO/FBO" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-2-i5"><input id="NKK6Gu4YLwx-VqFQqaUry9M-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - private/NGO/FBO" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-2-i6"><input id="vaMdM92FYAK-VqFQqaUry9M-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - private/NGO/FBO" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_t1-2-i7"><input id="KqZ65d3nqO3-VqFQqaUry9M-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - private/NGO/FBO" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="c_tt2"><input dataelementid="XbbeoFHvCRz" id="totalXbbeoFHvCRz" name="total" readonly="readonly" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months  " value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   ]" /></div>
-
-<div class="c_t1-3-i1"><input id="b9hdbRkjjCp-PjoEmHigP3E-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - private" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - private ]" /></div>
-
-<div class="c_t1-3-i2"><input id="XbbeoFHvCRz-PjoEmHigP3E-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - private" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - private ]" /></div>
-
-<div class="c_t1-3-i3"><input id="Wk9oUqPxnvi-PjoEmHigP3E-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - private" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - private ]" /></div>
-
-<div class="c_t1-3-i4"><input id="jhFolbnhe5Q-PjoEmHigP3E-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - private" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - private ]" /></div>
-
-<div class="c_t1-3-i5"><input id="NKK6Gu4YLwx-PjoEmHigP3E-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - private" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - private ]" /></div>
-
-<div class="c_t1-3-i6"><input id="vaMdM92FYAK-PjoEmHigP3E-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - private" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - private ]" /></div>
-
-<div class="c_t1-3-i7"><input id="KqZ65d3nqO3-PjoEmHigP3E-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - private" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - private ]" /></div>
-
-<div class="c_tt3"><input dataelementid="Wk9oUqPxnvi" id="totalWk9oUqPxnvi" name="total" readonly="readonly" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months  " value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   ]" /></div>
-
-<div class="c_t2-1-i1"><input id="b9hdbRkjjCp-qeAEUnEIS86-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Service site unspecified" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Service site unspecified ]" /></div>
-
-<div class="c_t2-1-i2"><input id="XbbeoFHvCRz-qeAEUnEIS86-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Service site unspecified" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Service site unspecified ]" /></div>
-
-<div class="c_t2-1-i3"><input id="Wk9oUqPxnvi-qeAEUnEIS86-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Service site unspecified" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Service site unspecified ]" /></div>
-
-<div class="c_t2-1-i4"><input id="jhFolbnhe5Q-qeAEUnEIS86-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Service site unspecified" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Service site unspecified ]" /></div>
-
-<div class="c_t2-1-i5"><input id="NKK6Gu4YLwx-qeAEUnEIS86-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Service site unspecified" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Service site unspecified ]" /></div>
-
-<div class="c_t2-1-i6"><input id="vaMdM92FYAK-qeAEUnEIS86-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Service site unspecified" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Service site unspecified ]" /></div>
-
-<div class="c_t2-1-i7"><input id="KqZ65d3nqO3-qeAEUnEIS86-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Service site unspecified" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Service site unspecified ]" /></div>
-
-<div class="c_tt4"><input dataelementid="jhFolbnhe5Q" id="totaljhFolbnhe5Q" name="total" readonly="readonly" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months ]" /></div>
-
-<div class="c_t3-1-i1"><input id="b9hdbRkjjCp-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - public ]" /></div>
-
-<div class="c_t3-1-i2"><input id="XbbeoFHvCRz-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - public ]" /></div>
-
-<div class="c_t3-1-i3"><input id="Wk9oUqPxnvi-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - public ]" /></div>
-
-<div class="c_t3-1-i4"><input id="jhFolbnhe5Q-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - public ]" /></div>
-
-<div class="c_t3-1-i5"><input id="NKK6Gu4YLwx-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - public" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - public ]" /></div>
-
-<div class="c_t3-1-i6"><input id="vaMdM92FYAK-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - public" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - public ]" /></div>
-
-<div class="c_t3-1-i7"><input id="KqZ65d3nqO3-yd0oM4Ca8nr-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - public" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - public ]" /></div>
-
-<div class="c_tt5"><input dataelementid="NKK6Gu4YLwx" id="totalNKK6Gu4YLwx" name="total" readonly="readonly" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility ]" /></div>
-
-<div class="c_t3-2-i1"><input id="b9hdbRkjjCp-Xop4P0fvAM3-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - public ]" /></div>
-
-<div class="c_t3-2-i2"><input id="XbbeoFHvCRz-Xop4P0fvAM3-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - public ]" /></div>
-
-<div class="c_t3-2-i3"><input id="Wk9oUqPxnvi-Xop4P0fvAM3-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - public ]" /></div>
-
-<div class="c_t3-2-i4"><input id="jhFolbnhe5Q-Xop4P0fvAM3-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - public ]" /></div>
-
-<div class="c_t3-2-i5"><input id="NKK6Gu4YLwx-Xop4P0fvAM3-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - public" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - public ]" /></div>
-
-<div class="c_t3-2-i6"><input id="vaMdM92FYAK-Xop4P0fvAM3-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - public" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - public ]" /></div>
-
-<div class="c_t3-2-i7"><input id="KqZ65d3nqO3-Xop4P0fvAM3-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - public" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - public ]" /></div>
-
-<div class="c_tt6"><input dataelementid="vaMdM92FYAK" id="totalvaMdM92FYAK" name="total" readonly="readonly" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores ]" /></div>
-
-<div class="c_t3-3-i1"><input id="b9hdbRkjjCp-oqTyFBngC1L-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - public ]" /></div>
-
-<div class="c_t3-3-i2"><input id="XbbeoFHvCRz-oqTyFBngC1L-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - public ]" /></div>
-
-<div class="c_t3-3-i3"><input id="Wk9oUqPxnvi-oqTyFBngC1L-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - public ]" /></div>
-
-<div class="c_t3-3-i4"><input id="jhFolbnhe5Q-oqTyFBngC1L-val" name="entryfield" title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - public" value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - public ]" /></div>
-
-<div class="c_t3-3-i5"><input id="NKK6Gu4YLwx-oqTyFBngC1L-val" name="entryfield" title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - public" value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - public ]" /></div>
-
-<div class="c_t3-3-i6"><input id="vaMdM92FYAK-oqTyFBngC1L-val" name="entryfield" title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - public" value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - public ]" /></div>
-
-<div class="c_t3-3-i7"><input id="KqZ65d3nqO3-oqTyFBngC1L-val" name="entryfield" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - public" value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - public ]" /></div>
-
-<div class="c_tt7"><input dataelementid="KqZ65d3nqO3" id="totalKqZ65d3nqO3" name="total" readonly="readonly" title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies " value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  ]" /></div>
-</div>
-</div>
-</div>
-
-<div catoption="Khf8loUdmET" class="t1g2">
-<div class="title" keyword="opt_c:Tb1Gr2Tt1">GEN 3 - Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication)</div>
-
-<div class="c1" keyword="opt_c:Ag1">- 20</div>
-
-<div class="c2" keyword="opt_c:Ag2">20-24</div>
-
-<div class="c3" keyword="opt_c:Ag3">+ 25</div>
-
-<div class="c4" keyword="opt_c:Ag4">Age not specified</div>
-
-<div class="title_private" keyword="opt_c:G1">Private</div>
-
-<div class="rwcls1">&nbsp;</div>
-
-<div class="private_rw1" keyword="opt_c:Gpriv">Hospital NGO/FBO</div>
-
-<div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO</div>
-
-<div class="private_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
-
-<div class="title_unspecified" keyword="opt_c:Gunsp">Unspecified</div>
-
-<div class="rwcls2">&nbsp;</div>
-
-<div class="unspecified_rw1" keyword="opt_c:GunspTx1">Service site</div>
-
-<div class="title_public" keyword="opt_c:Gpubl">Public</div>
-
-<div class="rwcls3">&nbsp;</div>
-
-<div class="public_rw1" keyword="opt_c:GpublTx1">Hospital</div>
-
-<div class="public_rw2" keyword="opt_c:GpublTx2">Health center/facility</div>
-
-<div class="public_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
-
-<div class="totals" keyword="opt_c:totals">Totals</div>
-
-<div class="tls"><input dataelementid="wKgwXfL2n4h" id="totalwKgwXfL2n4h" name="total" readonly="readonly" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas ]" /></div>
-
-<div class="vc1_0"><input id="wKgwXfL2n4h-sjgE0pen5no-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - private/NGO/FBO ]" /></div>
-
-<div class="vc1_1"><input id="wKgwXfL2n4h-SIrJqwP1fCN-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="vc1_2"><input id="wKgwXfL2n4h-UmS1T7QRQxY-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - private" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - private ]" /></div>
-
-<div class="vc1_4"><input id="wKgwXfL2n4h-EX5RuRcChJE-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Service site unspecified" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Service site unspecified ]" /></div>
-
-<div class="vc1_5">&nbsp;</div>
-
-<div class="vc1_6"><input id="wKgwXfL2n4h-pebFSefHihS-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - public ]" /></div>
-
-<div class="vc1_7"><input id="wKgwXfL2n4h-jImTKrmTUDa-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - public ]" /></div>
-
-<div class="vc1_8"><input id="wKgwXfL2n4h-Zfog8NuwxdH-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - public ]" /></div>
-
-<div class="vc2_0"><input id="wKgwXfL2n4h-RZd91smZjnb-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - private/NGO/FBO ]" /></div>
-
-<div class="vc2_1"><input id="wKgwXfL2n4h-veRErjDIupc-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="vc2_2"><input id="wKgwXfL2n4h-CHM5raM8z2X-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - private" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - private ]" /></div>
-
-<div class="vc2_4"><input id="wKgwXfL2n4h-zpxwsjI3UMR-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Service site unspecified" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Service site unspecified ]" /></div>
-
-<div class="vc2_5">&nbsp;</div>
-
-<div class="vc2_6"><input id="wKgwXfL2n4h-MNIno7KOidt-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - public ]" /></div>
-
-<div class="vc2_7"><input id="wKgwXfL2n4h-yqMscx3mWeK-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - public ]" /></div>
-
-<div class="vc2_8"><input id="wKgwXfL2n4h-jOFy1M0fZIy-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - public ]" /></div>
-
-<div class="vc3_0"><input id="wKgwXfL2n4h-mCQfgGXjHBT-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - private/NGO/FBO ]" /></div>
-
-<div class="vc3_1"><input id="wKgwXfL2n4h-uUWkYMdZjxR-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="vc3_2"><input id="wKgwXfL2n4h-yM00OJAxFxB-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - private" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - private ]" /></div>
-
-<div class="vc3_4"><input id="wKgwXfL2n4h-q3JvXWDGXxC-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Service site unspecified" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Service site unspecified ]" /></div>
-
-<div class="vc3_5">&nbsp;</div>
-
-<div class="vc3_6"><input id="wKgwXfL2n4h-utafq7Ptuxc-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - public ]" /></div>
-
-<div class="vc3_7"><input id="wKgwXfL2n4h-wvIb3PxOlAP-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - public ]" /></div>
-
-<div class="vc3_8"><input id="wKgwXfL2n4h-kFujLfKFgkl-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - public ]" /></div>
-
-<div class="vc4_0"><input id="wKgwXfL2n4h-a9hSYuXwgc6-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - private/NGO/FBO ]" /></div>
-
-<div class="vc4_1"><input id="wKgwXfL2n4h-rDI3fCWEhA6-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - private/NGO/FBO" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="vc4_2"><input id="wKgwXfL2n4h-IudRhk6Uqu1-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - private" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - private ]" /></div>
-
-<div class="vc4_4"><input id="wKgwXfL2n4h-X6S0dwZWIzn-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Service site unspecified" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Service site unspecified ]" /></div>
-
-<div class="vc4_5">&nbsp;</div>
-
-<div class="vc4_6"><input id="wKgwXfL2n4h-erNbI9dj3Az-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - public ]" /></div>
-
-<div class="vc4_7"><input id="wKgwXfL2n4h-JkAsL0o5inh-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - public ]" /></div>
-
-<div class="vc4_8"><input id="wKgwXfL2n4h-bJy6n8daYwX-val" name="entryfield" title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - public" value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - public ]" /></div>
-</div>
-
-<div catoption="XcI2u23mC5w" class="t1g4">
-<div class="title" keyword="opt_c:Tb1Gr2Tt2">Organization type</div>
-
-<div class="c1" keyword="opt_c:Ag1">- 20</div>
-
-<div class="c2" keyword="opt_c:Ag2">20 -24</div>
-
-<div class="c3" keyword="opt_c:Ag3">+ 25</div>
-
-<div class="c4" keyword="opt_c:Ag4">Age not specified</div>
-
-<div class="totals" keyword="opt_c:totals">Totals</div>
-
-<div class="r1" keyword="opt_c:Tb1Gr2Tx1">MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities)</div>
-
-<div class="c1i1"><input id="vfKLPQG5xPF-vjZPre4Dzjf-val" name="entryfield" title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age below 20" value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age below 20 ]" /></div>
-
-<div class="c2i1"><input id="vfKLPQG5xPF-bip4Z81y6Od-val" name="entryfield" title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age between 20-24" value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age between 20-24 ]" /></div>
-
-<div class="c3i1"><input id="vfKLPQG5xPF-x1FvtISW5xt-val" name="entryfield" title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age more than 25" value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age more than 25 ]" /></div>
-
-<div class="c4i1"><input id="vfKLPQG5xPF-oQJiZGGYtPx-val" name="entryfield" title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age not specified" value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age not specified ]" /></div>
-
-<div class="ctt1"><input dataelementid="vfKLPQG5xPF" id="totalvfKLPQG5xPF" name="total" readonly="readonly" title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities)" value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) ]" /></div>
-</div>
-
-<div catoption="tYP127Cb4ZR" class="t1g5">
-<div class="title">MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Nepal Only</div>
-
-<div class="title1">&nbsp;</div>
-
-<div class="fem">Female</div>
-
-<div class="fem1"><input id="X3fKGsZD8n9-RaDA18EdM3O-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Female" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Female ]" /></div>
-
-<div class="male">Male</div>
-
-<div class="male1"><input id="X3fKGsZD8n9-GhdeQuQT3pI-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Male" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Male ]" /></div>
-
-<div class="unspec">Unspecified (Sex)</div>
-
-<div class="unspec1"><input id="X3fKGsZD8n9-ZOFzuGOXt0U-val" name="entryfield" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Unspecified (sex)" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Unspecified (sex) ]" /></div>
-
-<div class="total">Total</div>
-
-<div class="total1"><input dataelementid="X3fKGsZD8n9" id="totalX3fKGsZD8n9" name="total" readonly="readonly" title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District)" value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) ]" /></div>
-</div>
-</div>
-
-<div catoption="kI2lPuAHQrF" class="content_tabs" id="XCUT">
-<div catoption="psNjqL9k1qq" class="t2g1">
-<div class="rw1" keyword="opt_c:Tb2Gr1Tx1">X.Cut.5_Total estimated population in areas receiving MOMENTUM-support to deliver, improve or expand MNCH/FP/RH</div>
-
-<div class="i1"><input id="iCMsCCYcgsy-HllvX50cXC0-val" name="entryfield" title="MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI" value="[ MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI ]" /></div>
-</div>
-
-<div catoption="rzM0yNAwP1W" class="t2g2">
-<div class="title" keyword="opt_c:Tb2Gr1Tt2">MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW)</div>
-
-<div class="c1" keyword="opt_c:HWCl1">Sites required to report HMIS data to a higher level for the six month period</div>
-
-<div class="c2" keyword="opt_c:HWCl2">Sites that completed and submitted HMIS reporting forms to higher level for the six month period</div>
-
-<div class="title_private" keyword="opt_c:Gpriv">Private</div>
-
-<div class="prw1" keyword="opt_c:GxTx1">Pharmacy</div>
-
-<div class="hwrw1" keyword="opt_c:GxTx2">Community (health worker)</div>
-
-<div class="rwcls1">&nbsp;</div>
-
-<div class="private_rw1" keyword="opt_c:GprivTx1">Hospital NGO/FBO</div>
-
-<div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO</div>
-
-<div class="private_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
-
-<div class="title_unspecified" keyword="opt_c:Gunsp">Unspecified</div>
-
-<div class="rwcls2">&nbsp;</div>
-
-<div class="unspecified_rw1" keyword="opt_c:GunspTx1">Service site</div>
-
-<div class="title_public" keyword="opt_c:Gpubl">Public</div>
-
-<div class="rwcls3">&nbsp;</div>
-
-<div class="public_rw1" keyword="opt_c:GpublTx1">Hospital</div>
-
-<div class="public_rw2" keyword="opt_c:GpublTx2">Health center/facility</div>
-
-<div class="public_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
-
-<div class="totals" keyword="opt_c:totals">Totals</div>
-
-<div class="tts1"><input dataelementid="jldU3dZkPV3" id="totaljldU3dZkPV3" name="total" readonly="readonly" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period ]" /></div>
-
-<div class="tts2"><input dataelementid="ezz4gWRBWms" id="totalezz4gWRBWms" name="total" readonly="readonly" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period ]" /></div>
-
-<div class="pc1"><input id="jldU3dZkPV3-yEgGHoBfFtA-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Pharmacy" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Pharmacy ]" /></div>
-
-<div class="pc2"><input id="ezz4gWRBWms-yEgGHoBfFtA-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Pharmacy" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Pharmacy ]" /></div>
-
-<div class="hwpc1"><input id="jldU3dZkPV3-eS8iYuwHDq4-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Community (health worker)" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Community (health worker) ]" /></div>
-
-<div class="hwpc2"><input id="ezz4gWRBWms-eS8iYuwHDq4-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Community (health worker)" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Community (health worker) ]" /></div>
-
-<div class="vc1_0"><input id="jldU3dZkPV3-jmm0lx8i5MU-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - private/NGO/FBO" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - private/NGO/FBO ]" /></div>
-
-<div class="vc1_1"><input id="jldU3dZkPV3-QkQ1lORcHzG-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - private/NGO/FBO" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="vc1_2"><input id="jldU3dZkPV3-D3g8iYXzGbd-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - private" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - private ]" /></div>
-
-<div class="vc1_4"><input id="jldU3dZkPV3-DGRU5TtSEKP-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Service site unspecified" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Service site unspecified ]" /></div>
-
-<div class="vc1_6"><input id="jldU3dZkPV3-TjNGgHXm7Dh-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - public" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - public ]" /></div>
-
-<div class="vc1_7"><input id="jldU3dZkPV3-FOxHf7UMkFc-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - public" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - public ]" /></div>
-
-<div class="vc1_8"><input id="jldU3dZkPV3-q1AhE1DMQzf-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - public" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - public ]" /></div>
-
-<div class="vc2_0"><input id="ezz4gWRBWms-jmm0lx8i5MU-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - private/NGO/FBO" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - private/NGO/FBO ]" /></div>
-
-<div class="vc2_1"><input id="ezz4gWRBWms-QkQ1lORcHzG-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - private/NGO/FBO" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - private/NGO/FBO ]" /></div>
-
-<div class="vc2_2"><input id="ezz4gWRBWms-D3g8iYXzGbd-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - private" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - private ]" /></div>
-
-<div class="vc2_4"><input id="ezz4gWRBWms-DGRU5TtSEKP-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Service site unspecified" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Service site unspecified ]" /></div>
-
-<div class="vc2_6"><input id="ezz4gWRBWms-TjNGgHXm7Dh-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - public" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - public ]" /></div>
-
-<div class="vc2_7"><input id="ezz4gWRBWms-FOxHf7UMkFc-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - public" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - public ]" /></div>
-
-<div class="vc2_8"><input id="ezz4gWRBWms-q1AhE1DMQzf-val" name="entryfield" title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - public" value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - public ]" /></div>
-</div>
-</div>
-</div>
-</div>
+              <div class="c_t1-1-i4"><input id="jhFolbnhe5Q-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-1-i5"><input id="NKK6Gu4YLwx-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - private/NGO/FBO"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-1-i6"><input id="vaMdM92FYAK-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - private/NGO/FBO"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-1-i7"><input id="KqZ65d3nqO3-zTQfDQVZjyr-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - private/NGO/FBO"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_tt1"><input dataelementid="b9hdbRkjjCp" id="totalb9hdbRkjjCp" name="total"
+                  readonly="readonly"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months  "
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   ]" />
+              </div>
+
+              <div class="c_t1-2-i1"><input id="b9hdbRkjjCp-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-2-i2"><input id="XbbeoFHvCRz-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-2-i3"><input id="Wk9oUqPxnvi-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-2-i4"><input id="jhFolbnhe5Q-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-2-i5"><input id="NKK6Gu4YLwx-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-2-i6"><input id="vaMdM92FYAK-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_t1-2-i7"><input id="KqZ65d3nqO3-VqFQqaUry9M-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - private/NGO/FBO"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - private/NGO/FBO ]" />
+              </div>
+
+              <div class="c_tt2"><input dataelementid="XbbeoFHvCRz" id="totalXbbeoFHvCRz" name="total"
+                  readonly="readonly"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months  "
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   ]" />
+              </div>
+
+              <div class="c_t1-3-i1"><input id="b9hdbRkjjCp-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - private"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_t1-3-i2"><input id="XbbeoFHvCRz-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - private"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_t1-3-i3"><input id="Wk9oUqPxnvi-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - private"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_t1-3-i4"><input id="jhFolbnhe5Q-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - private"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_t1-3-i5"><input id="NKK6Gu4YLwx-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - private"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_t1-3-i6"><input id="vaMdM92FYAK-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - private"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_t1-3-i7"><input id="KqZ65d3nqO3-PjoEmHigP3E-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - private"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - private ]" />
+              </div>
+
+              <div class="c_tt3"><input dataelementid="Wk9oUqPxnvi" id="totalWk9oUqPxnvi" name="total"
+                  readonly="readonly"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months  "
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   ]" />
+              </div>
+
+              <div class="c_t2-1-i1"><input id="b9hdbRkjjCp-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Service site unspecified"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Service site unspecified ]" />
+              </div>
+
+              <div class="c_t2-1-i2"><input id="XbbeoFHvCRz-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Service site unspecified"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Service site unspecified ]" />
+              </div>
+
+              <div class="c_t2-1-i3"><input id="Wk9oUqPxnvi-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Service site unspecified"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Service site unspecified ]" />
+              </div>
+
+              <div class="c_t2-1-i4"><input id="jhFolbnhe5Q-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Service site unspecified"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Service site unspecified ]" />
+              </div>
+
+              <div class="c_t2-1-i5"><input id="NKK6Gu4YLwx-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Service site unspecified"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Service site unspecified ]" />
+              </div>
+
+              <div class="c_t2-1-i6"><input id="vaMdM92FYAK-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Service site unspecified"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Service site unspecified ]" />
+              </div>
+
+              <div class="c_t2-1-i7"><input id="KqZ65d3nqO3-qeAEUnEIS86-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Service site unspecified"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Service site unspecified ]" />
+              </div>
+
+              <div class="c_tt4"><input dataelementid="jhFolbnhe5Q" id="totaljhFolbnhe5Q" name="total"
+                  readonly="readonly"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months ]" />
+              </div>
+
+              <div class="c_t3-1-i1"><input id="b9hdbRkjjCp-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Hospital - public ]" />
+              </div>
+
+              <div class="c_t3-1-i2"><input id="XbbeoFHvCRz-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Hospital - public ]" />
+              </div>
+
+              <div class="c_t3-1-i3"><input id="Wk9oUqPxnvi-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Hospital - public ]" />
+              </div>
+
+              <div class="c_t3-1-i4"><input id="jhFolbnhe5Q-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Hospital - public ]" />
+              </div>
+
+              <div class="c_t3-1-i5"><input id="NKK6Gu4YLwx-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - public"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Hospital - public ]" />
+              </div>
+
+              <div class="c_t3-1-i6"><input id="vaMdM92FYAK-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - public"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Hospital - public ]" />
+              </div>
+
+              <div class="c_t3-1-i7"><input id="KqZ65d3nqO3-yd0oM4Ca8nr-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - public"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Hospital - public ]" />
+              </div>
+
+              <div class="c_tt5"><input dataelementid="NKK6Gu4YLwx" id="totalNKK6Gu4YLwx" name="total"
+                  readonly="readonly"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility ]" />
+              </div>
+
+              <div class="c_t3-2-i1"><input id="b9hdbRkjjCp-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Health center/facility - public ]" />
+              </div>
+
+              <div class="c_t3-2-i2"><input id="XbbeoFHvCRz-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Health center/facility - public ]" />
+              </div>
+
+              <div class="c_t3-2-i3"><input id="Wk9oUqPxnvi-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Health center/facility - public ]" />
+              </div>
+
+              <div class="c_t3-2-i4"><input id="jhFolbnhe5Q-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Health center/facility - public ]" />
+              </div>
+
+              <div class="c_t3-2-i5"><input id="NKK6Gu4YLwx-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - public"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Health center/facility - public ]" />
+              </div>
+
+              <div class="c_t3-2-i6"><input id="vaMdM92FYAK-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - public"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Health center/facility - public ]" />
+              </div>
+
+              <div class="c_t3-2-i7"><input id="KqZ65d3nqO3-Xop4P0fvAM3-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - public"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Health center/facility - public ]" />
+              </div>
+
+              <div class="c_tt6"><input dataelementid="vaMdM92FYAK" id="totalvaMdM92FYAK" name="total"
+                  readonly="readonly"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores ]" />
+              </div>
+
+              <div class="c_t3-3-i1"><input id="b9hdbRkjjCp-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one maternal death audit and response within last 6 months   Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_t3-3-i2"><input id="XbbeoFHvCRz-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Pediatric death audit and response within last 6 months   Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_t3-3-i3"><input id="Wk9oUqPxnvi-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities conducting at least one Perinatal death audit and response within last 6 months   Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_t3-3-i4"><input id="jhFolbnhe5Q-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - public"
+                  value="[ MPHD - MN CH.2 Number of MOMENTUM supported facilities reporting / supervised within last 6 months Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_t3-3-i5"><input id="NKK6Gu4YLwx-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - public"
+                  value="[ MPHD - WASH.1_PSI_Number of MPHD supported facilities with available soap and running water or alcohol-based rub in the facility Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_t3-3-i6"><input id="vaMdM92FYAK-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - public"
+                  value="[ MPHD - WASH.2_PSI_Number of MPHD supported Health Facilities with improved infection prevention readiness scores Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_t3-3-i7"><input id="KqZ65d3nqO3-oqTyFBngC1L-val" name="entryfield"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - public"
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  Mobile clinic/services - public ]" />
+              </div>
+
+              <div class="c_tt7"><input dataelementid="KqZ65d3nqO3" id="totalKqZ65d3nqO3" name="total"
+                  readonly="readonly"
+                  title="MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies "
+                  value="[ MPHD - WASH.3_PSI_Number of MPHD supported health care facilities that experience a stock out during the previous three months of Essential Infection Prevention Supplies  ]" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div catoption="Khf8loUdmET" class="t1g2">
+          <div class="title" keyword="opt_c:Tb1Gr2Tt1">GEN 3 - Percentage of women who report they communicate with
+            their partner about MNCH/FP/RH topic(s) (couple communication)</div>
+
+          <div class="c1" keyword="opt_c:Ag1">- 20</div>
+
+          <div class="c2" keyword="opt_c:Ag2">20-24</div>
+
+          <div class="c3" keyword="opt_c:Ag3">+ 25</div>
+
+          <div class="c4" keyword="opt_c:Ag4">Age not specified</div>
+
+          <div class="title_private" keyword="opt_c:G1">Private</div>
+
+          <div class="rwcls1">&nbsp;</div>
+
+          <div class="private_rw1" keyword="opt_c:Gpriv">Hospital NGO/FBO</div>
+
+          <div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO</div>
+
+          <div class="private_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+
+          <div class="title_unspecified" keyword="opt_c:Gunsp">Unspecified</div>
+
+          <div class="rwcls2">&nbsp;</div>
+
+          <div class="unspecified_rw1" keyword="opt_c:GunspTx1">Service site</div>
+
+          <div class="title_public" keyword="opt_c:Gpubl">Public</div>
+
+          <div class="rwcls3">&nbsp;</div>
+
+          <div class="public_rw1" keyword="opt_c:GpublTx1">Hospital</div>
+
+          <div class="public_rw2" keyword="opt_c:GpublTx2">Health center/facility</div>
+
+          <div class="public_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+
+          <div class="totals" keyword="opt_c:totals">Totals</div>
+
+          <div class="tls"><input dataelementid="wKgwXfL2n4h" id="totalwKgwXfL2n4h" name="total" readonly="readonly"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas ]" />
+          </div>
+
+          <div class="vc1_0"><input id="wKgwXfL2n4h-sjgE0pen5no-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc1_1"><input id="wKgwXfL2n4h-SIrJqwP1fCN-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc1_2"><input id="wKgwXfL2n4h-UmS1T7QRQxY-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - private"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - private ]" />
+          </div>
+
+          <div class="vc1_4"><input id="wKgwXfL2n4h-EX5RuRcChJE-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Service site unspecified"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Service site unspecified ]" />
+          </div>
+
+          <div class="vc1_5">&nbsp;</div>
+
+          <div class="vc1_6"><input id="wKgwXfL2n4h-pebFSefHihS-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Hospital - public ]" />
+          </div>
+
+          <div class="vc1_7"><input id="wKgwXfL2n4h-jImTKrmTUDa-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Health center/facility - public ]" />
+          </div>
+
+          <div class="vc1_8"><input id="wKgwXfL2n4h-Zfog8NuwxdH-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age below 20, Mobile clinic/services - public ]" />
+          </div>
+
+          <div class="vc2_0"><input id="wKgwXfL2n4h-RZd91smZjnb-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc2_1"><input id="wKgwXfL2n4h-veRErjDIupc-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc2_2"><input id="wKgwXfL2n4h-CHM5raM8z2X-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - private"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - private ]" />
+          </div>
+
+          <div class="vc2_4"><input id="wKgwXfL2n4h-zpxwsjI3UMR-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Service site unspecified"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Service site unspecified ]" />
+          </div>
+
+          <div class="vc2_5">&nbsp;</div>
+
+          <div class="vc2_6"><input id="wKgwXfL2n4h-MNIno7KOidt-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Hospital - public ]" />
+          </div>
+
+          <div class="vc2_7"><input id="wKgwXfL2n4h-yqMscx3mWeK-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Health center/facility - public ]" />
+          </div>
+
+          <div class="vc2_8"><input id="wKgwXfL2n4h-jOFy1M0fZIy-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age between 20-24, Mobile clinic/services - public ]" />
+          </div>
+
+          <div class="vc3_0"><input id="wKgwXfL2n4h-mCQfgGXjHBT-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc3_1"><input id="wKgwXfL2n4h-uUWkYMdZjxR-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc3_2"><input id="wKgwXfL2n4h-yM00OJAxFxB-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - private"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - private ]" />
+          </div>
+
+          <div class="vc3_4"><input id="wKgwXfL2n4h-q3JvXWDGXxC-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Service site unspecified"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Service site unspecified ]" />
+          </div>
+
+          <div class="vc3_5">&nbsp;</div>
+
+          <div class="vc3_6"><input id="wKgwXfL2n4h-utafq7Ptuxc-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Hospital - public ]" />
+          </div>
+
+          <div class="vc3_7"><input id="wKgwXfL2n4h-wvIb3PxOlAP-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Health center/facility - public ]" />
+          </div>
+
+          <div class="vc3_8"><input id="wKgwXfL2n4h-kFujLfKFgkl-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age more than 25, Mobile clinic/services - public ]" />
+          </div>
+
+          <div class="vc4_0"><input id="wKgwXfL2n4h-a9hSYuXwgc6-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc4_1"><input id="wKgwXfL2n4h-rDI3fCWEhA6-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - private/NGO/FBO"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc4_2"><input id="wKgwXfL2n4h-IudRhk6Uqu1-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - private"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - private ]" />
+          </div>
+
+          <div class="vc4_4"><input id="wKgwXfL2n4h-X6S0dwZWIzn-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Service site unspecified"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Service site unspecified ]" />
+          </div>
+
+          <div class="vc4_5">&nbsp;</div>
+
+          <div class="vc4_6"><input id="wKgwXfL2n4h-erNbI9dj3Az-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Hospital - public ]" />
+          </div>
+
+          <div class="vc4_7"><input id="wKgwXfL2n4h-JkAsL0o5inh-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Health center/facility - public ]" />
+          </div>
+
+          <div class="vc4_8"><input id="wKgwXfL2n4h-bJy6n8daYwX-val" name="entryfield"
+              title="MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - public"
+              value="[ MPHD - GEN.3_PSI_Percentage of women who report they communicate with their partner about MNCH/FP/RH topic(s) (couple communication) in MPHD-supported areas Age not specified, Mobile clinic/services - public ]" />
+          </div>
+        </div>
+
+        <div catoption="XcI2u23mC5w" class="t1g4">
+          <div class="title" keyword="opt_c:Tb1Gr2Tt2">Organization type</div>
+
+          <div class="c1" keyword="opt_c:Ag1">- 20</div>
+
+          <div class="c2" keyword="opt_c:Ag2">20 -24</div>
+
+          <div class="c3" keyword="opt_c:Ag3">+ 25</div>
+
+          <div class="c4" keyword="opt_c:Ag4">Age not specified</div>
+
+          <div class="totals" keyword="opt_c:totals">Totals</div>
+
+          <div class="r1" keyword="opt_c:Tb1Gr2Tx1">MPHD - MNH.8_PSI_Percentage recently delivered women who report a
+            high person-centered maternity care score[1] in MPHD-supported areas (facilities)</div>
+
+          <div class="c1i1"><input id="vfKLPQG5xPF-vjZPre4Dzjf-val" name="entryfield"
+              title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age below 20"
+              value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age below 20 ]" />
+          </div>
+
+          <div class="c2i1"><input id="vfKLPQG5xPF-bip4Z81y6Od-val" name="entryfield"
+              title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age between 20-24"
+              value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age between 20-24 ]" />
+          </div>
+
+          <div class="c3i1"><input id="vfKLPQG5xPF-x1FvtISW5xt-val" name="entryfield"
+              title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age more than 25"
+              value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age more than 25 ]" />
+          </div>
+
+          <div class="c4i1"><input id="vfKLPQG5xPF-oQJiZGGYtPx-val" name="entryfield"
+              title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age not specified"
+              value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) Age not specified ]" />
+          </div>
+
+          <div class="ctt1"><input dataelementid="vfKLPQG5xPF" id="totalvfKLPQG5xPF" name="total" readonly="readonly"
+              title="MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities)"
+              value="[ MPHD - MNH.8_PSI_Percentage recently delivered women who report a high person-centered maternity care score[1] in MPHD-supported areas (facilities) ]" />
+          </div>
+        </div>
+
+        <div catoption="tYP127Cb4ZR" class="t1g5">
+          <div class="title">MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision
+            (District) Nepal Only</div>
+
+          <div class="title1">&nbsp;</div>
+
+          <div class="fem">Female</div>
+
+          <div class="fem1"><input id="X3fKGsZD8n9-RaDA18EdM3O-val" name="entryfield"
+              title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Female"
+              value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Female ]" />
+          </div>
+
+          <div class="male">Male</div>
+
+          <div class="male1"><input id="X3fKGsZD8n9-GhdeQuQT3pI-val" name="entryfield"
+              title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Male"
+              value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Male ]" />
+          </div>
+
+          <div class="unspec">Unspecified (Sex)</div>
+
+          <div class="unspec1"><input id="X3fKGsZD8n9-ZOFzuGOXt0U-val" name="entryfield"
+              title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Unspecified (sex)"
+              value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) Unspecified (sex) ]" />
+          </div>
+
+          <div class="total">Total</div>
+
+          <div class="total1"><input dataelementid="X3fKGsZD8n9" id="totalX3fKGsZD8n9" name="total" readonly="readonly"
+              title="MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District)"
+              value="[ MPHD - PSI PWI 2.6_PSI_Number of providers trained in high-quality service provision (District) ]" />
+          </div>
+        </div>
+      </div>
+
+      <div catoption="kI2lPuAHQrF" class="content_tabs" id="XCUT">
+        <div catoption="psNjqL9k1qq" class="t2g1">
+          <div class="rw1" keyword="opt_c:Tb2Gr1Tx1">X.Cut.5_Total estimated population in areas receiving
+            MOMENTUM-support to deliver, improve or expand MNCH/FP/RH</div>
+
+          <div class="i1"><input id="iCMsCCYcgsy-HllvX50cXC0-val" name="entryfield"
+              title="MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI"
+              value="[ MPHD - X.Cut.3_Total number of annual outpatient department visits*  among MOMENTUM-supported facilities implementing QI ]" />
+          </div>
+        </div>
+
+        <div catoption="rzM0yNAwP1W" class="t2g2">
+          <div class="title" keyword="opt_c:Tb2Gr1Tt2">MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and
+            community health worker (CHW)</div>
+
+          <div class="c1" keyword="opt_c:HWCl1">Sites required to report HMIS data to a higher level for the six month
+            period</div>
+
+          <div class="c2" keyword="opt_c:HWCl2">Sites that completed and submitted HMIS reporting forms to higher level
+            for the six month period</div>
+
+          <div class="title_private" keyword="opt_c:Gpriv">Private</div>
+
+          <div class="prw1" keyword="opt_c:GxTx1">Pharmacy</div>
+
+          <div class="hwrw1" keyword="opt_c:GxTx2">Community (health worker)</div>
+
+          <div class="rwcls1">&nbsp;</div>
+
+          <div class="private_rw1" keyword="opt_c:GprivTx1">Hospital NGO/FBO</div>
+
+          <div class="private_rw2" keyword="opt_c:GprivTx2">Health center/facility NGO/FBO</div>
+
+          <div class="private_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+
+          <div class="title_unspecified" keyword="opt_c:Gunsp">Unspecified</div>
+
+          <div class="rwcls2">&nbsp;</div>
+
+          <div class="unspecified_rw1" keyword="opt_c:GunspTx1">Service site</div>
+
+          <div class="title_public" keyword="opt_c:Gpubl">Public</div>
+
+          <div class="rwcls3">&nbsp;</div>
+
+          <div class="public_rw1" keyword="opt_c:GpublTx1">Hospital</div>
+
+          <div class="public_rw2" keyword="opt_c:GpublTx2">Health center/facility</div>
+
+          <div class="public_rw3" keyword="opt_c:GxTx3">Mobile clinic/services</div>
+
+          <div class="totals" keyword="opt_c:totals">Totals</div>
+
+          <div class="tts1"><input dataelementid="jldU3dZkPV3" id="totaljldU3dZkPV3" name="total" readonly="readonly"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period ]" />
+          </div>
+
+          <div class="tts2"><input dataelementid="ezz4gWRBWms" id="totalezz4gWRBWms" name="total" readonly="readonly"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period ]" />
+          </div>
+
+          <div class="pc1"><input id="jldU3dZkPV3-yEgGHoBfFtA-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Pharmacy"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Pharmacy ]" />
+          </div>
+
+          <div class="pc2"><input id="ezz4gWRBWms-yEgGHoBfFtA-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Pharmacy"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Pharmacy ]" />
+          </div>
+
+          <div class="hwpc1"><input id="jldU3dZkPV3-eS8iYuwHDq4-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Community (health worker)"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Community (health worker) ]" />
+          </div>
+
+          <div class="hwpc2"><input id="ezz4gWRBWms-eS8iYuwHDq4-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Community (health worker)"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Community (health worker) ]" />
+          </div>
+
+          <div class="vc1_0"><input id="jldU3dZkPV3-jmm0lx8i5MU-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - private/NGO/FBO"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc1_1"><input id="jldU3dZkPV3-QkQ1lORcHzG-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - private/NGO/FBO"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc1_2"><input id="jldU3dZkPV3-D3g8iYXzGbd-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - private"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - private ]" />
+          </div>
+
+          <div class="vc1_4"><input id="jldU3dZkPV3-DGRU5TtSEKP-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Service site unspecified"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Service site unspecified ]" />
+          </div>
+
+          <div class="vc1_6"><input id="jldU3dZkPV3-TjNGgHXm7Dh-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - public"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Hospital - public ]" />
+          </div>
+
+          <div class="vc1_7"><input id="jldU3dZkPV3-FOxHf7UMkFc-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - public"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Health center/facility - public ]" />
+          </div>
+
+          <div class="vc1_8"><input id="jldU3dZkPV3-q1AhE1DMQzf-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - public"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites required to report HMIS data to a higher level for the six month period Mobile clinic/services - public ]" />
+          </div>
+
+          <div class="vc2_0"><input id="ezz4gWRBWms-jmm0lx8i5MU-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - private/NGO/FBO"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc2_1"><input id="ezz4gWRBWms-QkQ1lORcHzG-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - private/NGO/FBO"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - private/NGO/FBO ]" />
+          </div>
+
+          <div class="vc2_2"><input id="ezz4gWRBWms-D3g8iYXzGbd-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - private"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - private ]" />
+          </div>
+
+          <div class="vc2_4"><input id="ezz4gWRBWms-DGRU5TtSEKP-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Service site unspecified"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Service site unspecified ]" />
+          </div>
+
+          <div class="vc2_6"><input id="ezz4gWRBWms-TjNGgHXm7Dh-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - public"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Hospital - public ]" />
+          </div>
+
+          <div class="vc2_7"><input id="ezz4gWRBWms-FOxHf7UMkFc-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - public"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Health center/facility - public ]" />
+          </div>
+
+          <div class="vc2_8"><input id="ezz4gWRBWms-q1AhE1DMQzf-val" name="entryfield"
+              title="MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - public"
+              value="[ MPHD - X.Cut.1 Number of MOMENTUM-supported health facilities and community health worker (CHW) sites that completed and submitted HMIS reporting forms to higher level for the six month period Mobile clinic/services - public ]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script>
   $(document).ready(function () {
