@@ -545,7 +545,7 @@
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3";
+  grid-template-areas: "a0 b0 c0 d0 e0" "a1 b1 c1 d1 e1" "a2 b2 c2 d2 e2" "a3 b3 c3 d3 e3" "a4 b4 c4 d4 e4";
   padding: 8px 0 42px 0;
 }
 .cont-tb1g2 .a0 {
@@ -594,6 +594,18 @@
   min-width: 120px;
   border-left: 1px solid #f7faff;
   grid-area: a3;
+}
+.cont-tb1g2 .a4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  border-left: 1px solid #f7faff;
+  grid-area: a4;
 }
 .cont-tb1g2 .b0 {
   font-size: 1.1em !important;
@@ -653,6 +665,22 @@
   grid-area: b3;
 }
 .cont-tb1g2 .b3 input {
+  max-width: 104px;
+  text-align: right;
+}
+.cont-tb1g2 .b4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  text-align: left;
+  grid-area: b4;
+}
+.cont-tb1g2 .b4 input {
   max-width: 104px;
   text-align: right;
 }
@@ -717,6 +745,22 @@
   max-width: 104px;
   text-align: right;
 }
+.cont-tb1g2 .c4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  text-align: left;
+  grid-area: c4;
+}
+.cont-tb1g2 .c4 input {
+  max-width: 104px;
+  text-align: right;
+}
 .cont-tb1g2 .d0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -778,6 +822,22 @@
   max-width: 104px;
   text-align: right;
 }
+.cont-tb1g2 .d4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #eff5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 2px solid #f7faff;
+  min-width: 120px;
+  text-align: left;
+  grid-area: d4;
+}
+.cont-tb1g2 .d4 input {
+  max-width: 104px;
+  text-align: right;
+}
 .cont-tb1g2 .e0 {
   font-size: 1.1em !important;
   font-weight: 800 !important;
@@ -836,6 +896,22 @@
   grid-area: e3;
 }
 .cont-tb1g2 .e3 input {
+  max-width: 104px;
+  text-align: right;
+}
+.cont-tb1g2 .e4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
+  background-color: #d6e5ff;
+  padding: 8px;
+  border-bottom: 1px solid #f7faff;
+  border-right: 1px solid #f7faff;
+  min-width: 120px;
+  text-align: left;
+  grid-area: e4;
+}
+.cont-tb1g2 .e4 input {
   max-width: 104px;
   text-align: right;
 }

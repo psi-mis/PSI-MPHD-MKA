@@ -521,7 +521,8 @@
         "a0 b0 c0 d0 e0"
         "a1 b1 c1 d1 e1"
         "a2 b2 c2 d2 e2"
-        "a3 b3 c3 d3 e3";
+        "a3 b3 c3 d3 e3"
+        "a4 b4 c4 d4 e4";
     padding: 8px 0 42px 0;
 
 
@@ -574,6 +575,19 @@
         min-width: 120px;
         border-left: 1px solid $Default-L;
         grid-area: a3;
+    }
+
+    .a4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        min-width: 120px;
+        border-left: 1px solid $Default-L;
+        grid-area: a4;
     }
 
     .b0 {
@@ -637,6 +651,24 @@
         min-width: 120px;
         text-align: left;
         grid-area: b3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .b4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        min-width: 120px;
+        text-align: left;
+        grid-area: b4;
 
         input {
             max-width: 104px;
@@ -712,6 +744,24 @@
         }
     }
 
+    .c4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        min-width: 120px;
+        text-align: left;
+        grid-area: c4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
     .d0 {
         font-size: 1.1em!important;
         font-weight: 800!important;
@@ -773,6 +823,24 @@
         min-width: 120px;
         text-align: left;
         grid-area: d3;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
+    .d4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-RW;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 2px solid $Default-L;
+        min-width: 120px;
+        text-align: left;
+        grid-area: d4;
 
         input {
             max-width: 104px;
@@ -847,6 +915,25 @@
             text-align: right;
         }
     }
+
+    .e4 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color2;
+        background-color: $Default-T;
+        padding: 8px;
+        border-bottom: 1px solid $Default-L;
+        border-right: 1px solid $Default-L;
+        min-width: 120px;
+        text-align: left;
+        grid-area: e4;
+
+        input {
+            max-width: 104px;
+            text-align: right;
+        }
+    }
+
 }
 
 .cont-tb1g2a {
