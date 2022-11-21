@@ -2630,11 +2630,11 @@
         <li><a href="#CE_AL" keyword="opt_c:TbTitle_4">CE and AL</a></li>
       </ul>
 
-      <div id="SPRT">
+      <div catoption="RAV9XtUZfiS" id="SPRT">
         <div class="img_logo"><img alt="usaid" height="120px"
             src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
-        <div class="t1g1">
+        <div catoption="MBVR5srzOLj" class="t1g1">
           <div class="title" keyword="opt_c:Tb1Tt1">Gen.1: Activities integrating gender</div>
 
           <div class="r1" keyword="opt_c:Tb1Tt1Tx1">Number of activities in Core Award work plans</div>
@@ -2650,7 +2650,7 @@
               value="[ MPHD - GEN.1_Number of discrete activities in the Field Award work plans ]" /></div>
         </div>
 
-        <div class="t1g2">
+        <div catoption="peO8Dpd0n7K" class="t1g2">
           <div class="title" keyword="opt_c:Tb1Tt2">Organizational Capacity Development</div>
 
           <div class="r1" keyword="opt_c:Tb1Tt23Tx1">PWI 2.2 D Number of organizations receiving organizational capacity
@@ -2668,7 +2668,7 @@
               value="[ MPHD - XX 2.2-N Number of MPHD-supported organizations with improved performance ]" /></div>
         </div>
 
-        <div class="t1g3">
+        <div catoption="RBaRYqeBIyX" class="t1g3">
           <div class="title" keyword="opt_c:Tb1Tt3">Organization type</div>
 
           <div class="c1" keyword="opt_c:Tb1Tt3Cl1">Private (CSO, NGO, for-profit)</div>
@@ -2760,7 +2760,7 @@
               value="[ MPHD - X.Cut.7_Number of organizations with MOMENTUM support Other (not specified) ]" /></div>
         </div>
 
-        <div class="t1g4">
+        <div catoption="Ff4pmdrocvt" class="t1g4">
           <div class="title" keyword="opt_c:Tb1Tt4">Gender Programming</div>
 
           <div class="c1" keyword="opt_c:Tb1Tt4Cl1">Empowerment (or reproductive empowerment)</div>
@@ -2843,11 +2843,11 @@
         </div>
       </div>
 
-      <div id="XCUT">
+      <div catoption="gTacKPqZFUa" id="XCUT">
         <div class="img_logo"><img alt="usaid" height="120px"
             src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
-        <div class="t2g1">
+        <div catoption="OScl8IZ2VoN" class="t2g1">
           <div class="title" keyword="opt_c:Tb2Tt1">Districts receiving support</div>
 
           <div class="r1" keyword="opt_c:Tb2Tt1Tx1">Number of districts receiving MPHD support</div>
@@ -2858,7 +2858,7 @@
           </div>
         </div>
 
-        <div class="t2g2">
+        <div catoption="qP9v1vKfDob" class="t2g2">
           <div class="Tittle" keyword="opt_c:Tb2Tt2">MPHD - X.Cut.8_Number of stresses or shocks occurring in
             MOMENTUM-supported districts due to</div>
 
@@ -3002,11 +3002,11 @@
         </div>
       </div>
 
-      <div id="CAP">
+      <div catoption="i541UQviNDL" id="CAP">
         <div class="img_logo"><img alt="usaid" height="120px"
             src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
-        <div class="t3g1">
+        <div catoption="qIpkJhO0aAy" class="t3g1">
           <div class="Title" keyword="opt_c:Tb3Title1">Organization assessed for organizational performance</div>
 
           <div class="SubTitle" keyword="opt_c:Tb3SubTitle1">In the description, please include the name of the tool that was used to assess performance and a short description of the metrics in which the organization improved.</div>
@@ -3164,7 +3164,7 @@
               value="[ CAP.5_Description of organization and increased performance Other ]" /></div>
         </div>
 
-        <div class="t3g1">
+        <div catoption="ZOXjWVRhbZm" class="t3g1">
           <div class="Title" keyword="opt_c:Tb3Title2">Organizations and technical capacity</div>
 
           <div class="SubTitle" keyword="opt_c:Tb3SubTitle2">In the description, please include the name of the tool that was used to assess capacity and a short description of the metrics in which the organization improved.</div>
@@ -3334,11 +3334,11 @@
         </div>
       </div>
 
-      <div id="CE_AL">
+      <div catoption="bdlo9VfjYkL" id="CE_AL">
         <div class="img_logo"><img alt="usaid" height="120px"
             src="https://dev-mphd.psi-mis.org/api/documents/M77i8WAUqQy/data" /></div>
 
-        <div class="t4g1">
+        <div catoption="lodjEsFNQ7I" class="t4g1">
           <div class="Title" keyword="opt_c:Tb4Title1">Approaches implemented by MOMENTUM that engage the community
           </div>
           <div class="SubT" keyword="opt_c:Tb4SubTitle1">In the description, please include the name of the approach and a short description of the approach. Also include the aim of the engagement and the type/intensity of engagement.</div>
@@ -3437,7 +3437,7 @@
           </div>
         </div>
 
-        <div class="t4g2">
+        <div catoption="NsRvUmQyx5N" class="t4g2">
           <div class="Title" keyword="opt_c:Tb4Title2">Entities receiving MOMENTUM-support</div>
           
           <div class="SubTitle" keyword="opt_c:Tb4SubT4">In the description, please include the name of the targeted actor, the data that was used, and detail the program modifications that were made.</div>
@@ -3526,6 +3526,9 @@
       }
     });
   });
+
+  var tab_swow = new Array();
+  var customEntryForm = new MPHDCustomEntryForm();
 
   $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
     if ($("#MPHDCustomForm").length > 0) {
@@ -3712,4 +3715,236 @@
     }
 
   });
+  function UIshowElements() {
+    var min = Math.min.apply(Math, tab_swow);
+
+    $('.content_tabs').css({
+      'display': 'none'
+    });
+
+
+    switch (min) {
+      case 1:
+        // Child health
+        //ui-tabs-active
+        $("#CHTab").css({
+          'display': 'block'
+        });
+        $("#tab1").addClass("ui-state-hover ui-tabs-active ui-state-active");
+        $("#tab1").attr('tabindex', function (index, attr) {
+          return index + 1;
+        });
+        $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+        $("#tab1").attr('aria-selected', 'true').prop('selected', true);
+        break;
+      case 2:
+        // Family planning
+        $("#FPTab").css({
+          'display': 'block'
+        });
+        $("#tab2").addClass("ui-state-hover ui-tabs-active ui-state-active");
+        $("#tab2").attr('tabindex', function (index, attr) {
+          return index + 1;
+        });
+        $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+        $("#tab2").attr('aria-selected', 'true').prop('selected', true);
+        break;
+      case "3":
+        // Immunization
+        $("#IMMTab").css({
+          'display': 'block'
+        });
+        $("#tab3").addClass("ui-state-hover ui-tabs-active ui-state-active");
+        $("#tab3").attr('tabindex', function (index, attr) {
+          return index + 1;
+        });
+        $("#tab3").attr('aria-selected', 'true').prop('selected', true);
+        $("#tab3").attr('aria-selected', 'true').prop('selected', true);
+        break;
+      case "4":
+        // Maternal Health
+        $("#MN").css({
+          'display': 'block'
+        });
+        $("#tab4").addClass("ui-state-hover ui-tabs-active ui-state-active");
+        $("#tab4").attr('tabindex', function (index, attr) {
+          return index + 1;
+        });
+        $("#tab4").attr('aria-selected', 'true').prop('selected', true);
+        $("#tab4").attr('aria-selected', 'true').prop('selected', true);
+        break;
+    }
+    return;
+  }
+
+  function MPHDCustomEntryForm() {
+    var me = this;
+
+    me.loaderDivTag = $("#loaderDiv");
+    me.mphdCustomFormTag = $("#MPHDCustomForm_Content");
+
+    // ------------------------------------------------------------------------------
+    // Variables
+
+    me.ID_CATEGORY_SHOW_HIDE_SUB_CONTENT = "N3RKXheNEgS";
+
+    me.showHideContentCatOptionList = {};
+
+    // ------------------------------------------------------------------------------
+    // URLs
+
+    me.PARAM_ORGUNIT_ID = "@PARAM_ORGUNIT_ID";
+
+    me.QUERY_URL_CATEGORY_SHOW_HIDE_SUB_CONTENT = "../api/categories/" + me.ID_CATEGORY_SHOW_HIDE_SUB_CONTENT + ".json?fields=categoryOptions[id,organisationUnits[id,path]]";
+    me.QUERY_URL_SELECTED_ORGUNIT = "../api/organisationUnits/" + me.PARAM_ORGUNIT_ID + ".json?fields=id,path";
+
+
+    // ------------------------------------------------------------------------------
+
+    me.init = function () {
+      me.retrieveCatOption(function () {
+        me.retrieveSelectedOrgUnitData();
+      })
+    }
+
+
+    // ------------------------------------------------------------------------------
+    // Retreive data
+
+    me.retrieveCatOption = function (execFunc) {
+      $.ajax({
+        type: "GET"
+        , url: me.QUERY_URL_CATEGORY_SHOW_HIDE_SUB_CONTENT
+        , contentType: "application/json;charset=utf-8"
+        , beforeSend: function (xhr) {
+          me.hideEntryForm();
+        }
+        , success: function (response) {
+
+          me.showHideContentCatOptionList = response.categoryOptions;
+          if (execFunc) execFunc();
+        }
+      });
+    }
+
+
+    me.retrieveSelectedOrgUnitData = function () {
+
+      var selectedOrgUnitId = dhis2.de.currentOrganisationUnitId;
+
+      if (selectedOrgUnitId != "") {
+        me.hideAllCatOptionPart();
+
+        var url = me.QUERY_URL_SELECTED_ORGUNIT;
+        url = url.replace(me.PARAM_ORGUNIT_ID, selectedOrgUnitId);
+
+        $.ajax({
+          type: "GET"
+          , url: url
+          , contentType: "application/json;charset=utf-8"
+          , beforeSend: function (xhr) {
+            me.hideEntryForm();
+          }
+          , success: function (response) {
+
+            var path = response.path;
+
+            var catOptionList = me.showHideContentCatOptionList;
+            for (var i in catOptionList) {
+              var catOption = catOptionList[i];
+              var catOptOrgUnitList = catOption.organisationUnits;
+              var found = me.searchOrgUnitPath(catOptOrgUnitList, path);
+              if (found) {
+                me.showOneCatOptionPart(catOption.id);
+                UIshowElements();
+              }
+            }
+
+
+            me.showEntryForm();
+          }
+        });
+      }
+
+    }
+
+    // ------------------------------------------------------------------------------
+    // Supportive methods
+
+    me.hideAllCatOptionPart = function () {
+      $("[catOption]").hide();
+    }
+
+    me.showOneCatOptionPart = function (catOptionId) {
+
+      //tab_swow.includes(2);
+      // true
+
+      switch (catOptionId) {
+        case "RAV9XtUZfiS":
+          // Project Wide Indicators
+          if (tab_swow.includes(1) == false) {
+            tab_swow.push(1);
+          }
+          break;
+        case "gTacKPqZFUa":
+          // XCut
+          if (tab_swow.includes(2) == false) {
+            tab_swow.push(2);
+          }
+          break;
+        case "i541UQviNDL":
+          // Capacity
+          if (tab_swow.includes(3) == false) {
+            tab_swow.push(3);
+          }
+          break;
+        case "bdlo9VfjYkL":
+          // Adaptive Learning
+          if (tab_swow.includes(4) == false) {
+            tab_swow.push(4);
+          }
+          break;
+      }
+
+      $("[catOption='" + catOptionId + "']").show();
+
+    }
+
+
+    me.hideEntryForm = function () {
+      me.loaderDivTag.show();
+      me.mphdCustomFormTag.hide();
+    }
+
+    me.showEntryForm = function () {
+      me.loaderDivTag.hide();
+      me.mphdCustomFormTag.show();
+    }
+
+    me.searchOrgUnitPath = function (list, path) {
+      let item;
+
+      if (list) {
+
+        for (let i = 0; i < list.length; i++) {
+          let listItem = list[i];
+
+          if (path.indexOf(listItem.path) == 0) {
+            item = listItem;
+            break;
+          }
+        }
+      }
+
+      return item;
+    }
+
+
+    // ------------------------------------------------------------------------------
+
+    me.init();
+
+  }
+
 </script>
